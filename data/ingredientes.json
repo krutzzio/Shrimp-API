@@ -1,0 +1,267 @@
+[
+    { 
+        "nombre_ingrediente": "Aceite de oliva",
+        "GrupoAlimentoId": "24"
+    },
+    {
+        "nombre_ingrediente": "Ajo",
+        "GrupoAlimentoId": "16"
+    },
+    {
+        "nombre_ingrediente": "Cebolla",
+        "GrupoAlimentoId": "16"
+    },
+    {
+        "nombre_ingrediente": "Pimiento",
+        "GrupoAlimentoId": "16"
+    },
+    {
+        "nombre_ingrediente": "Tomate",
+        "GrupoAlimentoId": "16"
+    },
+    {
+        "nombre_ingrediente": "Zanahoria",
+        "GrupoAlimentoId": "16"
+    },
+    {
+        "nombre_ingrediente": "Papa",
+        "GrupoAlimentoId": "16"
+    },
+    {
+        "nombre_ingrediente": "Batata",
+        "GrupoAlimentoId": "16"
+    },
+    {
+        "nombre_ingrediente": "Calabaza",
+        "GrupoAlimentoId": "16"
+    },
+    {
+        "nombre_ingrediente": "Lechuga",
+        "GrupoAlimentoId": "16"
+    },
+    {
+        "nombre_ingrediente": "Espinaca",
+        "GrupoAlimentoId": "16"
+    },
+    {
+        "nombre_ingrediente": "Brócoli",
+        "GrupoAlimentoId": "16"
+    },
+    {
+        "nombre_ingrediente": "Coliflor",
+        "GrupoAlimentoId": "16"
+    },
+    {
+        "nombre_ingrediente": "Pepino",
+        "GrupoAlimentoId": "16"
+    },
+    {
+        "nombre_ingrediente": "Judías verdes",
+        "GrupoAlimentoId": "16"
+    },
+    {
+        "nombre_ingrediente": "Champiñones",
+        "GrupoAlimentoId": "16"
+    },
+    {
+        "nombre_ingrediente": "Perejil",
+        "GrupoAlimentoId": "22"
+    },
+    {
+        "nombre_ingrediente": "Cilantro",
+        "GrupoAlimentoId": "22"
+    },
+    {
+        "nombre_ingrediente": "Albahaca",
+        "GrupoAlimentoId": "22"
+    },
+    {
+        "nombre_ingrediente": "Romero",
+        "GrupoAlimentoId": "22"
+    },
+    {
+        "nombre_ingrediente": "Tomillo",
+        "GrupoAlimentoId": "22"
+    },
+    {
+        "nombre_ingrediente": "Orégano",
+        "GrupoAlimentoId": "22"
+    },
+    {
+        "nombre_ingrediente": "Laurel",
+        "GrupoAlimentoId": "22"
+    },
+    {
+        "nombre_ingrediente": "Canela",
+        "GrupoAlimentoId": "22"
+    },
+    {
+        "nombre_ingrediente": "Clavo de olor",
+        "GrupoAlimentoId": "22"
+    },
+    {
+        "nombre_ingrediente": "Comino",
+        "GrupoAlimentoId": "22"
+    },
+    {
+        "nombre_ingrediente": "Pimienta negra",
+        "GrupoAlimentoId": "22"
+    },
+    {
+        "nombre_ingrediente": "Pimienta roja",
+        "GrupoAlimentoId": "22"
+    },
+    {
+        "nombre_ingrediente": "Sal",
+        "GrupoAlimentoId": "22"
+    },
+    {
+        "nombre_ingrediente": "Azúcar",
+        "GrupoAlimentoId": "22"
+    },
+    {
+        "nombre_ingrediente": "Vinagre",
+        "GrupoAlimentoId": "21"
+    },
+    {
+        "nombre_ingrediente": "Limón",
+        "GrupoAlimentoId": "17"
+    },
+    {
+        "nombre_ingrediente": "Naranja",
+        "GrupoAlimentoId": "17"
+    },
+    {
+        "nombre_ingrediente": "Vino",
+        "GrupoAlimentoId": "26"
+    },
+    {
+        "nombre_ingrediente": "Salsa de soja",
+        "GrupoAlimentoId": "5"
+    },
+    {
+        "nombre_ingrediente": "Salsa Worcestershire",
+        "GrupoAlimentoId": "23"
+    },
+    {
+        "nombre_ingrediente": "Mostaza",
+        "GrupoAlimentoId": "9"
+    },
+    {
+        "nombre_ingrediente": "Mayonesa",
+        "GrupoAlimentoId": "23"
+    },
+    {
+        "nombre_ingrediente": "Ketchup",
+        "GrupoAlimentoId": "23"
+    },
+    {
+        "nombre_ingrediente": "Miel",
+        "GrupoAlimentoId": "25"
+    },
+    {
+        "nombre_ingrediente": "Harina",
+        "GrupoAlimentoId": "19"
+    },
+    {
+        "nombre_ingrediente": "Levadura",
+        "GrupoAlimentoId": "19"
+    },
+    {
+        "nombre_ingrediente": "Arroz",
+        "GrupoAlimentoId": "19"
+    },
+    {
+        "nombre_ingrediente": "Pasta",
+        "GrupoAlimentoId": "19"
+    },
+    {
+        "nombre_ingrediente": "Pan rallado",
+        "GrupoAlimentoId": "19"
+    },
+    {
+        "nombre_ingrediente": "Quinoa",
+        "GrupoAlimentoId": "19"
+    },
+    {
+        "nombre_ingrediente": "Lentejas",
+        "GrupoAlimentoId": "18"
+    },
+    {
+        "nombre_ingrediente": "Garbanzos",
+        "GrupoAlimentoId": "18"
+    },
+    {
+        "nombre_ingrediente": "Frijoles",
+        "GrupoAlimentoId": "18"
+    },
+    {
+        "nombre_ingrediente": "Tofu",
+        "GrupoAlimentoId": "5"
+    },
+    {
+        "nombre_ingrediente": "Pollo",
+        "GrupoAlimentoId": "14"
+    },
+    {
+        "nombre_ingrediente": "Carne de res",
+        "GrupoAlimentoId": "14"
+    },
+    {
+        "nombre_ingrediente": "Cerdo",
+        "GrupoAlimentoId": "14"
+    },
+    {
+        "nombre_ingrediente": "Trucha",
+        "GrupoAlimentoId": "3"
+    },
+    {
+        "nombre_ingrediente": "Camarones",
+        "GrupoAlimentoId": "1"
+    },
+    {
+        "nombre_ingrediente": "Huevo",
+        "GrupoAlimentoId": "2"
+    },
+    {
+        "nombre_ingrediente": "Queso",
+        "GrupoAlimentoId": "6"
+    },
+    {
+        "nombre_ingrediente": "Yogur",
+        "GrupoAlimentoId": "6"
+    },
+    {
+        "nombre_ingrediente": "Leche",
+        "GrupoAlimentoId": "6"
+    },
+    {
+        "nombre_ingrediente": "Nata",
+        "GrupoAlimentoId": "6"
+    },
+    {
+        "nombre_ingrediente": "Mantequilla",
+        "GrupoAlimentoId": "20"
+    },
+    {
+        "nombre_ingrediente": "Cacahuete",
+        "GrupoAlimentoId": "4"
+    },
+    {
+        "nombre_ingrediente": "Nuez",
+        "GrupoAlimentoId": "7"
+    },
+    {
+        "nombre_ingrediente": "Apio",
+        "GrupoAlimentoId": "8"
+    },
+    {
+        "nombre_ingrediente": "Semillas de sesamo",
+        "GrupoAlimentoId": "10"
+    },
+    {
+        "nombre_ingrediente": "Mejillones",
+        "GrupoAlimentoId": "13"
+    }
+
+]

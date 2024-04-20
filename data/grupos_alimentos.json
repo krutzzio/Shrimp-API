@@ -1,0 +1,107 @@
+[
+    {
+        "nombre_grupo": "Crustaceos",
+        "dieta": "otro"
+    },
+    {
+        "nombre_grupo": "Huevos",
+        "dieta": "vegetal"
+    },
+    {
+        "nombre_grupo": "Pescado",
+        "dieta": "otro"
+    },
+    {
+        "nombre_grupo": "Cacahuetes",
+        "dieta": "vegano"
+    },
+    {
+        "nombre_grupo": "Soja",
+        "dieta": "vegano"
+    },
+    {
+        "nombre_grupo": "Lacteos",
+        "dieta": "vegetal"
+    },
+    {
+        "nombre_grupo": "Frutos secos",
+        "dieta": "vegano"
+    },
+    {
+        "nombre_grupo": "Apios",
+        "dieta": "vegano"
+    },
+    {
+        "nombre_grupo": "Mostazas",
+        "dieta": "vegano"
+    },
+    {
+        "nombre_grupo": "Sesamos",
+        "dieta": "vegano"
+    },
+    {
+        "nombre_grupo": "Dioxido de azufre y sultifos",
+        "dieta": "otro"
+    },
+    {
+        "nombre_grupo": "Altramuces",
+        "dieta": "vegano"
+    },
+    {
+        "nombre_grupo": "Moluscos",
+        "dieta": "otro"
+    },
+    {
+        "nombre_grupo": "Carne, pollo",
+        "dieta": "otro"
+    },
+    {
+        "nombre_grupo": "ninguno",
+        "dieta": "otro"
+    },
+    {
+        "nombre_grupo": "Vegetales",
+        "dieta": "vegano"
+    },
+    {
+        "nombre_grupo": "Frutas",
+        "dieta": "vegano"
+    },
+    {
+        "nombre_grupo": "Legumbres",
+        "dieta": "vegano"
+    },
+    {
+        "nombre_grupo": "Cereales",
+        "dieta": "vegano"
+    },
+    {
+        "nombre_grupo": "Grasas",
+        "dieta": "otro"
+    },
+    {
+        "nombre_grupo": "Condimentos",
+        "dieta": "vegano"
+    },
+    {
+        "nombre_grupo": "Especies",
+        "dieta": "vegano"
+    },
+    {
+        "nombre_grupo": "Salsas",
+        "dieta": "vegano"
+    },
+    {
+        "nombre_grupo": "Aceites",
+        "dieta": "vegano"
+    },
+    {
+        "nombre_grupo": "Mieles",
+        "dieta": "vegetal"
+    },
+    {
+        "nombre_grupo": "Vinos",
+        "dieta": "vegano"
+    }
+
+]

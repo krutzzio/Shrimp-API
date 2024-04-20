@@ -1,0 +1,1 @@
+dependecias npm install bcrypt mysql2 sequelize cors express cookie-parser jsonwebtoken multer
