@@ -161,7 +161,6 @@ router.post("/registerUser", upload.single("photo"), async (req, res) => {
       alergias,
       dieta,
     } = req.body; // Obté el nom, email i contrasenya de la petició
-    console.log(nombre, correo, password, cp, tipos_cocina, alergias, dieta)
     const baseUrl = 'http://localhost:3000/api/uploads/'
     const foto_perfil = req.file ? baseUrl + req.file.filename : null; // Obtiene la ruta del archivo subido
     if (!nombre || !correo || !password || !cp) {
