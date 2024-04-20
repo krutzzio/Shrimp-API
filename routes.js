@@ -17,6 +17,7 @@ const {
   TipoCocina,
 
   Receta_Ingrediente,
+  GrupoAlimento,
 } = require("./models"); // Importa els models de dades
 
 const {
@@ -153,18 +154,17 @@ router.post("/registerUser", upload.single("photo"), async (req, res) => {
   try {
     const {
       nombre,
-      apellidos,
       correo,
       password,
-      localizacion,
+      cp,
       tipos_cocina,
+      alergias,
       dieta,
     } = req.body; // Obté el nom, email i contrasenya de la petició
-
+    console.log(nombre, correo, password, cp, tipos_cocina, alergias, dieta)
     const baseUrl = 'http://localhost:3000/api/uploads/'
     const foto_perfil = req.file ? baseUrl + req.file.filename : null; // Obtiene la ruta del archivo subido
-
-    if (!nombre || !apellidos || !correo || !password || !localizacion) {
+    if (!nombre || !correo || !password || !cp) {
       return res
         .status(400)
         .json({
@@ -172,35 +172,51 @@ router.post("/registerUser", upload.single("photo"), async (req, res) => {
             "Nombre, apellido, email, password y localización son requeridos",
         }); // Retorna error 400 si no es proporcionen el nom, email o contrasenya
     }
-    const existingUser = await Usuario.findOne({ where: { correo } }); // Comprova si l'email ja està registrat
+
+    const alergiasArray = alergias.split(",")
+    const alimentosAlergia = await GrupoAlimento.findAll({ where: { nombre_grupo: alergiasArray } })
+    const alergiasId = alimentosAlergia.map(alergia => alergia.id)
+
+    const cocinas = tipos_cocina.split(",")
+    const tiposCocinas = await TipoCocina.findAll({ where: { nombre_tipo: cocinas } })
+    const cocinasId = tiposCocinas.map(cocina => cocina.id)
+
+
+    const existingUser = await Usuario.findOne({ where: { correo } });
+    // Comprova si l'email ja està registrat
     if (existingUser) {
       return res.status(400).json({ error: "Email ja existeix" }); // Retorna error 400 si l'email ja està registrat
     }
     const user = await Usuario.create({
       nombre,
-      apellidos,
       correo,
       password,
-      localizacion,
-      tipos_cocina,
+      cp,
       dieta,
       foto_perfil,
     }); // Crea l'usuari amb les dades proporcionades
 
-    res
-      .status(201)
-      .json({
-        id: user.id,
-        nombre: user.nombre,
-        apellidos: user.apellidos,
-        email: user.email,
-        localizacion: user.localizacion,
-        foto_perfil: foto_perfil,
-      }); // Retorna l'usuari creat amb el codi d'estat 201 (Creat)
+    await user.addTipoCocina(cocinasId)
+    await user.addGrupoAlimento(alergiasId)
+
+
+    res.status(201).json({
+      id: user.id,
+      nombre: user.nombre,
+      email: user.email,
+      cp: user.cp,
+      foto_perfil: foto_perfil,
+    }); // Retorna l'usuari creat amb el codi d'estat 201 (Creat)
+
+
   } catch (error) {
-    res.status(500).json({ error: error.message }); // Retorna error 500 amb el missatge d'error
+    res.status(500).json({ error: error.message });
+    throw (error) // Retorna error 500 amb el missatge d'error
   }
 });
+
+
+
 /* --------------------------- Seguir restaurante --------------------------- */
 router.post("/home/:restId/seguirRestaurante", checkToken, async (req, res) => {
   try {

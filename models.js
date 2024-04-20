@@ -43,10 +43,6 @@ const Usuario = sequelize.define("Usuario", {
         type: DataTypes.STRING,
         allowNull: false,
     },
-    apellidos: { // no se si aquesta columna la voleu o no?
-        type: DataTypes.STRING,
-        allowNull: false,
-    },
     correo: {
         type: DataTypes.STRING,
         allowNull: false,
@@ -56,22 +52,18 @@ const Usuario = sequelize.define("Usuario", {
         type: DataTypes.STRING,
         allowNull: false,
     },
-    localizacion: {
+    cp: {
         type: DataTypes.STRING,// o INT si es CP????
         allowNull: false,
     },
-    tipos_cocina: {
-        type: DataTypes.ENUM(coci),
-        allowNull: false,
-    },
     dieta: {
-        type: DataTypes.ENUM('vegana', 'vegetariana', 'sin gluten', 'otra'),
+        type: DataTypes.STRING,
         allowNull: false,
     },
     foto_perfil: {
         type: DataTypes.STRING, // Tipo de datos para almacenar la URL de la imagen
         allowNull: true, // Permitir que el campo sea nulo
-    }
+    },
 });
 
 // Model per a la taula Issues
@@ -166,7 +158,7 @@ const GrupoAlimento = sequelize.define("GrupoAlimento", {
         allowNull: false,
     },
     dieta: {
-        type: DataTypes.ENUM('vegetal', 'vegano', 'otro'),
+        type: DataTypes.STRING,
         allowNull: false,
     },
 });
@@ -276,15 +268,18 @@ Usuario.belongsToMany(GrupoAlimento, { through: 'UsuarioAlimento' }) // Un usuar
 // connectem a base de dades
 async function iniDB() {
     await sequelize.sync({ force: true });
+
     const cocinas = require("./data/tipococina.json");
     const cocinas_añadidas = TipoCocina.bulkCreate(cocinas);
+
     const grupos = require("./data/grupos_alimentos.json");
     const grupos_añadidos = GrupoAlimento.bulkCreate(grupos);
+
     const ingredientes = require("./data/ingredientes.json");
     const ingredientes_añadidos = Ingrediente.bulkCreate(ingredientes);
 }
 
-// iniDB();
+//iniDB();
 
 
 
