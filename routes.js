@@ -107,26 +107,14 @@ router.get("/users/:id", async (req, res) => {
   }
 });
 
-
-
-
-
-
-router.put(
-  "/users/:id",
-  checkToken,
-  async (req, res) => await updateItem(req, res, Usuario)
-); // Actualitza un usuari
-router.delete(
-  "/users/:id",
-  checkToken,
-  async (req, res) => await deleteItem(req, res, Usuario)
-); // Elimina un usuari
+router.put("/users/:id", checkToken, async (req, res) => await updateItem(req, res, Usuario)); // Actualitza un usuari
+router.delete("/users/:id", checkToken, async (req, res) => await deleteItem(req, res, Usuario)); // Elimina un usuari
 
 /* --------------------------------  LOGIN -------------------------------- */
 // Endpoint per iniciar sessió d'un usuari
 router.post("/loginUser", async (req, res) => {
   const { correo, password } = req.body; // Obté l'correo i la contrasenya de la petició
+  console.log(correo, password)
   try {
     const user = await Usuario.findOne({ where: { correo } }); // Cerca l'usuari pel seu email
     if (!user) {

@@ -211,7 +211,6 @@ const Receta_Ingrediente = sequelize.define("Receta_Ingrediente", {
     }
 });
 
-
 // hook per encriptar la contrasenya abans de desar un nou usuari o restaurant
 Usuario.beforeCreate(async (user) => {
     const hashedPassword = await bcrypt.hash(user.password, 10); // Encripta la contrasenya amb bcrypt
