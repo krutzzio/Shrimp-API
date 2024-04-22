@@ -239,25 +239,13 @@ router.post("/home/:restId/seguirRestaurante", checkToken, async (req, res) => {
 /*                                RESTAURANTE                               */
 /* -------------------------------------------------------------------------- */
 
-router.get(
-  "/restaurant",
-  checkToken,
-  async (req, res) => await readItems(req, res, Restaurante)
+router.get("/restaurant", checkToken, async (req, res) => await readItems(req, res, Restaurante)
 ); // Llegeix tots els restaurants
-router.get(
-  "/restaurant/:id",
-  checkToken,
-  async (req, res) => await readItem(req, res, Restaurante)
+router.get("/restaurant/:id", checkToken, async (req, res) => await readItem(req, res, Restaurante)
 ); // Llegeix un restaurant específic
-router.put(
-  "/restaurant/:id",
-  checkToken,
-  async (req, res) => await updateItem(req, res, Restaurante)
+router.put("/restaurant/:id", checkToken, async (req, res) => await updateItem(req, res, Restaurante)
 ); // Actualitza un restaurant
-router.delete(
-  "/restaurant/:id",
-  checkToken,
-  async (req, res) => await deleteItem(req, res, Restaurante)
+router.delete("/restaurant/:id", checkToken, async (req, res) => await deleteItem(req, res, Restaurante)
 ); // Elimina un restaurant
 
 /* ------------------------------- REGISTER ------------------------------- */
