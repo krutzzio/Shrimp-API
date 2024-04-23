@@ -68,15 +68,15 @@ const Usuario = sequelize.define("Usuario", {
 
 // Model per a la taula Issues
 const Restaurante = sequelize.define("Restaurante", {
-    nombre_restaurante: {
+    nombre: {
         type: DataTypes.STRING,
         allowNull: false,
     },
-    password_restaurante: {
+    password: {
         type: DataTypes.STRING,
         allowNull: false,
     },
-    correo_restaurante: {
+    correo: {
         type: DataTypes.STRING,
         allowNull: false,
         unique: true,
@@ -99,10 +99,6 @@ const Restaurante = sequelize.define("Restaurante", {
     },
     descripcio: {
         type: DataTypes.STRING,
-        allowNull: false,
-    },
-    tipos_cocina: {
-        type: DataTypes.ENUM(coci),
         allowNull: false,
     },
     foto_restaurante: {
@@ -218,8 +214,8 @@ Usuario.beforeCreate(async (user) => {
 });
 
 Restaurante.beforeCreate(async (restaurant) => {
-    const hashedPassword = await bcrypt.hash(restaurant.password_restaurante, 10); // Encripta la contrasenya amb bcrypt
-    restaurant.password_restaurante = hashedPassword;
+    const hashedPassword = await bcrypt.hash(restaurant.password, 10); // Encripta la contrasenya amb bcrypt
+    restaurant.password = hashedPassword;
 });
 
 

@@ -114,7 +114,6 @@ router.delete("/users/:id", checkToken, async (req, res) => await deleteItem(req
 // Endpoint per iniciar sessió d'un usuari
 router.post("/loginUser", async (req, res) => {
   const { correo, password } = req.body; // Obté l'correo i la contrasenya de la petició
-  console.log(correo, password)
   try {
     const user = await Usuario.findOne({ where: { correo } }); // Cerca l'usuari pel seu email
     if (!user) {
@@ -149,8 +148,10 @@ router.post("/registerUser", upload.single("photo"), async (req, res) => {
       alergias,
       dieta,
     } = req.body; // Obté el nom, email i contrasenya de la petició
+
     const baseUrl = 'http://localhost:3000/api/uploads/'
     const foto_perfil = req.file ? baseUrl + req.file.filename : null; // Obtiene la ruta del archivo subido
+
     if (!nombre || !correo || !password || !cp) {
       return res
         .status(400)
@@ -174,6 +175,7 @@ router.post("/registerUser", upload.single("photo"), async (req, res) => {
     if (existingUser) {
       return res.status(400).json({ error: "Email ja existeix" }); // Retorna error 400 si l'email ja està registrat
     }
+
     const user = await Usuario.create({
       nombre,
       correo,
@@ -252,24 +254,40 @@ router.delete("/restaurant/:id", checkToken, async (req, res) => await deleteIte
 router.post("/registerRest", upload.single("photo"), async (req, res) => {
   try {
     const {
-      nombre_restaurante,
-      correo_restaurante,
-      password_restaurante,
+      nombre,
+      correo,
+      password,
       numero,
       direccion,
       cp,
       telefono,
       descripcio,
-      tipos_cocina,
+      tipos_cocina
     } = req.body;
 
-    const foto_restaurante = req.file ? req.file.path : null; // Obtiene la ruta del archivo subido
+    console.log(
+      nombre,
+      correo,
+      password,
+      numero,
+      direccion,
+      cp,
+      telefono,
+      descripcio,
+      tipos_cocina)
+
+    console.log("Prova 1")
+
+    const baseUrl = 'http://localhost:3000/api/uploads/'
+    const foto_restaurante = req.file ? baseUrl + req.file.filename : null; // Obtiene la ruta del archivo subido
+
+    console.log("Prova 2")
 
     if (
-      !nombre_restaurante ||
+      !nombre ||
       !cp ||
-      !correo_restaurante ||
-      !password_restaurante ||
+      !correo ||
+      !password ||
       !tipos_cocina ||
       tipos_cocina.length === 0
     ) {
@@ -281,42 +299,36 @@ router.post("/registerRest", upload.single("photo"), async (req, res) => {
         });
     }
 
+    console.log("Prova 3")
+
     const existingRest = await Restaurante.findOne({
-      where: { correo_restaurante },
+      where: { correo },
     });
     if (existingRest) {
       return res.status(400).json({ error: "Email ya existe" });
     }
 
+    console.log("Prova 4")
+
     const restaurant = await Restaurante.create({
-      nombre_restaurante,
+      nombre,
       telefono,
-      correo_restaurante,
-      password_restaurante,
+      correo,
+      password,
       descripcio,
       numero,
       direccion,
       cp,
-      tipos_cocina,
       foto_restaurante,
     });
 
-    // if (!Array.isArray(tipos_cocina)) {
-    //   return res.status(400).json({ error: 'tipos_cocina debe ser un array de IDs' });
-    // }
-    // Asociar los tipos de cocina seleccionados con el restaurante
-    for (const tipoId of tipos_cocina) {
-      const tipoCocina = await TipoCocina.findByPk(tipoId);
-      if (tipoCocina) {
-        await restaurant.addTipoCocina(tipoCocina);
-      }
-    }
+    console.log("Prova 5")
 
     res.status(201).json({
       id: restaurant.id,
-      nombre_restaurante: restaurant.nombre_restaurante,
-      tipos_cocina: restaurant.tipos_cocina,
-    });
+      nombre_restaurante: restaurant.nombre,
+    })
+
   } catch (error) {
     res.status(500).json({ error: error.message });
   }
@@ -324,28 +336,28 @@ router.post("/registerRest", upload.single("photo"), async (req, res) => {
 
 /* --------------------------------- LOGIN -------------------------------- */
 router.post("/loginRest", async (req, res) => {
-  const { correo_restaurante, password_restaurante } = req.body; // Obté l'correo i la contrasenya de la petició
+  const { correo, password } = req.body; // Obté l'correo i la contrasenya de la petició
   try {
     const restaurant = await Restaurante.findOne({
-      where: { correo_restaurante },
+      where: { correo },
     }); // Cerca l'usuari pel seu email
     if (!restaurant) {
       return res.status(404).json({ error: "User no trobat" }); // Retorna error 404 si l'usuari no es troba
     }
     const passwordMatch = await bcrypt.compare(
-      password_restaurante,
-      restaurant.password_restaurante
+      password,
+      restaurant.password
     ); // Compara la contrasenya proporcionada amb la contrasenya encriptada de l'usuari
     if (!passwordMatch) {
       return res.status(401).json({ error: "Password incorrecte" }); // Retorna error 401 si la contrasenya és incorrecta
     }
     const token = jwt.sign(
-      { id: restaurant.id, nombre: restaurant.nombre_restaurante },
+      { id: restaurant.id, nombre: restaurant.nombre },
       SECRET_KEY,
       { expiresIn: "2h" }
     ); // Genera un token JWT vàlid durant 2 hores
     res.cookie("token", token, { httpOnly: false, maxAge: 7200000 }); // Estableix el token com una cookie
-    res.json({ nombre: restaurant.nombre_restaurante, id: restaurant.id }); // Retorna missatge d'èxit
+    res.json({ nombre: restaurant.nombre, id: restaurant.id }); // Retorna missatge d'èxit
   } catch (error) {
     res.status(500).json({ error: error.message }); // Retorna error 500 amb el missatge d'error
   }
