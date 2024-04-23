@@ -265,23 +265,8 @@ router.post("/registerRest", upload.single("photo"), async (req, res) => {
       tipos_cocina
     } = req.body;
 
-    console.log(
-      nombre,
-      correo,
-      password,
-      numero,
-      direccion,
-      cp,
-      telefono,
-      descripcio,
-      tipos_cocina)
-
-    console.log("Prova 1")
-
     const baseUrl = 'http://localhost:3000/api/uploads/'
     const foto_restaurante = req.file ? baseUrl + req.file.filename : null; // Obtiene la ruta del archivo subido
-
-    console.log("Prova 2")
 
     if (
       !nombre ||
@@ -299,16 +284,12 @@ router.post("/registerRest", upload.single("photo"), async (req, res) => {
         });
     }
 
-    console.log("Prova 3")
-
     const existingRest = await Restaurante.findOne({
       where: { correo },
     });
     if (existingRest) {
       return res.status(400).json({ error: "Email ya existe" });
     }
-
-    console.log("Prova 4")
 
     const restaurant = await Restaurante.create({
       nombre,
@@ -321,8 +302,6 @@ router.post("/registerRest", upload.single("photo"), async (req, res) => {
       cp,
       foto_restaurante,
     });
-
-    console.log("Prova 5")
 
     res.status(201).json({
       id: restaurant.id,
