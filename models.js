@@ -30,7 +30,7 @@ const coci = [[
 ]
 const bcrypt = require("bcrypt"); // Importa la llibreria bcrypt per a encriptar contrasenyes
 
-const sequelize = new Sequelize("gamba", "root", "", {
+const sequelize = new Sequelize("gamba", "root", "admin123", {
     host: "localhost",
     //host: '192.168.1.133', //IP de la base de dades
     port: 3306,
