@@ -279,7 +279,7 @@ async function iniDB() {
     const ingredientes_añadidos = Ingrediente.bulkCreate(ingredientes);
 }
 
-//iniDB();
+iniDB();
 
 
 
