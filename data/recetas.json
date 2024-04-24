@@ -1,0 +1,35 @@
+[
+    {
+        "nombre": "La Parrilla",
+        "password": "contraseña123",
+        "correo": "info@laparrilla.com",
+        "numero": "123456789",
+        "direccion": "Calle Principal 123",
+        "cp": "28001",
+        "telefono": "910 123 456",
+        "descripcio": "Carnes a la parrilla y platos tradicionales.",
+        "foto_restaurante": "laparrilla.jpg"
+    },
+    {
+        "nombre": "Pizza Italia",
+        "password": "pizza123",
+        "correo": "contacto@pizzaitalia.com",
+        "numero": "987654321",
+        "direccion": "Avenida Italia 456",
+        "cp": "28002",
+        "telefono": "910 987 654",
+        "descripcio": "Auténtica pizza italiana y pasta fresca.",
+        "foto_restaurante": "pizzaitalia.jpg"
+    },
+    {
+        "nombre": "Sushi Bar",
+        "password": "sushi456",
+        "correo": "reservas@sushibar.com",
+        "numero": "456123789",
+        "direccion": "Plaza Sushi 789",
+        "cp": "28003",
+        "telefono": "910 456 123",
+        "descripcio": "Sushi fresco y cocina japonesa.",
+        "foto_restaurante": "sushibar.jpg"
+    }
+]

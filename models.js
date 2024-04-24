@@ -82,15 +82,19 @@ const Restaurante = sequelize.define("Restaurante", {
         unique: true,
     },
     numero: {
-        type: DataTypes.STRING,// o INT si es CP????
+        type: DataTypes.STRING,
         allowNull: false,
     },
     direccion: {
-        type: DataTypes.STRING,// o INT si es CP????
+        type: DataTypes.STRING,
+        allowNull: false,
+    },
+    dieta: {
+        type: DataTypes.INTEGER,
         allowNull: false,
     },
     cp: {
-        type: DataTypes.STRING,// o INT si es CP????
+        type: DataTypes.STRING,
         allowNull: false,
     },
     telefono: {
@@ -106,6 +110,7 @@ const Restaurante = sequelize.define("Restaurante", {
         allowNull: true,
     },
 });
+
 
 // Model per a la taula Receta
 const Receta = sequelize.define("Receta", {
@@ -239,7 +244,7 @@ Receta.belongsTo(Restaurante) // Un receta pertences a un solo restaurante
 Usuario.belongsToMany(TipoCocina, { through: 'UsuarioCocina' }); // Un usuario puede tener varios tipos cocina
 TipoCocina.belongsToMany(Usuario, { through: 'UsuarioCocina' }); // Un tipo de cocina lo pueden tener varios usuarios
 
-Receta.belongsTo(TipoCocina); // Una receta tiene un unico tipo de cocina
+Receta.belongsTo(TipoCoc  ina); // Una receta tiene un unico tipo de cocina
 TipoCocina.hasMany(Receta); // Un tipo de cocina pertence a varias recetas
 
 Restaurante.belongsToMany(TipoCocina, { through: 'RestauranteCocina' })
@@ -272,6 +277,9 @@ async function iniDB() {
 
     const ingredientes = require("./data/ingredientes.json");
     const ingredientes_añadidos = Ingrediente.bulkCreate(ingredientes);
+
+    const restaurantes = require("./data/restaurantes.json");
+    const restaurantes_añadidos = Restaurante.bulkCreate(restaurantes)
 }
 
 //iniDB();
@@ -279,18 +287,6 @@ async function iniDB() {
 
 (async () => {
     try {
-        // Crear algunos ingredientes
-        const ingrediente1 = await Ingrediente.create({ nombre_ingrediente: 'Harina' });
-        const ingrediente2 = await Ingrediente.create({ nombre_ingrediente: 'Azúcar' });
-        const ingrediente3 = await Ingrediente.create({ nombre_ingrediente: 'Huevos' });
-
-        // Crear algunos grupos de alimentos
-        const grupo1 = await GrupoAlimento.create({ nombre_grupo: 'Frutas', dieta: 'Vegana' });
-        const grupo2 = await GrupoAlimento.create({ nombre_grupo: 'Carnes', dieta: 'Omnívora' });
-
-        // Crear algunos tipos de cocina
-        const tipo1 = await TipoCocina.create({ nombre_tipo: 'Mediterránea' });
-        const tipo2 = await TipoCocina.create({ nombre_tipo: 'Asiática' });
 
         // Crear una receta
         const receta1 = await Receta.create({
@@ -321,9 +317,6 @@ async function iniDB() {
         console.log('Datos creados exitosamente.');
     } catch (error) {
         console.error('Error al crear datos:', error);
-    } finally {
-        // Cierra la conexión a la base de datos
-        await sequelize.close();
     }
 })();
 
