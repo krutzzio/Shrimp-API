@@ -105,7 +105,7 @@ const Restaurante = sequelize.define("Restaurante", {
         type: DataTypes.STRING,
         allowNull: false,
     },
-    foto_restaurnte: {
+    foto_restaurante: {
         type: DataTypes.STRING,
         allowNull: true,
     },
@@ -278,20 +278,14 @@ async function iniDB() {
     const ingredientes = require("./data/ingredientes.json");
     const ingredientes_añadidos = Ingrediente.bulkCreate(ingredientes);
 
-    const anadirReceta = require("./data/anadirReceta.js")
-    await anadirReceta()
-
     const anadirRestaurante = require("./data/anadirRestaurante.js")
     await anadirRestaurante()
 
-    /*     await añadirRestaurante()
-     */
-
+    const anadirReceta = require("./data/anadirReceta.js")
+    await anadirReceta()
 }
 
-//iniDB();
-
-
+iniDB();
 
 //Exportem els models
 module.exports = {

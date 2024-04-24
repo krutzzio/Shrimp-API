@@ -1,6 +1,6 @@
 
 
-const { Receta, Ingrediente, GrupoAlimento, Promo, TipoCocina, Procedimiento, Receta_Ingrediente } = require('../models'); // Importa los modelos definidos en tu archivo
+const { Receta, Ingrediente, GrupoAlimento, TipoCocina, Receta_Ingrediente, Restaurante } = require('../models'); // Importa los modelos definidos en tu archivo
 
 async function anadirReceta() {
     try {
@@ -13,7 +13,8 @@ async function anadirReceta() {
                 "dificultad": "Fácil",
                 "tipo": "Principal",
                 "foto_receta": "receta1.jpg",
-                "tipo_cocina": [5],
+                "RestauranteId": 2,
+                "TipoCocinaId": [5],
                 ingredientes: [
                     {
                         "IngredienteId": 44,
@@ -97,7 +98,8 @@ async function anadirReceta() {
                 "dificultad": "Fácil",
                 "tipo": "Principal",
                 "foto_receta": "receta1.jpg",
-                "tipo_cocina": [5],
+                "RestauranteId": 6,
+                "TipoCocinaId": [5],
                 ingredientes: [
                     {
                         "IngredienteId": 44,
@@ -177,7 +179,6 @@ async function anadirReceta() {
 
         for (const receta of recetaObj) {
             const recetaCreada = await Receta.create(receta);
-            console.log(recetaCreada, recetaCreada.id)
             for (const ingrediente of receta.ingredientes) {
                 await Receta_Ingrediente.create({
                     RecetumId: recetaCreada.id,

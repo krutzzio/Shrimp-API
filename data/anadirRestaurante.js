@@ -12,7 +12,7 @@ async function anadirRestaurante() {
             direccion: "calle test",
             numero: "42",
             cp: "12345",
-            foto_restaurnte: 'restaurante1.jpg',
+            foto_restaurante: 'restaurante1.jpg',
             tipos_cocina: [1, 2]
         },
         {
@@ -25,7 +25,7 @@ async function anadirRestaurante() {
             direccion: "calle test",
             numero: "42",
             cp: "12345",
-            foto_restaurnte: 'restaurante2.jpg',
+            foto_restaurante: 'restaurante2.jpg',
             tipos_cocina: [9, 7]
         },
         {
@@ -38,7 +38,7 @@ async function anadirRestaurante() {
             direccion: "calle test",
             numero: "42",
             cp: "12345",
-            foto_restaurnte: 'restaurante3.jpg',
+            foto_restaurante: 'restaurante3.jpg',
             tipos_cocina: [2, 6]
         },
         {
@@ -51,7 +51,7 @@ async function anadirRestaurante() {
             direccion: "calle fabra",
             numero: "42",
             cp: "12345",
-            foto_restaurnte: 'restaurante1.jpg',
+            foto_restaurante: 'restaurante1.jpg',
             tipos_cocina: [9, 3]
         },
         {
@@ -64,7 +64,7 @@ async function anadirRestaurante() {
             direccion: "calle chinatown",
             numero: "42",
             cp: "12345",
-            foto_restaurnte: 'restaurante2.jpg',
+            foto_restaurante: 'restaurante2.jpg',
             tipos_cocina: [2, 6]
         },
         {
@@ -77,7 +77,7 @@ async function anadirRestaurante() {
             direccion: "Calle Marina",
             numero: "105",
             cp: "08001",
-            foto_restaurnte: "restaurante3.jpg",
+            foto_restaurante: "restaurante3.jpg",
             tipos_cocina: [2, 6]
         },
         {
@@ -90,7 +90,7 @@ async function anadirRestaurante() {
             direccion: "Calle Princesa",
             numero: "50",
             cp: "08003",
-            foto_restaurnte: "restaurante1.jpg",
+            foto_restaurante: "restaurante1.jpg",
             tipos_cocina: [3, 8]
         },
         {
@@ -103,7 +103,7 @@ async function anadirRestaurante() {
             direccion: "Rambla del Raval",
             numero: "35",
             cp: "08001",
-            foto_restaurnte: "restaurante2.jpg",
+            foto_restaurante: "restaurante2.jpg",
             tipos_cocina: [1, 4]
         },
         {
@@ -116,7 +116,7 @@ async function anadirRestaurante() {
             direccion: "Travessera de Gràcia",
             numero: "256",
             cp: "08024",
-            foto_restaurnte: "restaurante3.jpg",
+            foto_restaurante: "restaurante3.jpg",
             tipos_cocina: [5, 7]
         },
         {
@@ -129,7 +129,7 @@ async function anadirRestaurante() {
             direccion: "Carrer del Bisbe",
             numero: "10",
             cp: "08002",
-            foto_restaurnte: "restaurante1.jpg",
+            foto_restaurante: "restaurante1.jpg",
             tipos_cocina: [3, 6]
         },
         {
@@ -142,7 +142,7 @@ async function anadirRestaurante() {
             direccion: "Avinguda del Paral·lel",
             numero: "14",
             cp: "08001",
-            foto_restaurnte: "restaurante2.jpg",
+            foto_restaurante: "restaurante2.jpg",
             tipos_cocina: [2, 4]
         },
         {
@@ -155,7 +155,7 @@ async function anadirRestaurante() {
             direccion: "Rambla del Poblenou",
             numero: "98",
             cp: "08018",
-            foto_restaurnte: "restaurante3.jpg",
+            foto_restaurante: "restaurante3.jpg",
             tipos_cocina: [6, 8]
         },
         {
@@ -168,7 +168,7 @@ async function anadirRestaurante() {
             direccion: "Carrer de Sants",
             numero: "79",
             cp: "08014",
-            foto_restaurnte: "restaurante1.jpg",
+            foto_restaurante: "restaurante1.jpg",
             tipos_cocina: [3, 7]
         },
         {
@@ -181,7 +181,7 @@ async function anadirRestaurante() {
             direccion: "Passeig de Gràcia",
             numero: "45",
             cp: "08007",
-            foto_restaurnte: "restaurante2.jpg",
+            foto_restaurante: "restaurante2.jpg",
             tipos_cocina: [1, 5]
         },
         {
@@ -194,7 +194,7 @@ async function anadirRestaurante() {
             direccion: "Travessera de Les Corts",
             numero: "322",
             cp: "08028",
-            foto_restaurnte: "restaurante3.jpg",
+            foto_restaurante: "restaurante3.jpg",
             tipos_cocina: [2, 6]
         },
         {
@@ -207,7 +207,7 @@ async function anadirRestaurante() {
             direccion: "Calle Cava Baja 35",
             numero: "35",
             cp: "28005",
-            foto_restaurnte: "restaurante1.jpg",
+            foto_restaurante: "restaurante1.jpg",
             tipos_cocina: [1, 9]
         },
         {
@@ -220,7 +220,7 @@ async function anadirRestaurante() {
             direccion: "Calle Cuchilleros 17",
             numero: "17",
             cp: "28005",
-            foto_restaurnte: "restaurante2.jpg",
+            foto_restaurante: "restaurante2.jpg",
             tipos_cocina: [7, 9]
         },
         {
@@ -233,7 +233,7 @@ async function anadirRestaurante() {
             direccion: "Calle Cuchilleros 17",
             numero: "17",
             cp: "28005",
-            foto_restaurnte: "restaurante3.jpg",
+            foto_restaurante: "restaurante3.jpg",
             tipos_cocina: [8, 9]
         }
         ]
