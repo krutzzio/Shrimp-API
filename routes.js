@@ -291,6 +291,11 @@ router.post("/registerRest", upload.single("photo"), async (req, res) => {
       return res.status(400).json({ error: "Email ya existe" });
     }
 
+    const cocinas = tipos_cocina.split(",")
+    const tiposCocinas = await TipoCocina.findAll({ where: { nombre_tipo: cocinas } })
+    const cocinasId = tiposCocinas.map(cocina => cocina.id)
+
+
     const restaurant = await Restaurante.create({
       nombre,
       telefono,
@@ -299,10 +304,11 @@ router.post("/registerRest", upload.single("photo"), async (req, res) => {
       descripcio,
       numero,
       direccion,
-      dieta: 0,
       cp,
       foto_restaurante,
     });
+
+    await restaurant.addTipoCocina(cocinasId)
 
     res.status(201).json({
       id: restaurant.id,
@@ -373,99 +379,114 @@ router.delete(
 ); // Elimina un recipes
 
 /* ----------------------------- CREAR RECETA ---------------------------- */
-router.post("/home/:restId/registerReceta", upload.single("photo"), async (req, res) => {
-  try {
-    const {
-      nombre_receta,
-      desc_receta,
-      TipoCocinaId,
-      persones,
-      tiempo,
-      dificultad,
-      tipo,
-      ingredientes,
+router.post(
+  "/home/:restId/registerReceta",
 
-    } = req.body;
+  upload.single("photo"),
+  async (req, res) => {
+    try {
+      const {
+        nombre_receta,
+        desc_receta,
+        TipoCocinaId,
+        persones,
+        tiempo,
+        dificultad,
+        tipo,
+        ingredientes,
+        procedimientos
+
+      } = req.body;
 
 
-    const baseUrl = 'http://localhost:3000/api/uploads/'
-    const foto_receta = req.file ? baseUrl + req.file.filename : null; // Obtiene la ruta del archivo subido
+      const baseUrl = 'http://localhost:3000/api/uploads/'
+      const foto_receta = req.file ? baseUrl + req.file.filename : null; // Obtiene la ruta del archivo subido
 
-    const restauranteId = req.params.restId;
+      const restauranteId = req.params.restId;
 
-    // Verificar
-    if (
-      !nombre_receta ||
-      !desc_receta ||
-      !TipoCocinaId ||
-      !ingredientes ||
-      ingredientes.length === 0
-    ) {
-      return res
-        .status(400)
-        .json({
-          error:
-            "Nombre, descripción, TipoCocinaId, al menos un procedimiento y al menos un ingrediente son requeridos",
-        });
-    }
-    // Mira si hay otra igual sengun el nombre de la receta en un mismo restaurante
-    const existingReceta = await Receta.findOne({
-      where: { nombre_receta, RestauranteId: restauranteId },
-    });
-    if (existingReceta) {
-      return res
-        .status(409)
-        .json({
-          error:
-            "Ya existe una receta con el mismo nombre para este restaurante",
-        });
-    }
-    const tipoCocina = await TipoCocina.findByPk(TipoCocinaId);
-    if (!tipoCocina) {
-      return res.status(404).json({ error: "Tipo de cocina no encontrado" });
-    }
-
-    // Crea receta
-    const receta = await Receta.create({
-      nombre_receta,
-      desc_receta,
-      TipoCocinaId,
-      RestauranteId: restauranteId,
-      persones,
-      tiempo,
-      dificultad,
-      tipo,
-      foto_receta,
-    });
-
-    // Crea ingredientes
-    for (const ingrediente of ingredientes) {
-      const { id, cantidad, medida } = ingrediente;
-      const recetaIngrediente = await Receta_Ingrediente.create({
-        RecetumId: receta.id,
-        IngredienteId: id,
-        cantidad,
-        medida,
+      // Verificar
+      if (
+        !nombre_receta ||
+        !desc_receta ||
+        !TipoCocinaId ||
+        !ingredientes ||
+        ingredientes.length === 0
+      ) {
+        return res
+          .status(400)
+          .json({
+            error:
+              "Nombre, descripción, TipoCocinaId, al menos un procedimiento y al menos un ingrediente son requeridos",
+          });
+      }
+      // Mira si hay otra igual sengun el nombre de la receta en un mismo restaurante
+      const existingReceta = await Receta.findOne({
+        where: { nombre_receta, RestauranteId: restauranteId },
       });
-    }
+      if (existingReceta) {
+        return res
+          .status(409)
+          .json({
+            error:
+              "Ya existe una receta con el mismo nombre para este restaurante",
+          });
+      }
+      const tipoCocina = await TipoCocina.findByPk(TipoCocinaId);
+      if (!tipoCocina) {
+        return res.status(404).json({ error: "Tipo de cocina no encontrado" });
+      }
 
-
-    res.status(201).json({
-      receta: {
-        id: receta.id,
-        nombre_receta: receta.nombre_receta,
-        desc_receta: receta.desc_receta,
-        TipoCocinaId: receta.TipoCocinaId,
+      // Crea receta
+      const receta = await Receta.create({
+        nombre_receta,
+        desc_receta,
+        TipoCocinaId,
         RestauranteId: restauranteId,
-        foto_receta: foto_receta
-      },
-      ingredientes: ingredientes,
-    });
-  } catch (error) {
+        persones,
+        tiempo,
+        dificultad,
+        tipo,
+        foto_receta,
+      });
 
-    res.status(500).json({ error: error.message });
+      // Crea ingredientes
+      for (const ingrediente of ingredientes) {
+        const { id, cantidad, medida } = ingrediente;
+        const recetaIngrediente = await Receta_Ingrediente.create({
+          RecetumId: receta.id,
+          IngredienteId: id,
+          cantidad,
+          medida,
+
+        });
+      }
+      const procedimientosCreados = [];
+      for (const procedimiento of procedimientos) {
+        const nuevoProcedimiento = await Procedimiento.create({
+          numero_procedimiento: procedimiento.numero_procedimiento,
+          desc_procedimiento: procedimiento.desc_procedimiento,
+          foto_procedimiento: procedimiento.foto_procedimiento,
+          RecetumId: receta.id // Asociar el procedimiento con la receta recién creada
+        });
+        procedimientosCreados.push(nuevoProcedimiento);
+      }
+
+      res.status(201).json({
+        receta: {
+          id: receta.id,
+          nombre_receta: receta.nombre_receta,
+          desc_receta: receta.desc_receta,
+          TipoCocinaId: receta.TipoCocinaId,
+          RestauranteId: restauranteId,
+          foto_receta: foto_receta
+        },
+        ingredientes: ingredientes,
+      });
+    } catch (error) {
+
+      res.status(500).json({ error: error.message });
+    }
   }
-}
 );
 
 

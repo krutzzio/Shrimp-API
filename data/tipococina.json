@@ -3,25 +3,7 @@
         "nombre_tipo": "Americana"
     },
     {
-        "nombre_tipo": "Britanica"
-    },
-    {
         "nombre_tipo": "China"
-    },
-    {
-        "nombre_tipo": "Croata"
-    },
-    {
-        "nombre_tipo": "Alemana"
-    },
-    {
-        "nombre_tipo": "Egicia"
-    },
-    {
-        "nombre_tipo": "Filipina"
-    },
-    {
-        "nombre_tipo": "Francesa"
     },
     {
         "nombre_tipo": "Griega"
@@ -33,9 +15,6 @@
         "nombre_tipo": "Italiana"
     },
     {
-        "nombre_tipo": "Jamaicana"
-    },
-    {
         "nombre_tipo": "Japonesa"
     },
     {
@@ -45,21 +24,9 @@
         "nombre_tipo": "Marroqui"
     },
     {
-        "nombre_tipo": "Portuguesa"
-    },
-    {
-        "nombre_tipo": "Rusa"
-    },
-    {
         "nombre_tipo": "Española"
     },
     {
         "nombre_tipo": "Thailandesa"
-    },
-    {
-        "nombre_tipo": "Indonesia"
-    },
-    {
-        "nombre_tipo": "Otros"
     }
 ]

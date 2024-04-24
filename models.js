@@ -135,7 +135,7 @@ const Receta = sequelize.define("Receta", {
         allowNull: true,
     },
     tipo: {
-        type: DataTypes.ENUM('postre', 'primero', 'segundo', 'entrante', ''),
+        type: DataTypes.STRING,
         allowNull: true,
     },
     foto_receta: {
@@ -278,47 +278,14 @@ async function iniDB() {
     const ingredientes = require("./data/ingredientes.json");
     const ingredientes_añadidos = Ingrediente.bulkCreate(ingredientes);
 
-    const restaurantes = require("./data/restaurantes.json");
-    const restaurantes_añadidos = Restaurante.bulkCreate(restaurantes)
+    const anadirRestaurante = require("./data/anadirRestaurante.js")
+    await anadirRestaurante()
+
+    const anadirReceta = require("./data/anadirReceta.js")
+    await anadirReceta()
 }
 
-//iniDB();
-
-
-(async () => {
-    try {
-
-        // Crear una receta
-        const receta1 = await Receta.create({
-            nombre_receta: 'Tarta de manzana',
-            desc_receta: 'Una deliciosa tarta de manzana casera',
-            persones: '4',
-            tiempo: '1 hora',
-            dificultad: 'Media',
-            tipo: 'postre',
-            foto_receta: 'tarta_manzana.jpg'
-        });
-
-        // Asociar ingredientes a la receta
-        await Receta_Ingrediente.create({ RecetumId: receta1.id, IngredienteId: ingrediente1.id, cantidad: 250, medida: 'gramos' });
-        await Receta_Ingrediente.create({ RecetumId: receta1.id, IngredienteId: ingrediente2.id, cantidad: 150, medida: 'gramos' });
-        await Receta_Ingrediente.create({ RecetumId: receta1.id, IngredienteId: ingrediente3.id, cantidad: 3, medida: 'unidades' });
-
-        // Crear un procedimiento para la receta
-        const procedimiento1 = await Procedimiento.create({
-            numero_procedimiento: '1',
-            desc_procedimiento: 'Mezclar la harina y el azúcar en un bol grande',
-            foto_procedimiento: 'mezclar.jpg'
-        });
-
-        // Asociar el procedimiento a la receta
-        await receta1.addProcedimiento(procedimiento1);
-
-        console.log('Datos creados exitosamente.');
-    } catch (error) {
-        console.error('Error al crear datos:', error);
-    }
-})();
+iniDB();
 
 //Exportem els models
 module.exports = {
