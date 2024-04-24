@@ -244,7 +244,7 @@ Receta.belongsTo(Restaurante) // Un receta pertences a un solo restaurante
 Usuario.belongsToMany(TipoCocina, { through: 'UsuarioCocina' }); // Un usuario puede tener varios tipos cocina
 TipoCocina.belongsToMany(Usuario, { through: 'UsuarioCocina' }); // Un tipo de cocina lo pueden tener varios usuarios
 
-Receta.belongsTo(TipoCoc  ina); // Una receta tiene un unico tipo de cocina
+Receta.belongsTo(TipoCocina); // Una receta tiene un unico tipo de cocina
 TipoCocina.hasMany(Receta); // Un tipo de cocina pertence a varias recetas
 
 Restaurante.belongsToMany(TipoCocina, { through: 'RestauranteCocina' })
