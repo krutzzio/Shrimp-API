@@ -15,7 +15,7 @@ const {
   Restaurante,
   Receta,
   TipoCocina,
-
+  Ingrediente,
   Receta_Ingrediente,
   GrupoAlimento,
 } = require("./models"); // Importa els models de dades
@@ -375,20 +375,27 @@ router.post("/loginRest", async (req, res) => {
   }
 });
 
+
+
+/* -------------------------------------------------------------------------- */
+/*                                  INGREDIENTES                                */
+/* -------------------------------------------------------------------------- */
+
+router.get("/ingredientes", async (req, res) => await readItems(req, res, Ingrediente)); // Llegeix tots els restaurants
+
+
 /* -------------------------------------------------------------------------- */
 /*                                  RECETAS                                 */
 /* -------------------------------------------------------------------------- */
 
-router.get(
-  "/home/:restId/recipes/:id",
-  checkToken,
-  async (req, res) => await readItems(req, res, Receta)
-); // Llegeix tots els restaurants
+router.get("/home/:restId/recipes/:id", checkToken, async (req, res) => await readItems(req, res, Receta)); // Llegeix tots els restaurants
+
 router.get(
   "/recipes/:id",
   checkToken,
   async (req, res) => await readItem(req, res, Receta)
 ); // Llegeix un recipes específic
+
 router.put("/home/:restId/recipes/:id", checkToken, async (req, res) => {
   try {
     const restaurantId = req.params.restId;
