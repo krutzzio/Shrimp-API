@@ -291,6 +291,11 @@ router.post("/registerRest", upload.single("photo"), async (req, res) => {
       return res.status(400).json({ error: "Email ya existe" });
     }
 
+    const cocinas = tipos_cocina.split(",")
+    const tiposCocinas = await TipoCocina.findAll({ where: { nombre_tipo: cocinas } })
+    const cocinasId = tiposCocinas.map(cocina => cocina.id)
+
+
     const restaurant = await Restaurante.create({
       nombre,
       telefono,
@@ -302,6 +307,8 @@ router.post("/registerRest", upload.single("photo"), async (req, res) => {
       cp,
       foto_restaurante,
     });
+
+    await restaurant.addTipoCocina(cocinasId)
 
     res.status(201).json({
       id: restaurant.id,

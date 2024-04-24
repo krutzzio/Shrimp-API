@@ -278,47 +278,54 @@ async function iniDB() {
     const ingredientes = require("./data/ingredientes.json");
     const ingredientes_añadidos = Ingrediente.bulkCreate(ingredientes);
 
-    const restaurantes = require("./data/restaurantes.json");
-    const restaurantes_añadidos = Restaurante.bulkCreate(restaurantes)
+    /*     await añadirRestaurante()
+     */
+    (async () => {
+        try {
+            const restObj = [{
+                nombre: 'Restaurante Nombre bonito',
+                descripcio: 'Mejor restaurante del barrio',
+                correo: 'correo@test.com',
+                password: 'test123',
+                telefono: "999999999",
+                dieta: 0,
+                direccion: "calle test",
+                numero: "42",
+                cp: "12345",
+                foto_restaurnte: 'restaurante1.jpg',
+                tipos_cocina: [1, 2]
+            },
+            {
+                nombre: 'Restaurante',
+                descripcio: 'Mejor restaurante del barrio',
+                correo: 'correo@test123.com',
+                password: 'test123',
+                telefono: "999929999",
+                dieta: 0,
+                direccion: "calle test",
+                numero: "42",
+                cp: "12345",
+                foto_restaurnte: 'restaurante1.jpg',
+                tipos_cocina: [5, 7]
+            }]
+
+            for (const rest of restObj) {
+                const restaurante = await Restaurante.create(rest);
+                await restaurante.addTipoCocina(rest.tipos_cocina)
+            }
+
+            console.log('Datos creados exitosamente.');
+        } catch (error) {
+            console.error('Error al crear datos:', error);
+        }
+    })()
 }
 
-//iniDB();
 
 
-(async () => {
-    try {
+iniDB();
 
-        // Crear una receta
-        const receta1 = await Receta.create({
-            nombre_receta: 'Tarta de manzana',
-            desc_receta: 'Una deliciosa tarta de manzana casera',
-            persones: '4',
-            tiempo: '1 hora',
-            dificultad: 'Media',
-            tipo: 'postre',
-            foto_receta: 'tarta_manzana.jpg'
-        });
 
-        // Asociar ingredientes a la receta
-        await Receta_Ingrediente.create({ RecetumId: receta1.id, IngredienteId: ingrediente1.id, cantidad: 250, medida: 'gramos' });
-        await Receta_Ingrediente.create({ RecetumId: receta1.id, IngredienteId: ingrediente2.id, cantidad: 150, medida: 'gramos' });
-        await Receta_Ingrediente.create({ RecetumId: receta1.id, IngredienteId: ingrediente3.id, cantidad: 3, medida: 'unidades' });
-
-        // Crear un procedimiento para la receta
-        const procedimiento1 = await Procedimiento.create({
-            numero_procedimiento: '1',
-            desc_procedimiento: 'Mezclar la harina y el azúcar en un bol grande',
-            foto_procedimiento: 'mezclar.jpg'
-        });
-
-        // Asociar el procedimiento a la receta
-        await receta1.addProcedimiento(procedimiento1);
-
-        console.log('Datos creados exitosamente.');
-    } catch (error) {
-        console.error('Error al crear datos:', error);
-    }
-})();
 
 //Exportem els models
 module.exports = {
