@@ -135,7 +135,7 @@ const Receta = sequelize.define("Receta", {
         allowNull: true,
     },
     tipo: {
-        type: DataTypes.ENUM('postre', 'primero', 'segundo', 'entrante', ''),
+        type: DataTypes.STRING,
         allowNull: true,
     },
     foto_receta: {
@@ -278,47 +278,51 @@ async function iniDB() {
     const ingredientes = require("./data/ingredientes.json");
     const ingredientes_añadidos = Ingrediente.bulkCreate(ingredientes);
 
+    const anadirReceta = require("./data/anadirReceta.js")
+    await anadirReceta()
+
+
     /*     await añadirRestaurante()
      */
-    (async () => {
-        try {
-            const restObj = [{
-                nombre: 'Restaurante Nombre bonito',
-                descripcio: 'Mejor restaurante del barrio',
-                correo: 'correo@test.com',
-                password: 'test123',
-                telefono: "999999999",
-                dieta: 0,
-                direccion: "calle test",
-                numero: "42",
-                cp: "12345",
-                foto_restaurnte: 'restaurante1.jpg',
-                tipos_cocina: [1, 2]
-            },
-            {
-                nombre: 'Restaurante',
-                descripcio: 'Mejor restaurante del barrio',
-                correo: 'correo@test123.com',
-                password: 'test123',
-                telefono: "999929999",
-                dieta: 0,
-                direccion: "calle test",
-                numero: "42",
-                cp: "12345",
-                foto_restaurnte: 'restaurante1.jpg',
-                tipos_cocina: [5, 7]
-            }]
+    /*  (async () => {
+         try {
+             const restObj = [{
+                 nombre: 'Restaurante Nombre bonito',
+                 descripcio: 'Mejor restaurante del barrio',
+                 correo: 'correo@test.com',
+                 password: 'test123',
+                 telefono: "999999999",
+                 dieta: 0,
+                 direccion: "calle test",
+                 numero: "42",
+                 cp: "12345",
+                 foto_restaurnte: 'restaurante1.jpg',
+                 tipos_cocina: [1, 2]
+             },
+             {
+                 nombre: 'Restaurante',
+                 descripcio: 'Mejor restaurante del barrio',
+                 correo: 'correo@test123.com',
+                 password: 'test123',
+                 telefono: "999929999",
+                 dieta: 0,
+                 direccion: "calle test",
+                 numero: "42",
+                 cp: "12345",
+                 foto_restaurnte: 'restaurante1.jpg',
+                 tipos_cocina: [5, 7]
+             }]
 
-            for (const rest of restObj) {
-                const restaurante = await Restaurante.create(rest);
-                await restaurante.addTipoCocina(rest.tipos_cocina)
-            }
+             for (const rest of restObj) {
+                 const restaurante = await Restaurante.create(rest);
+                 await restaurante.addTipoCocina(rest.tipos_cocina)
+             }
 
-            console.log('Datos creados exitosamente.');
-        } catch (error) {
-            console.error('Error al crear datos:', error);
-        }
-    })()
+             console.log('Datos creados exitosamente.');
+         } catch (error) {
+             console.error('Error al crear datos:', error);
+         }
+     })() */
 }
 
 
