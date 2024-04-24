@@ -26,7 +26,7 @@ app.use(cookieParser());
 app.use('/uploads', express.static(uploadDirectory));
 app.use('/api', routes);
 // iniciem servidor
-const PORT = 3000;
+const PORT = 80;
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
 });
