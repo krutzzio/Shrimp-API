@@ -31,6 +31,7 @@ const {
   readItemsForUser,
   deleteItemForUser,
 } = require("./generics"); // Importa les funcions per a realitzar operacions CRUD genèriques
+const { where } = require("sequelize");
 
 // CONFIG MULTER
 const storage = multer.diskStorage({
@@ -167,6 +168,7 @@ router.post("/registerUser", upload.single("photo"), async (req, res) => {
 
     const cocinas = tipos_cocina.split(",")
     const tiposCocinas = await TipoCocina.findAll({ where: { nombre_tipo: cocinas } })
+    console.log(tiposCocinas)
     const cocinasId = tiposCocinas.map(cocina => cocina.id)
 
 
@@ -349,6 +351,21 @@ router.post("/loginRest", async (req, res) => {
 /*                                  RECETAS                                 */
 /* -------------------------------------------------------------------------- */
 
+
+router.get("/home/recetas", checkToken, async (req, res) => {
+  try {
+    const user = await Usuario.findByPk(req.userId);
+    const tipos_comidas_user = await user.getTipoCocinas();
+    const TipoCocinaId = tipos_comidas_user.map(tipo => tipo.id)
+    const recetasSugeridas = await Receta.findAll({ where: { TipoCocinaId } })
+    res.status(201).json(recetasSugeridas);
+    console.log("Recetas SUGERIDAS", recetasSugeridas);
+
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+});
+
 router.get("/home/:restId/recipes/:id", checkToken, async (req, res) => await readItems(req, res, Receta)); // Llegeix tots els restaurants
 router.get("/recipes/:id", checkToken, async (req, res) => await readItem(req, res, Receta)); // Llegeix un recipes específic
 router.put("/home/:restId/recipes/:id", checkToken, async (req, res) => {
@@ -465,20 +482,12 @@ router.post("/home/:restId/registerReceta", upload.single("photo"), async (req, 
       ingredientes: ingredientes,
     });
   } catch (error) {
-
-    res.status(500).json({ error: error.message });
-  }
-}
-);
-router.get("/home/recetas", checkToken, async (req, res) => {
-  try {
-    const user = await Usuario.findByPk(req.userId);
-    const tipos_comidas_user = await user.getTipoCocinas();
-    console.log(tipos_comidas_user);
-  } catch (error) {
     res.status(500).json({ error: error.message });
   }
 });
+
+
+
 
 router.get('/uploads/:fileName', (req, res) => {
   const fileName = req.params.fileName;
