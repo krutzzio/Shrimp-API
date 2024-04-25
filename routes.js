@@ -241,14 +241,10 @@ router.post("/home/:restId/seguirRestaurante", checkToken, async (req, res) => {
 /*                                RESTAURANTE                               */
 /* -------------------------------------------------------------------------- */
 
-router.get("/restaurant", checkToken, async (req, res) => await readItems(req, res, Restaurante)
-); // Llegeix tots els restaurants
-router.get("/restaurant/:id", checkToken, async (req, res) => await readItem(req, res, Restaurante)
-); // Llegeix un restaurant específic
-router.put("/restaurant/:id", checkToken, async (req, res) => await updateItem(req, res, Restaurante)
-); // Actualitza un restaurant
-router.delete("/restaurant/:id", checkToken, async (req, res) => await deleteItem(req, res, Restaurante)
-); // Elimina un restaurant
+router.get("/restaurant", checkToken, async (req, res) => await readItems(req, res, Restaurante)); // Llegeix tots els restaurants
+router.get("/restaurant/:id", checkToken, async (req, res) => await readItem(req, res, Restaurante)); // Llegeix un restaurant específic
+router.put("/restaurant/:id", checkToken, async (req, res) => await updateItem(req, res, Restaurante)); // Actualitza un restaurant
+router.delete("/restaurant/:id", checkToken, async (req, res) => await deleteItem(req, res, Restaurante)); // Elimina un restaurant
 
 /* ------------------------------- REGISTER ------------------------------- */
 router.post("/registerRest", upload.single("photo"), async (req, res) => {
@@ -474,8 +470,15 @@ router.post("/home/:restId/registerReceta", upload.single("photo"), async (req, 
   }
 }
 );
-
-router.get("/home/recetas")
+router.get("/home/recetas", checkToken, async (req, res) => {
+  try {
+    const user = await Usuario.findByPk(req.userId);
+    const tipos_comidas_user = await user.getTipoCocinas();
+    console.log(tipos_comidas_user);
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+});
 
 router.get('/uploads/:fileName', (req, res) => {
   const fileName = req.params.fileName;

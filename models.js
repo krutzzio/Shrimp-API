@@ -3,7 +3,7 @@ const { Sequelize, DataTypes } = require("sequelize"); // Importa la llibreria S
 
 const bcrypt = require("bcrypt"); // Importa la llibreria bcrypt per a encriptar contrasenyes
 
-const sequelize = new Sequelize("gamba", "root", "", {
+const sequelize = new Sequelize("gamba", "root", "admin123", {
     host: "localhost",
     //host: '192.168.1.133', //IP de la base de dades
     port: 3306,
@@ -243,13 +243,13 @@ async function iniDB() {
     await sequelize.sync({ force: true });
 
     const cocinas = require("./data/tipococina.json");
-    const cocinas_añadidas = TipoCocina.bulkCreate(cocinas);
+    const cocinas_añadidas = await TipoCocina.bulkCreate(cocinas);
 
     const grupos = require("./data/grupos_alimentos.json");
-    const grupos_añadidos = GrupoAlimento.bulkCreate(grupos);
+    const grupos_añadidos = await GrupoAlimento.bulkCreate(grupos);
 
     const ingredientes = require("./data/ingredientes.json");
-    const ingredientes_añadidos = Ingrediente.bulkCreate(ingredientes);
+    const ingredientes_añadidos = await Ingrediente.bulkCreate(ingredientes);
 
     const anadirRestaurante = require("./data/anadirRestaurante.js")
     await anadirRestaurante()
