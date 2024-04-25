@@ -601,47 +601,47 @@ async function anadirReceta() {
                 "TipoCocinaId": [1],
                 ingredientes: [
                     {
-                        "IngredienteId": "Costillas de cerdo",
+                        "IngredienteId": 85,
                         "cantidad": 1.5,
                         "medida": "kilogramo"
                     },
                     {
-                        "IngredienteId": "Salsa barbacoa",
+                        "IngredienteId": 86,
                         "cantidad": 300,
                         "medida": "mililitros"
                     },
                     {
-                        "IngredienteId": "Vinagre de manzana",
+                        "IngredienteId": 87,
                         "cantidad": 50,
                         "medida": "mililitros"
                     },
                     {
-                        "IngredienteId": "Azúcar moreno",
+                        "IngredienteId": 88,
                         "cantidad": 50,
                         "medida": "gramos"
                     },
                     {
-                        "IngredienteId": "Pimentón dulce",
+                        "IngredienteId": 78,
                         "cantidad": 2,
                         "medida": "cucharaditas"
                     },
                     {
-                        "IngredienteId": "Ajo en polvo",
+                        "IngredienteId": 89,
                         "cantidad": 1,
                         "medida": "cucharadita"
                     },
                     {
-                        "IngredienteId": "Sal",
+                        "IngredienteId": 29,
                         "cantidad": 1,
                         "medida": "cucharadita"
                     },
                     {
-                        "IngredienteId": "Pimienta negra",
+                        "IngredienteId": 27,
                         "cantidad": 0.5,
                         "medida": "cucharadita"
                     },
                     {
-                        "IngredienteId": "Aceite de oliva",
+                        "IngredienteId": 1,
                         "cantidad": 2,
                         "medida": "cucharadas"
                     }

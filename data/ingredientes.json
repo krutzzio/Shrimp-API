@@ -352,8 +352,7 @@
         "GrupoAlimentoId": "28"
     },
     {
-        "IngredienteId": "Ajo en polvo",
-        "cantidad": 1,
-        "medida": "cucharadita"
+        "nombre_ingrediente": "Ajo en polvo",
+        "GrupoAlimentoId": "16"
     }
 ]
