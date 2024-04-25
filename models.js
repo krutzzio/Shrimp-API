@@ -6,10 +6,10 @@ const { Sequelize, DataTypes } = require("sequelize"); // Importa la llibreria S
 
 const bcrypt = require("bcrypt"); // Importa la llibreria bcrypt per a encriptar contrasenyes
 
-const sequelize = new Sequelize("gamba", "root", "", {
+const sequelize = new Sequelize("gamba", "root", "admin", {
     host: "localhost",
     //host: '192.168.1.133', //IP de la base de dades
-    port: 3306,
+    port: 3308,
     dialect: "mysql", // connectem a mysql
 });
 

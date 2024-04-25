@@ -577,6 +577,23 @@
     {
         "nombre_ingrediente": "Brocoli",
         "GrupoAlimentoId": "16"
+    },
+    {
+        "nombre_ingrediente": "Caldo de carne",
+        "GrupoAlimentoId": "13"
+    },
+    {
+        "nombre_ingrediente": "Agua",
+        "GrupoAlimentoId": "14"
+    },
+    {
+        "nombre_ingrediente": "Pimenton dulce",
+        "GrupoAlimentoId": "22"
+    },
+    {
+        "nombre_ingrediente": "Cochinillo",
+        "GrupoAlimentoId": "14"
     }
+
     
 ]
