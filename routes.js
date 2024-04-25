@@ -355,11 +355,21 @@ router.post("/loginRest", async (req, res) => {
 router.get("/home/recetas", checkToken, async (req, res) => {
   try {
     const user = await Usuario.findByPk(req.userId);
-    const tipos_comidas_user = await user.getTipoCocinas();
-    const TipoCocinaId = tipos_comidas_user.map(tipo => tipo.id)
+    const tipos_cocinas_user = await user.getTipoCocinas();
+    const TipoCocinaId = tipos_cocinas_user.map(tipo => tipo.id)
     const recetasSugeridas = await Receta.findAll({ where: { TipoCocinaId } })
-    res.status(201).json(recetasSugeridas);
-    console.log("Recetas SUGERIDAS", recetasSugeridas);
+    const recetas = await Promise.all(recetasSugeridas.map(async receta => {
+      const tipoCocinaReceta = await receta.getTipoCocina()
+      const nombreRestaurante = await receta.getRestaurante()
+      const recetaInUser = await user.hasReceta(receta);
+      console.log("Recetas SUGERIDAS", recetaInUser);
+
+      const infoReceta = { receta: receta.dataValues, nombreRestaurante: nombreRestaurante.nombre, tipoCocinaReceta: tipoCocinaReceta.nombre_tipo, recetaInUser: recetaInUser }
+      /* console.log("TIPO_RECETA", tipoCocinaReceta, "NOMBRE", tipoCocinaReceta.nombre_tipo)
+      console.log("RESTAURANTE", nombreRestaurante, "NOMBRE", nombreRestaurante.nombre)
+       */return infoReceta
+    }))
+    res.status(201).json(recetas);
 
   } catch (error) {
     res.status(500).json({ error: error.message });
