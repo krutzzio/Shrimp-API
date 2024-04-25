@@ -102,6 +102,13 @@
     {
         "nombre_grupo": "Vinos",
         "dieta": "vegano"
+    },
+    {
+        "nombre_grupo": "Vinagres",
+        "dieta": "vegano"
+    },
+    {
+        "nombre_grupo": "Azúcar",
+        "dieta": "vegano"
     }
-
 ]

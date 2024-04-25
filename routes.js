@@ -353,16 +353,8 @@ router.post("/loginRest", async (req, res) => {
 /*                                  RECETAS                                 */
 /* -------------------------------------------------------------------------- */
 
-router.get(
-  "/home/:restId/recipes/:id",
-  checkToken,
-  async (req, res) => await readItems(req, res, Receta)
-); // Llegeix tots els restaurants
-router.get(
-  "/recipes/:id",
-  checkToken,
-  async (req, res) => await readItem(req, res, Receta)
-); // Llegeix un recipes específic
+router.get("/home/:restId/recipes/:id", checkToken, async (req, res) => await readItems(req, res, Receta)); // Llegeix tots els restaurants
+router.get("/recipes/:id", checkToken, async (req, res) => await readItem(req, res, Receta)); // Llegeix un recipes específic
 router.put("/home/:restId/recipes/:id", checkToken, async (req, res) => {
   try {
     const restaurantId = req.params.restId;
@@ -372,11 +364,9 @@ router.put("/home/:restId/recipes/:id", checkToken, async (req, res) => {
     return res.status(404).json({ error: "Tipo de cocina no encontrado" });
   }
 }); // Actualitza
-router.delete(
-  "/recipes/:id",
-  checkToken,
-  async (req, res) => await deleteItem(req, res, Receta)
-); // Elimina un recipes
+
+router.delete("/recipes/:id", checkToken, async (req, res) => await deleteItem(req, res, Receta)); // Elimina un recipes
+
 
 /* ----------------------------- CREAR RECETA ---------------------------- */
 router.post(

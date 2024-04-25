@@ -1,5 +1,5 @@
 [
-    { 
+    {
         "nombre_ingrediente": "Aceite de oliva",
         "GrupoAlimentoId": "24"
     },
@@ -24,7 +24,7 @@
         "GrupoAlimentoId": "16"
     },
     {
-        "nombre_ingrediente": "Papa",
+        "nombre_ingrediente": "Patata",
         "GrupoAlimentoId": "16"
     },
     {
@@ -117,11 +117,11 @@
     },
     {
         "nombre_ingrediente": "Azúcar",
-        "GrupoAlimentoId": "22"
+        "GrupoAlimentoId": "28"
     },
     {
         "nombre_ingrediente": "Vinagre",
-        "GrupoAlimentoId": "21"
+        "GrupoAlimentoId": "27"
     },
     {
         "nombre_ingrediente": "Limón",
@@ -262,6 +262,98 @@
     {
         "nombre_ingrediente": "Mejillones",
         "GrupoAlimentoId": "13"
+    },
+    {
+        "nombre_ingrediente": "Pechuga de pollo",
+        "GrupoAlimentoId": "14"
+    },
+    {
+        "nombre_ingrediente": "Jengibre fresco",
+        "GrupoAlimentoId": "22"
+    },
+    {
+        "nombre_ingrediente": "Cúrcuma",
+        "GrupoAlimentoId": "22"
+    },
+    {
+        "nombre_ingrediente": "Comino molido",
+        "GrupoAlimentoId": "22"
+    },
+    {
+        "nombre_ingrediente": "Pimentón picante",
+        "GrupoAlimentoId": "22"
+    },
+    {
+        "nombre_ingrediente": "Tomate triturado",
+        "GrupoAlimentoId": "17"
+    },
+    {
+        "nombre_ingrediente": "Crema de coco",
+        "GrupoAlimentoId": "17"
+    },
+    {
+        "nombre_ingrediente": "Arroz basmati",
+        "GrupoAlimentoId": "19"
+    },
+    {
+        "nombre_ingrediente": "Curry",
+        "GrupoAlimentoId": "22"
+    },
+    {
+        "nombre_ingrediente": "Leche de coco",
+        "GrupoAlimentoId": "17"
+    },
+    {
+        "nombre_ingrediente": "Caldo de verduras",
+        "GrupoAlimentoId": "16"
+    },
+    {
+        "nombre_ingrediente": "Pimentón dulce",
+        "GrupoAlimentoId": "22"
+    },
+    {
+        "nombre_ingrediente": "Queso Gouda",
+        "GrupoAlimentoId": "6"
+    },
+    {
+        "nombre_ingrediente": "Cuscús",
+        "GrupoAlimentoId": "19"
+    },
+    {
+        "nombre_ingrediente": "Calabacín",
+        "GrupoAlimentoId": "16"
+    },
+    {
+        "nombre_ingrediente": "Pimiento rojo",
+        "GrupoAlimentoId": "16"
+    },
+    {
+        "nombre_ingrediente": "Pasas",
+        "GrupoAlimentoId": "17"
+    },
+    {
+        "nombre_ingrediente": "Almendras",
+        "GrupoAlimentoId": "7"
+    },
+    {
+        "nombre_ingrediente": "Costillas de cerdo",
+        "GrupoAlimentoId": "14"
+    },
+    {
+        "nombre_ingrediente": "Salsa barbacoa",
+        "GrupoAlimentoId": "23"
+    },
+    {
+        "nombre_ingrediente": "Vinagre de manzana",
+        "GrupoAlimentoId": "27"
+    },
+    {
+        "nombre_ingrediente": "Azúcar moreno",
+        "GrupoAlimentoId": "28"
+    },
+    {
+        "IngredienteId": "Ajo en polvo",
+        "cantidad": 1,
+        "medida": "cucharadita"
     }
-
 ]
