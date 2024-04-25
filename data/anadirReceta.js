@@ -8,7 +8,7 @@ async function anadirReceta() {
             {
                 "nombre_receta": "Pasta Alfredo con Pollo",
                 "desc_receta": "Una exquisita pasta cremosa con pollo y salsa Alfredo",
-                "personas": "4",
+                "persones": "4",
                 "tiempo": "30 minutos",
                 "dificultad": "Fácil",
                 "tipo": "Principal",
@@ -93,7 +93,7 @@ async function anadirReceta() {
             {
                 "nombre_receta": "Pollo Tikka Masala",
                 "desc_receta": "Un plato clásico de la cocina india con pollo en una deliciosa salsa cremosa de tomate y especias",
-                "personas": "4",
+                "persones": "4",
                 "tiempo": "45 minutos",
                 "dificultad": "Media",
                 "tipo": "Segundo",
@@ -193,7 +193,7 @@ async function anadirReceta() {
             {
                 "nombre_receta": "Curry de Garbanzos",
                 "desc_receta": "Un delicioso plato vegetariano con garbanzos en una salsa aromática de curry",
-                "personas": "4",
+                "persones": "4",
                 "tiempo": "40 minutos",
                 "dificultad": "Fácil",
                 "tipo": "Principal",
@@ -283,7 +283,7 @@ async function anadirReceta() {
             {
                 "nombre_receta": "Sopa de Lentejas",
                 "desc_receta": "Una reconfortante sopa vegana llena de sabor y nutrientes",
-                "personas": "6",
+                "persones": "6",
                 "tiempo": "50 minutos",
                 "dificultad": "Fácil",
                 "tipo": "Principal",
@@ -388,7 +388,7 @@ async function anadirReceta() {
             {
                 "nombre_receta": "Tortilla de Espinacas y Queso",
                 "desc_receta": "Una deliciosa tortilla española vegetariana con espinacas frescas y queso derretido",
-                "personas": "4",
+                "persones": "4",
                 "tiempo": "30 minutos",
                 "dificultad": "Fácil",
                 "tipo": "Principal",
@@ -468,7 +468,7 @@ async function anadirReceta() {
             {
                 "nombre_receta": "Cuscús de Verduras",
                 "desc_receta": "Un plato clásico de la cocina marroquí, cuscús con una variedad de verduras sazonadas con especias aromáticas",
-                "personas": "6",
+                "persones": "6",
                 "tiempo": "40 minutos",
                 "dificultad": "Media",
                 "tipo": "Principal",
@@ -592,7 +592,7 @@ async function anadirReceta() {
             }, {
                 "nombre_receta": "Costillas a la Barbacoa",
                 "desc_receta": "Costillas de cerdo glaseadas con una sabrosa salsa barbacoa casera, perfectas para una comida reconfortante y llena de sabor",
-                "personas": "4",
+                "persones": "4",
                 "tiempo": "3 horas",
                 "dificultad": "Media",
                 "tipo": "Principal",
@@ -676,6 +676,111 @@ async function anadirReceta() {
                         "numero_procedimiento": 6,
                         "desc_procedimiento": "Servir las costillas a la barbacoa caliente, acompañadas de ensalada de col y pan de maíz.",
                         "foto_procedimiento": "costillas_barbacoa_proceso6.jpg"
+                    }
+                ]
+            },
+            {
+                "nombre_receta": "Tacos al Pastor",
+                "desc_receta": "Tacos de carne de cerdo marinada en una mezcla de especias y achiote, cocinada lentamente en un trompo y servida con piña, cebolla y cilantro",
+                "persones": "4",
+                "tiempo": "2 horas",
+                "dificultad": "Media",
+                "tipo": "Principal",
+                "foto_receta": "tacos_al_pastor.jpg",
+                "RestauranteId": 10,
+                "TipoCocinaId": [7],
+                ingredientes: [
+                    {
+                        "IngredienteId": 90,
+                        "cantidad": 1,
+                        "medida": "unidad"
+                    },
+                    {
+                        "IngredienteId": 91,
+                        "cantidad": 800,
+                        "medida": "gramos"
+                    },
+                    {
+                        "IngredienteId": 92,
+                        "cantidad": 2,
+                        "medida": "cucharadas"
+                    },
+                    {
+                        "IngredienteId": 93,
+                        "cantidad": 1,
+                        "medida": "taza"
+                    },
+                    {
+                        "IngredienteId": 94,
+                        "cantidad": 0.5,
+                        "medida": "taza"
+                    },
+                    {
+                        "IngredienteId": 95,
+                        "cantidad": 0.25,
+                        "medida": "taza"
+                    },
+                    {
+                        "IngredienteId": 2,
+                        "cantidad": 3,
+                        "medida": "dientes"
+                    },
+                    {
+                        "IngredienteId": 70,
+                        "cantidad": 1,
+                        "medida": "cucharadita"
+                    },
+                    {
+                        "IngredienteId": 22,
+                        "cantidad": 1,
+                        "medida": "cucharadita"
+                    },
+                    {
+                        "IngredienteId": 27,
+                        "cantidad": 0.5,
+                        "medida": "cucharadita"
+                    },
+                    {
+                        "IngredienteId": 29,
+                        "cantidad": 1,
+                        "medida": "cucharadita"
+                    },
+                    {
+                        "IngredienteId": 96,
+                        "cantidad": 12,
+                        "medida": "unidades"
+                    },
+                    {
+                        "IngredienteId": 3,
+                        "cantidad": 1,
+                        "medida": "unidad"
+                    },
+                    {
+                        "IngredienteId": 18,
+                        "cantidad": 10,
+                        "medida": "gramos"
+                    }
+                ],
+                procedimientos: [
+                    {
+                        "numero_procedimiento": 1,
+                        "desc_procedimiento": "Cortar la carne de cerdo en tiras delgadas y marinar en una mezcla de achiote, jugo de naranja, jugo de limón, vinagre blanco, ajo picado, comino, orégano, pimienta negra y sal. Dejar reposar en el refrigerador durante al menos 1 hora.",
+                        "foto_procedimiento": "tacos_al_pastor_proceso1.jpg"
+                    },
+                    {
+                        "numero_procedimiento": 2,
+                        "desc_procedimiento": "En una parrilla o sartén caliente, cocinar la carne de cerdo marinada hasta que esté dorada y cocida por completo.",
+                        "foto_procedimiento": "tacos_al_pastor_proceso2.jpg"
+                    },
+                    {
+                        "numero_procedimiento": 3,
+                        "desc_procedimiento": "Calentar las tortillas de maíz en una sartén o comal.",
+                        "foto_procedimiento": "tacos_al_pastor_proceso3.jpg"
+                    },
+                    {
+                        "numero_procedimiento": 4,
+                        "desc_procedimiento": "Servir la carne de cerdo cocida en las tortillas calientes, acompañadas de piña picada, cebolla finamente picada y cilantro fresco.",
+                        "foto_procedimiento": "tacos_al_pastor_proceso4.jpg"
                     }
                 ]
             }

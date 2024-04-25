@@ -354,5 +354,33 @@
     {
         "nombre_ingrediente": "Ajo en polvo",
         "GrupoAlimentoId": "16"
+    },
+    {
+        "nombre_ingrediente": "Piña",
+        "GrupoAlimentoId": "17"
+    },
+    {
+        "nombre_ingrediente": "Carne de cerdo",
+        "GrupoAlimentoId": "14"
+    },
+    {
+        "nombre_ingrediente": "Achiote",
+        "GrupoAlimentoId": "22"
+    },
+    {
+        "nombre_ingrediente": "Jugo de naranja",
+        "GrupoAlimentoId": "17"
+    },
+    {
+        "nombre_ingrediente": "Jugo de limón",
+        "GrupoAlimentoId": "17"
+    },
+    {
+        "nombre_ingrediente": "Vinagre blanco",
+        "GrupoAlimentoId": "27"
+    },
+    {
+        "nombre_ingrediente": "Tortillas de maíz",
+        "GrupoAlimentoId": "19"
     }
 ]
