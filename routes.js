@@ -15,7 +15,7 @@ const {
   Restaurante,
   Receta,
   TipoCocina,
-
+  Procedimiento,
   Receta_Ingrediente,
   GrupoAlimento,
   Ingrediente,
@@ -46,7 +46,7 @@ const storage = multer.diskStorage({
 const upload = multer({ storage: storage });
 
 // Endpoint para manejar la subida de archivos
-router.post("/uploadFile", upload.single("photo"), (req, res) => {
+router.post("/uploadFile", upload.array("photo",7), (req, res) => {
   res.send("Archivo subido con éxito");
 });
 
@@ -483,32 +483,47 @@ router.post(
 
 
 router.post(
-  "/home/:recetaId/procedimientos",
-  upload.single("photo"),
+  "/home/:restId/procedimientos",
+
+  upload.array("photo", 7),
   async (req, res) => {
     try {
-      const { procedimientos } = req.body;
-      const recetaId = req.params.recetaId;
-      const baseUrl = 'http://localhost:3000/api/uploads/';
-      const foto_procedimiento = req.file ? baseUrl + req.file.filename : null; // Obtiene la ruta del archivo subido
+      const {
+        procedimientos,
+      } = req.body;
+      console.log(procedimientos)
+      const restauranteId = req.params.restId;
 
       // Verificar si la receta existe
-      const recetaExistente = await Receta.findByPk(recetaId);
-      if (!recetaExistente) {
-        return res.status(404).json({ error: "Receta no encontrada" });
-      }
+      // Añade tu lógica de verificación de receta si es necesario
 
+      const baseUrl = 'http://localhost:3000/api/uploads/';
+      
       // Crear los procedimientos
       const procedimientosCreados = [];
-      for (const procedimiento of procedimientos) {
-        const nuevoProcedimiento = await Procedimiento.create({
-          numero_procedimiento: procedimiento.numero_procedimiento,
-          desc_procedimiento: procedimiento.desc_procedimiento,
-          foto_procedimiento: foto_procedimiento,
-          RecetumId: recetaId // Asociar el procedimiento con la receta especificada
-        });
-        procedimientosCreados.push(nuevoProcedimiento);
-      }
+let indexFoto = 0; // Índice para acceder a las fotos_procedimiento
+
+for (const procedimiento of procedimientos) {
+  const { numero_procedimiento, desc_procedimiento } = procedimiento;
+  
+  // Aquí manejas las fotos de procedimiento si hay
+  const fotos_procedimiento = req.files.map(file => baseUrl + file.filename);
+  
+  console.log(fotos_procedimiento)
+
+  // Crea el procedimiento
+  const nuevoProcedimiento = await Procedimiento.create({
+    numero_procedimiento,
+    desc_procedimiento,
+    foto_procedimiento: fotos_procedimiento[indexFoto], // Accede a la foto correspondiente al índice actual
+    RestauranteId: restauranteId // Asocia el procedimiento con el restaurante especificado
+  });
+  
+  procedimientosCreados.push(nuevoProcedimiento);
+
+  // Incrementa el índice para acceder a la siguiente foto en la próxima iteración
+  indexFoto++;
+}
 
       res.status(201).json({
         message: "Procedimientos creados exitosamente",
@@ -519,6 +534,7 @@ router.post(
     }
   }
 );
+
 
 router.get(
   "/tipuscuina",
