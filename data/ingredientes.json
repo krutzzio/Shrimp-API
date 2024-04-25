@@ -1,5 +1,5 @@
 [
-    { 
+    {
         "nombre_ingrediente": "Aceite de oliva",
         "GrupoAlimentoId": "24"
     },
@@ -128,14 +128,6 @@
         "GrupoAlimentoId": "17"
     },
     {
-        "nombre_ingrediente": "Naranja",
-        "GrupoAlimentoId": "17"
-    },
-    {
-        "nombre_ingrediente": "Vino",
-        "GrupoAlimentoId": "26"
-    },
-    {
         "nombre_ingrediente": "Salsa de soja",
         "GrupoAlimentoId": "5"
     },
@@ -200,18 +192,6 @@
         "GrupoAlimentoId": "5"
     },
     {
-        "nombre_ingrediente": "Pollo",
-        "GrupoAlimentoId": "14"
-    },
-    {
-        "nombre_ingrediente": "Carne de res",
-        "GrupoAlimentoId": "14"
-    },
-    {
-        "nombre_ingrediente": "Cerdo",
-        "GrupoAlimentoId": "14"
-    },
-    {
         "nombre_ingrediente": "Trucha",
         "GrupoAlimentoId": "3"
     },
@@ -245,7 +225,7 @@
     },
     {
         "nombre_ingrediente": "Cacahuete",
-        "GrupoAlimentoId": "4"
+        "GrupoAlimentoId": "7"
     },
     {
         "nombre_ingrediente": "Nuez",
@@ -260,8 +240,343 @@
         "GrupoAlimentoId": "10"
     },
     {
+        "nombre_ingrediente": "Langosta",
+        "GrupoAlimentoId": "1"
+    },
+    {
+        "nombre_ingrediente": "Cangrejo",
+        "GrupoAlimentoId": "1"
+    },
+    {
+        "nombre_ingrediente": "Langostino",
+        "GrupoAlimentoId": "1"
+    },
+    {
+        "nombre_ingrediente": "Camarón",
+        "GrupoAlimentoId": "1"
+    },
+    {
+        "nombre_ingrediente": "Carabinero",
+        "GrupoAlimentoId": "1"
+    },
+    {
+        "nombre_ingrediente": "Centollo",
+        "GrupoAlimentoId": "1"
+    },
+    {
+        "nombre_ingrediente": "Bogavante",
+        "GrupoAlimentoId": "1"
+    },
+    {
+        "nombre_ingrediente": "Cigala",
+        "GrupoAlimentoId": "1"
+    },
+    {
+        "nombre_ingrediente": "Nécora",
+        "GrupoAlimentoId": "1"
+    },
+    {
+        "nombre_ingrediente": "Buey de mar",
+        "GrupoAlimentoId": "1"
+    },
+    {
+        "nombre_ingrediente": "Gambón",
+        "GrupoAlimentoId": "1"
+    },
+    {
+        "nombre_ingrediente": "Langostinos tigre",
+        "GrupoAlimentoId": "1"
+    },
+    {
+        "nombre_ingrediente": "Camarón de río",
+        "GrupoAlimentoId": "1"
+    },
+    {
+        "nombre_ingrediente": "Langostino patagónico",
+        "GrupoAlimentoId": "1"
+    },
+    {
+        "nombre_ingrediente": "Cangrejo de río",
+        "GrupoAlimentoId": "1"
+    },
+    {
+        "nombre_ingrediente": "Cigalas",
+        "GrupoAlimentoId": "1"
+    },
+    {
+        "nombre_ingrediente": "Camarón de mar",
+        "GrupoAlimentoId": "1"
+    },
+    {
+        "nombre_ingrediente": "Buey de mar gigante",
+        "GrupoAlimentoId": "1"
+    },
+    {
+        "nombre_ingrediente": "Cangrejo real",
+        "GrupoAlimentoId": "1"
+    },
+    {
+        "nombre_ingrediente": "Salmón",
+        "GrupoAlimentoId": "3"
+    },
+    {
+        "nombre_ingrediente": "Atún",
+        "GrupoAlimentoId": "3"
+    },
+    {
+        "nombre_ingrediente": "Merluza",
+        "GrupoAlimentoId": "3"
+    },
+    {
+        "nombre_ingrediente": "Dorada",
+        "GrupoAlimentoId": "3"
+    },
+    {
+        "nombre_ingrediente": "Lubina",
+        "GrupoAlimentoId": "3"
+    },
+    {
+        "nombre_ingrediente": "Bacalao",
+        "GrupoAlimentoId": "3"
+    },
+    {
+        "nombre_ingrediente": "Trucha",
+        "GrupoAlimentoId": "3"
+    },
+    {
+        "nombre_ingrediente": "Rape",
+        "GrupoAlimentoId": "3"
+    },
+    {
+        "nombre_ingrediente": "Pez espada",
+        "GrupoAlimentoId": "3"
+    },
+    {
+        "nombre_ingrediente": "Pargo",
+        "GrupoAlimentoId": "3"
+    },
+    {
+        "nombre_ingrediente": "Sardina",
+        "GrupoAlimentoId": "3"
+    },
+    {
+        "nombre_ingrediente": "Bonito",
+        "GrupoAlimentoId": "3"
+    },
+    {
+        "nombre_ingrediente": "Lenguado",
+        "GrupoAlimentoId": "3"
+    },
+    {
+        "nombre_ingrediente": "Caballa",
+        "GrupoAlimentoId": "3"
+    },
+    {
+        "nombre_ingrediente": "Anguila",
+        "GrupoAlimentoId": "3"
+    },
+    {
+        "nombre_ingrediente": "Almejas",
+        "GrupoAlimentoId": "1"
+    },
+    {
+        "nombre_ingrediente": "Pulpo",
+        "GrupoAlimentoId": "3"
+    },
+    {
+        "nombre_ingrediente": "Calamar",
+        "GrupoAlimentoId": "3"
+    },
+    {
         "nombre_ingrediente": "Mejillones",
-        "GrupoAlimentoId": "13"
+        "GrupoAlimentoId": "1"
+    },
+    {
+        "nombre_ingrediente": "Vieiras",
+        "GrupoAlimentoId": "3"
+    },
+    {
+        "nombre_ingrediente": "Pollo",
+        "GrupoAlimentoId": "14"
+    },
+    {
+        "nombre_ingrediente": "Pavo",
+        "GrupoAlimentoId": "14"
+    },
+    {
+        "nombre_ingrediente": "Ternera",
+        "GrupoAlimentoId": "14"
+    },
+    {
+        "nombre_ingrediente": "Cordero",
+        "GrupoAlimentoId": "14"
+    },
+    {
+        "nombre_ingrediente": "Cerdo",
+        "GrupoAlimentoId": "14"
+    },
+    {
+        "nombre_ingrediente": "Carne picada de res",
+        "GrupoAlimentoId": "14"
+    },
+    {
+        "nombre_ingrediente": "Carne picada de pollo",
+        "GrupoAlimentoId": "14"
+    },
+    {
+        "nombre_ingrediente": "Carne de canguro",
+        "GrupoAlimentoId": "14"
+    },
+    {
+        "nombre_ingrediente": "Carne de pato",
+        "GrupoAlimentoId": "14"
+    },
+    {
+        "nombre_ingrediente": "Carne de búfalo",
+        "GrupoAlimentoId": "14"
+    },
+    {
+        "nombre_ingrediente": "Manzana",
+        "GrupoAlimentoId": "17"
+    },
+    {
+        "nombre_ingrediente": "Plátano",
+        "GrupoAlimentoId": "17"
+    },
+    {
+        "nombre_ingrediente": "Naranja",
+        "GrupoAlimentoId": "17"
+    },
+    {
+        "nombre_ingrediente": "Uva",
+        "GrupoAlimentoId": "17"
+    },
+    {
+        "nombre_ingrediente": "Fresa",
+        "GrupoAlimentoId": "17"
+    },
+    {
+        "nombre_ingrediente": "Pera",
+        "GrupoAlimentoId": "17"
+    },
+    {
+        "nombre_ingrediente": "Melón",
+        "GrupoAlimentoId": "17"
+    },
+    {
+        "nombre_ingrediente": "Kiwi",
+        "GrupoAlimentoId": "17"
+    },
+    {
+        "nombre_ingrediente": "Mango",
+        "GrupoAlimentoId": "17"
+    },
+    {
+        "nombre_ingrediente": "Piña",
+        "GrupoAlimentoId": "17"
+    },
+    {
+        "nombre_ingrediente": "Pistachos",
+        "GrupoAlimentoId": "7"
+    },
+    {
+        "nombre_ingrediente": "Almendras",
+        "GrupoAlimentoId": "7"
+    },
+    {
+        "nombre_ingrediente": "Avellanas",
+        "GrupoAlimentoId": "7"
+    },
+    {
+        "nombre_ingrediente": "Nuez de macadamia",
+        "GrupoAlimentoId": "7"
+    },
+    {
+        "nombre_ingrediente": "Nuez de Brasil",
+        "GrupoAlimentoId": "7"
+    },
+    {
+        "nombre_ingrediente": "Anacardos",
+        "GrupoAlimentoId": "7"
+    },
+    {
+        "nombre_ingrediente": "Castañas de cajú",
+        "GrupoAlimentoId": "7"
+    },
+    {
+        "nombre_ingrediente": "Nueces pecanas",
+        "GrupoAlimentoId": "7"
+    },
+    {
+        "nombre_ingrediente": "Nueces de pekan",
+        "GrupoAlimentoId": "7"
+    },
+    {
+        "nombre_ingrediente": "Nueces de nogal",
+        "GrupoAlimentoId": "7"
+    },
+    {
+        "nombre_ingrediente": "Piñones",
+        "GrupoAlimentoId": "7"
+    },
+    {
+        "nombre_ingrediente": "Cacahuetes japoneses",
+        "GrupoAlimentoId": "7"
+    },
+    {
+        "nombre_ingrediente": "Almendras Marcona",
+        "GrupoAlimentoId": "7"
+    },
+    {
+        "nombre_ingrediente": "Nuez moscada",
+        "GrupoAlimentoId": "7"
+    },
+    {
+        "nombre_ingrediente": "Avellanas tostadas",
+        "GrupoAlimentoId": "7"
+    },
+    {
+        "nombre_ingrediente": "Almendras tostadas",
+        "GrupoAlimentoId": "7"
+    },
+    {
+        "nombre_ingrediente": "Nueces tostadas",
+        "GrupoAlimentoId": "7"
+    },
+    {
+        "nombre_ingrediente": "Almendras picadas",
+        "GrupoAlimentoId": "7"
+    },
+    {
+        "nombre_ingrediente": "Anacardos tostados",
+        "GrupoAlimentoId": "7"
+    },
+    {
+        "nombre_ingrediente": "Nueces caramelizadas",
+        "GrupoAlimentoId": "7"
+    },    {
+        "nombre_ingrediente": "Gamba",
+        "GrupoAlimentoId": "1"
+    },
+    {
+        "nombre_ingrediente": "Tomate triturado",
+        "GrupoAlimentoId": "16"
+    },
+    {
+        "nombre_ingrediente": "Pan",
+        "GrupoAlimentoId": "19"
+    },
+    {
+        "nombre_ingrediente": "Jamon serrano",
+        "GrupoAlimentoId": "14"
+    },   
+    {
+        "nombre_ingrediente": "Azucar",
+        "GrupoAlimentoId": "10"
+    },
+    {
+        "nombre_ingrediente": "Brocoli",
+        "GrupoAlimentoId": "16"
     }
-
+    
 ]

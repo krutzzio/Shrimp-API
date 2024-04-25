@@ -3,31 +3,7 @@
 
 // Es defineix la configuració de sequelize
 const { Sequelize, DataTypes } = require("sequelize"); // Importa la llibreria Sequelize
-const coci = [[
-    "Americana",
-    "Britanica",
-    "China",
-    "Croata",
-    "Alemana",
-    "Egicia",
-    "Filipina",
-    "Francesa",
-    "Griega",
-    "India",
-    "Italiana",
-    "Jamaicana",
-    "Japonesa",
-    "Malaysiana",
-    "Mexicana",
-    "Marroqui",
-    "Portuguesa",
-    "Rusa",
-    "Española",
-    "Thailandesa",
-    "Indonesia",
-    "Otros"
-]
-]
+
 const bcrypt = require("bcrypt"); // Importa la llibreria bcrypt per a encriptar contrasenyes
 
 const sequelize = new Sequelize("gamba", "root", "", {
