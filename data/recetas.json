@@ -486,38 +486,18 @@
         "procedimientos": [
             {
                 "numero_procedimiento": 1,
-                "desc_procedimiento": "Picar finamente la cebolla, las zanahorias, el calabacín, el pimiento rojo y los tomates.",
+                "desc_procedimiento": "Picar finamente la cebolla, las zanahorias, el calabacín, el pimiento rojo y los tomates. En una olla grande, calentar el aceite de oliva y saltear la cebolla hasta que esté transparente.",
                 "foto_procedimiento": "cuscus_verduras_proceso1.jpg"
             },
             {
                 "numero_procedimiento": 2,
-                "desc_procedimiento": "En una olla grande, calentar el aceite de oliva y saltear la cebolla hasta que esté transparente.",
+                "desc_procedimiento": "Agregar las zanahorias, el calabacín y el pimiento rojo picados. Cocinar por unos minutos hasta que estén tiernos. Añadir los tomates picados, las pasas y las almendras. Cocinar por unos minutos más.",
                 "foto_procedimiento": "cuscus_verduras_proceso2.jpg"
             },
             {
                 "numero_procedimiento": 3,
-                "desc_procedimiento": "Agregar las zanahorias, el calabacín y el pimiento rojo picados. Cocinar por unos minutos hasta que estén tiernos.",
+                "desc_procedimiento": "Agregar el cúrcuma, el comino, la canela, la sal y la pimienta. Mezclar bien. Agregar el caldo de verduras y llevar a ebullición. Luego, añadir el cuscús y remover. Tapar la olla y dejar reposar fuera del fuego durante 10 minutos. Servir el cuscús de verduras caliente, acompañado de pan marroquí si se desea.",
                 "foto_procedimiento": "cuscus_verduras_proceso3.jpg"
-            },
-            {
-                "numero_procedimiento": 4,
-                "desc_procedimiento": "Añadir los tomates picados, las pasas y las almendras. Cocinar por unos minutos más.",
-                "foto_procedimiento": "cuscus_verduras_proceso4.jpg"
-            },
-            {
-                "numero_procedimiento": 5,
-                "desc_procedimiento": "Agregar el cúrcuma, el comino, la canela, la sal y la pimienta. Mezclar bien.",
-                "foto_procedimiento": "cuscus_verduras_proceso5.jpg"
-            },
-            {
-                "numero_procedimiento": 6,
-                "desc_procedimiento": "Agregar el caldo de verduras y llevar a ebullición. Luego, añadir el cuscús y remover. Tapar la olla y dejar reposar fuera del fuego durante 10 minutos.",
-                "foto_procedimiento": "cuscus_verduras_proceso6.jpg"
-            },
-            {
-                "numero_procedimiento": 7,
-                "desc_procedimiento": "Servir el cuscús de verduras caliente, acompañado de pan marroquí si se desea.",
-                "foto_procedimiento": "cuscus_verduras_proceso7.jpg"
             }
         ]
     },
@@ -583,33 +563,18 @@
         "procedimientos": [
             {
                 "numero_procedimiento": 1,
-                "desc_procedimiento": "Precalentar el horno a 150°C (300°F).",
+                "desc_procedimiento": "Precalentar el horno a 150°C (300°F). En un tazón, mezclar la salsa barbacoa, el vinagre de manzana, el azúcar moreno, el pimentón dulce, el ajo en polvo, la sal y la pimienta negra para hacer el glaseado.",
                 "foto_procedimiento": "costillas_barbacoa_proceso1.jpg"
             },
             {
                 "numero_procedimiento": 2,
-                "desc_procedimiento": "En un tazón, mezclar la salsa barbacoa, el vinagre de manzana, el azúcar moreno, el pimentón dulce, el ajo en polvo, la sal y la pimienta negra para hacer el glaseado.",
+                "desc_procedimiento": "Colocar las costillas en una bandeja para hornear y untarlas generosamente con el glaseado por todos lados. Cubrir la bandeja con papel de aluminio y hornear durante aproximadamente 2 horas, o hasta que las costillas estén tiernas.",
                 "foto_procedimiento": "costillas_barbacoa_proceso2.jpg"
             },
             {
                 "numero_procedimiento": 3,
-                "desc_procedimiento": "Colocar las costillas en una bandeja para hornear y untarlas generosamente con el glaseado por todos lados.",
+                "desc_procedimiento": "Retirar el papel de aluminio y aumentar la temperatura del horno a 200°C (400°F). Pincelar las costillas con más glaseado y hornear durante 15-20 minutos más, hasta que estén caramelizadas y doradas. Servir las costillas a la barbacoa caliente, acompañadas de ensalada de col y pan de maíz.",
                 "foto_procedimiento": "costillas_barbacoa_proceso3.jpg"
-            },
-            {
-                "numero_procedimiento": 4,
-                "desc_procedimiento": "Cubrir la bandeja con papel de aluminio y hornear durante aproximadamente 2 horas, o hasta que las costillas estén tiernas.",
-                "foto_procedimiento": "costillas_barbacoa_proceso4.jpg"
-            },
-            {
-                "numero_procedimiento": 5,
-                "desc_procedimiento": "Retirar el papel de aluminio y aumentar la temperatura del horno a 200°C (400°F). Pincelar las costillas con más glaseado y hornear durante 15-20 minutos más, hasta que estén caramelizadas y doradas.",
-                "foto_procedimiento": "costillas_barbacoa_proceso5.jpg"
-            },
-            {
-                "numero_procedimiento": 6,
-                "desc_procedimiento": "Servir las costillas a la barbacoa caliente, acompañadas de ensalada de col y pan de maíz.",
-                "foto_procedimiento": "costillas_barbacoa_proceso6.jpg"
             }
         ]
     },
@@ -705,18 +670,13 @@
             },
             {
                 "numero_procedimiento": 2,
-                "desc_procedimiento": "En una parrilla o sartén caliente, cocinar la carne de cerdo marinada hasta que esté dorada y cocida por completo.",
+                "desc_procedimiento": "En una parrilla o sartén caliente, cocinar la carne de cerdo marinada hasta que esté dorada y cocida por completo. Calentar las tortillas de maíz en una sartén o comal.",
                 "foto_procedimiento": "tacos_al_pastor_proceso2.jpg"
             },
             {
                 "numero_procedimiento": 3,
-                "desc_procedimiento": "Calentar las tortillas de maíz en una sartén o comal.",
-                "foto_procedimiento": "tacos_al_pastor_proceso3.jpg"
-            },
-            {
-                "numero_procedimiento": 4,
                 "desc_procedimiento": "Servir la carne de cerdo cocida en las tortillas calientes, acompañadas de piña picada, cebolla finamente picada y cilantro fresco.",
-                "foto_procedimiento": "tacos_al_pastor_proceso4.jpg"
+                "foto_procedimiento": "tacos_al_pastor_proceso3.jpg"
             }
         ]
     },
@@ -792,28 +752,18 @@
         "procedimientos": [
             {
                 "numero_procedimiento": 1,
-                "desc_procedimiento": "Pelar y cortar las patatas en cubos. Freír en aceite caliente hasta que estén doradas y crujientes.",
+                "desc_procedimiento": "Pelar y cortar las patatas en cubos. Freír en aceite caliente hasta que estén doradas y crujientes. En una sartén, calentar el aceite de oliva y sofreír el ajo picado. Agregar el tomate frito y el pimentón. Cocinar unos minutos.",
                 "foto_procedimiento": "patatas_bravas_1.jpg"
             },
             {
                 "numero_procedimiento": 2,
-                "desc_procedimiento": "En una sartén, calentar el aceite de oliva y sofreír el ajo picado. Agregar el tomate frito y el pimentón. Cocinar unos minutos.",
+                "desc_procedimiento": "Agregar el caldo de pollo y cocinar a fuego lento hasta que la salsa espese ligeramente. Por separado, mezclar la mayonesa con el ajo picado y el perejil. Reservar como alioli.",
                 "foto_procedimiento": "patatas_bravas_2.jpg"
             },
             {
                 "numero_procedimiento": 3,
-                "desc_procedimiento": "Agregar el caldo de pollo y cocinar a fuego lento hasta que la salsa espese ligeramente.",
-                "foto_procedimiento": "patatas_bravas_3.jpg"
-            },
-            {
-                "numero_procedimiento": 4,
-                "desc_procedimiento": "Por separado, mezclar la mayonesa con el ajo picado y el perejil. Reservar como alioli.",
-                "foto_procedimiento": "patatas_bravas_4.jpg"
-            },
-            {
-                "numero_procedimiento": 5,
                 "desc_procedimiento": "Servir las patatas en platos individuales, cubrir con la salsa picante y servir el alioli al lado.",
-                "foto_procedimiento": "patatas_bravas_5.jpg"
+                "foto_procedimiento": "patatas_bravas_3.jpg"
             }
         ]
     },
@@ -894,28 +844,18 @@
         "procedimientos": [
             {
                 "numero_procedimiento": 1,
-                "desc_procedimiento": "Pelar los tomates y quitar las semillas. Trocear el pan.",
+                "desc_procedimiento": "Pelar los tomates y quitar las semillas. Trocear el pan. En una licuadora, mezclar los tomates, el pan, el ajo, el vinagre y la sal. Triturar hasta obtener una mezcla suave.",
                 "foto_procedimiento": "salmorejo_cordobes_1.jpg"
             },
             {
                 "numero_procedimiento": 2,
-                "desc_procedimiento": "En una licuadora, mezclar los tomates, el pan, el ajo, el vinagre y la sal. Triturar hasta obtener una mezcla suave.",
+                "desc_procedimiento": "Agregar el aceite de oliva poco a poco mientras se sigue mezclando, hasta que quede bien emulsionado. Refrigerar por al menos una hora antes de servir.",
                 "foto_procedimiento": "salmorejo_cordobes_2.jpg"
             },
             {
                 "numero_procedimiento": 3,
-                "desc_procedimiento": "Agregar el aceite de oliva poco a poco mientras se sigue mezclando, hasta que quede bien emulsionado.",
-                "foto_procedimiento": "salmorejo_cordobes_3.jpg"
-            },
-            {
-                "numero_procedimiento": 4,
-                "desc_procedimiento": "Refrigerar por al menos una hora antes de servir.",
-                "foto_procedimiento": "salmorejo_cordobes_4.jpg"
-            },
-            {
-                "numero_procedimiento": 5,
                 "desc_procedimiento": "Servir frío, decorado con huevo duro picado y jamón serrano en tiras.",
-                "foto_procedimiento": "salmorejo_cordobes_5.jpg"
+                "foto_procedimiento": "salmorejo_cordobes_3.jpg"
             }
         ]
     },
@@ -981,28 +921,18 @@
         "procedimientos": [
             {
                 "numero_procedimiento": 1,
-                "desc_procedimiento": "En una paellera, dorar el pollo y el conejo con aceite de oliva. Retirar y reservar.",
+                "desc_procedimiento": "En una paellera, dorar el pollo y el conejo con aceite de oliva. Retirar y reservar. En la misma paellera, sofreír la cebolla y el pimiento rojo hasta que estén tiernos. Agregar el ajo picado y el tomate rallado. Cocinar unos minutos.",
                 "foto_procedimiento": "paella_valenciana_1.jpg"
             },
             {
                 "numero_procedimiento": 2,
-                "desc_procedimiento": "En la misma paellera, sofreír la cebolla y el pimiento rojo hasta que estén tiernos. Agregar el ajo picado y el tomate rallado. Cocinar unos minutos.",
+                "desc_procedimiento": "Incorporar el arroz y remover para que se impregne de los sabores. Agregar el caldo de pescado caliente y el azafrán. Cocinar a fuego medio-alto durante 10 minutos. Colocar los mariscos y el pollo reservados sobre el arroz.",
                 "foto_procedimiento": "paella_valenciana_2.jpg"
             },
             {
                 "numero_procedimiento": 3,
-                "desc_procedimiento": "Incorporar el arroz y remover para que se impregne de los sabores. Agregar el caldo de pescado caliente y el azafrán. Cocinar a fuego medio-alto durante 10 minutos.",
+                "desc_procedimiento": "Cocinar a fuego medio-bajo durante otros 10 minutos. Retirar del fuego, cubrir con papel de aluminio y dejar reposar durante 5 minutos antes de servir.",
                 "foto_procedimiento": "paella_valenciana_3.jpg"
-            },
-            {
-                "numero_procedimiento": 4,
-                "desc_procedimiento": "Colocar los mariscos y el pollo reservados sobre el arroz. Cocinar a fuego medio-bajo durante otros 10 minutos.",
-                "foto_procedimiento": "paella_valenciana_4.jpg"
-            },
-            {
-                "numero_procedimiento": 5,
-                "desc_procedimiento": "Retirar del fuego, cubrir con papel de aluminio y dejar reposar durante 5 minutos antes de servir.",
-                "foto_procedimiento": "paella_valenciana_5.jpg"
             }
         ]
     },
@@ -1043,28 +973,18 @@
         "procedimientos": [
             {
                 "numero_procedimiento": 1,
-                "desc_procedimiento": "Batir los huevos en un tazón y sazonar con sal y pimienta al gusto.",
+                "desc_procedimiento": "Batir los huevos en un tazón y sazonar con sal y pimienta al gusto. Calentar una sartén antiadherente a fuego medio-alto. Agregar la mantequilla y dejar que se derrita.",
                 "foto_procedimiento": "tortilla_francesa_1.jpg"
             },
             {
                 "numero_procedimiento": 2,
-                "desc_procedimiento": "Calentar una sartén antiadherente a fuego medio-alto. Agregar la mantequilla y dejar que se derrita.",
+                "desc_procedimiento": "Verter los huevos batidos en la sartén caliente y cocinar durante unos minutos hasta que estén dorados por abajo. Con la ayuda de una espátula, voltear la tortilla y cocinar por el otro lado hasta que esté dorada y cocida por completo.",
                 "foto_procedimiento": "tortilla_francesa_2.jpg"
             },
             {
                 "numero_procedimiento": 3,
-                "desc_procedimiento": "Verter los huevos batidos en la sartén caliente y cocinar durante unos minutos hasta que estén dorados por abajo.",
-                "foto_procedimiento": "tortilla_francesa_3.jpg"
-            },
-            {
-                "numero_procedimiento": 4,
-                "desc_procedimiento": "Con la ayuda de una espátula, voltear la tortilla y cocinar por el otro lado hasta que esté dorada y cocida por completo.",
-                "foto_procedimiento": "tortilla_francesa_4.jpg"
-            },
-            {
-                "numero_procedimiento": 5,
                 "desc_procedimiento": "Transferir la tortilla a un plato, cortar en porciones y servir caliente.",
-                "foto_procedimiento": "tortilla_francesa_5.jpg"
+                "foto_procedimiento": "tortilla_francesa_3.jpg"
             }
         ]
     },
@@ -1115,28 +1035,18 @@
         "procedimientos": [
             {
                 "numero_procedimiento": 1,
-                "desc_procedimiento": "Cocinar el arroz de acuerdo a las instrucciones del paquete. Reservar caliente.",
+                "desc_procedimiento": "Cocinar el arroz de acuerdo a las instrucciones del paquete. Reservar caliente. Sazonar los filetes de trucha con sal y pimienta al gusto.",
                 "foto_procedimiento": "trucha_limón_arroz_1.jpg"
             },
             {
                 "numero_procedimiento": 2,
-                "desc_procedimiento": "Sazonar los filetes de trucha con sal y pimienta al gusto.",
+                "desc_procedimiento": "Calentar una sartén a fuego medio-alto con un poco de aceite de oliva. Cocinar los filetes de trucha hasta que estén dorados por ambos lados y cocidos en su punto. Servir los filetes de trucha sobre una cama de arroz caliente.",
                 "foto_procedimiento": "trucha_limón_arroz_2.jpg"
             },
             {
                 "numero_procedimiento": 3,
-                "desc_procedimiento": "Calentar una sartén a fuego medio-alto con un poco de aceite de oliva. Cocinar los filetes de trucha hasta que estén dorados por ambos lados y cocidos en su punto.",
-                "foto_procedimiento": "trucha_limón_arroz_3.jpg"
-            },
-            {
-                "numero_procedimiento": 4,
-                "desc_procedimiento": "Servir los filetes de trucha sobre una cama de arroz caliente.",
-                "foto_procedimiento": "trucha_limón_arroz_4.jpg"
-            },
-            {
-                "numero_procedimiento": 5,
                 "desc_procedimiento": "Exprimir el jugo de limón sobre los filetes de trucha y decorar con rodajas de limón fresco. ¡Disfrutar!",
-                "foto_procedimiento": "trucha_limón_arroz_5.jpg"
+                "foto_procedimiento": "trucha_limón_arroz_3.jpg"
             }
         ]
     },
@@ -1222,33 +1132,18 @@
         "procedimientos": [
             {
                 "numero_procedimiento": 1,
-                "desc_procedimiento": "En una olla grande, calentar el aceite de oliva a fuego medio-alto. Dorar la carne de ternera por todos lados. Retirar y reservar.",
+                "desc_procedimiento": "En una olla grande, calentar el aceite de oliva a fuego medio-alto. Dorar la carne de ternera por todos lados. Retirar y reservar. En la misma olla, agregar un poco más de aceite si es necesario y sofreír el ajo y la cebolla hasta que estén dorados.",
                 "foto_procedimiento": "estofado_paso1.jpg"
             },
             {
                 "numero_procedimiento": 2,
-                "desc_procedimiento": "En la misma olla, agregar un poco más de aceite si es necesario y sofreír el ajo y la cebolla hasta que estén dorados.",
+                "desc_procedimiento": "Agregar las papas y zanahorias cortadas en trozos grandes a la olla. Cocinar por unos minutos. Regresar la carne de ternera a la olla. Agregar el caldo de carne, laurel, tomillo, romero, pimienta negra, pimienta roja y sal.",
                 "foto_procedimiento": "estofado_paso2.jpg"
             },
             {
                 "numero_procedimiento": 3,
-                "desc_procedimiento": "Agregar las papas y zanahorias cortadas en trozos grandes a la olla. Cocinar por unos minutos.",
+                "desc_procedimiento": "Cubrir la olla y reducir el fuego a bajo. Cocinar a fuego lento durante aproximadamente 1 hora y media o hasta que la carne esté tierna. Servir caliente y disfrutar de este reconfortante estofado de carne.",
                 "foto_procedimiento": "estofado_paso3.jpg"
-            },
-            {
-                "numero_procedimiento": 4,
-                "desc_procedimiento": "Regresar la carne de ternera a la olla. Agregar el caldo de carne, laurel, tomillo, romero, pimienta negra, pimienta roja y sal.",
-                "foto_procedimiento": "estofado_paso4.jpg"
-            },
-            {
-                "numero_procedimiento": 5,
-                "desc_procedimiento": "Cubrir la olla y reducir el fuego a bajo. Cocinar a fuego lento durante aproximadamente 1 hora y media o hasta que la carne esté tierna.",
-                "foto_procedimiento": "estofado_paso5.jpg"
-            },
-            {
-                "numero_procedimiento": 6,
-                "desc_procedimiento": "Servir caliente y disfrutar de este reconfortante estofado de carne.",
-                "foto_procedimiento": "estofado_paso6.jpg"
             }
         ]
     },
@@ -1329,28 +1224,18 @@
         "procedimientos": [
             {
                 "numero_procedimiento": 1,
-                "desc_procedimiento": "Pelar los tomates y cortarlos en trozos. Picar la cebolla, el ajo, el pimiento verde y el pepino.",
+                "desc_procedimiento": "Pelar los tomates y cortarlos en trozos. Picar la cebolla, el ajo, el pimiento verde y el pepino. En una licuadora o procesador de alimentos, mezclar los tomates, la cebolla, el ajo, el pimiento verde, el pepino, el pan, el aceite de oliva, el vinagre, el laurel, el romero y la sal. Mezclar hasta obtener una mezcla homogénea.",
                 "foto_procedimiento": "gazpacho_paso1.jpg"
             },
             {
                 "numero_procedimiento": 2,
-                "desc_procedimiento": "En una licuadora o procesador de alimentos, mezclar los tomates, la cebolla, el ajo, el pimiento verde, el pepino, el pan, el aceite de oliva, el vinagre, el laurel, el romero y la sal. Mezclar hasta obtener una mezcla homogénea.",
+                "desc_procedimiento": "Agregar el agua fría y mezclar nuevamente hasta que todo esté bien incorporado y el gazpacho tenga la consistencia deseada. Refrigerar el gazpacho durante al menos 1 hora antes de servir.",
                 "foto_procedimiento": "gazpacho_paso2.jpg"
             },
             {
                 "numero_procedimiento": 3,
-                "desc_procedimiento": "Agregar el agua fría y mezclar nuevamente hasta que todo esté bien incorporado y el gazpacho tenga la consistencia deseada.",
-                "foto_procedimiento": "gazpacho_paso3.jpg"
-            },
-            {
-                "numero_procedimiento": 4,
-                "desc_procedimiento": "Refrigerar el gazpacho durante al menos 1 hora antes de servir.",
-                "foto_procedimiento": "gazpacho_paso4.jpg"
-            },
-            {
-                "numero_procedimiento": 5,
                 "desc_procedimiento": "Servir frío y disfrutar de este delicioso gazpacho andaluz.",
-                "foto_procedimiento": "gazpacho_paso5.jpg"
+                "foto_procedimiento": "gazpacho_paso3.jpg"
             }
         ]
     },
