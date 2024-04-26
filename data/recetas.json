@@ -158,18 +158,8 @@
             },
             {
                 "numero_procedimiento": 3,
-                "desc_procedimiento": "En la misma sartén, agregar un poco más de aceite si es necesario y saltear el tomate triturado hasta que reduzca y espese ligeramente.",
+                "desc_procedimiento": "En la misma sartén, agregar un poco más de aceite si es necesario y saltear el tomate triturado hasta que reduzca y espese ligeramente. Añadir la crema de coco a la salsa de tomate y mezclar bien. Cocinar a fuego lento durante unos minutos.",
                 "foto_procedimiento": "procedimiento3.jpg"
-            },
-            {
-                "numero_procedimiento": 4,
-                "desc_procedimiento": "Añadir la crema de coco a la salsa de tomate y mezclar bien. Cocinar a fuego lento durante unos minutos.",
-                "foto_procedimiento": "procedimiento1.jpg"
-            },
-            {
-                "numero_procedimiento": 5,
-                "desc_procedimiento": "Incorporar el pollo cocido a la salsa y calentar todo junto. Espolvorear con cilantro fresco picado antes de servir. Acompañar con arroz basmati cocido.",
-                "foto_procedimiento": "procedimiento2.jpg"
             }
         ]
     },
@@ -235,33 +225,18 @@
         "procedimientos": [
             {
                 "numero_procedimiento": 1,
-                "desc_procedimiento": "Picar la cebolla, los tomates, el jengibre y el ajo finamente.",
+                "desc_procedimiento": "Picar finamente la cebolla, los tomates, el jengibre y el ajo.",
                 "foto_procedimiento": "procedimiento1.jpg"
             },
             {
                 "numero_procedimiento": 2,
-                "desc_procedimiento": "En una sartén grande, saltear la cebolla, el jengibre y el ajo hasta que estén dorados.",
-                "foto_procedimiento": "procedimiento1.jpg"
+                "desc_procedimiento": "En una sartén grande, saltear la cebolla, el jengibre y el ajo hasta que estén dorados. Agregar los tomates picados y cocinar hasta que se deshagan.",
+                "foto_procedimiento": "procedimiento2.jpg"
             },
             {
                 "numero_procedimiento": 3,
-                "desc_procedimiento": "Agregar los tomates picados y cocinar hasta que se deshagan.",
-                "foto_procedimiento": "procedimiento1.jpg"
-            },
-            {
-                "numero_procedimiento": 4,
-                "desc_procedimiento": "Añadir el curry en polvo y cocinar por unos minutos.",
-                "foto_procedimiento": "procedimiento1.jpg"
-            },
-            {
-                "numero_procedimiento": 5,
-                "desc_procedimiento": "Incorporar los garbanzos cocidos y la leche de coco. Cocinar a fuego lento hasta que la salsa espese.",
-                "foto_procedimiento": "procedimiento1.jpg"
-            },
-            {
-                "numero_procedimiento": 6,
-                "desc_procedimiento": "Servir caliente, espolvoreado con cilantro fresco picado, acompañado de arroz basmati cocido.",
-                "foto_procedimiento": "procedimiento1.jpg"
+                "desc_procedimiento": "Añadir el curry en polvo y cocinar por unos minutos. Incorporar los garbanzos cocidos y la leche de coco. Cocinar a fuego lento hasta que la salsa espese. Servir caliente, espolvoreado con cilantro fresco picado, acompañado de arroz basmati cocido.",
+                "foto_procedimiento": "procedimiento3.jpg"
             }
         ]
     },
@@ -347,28 +322,13 @@
             },
             {
                 "numero_procedimiento": 2,
-                "desc_procedimiento": "En una olla grande, calentar el aceite de oliva y saltear la cebolla, el apio y las zanahorias hasta que estén tiernos.",
+                "desc_procedimiento": "En una olla grande, calentar el aceite de oliva y saltear la cebolla, el apio y las zanahorias hasta que estén tiernos. Agregar el ajo picado, el pimentón dulce y el comino molido. Cocinar por unos minutos hasta que el ajo esté fragante.",
                 "foto_procedimiento": "sopa_lentejas_proceso2.jpg"
             },
             {
                 "numero_procedimiento": 3,
-                "desc_procedimiento": "Agregar el ajo picado, el pimentón dulce y el comino molido. Cocinar por unos minutos hasta que el ajo esté fragante.",
+                "desc_procedimiento": "Añadir los tomates picados y cocinar hasta que se deshagan. Agregar las lentejas y el caldo de verduras. Dejar cocinar a fuego lento hasta que las lentejas estén tiernas, aproximadamente 30-40 minutos. Sazonar con sal y pimienta al gusto. Servir caliente, acompañado de pan crujiente.",
                 "foto_procedimiento": "sopa_lentejas_proceso3.jpg"
-            },
-            {
-                "numero_procedimiento": 4,
-                "desc_procedimiento": "Añadir los tomates picados y cocinar hasta que se deshagan.",
-                "foto_procedimiento": "sopa_lentejas_proceso4.jpg"
-            },
-            {
-                "numero_procedimiento": 5,
-                "desc_procedimiento": "Agregar las lentejas y el caldo de verduras. Dejar cocinar a fuego lento hasta que las lentejas estén tiernas, aproximadamente 30-40 minutos.",
-                "foto_procedimiento": "sopa_lentejas_proceso5.jpg"
-            },
-            {
-                "numero_procedimiento": 6,
-                "desc_procedimiento": "Sazonar con sal y pimienta al gusto. Servir caliente, acompañado de pan crujiente.",
-                "foto_procedimiento": "sopa_lentejas_proceso6.jpg"
             }
         ]
     },
@@ -424,33 +384,13 @@
         "procedimientos": [
             {
                 "numero_procedimiento": 1,
-                "desc_procedimiento": "Lavar y picar finamente las espinacas frescas y la cebolla.",
+                "desc_procedimiento": "Lavar y picar finamente las espinacas frescas y la cebolla. En una sartén grande, calentar el aceite de oliva y saltear la cebolla hasta que esté transparente. Agregar las espinacas picadas a la sartén y cocinar hasta que se marchiten.",
                 "foto_procedimiento": "tortilla_espinacas_queso_proceso1.jpg"
             },
             {
                 "numero_procedimiento": 2,
-                "desc_procedimiento": "En una sartén grande, calentar el aceite de oliva y saltear la cebolla hasta que esté transparente.",
+                "desc_procedimiento": "Batir los huevos en un tazón grande y añadir las espinacas cocidas, el queso rallado, la sal y la pimienta. Verter la mezcla de huevos en una sartén caliente y cocinar a fuego medio-bajo hasta que la tortilla esté dorada por ambos lados y el queso se haya derretido por dentro. Servir caliente, cortada en porciones, y disfrutar como plato principal o acompañamiento.",
                 "foto_procedimiento": "tortilla_espinacas_queso_proceso2.jpg"
-            },
-            {
-                "numero_procedimiento": 3,
-                "desc_procedimiento": "Agregar las espinacas picadas a la sartén y cocinar hasta que se marchiten.",
-                "foto_procedimiento": "tortilla_espinacas_queso_proceso3.jpg"
-            },
-            {
-                "numero_procedimiento": 4,
-                "desc_procedimiento": "Batir los huevos en un tazón grande y añadir las espinacas cocidas, el queso rallado, la sal y la pimienta.",
-                "foto_procedimiento": "tortilla_espinacas_queso_proceso4.jpg"
-            },
-            {
-                "numero_procedimiento": 5,
-                "desc_procedimiento": "Verter la mezcla de huevos en una sartén caliente y cocinar a fuego medio-bajo hasta que la tortilla esté dorada por ambos lados y el queso se haya derretido por dentro.",
-                "foto_procedimiento": "tortilla_espinacas_queso_proceso5.jpg"
-            },
-            {
-                "numero_procedimiento": 6,
-                "desc_procedimiento": "Servir caliente, cortada en porciones, y disfrutar como plato principal o acompañamiento.",
-                "foto_procedimiento": "tortilla_espinacas_queso_proceso6.jpg"
             }
         ]
     },
