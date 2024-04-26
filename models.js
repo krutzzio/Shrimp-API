@@ -258,7 +258,7 @@ async function iniDB() {
     await anadirReceta()
 }
 
-//iniDB();
+iniDB();
 
 //Exportem els models
 module.exports = {
