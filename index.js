@@ -17,7 +17,12 @@ if (!fs.existsSync(uploadDirectory)) {
 // permet llegir contingut json en posts
 app.use(express.json());
 
-app.use(cors({ origin: 'http://localhost:5173', credentials: true }));
+app.use(cors({
+  origin: function (origin, callback) {
+    // Permitir peticiones desde cualquier origen
+    callback(null, true);
+  }, credentials: true
+}));
 // cors necessari quan api/front son a servidors diferents
 // permet llegir les cookies
 app.use(cookieParser());
@@ -28,5 +33,5 @@ app.use('/api', routes);
 // iniciem servidor
 const PORT = 3000;
 app.listen(PORT, () => {
-    console.log(`Server is running on port ${PORT}`);
+  console.log(`Server is running on port ${PORT}`);
 });
