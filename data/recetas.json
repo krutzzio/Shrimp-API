@@ -56,32 +56,17 @@
         "procedimientos": [
             {
                 "numero_procedimiento": 1,
-                "desc_procedimiento": "Cocinar la pasta según las instrucciones del paquete. Escurrir y reservar.",
+                "desc_procedimiento": "Cocinar la pasta en agua hirviendo con sal siguiendo las instrucciones del paquete hasta que esté al dente. Mientras tanto, cortar la pechuga de pollo en trozos y dorarlos en una sartén con aceite a fuego medio-alto hasta que estén cocidos y dorados por fuera.",
                 "foto_procedimiento": "procedimiento1.jpg"
             },
             {
                 "numero_procedimiento": 2,
-                "desc_procedimiento": "Cortar la pechuga de pollo en trozos y cocinar en una sartén con un poco de aceite hasta que esté dorada por fuera y cocida por dentro.",
+                "desc_procedimiento": "En la misma sartén, reducir el fuego a medio y derretir la mantequilla. Agregar el ajo picado y saltearlo hasta que esté fragante. Luego, verter la crema de leche y agregar el queso parmesano rallado. Cocinar a fuego lento, revolviendo ocasionalmente, hasta que la salsa espese ligeramente.",
                 "foto_procedimiento": "procedimiento2.jpg"
             },
             {
                 "numero_procedimiento": 3,
-                "desc_procedimiento": "En la misma sartén, derretir la mantequilla y saltear el ajo picado hasta que esté fragante.",
-                "foto_procedimiento": "procedimiento3.jpg"
-            },
-            {
-                "numero_procedimiento": 4,
-                "desc_procedimiento": "Agregar la crema de leche y el queso parmesano rallado. Cocinar a fuego lento hasta que la salsa espese ligeramente.",
-                "foto_procedimiento": "procedimiento1.jpg"
-            },
-            {
-                "numero_procedimiento": 5,
-                "desc_procedimiento": "Incorporar la pasta cocida y el pollo a la salsa. Mezclar bien y calentar todo junto.",
-                "foto_procedimiento": "procedimiento2.jpg"
-            },
-            {
-                "numero_procedimiento": 6,
-                "desc_procedimiento": "Sazonar con sal y pimienta al gusto. Servir caliente y disfrutar.",
+                "desc_procedimiento": "Agregar la pasta cocida y escurrida junto con los trozos de pollo a la salsa en la sartén. Mezclar todo bien para que la pasta y el pollo estén cubiertos uniformemente con la salsa. Sazonar con sal y pimienta al gusto. Servir caliente y disfrutar.",
                 "foto_procedimiento": "procedimiento3.jpg"
             }
         ]
@@ -1343,7 +1328,7 @@
             {
                 "IngredienteId": 5,
                 "cantidad": 6,
-                "medida": "tomates" 
+                "medida": "tomates"
             },
             {
                 "IngredienteId": 3,
@@ -1353,27 +1338,27 @@
             {
                 "IngredienteId": 2,
                 "cantidad": 1,
-                "medida": "diente" 
+                "medida": "diente"
             },
             {
                 "IngredienteId": 1,
                 "cantidad": 2,
-                "medida": "cucharadas" 
+                "medida": "cucharadas"
             },
             {
                 "IngredienteId": 31,
                 "cantidad": 2,
-                "medida": "cucharadas" 
+                "medida": "cucharadas"
             },
             {
                 "IngredienteId": 22,
                 "cantidad": 1,
-                "medida": "rama" 
+                "medida": "rama"
             },
             {
                 "IngredienteId": 20,
                 "cantidad": 1,
-                "medida": "ramita" 
+                "medida": "ramita"
             },
             {
                 "IngredienteId": 4,
@@ -1383,17 +1368,17 @@
             {
                 "IngredienteId": 14,
                 "cantidad": 1,
-                "medida": "unidad" 
+                "medida": "unidad"
             },
             {
                 "IngredienteId": 142,
                 "cantidad": 1,
-                "medida": "rebanada" 
+                "medida": "rebanada"
             },
             {
                 "IngredienteId": 147,
                 "cantidad": 1,
-                "medida": "taza" 
+                "medida": "taza"
             },
             {
                 "IngredienteId": 29,
@@ -1445,17 +1430,17 @@
             {
                 "IngredienteId": 96,
                 "cantidad": 1,
-                "medida": "pulpo" 
+                "medida": "pulpo"
             },
             {
                 "IngredienteId": 7,
                 "cantidad": 4,
-                "medida": "unidades pequeñas" 
+                "medida": "unidades pequeñas"
             },
             {
                 "IngredienteId": 1,
                 "cantidad": 4,
-                "medida": "cucharadas" 
+                "medida": "cucharadas"
             },
             {
                 "IngredienteId": 148,
@@ -1465,7 +1450,7 @@
             {
                 "IngredienteId": 29,
                 "cantidad": 1,
-                "medida": "pizca" 
+                "medida": "pizca"
             }
         ],
         "procedimientos": [
@@ -1527,27 +1512,27 @@
             {
                 "IngredienteId": 149,
                 "cantidad": 1,
-                "medida": "lechón entero" 
+                "medida": "lechón entero"
             },
             {
                 "IngredienteId": 1,
                 "cantidad": 4,
-                "medida": "cucharadas" 
+                "medida": "cucharadas"
             },
             {
                 "IngredienteId": 2,
                 "cantidad": 4,
-                "medida": "dientes" 
+                "medida": "dientes"
             },
             {
                 "IngredienteId": 20,
                 "cantidad": 2,
-                "medida": "ramitas" 
+                "medida": "ramitas"
             },
             {
                 "IngredienteId": 29,
                 "cantidad": 1,
-                "medida": "ramita" 
+                "medida": "ramita"
             }
         ],
         "procedimientos": [
