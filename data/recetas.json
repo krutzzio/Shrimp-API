@@ -1315,8 +1315,8 @@
     {
         "nombre_receta": "Cochinillo Asado",
         "desc_receta": "Una deliciosa especialidad de la cocina española, el cochinillo asado es un plato exquisito y tierno que se prepara tradicionalmente asando un lechón entero.",
-        "persones": "6-8",
-        "tiempo": "3-4 horas",
+        "persones": "8",
+        "tiempo": "4 horas",
         "dieta": 0,
         "dificultad": "Alta",
         "tipo": "Principal",
