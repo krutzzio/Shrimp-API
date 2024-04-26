@@ -349,7 +349,7 @@
                 "medida": "cucharadita"
             },
             {
-                "IngredienteId": 27,
+                "IngredienteId": 29,
                 "cantidad": 0.5,
                 "medida": "cucharadita"
             }
@@ -702,32 +702,32 @@
         ],
         "ingredientes": [
             {
-                "IngredienteId": 175,
+                "IngredienteId": 174,
                 "cantidad": 1,
                 "medida": "unidad"
             },
             {
-                "IngredienteId": 176,
+                "IngredienteId": 175,
                 "cantidad": 800,
                 "medida": "gramos"
             },
             {
-                "IngredienteId": 177,
+                "IngredienteId": 176,
                 "cantidad": 2,
                 "medida": "cucharadas"
             },
             {
-                "IngredienteId": 178,
+                "IngredienteId": 177,
                 "cantidad": 1,
                 "medida": "taza"
             },
             {
-                "IngredienteId": 179,
+                "IngredienteId": 178,
                 "cantidad": 0.5,
                 "medida": "taza"
             },
             {
-                "IngredienteId": 180,
+                "IngredienteId": 179,
                 "cantidad": 0.25,
                 "medida": "taza"
             },
@@ -757,7 +757,7 @@
                 "medida": "cucharadita"
             },
             {
-                "IngredienteId": 181,
+                "IngredienteId": 180,
                 "cantidad": 12,
                 "medida": "unidades"
             },
