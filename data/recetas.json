@@ -1553,48 +1553,18 @@
         "procedimientos": [
             {
                 "numero_procedimiento": 1,
-                "desc_procedimiento": "Precalentar el horno a 180°C (350°F).",
-                "foto_procedimiento": "cochinillo_paso1.jpg"
+                "desc_procedimiento": "Prepara el lechón y condiméntalo: Para comenzar, precalienta el horno a 180°C (350°F) para garantizar una cocción uniforme. Lava minuciosamente el lechón bajo agua fría y asegúrate de secarlo completamente con papel de cocina para eliminar cualquier exceso de humedad que pueda interferir con la textura final. Luego, con un cuchillo afilado, realiza cortes poco profundos en la piel del lechón para permitir que los sabores y condimentos penetren profundamente. Prepara una mezcla aromática de ajo, sal y hierbas frescas, como romero, tomillo y laurel, en un mortero, asegurándote de obtener una pasta suave y fragante. Frota generosamente esta mezcla sobre la superficie del lechón, asegurándote de que los condimentos se introduzcan en los cortes realizados anteriormente. Finalmente, unta la piel con aceite de oliva para obtener un dorado perfecto durante la cocción.",
+                "foto_procedimiento":""
             },
             {
                 "numero_procedimiento": 2,
-                "desc_procedimiento": "Lavar bien el lechón bajo agua fría y secarlo completamente con papel de cocina.",
-                "foto_procedimiento": "cochinillo_paso2.jpg"
+                "desc_procedimiento": "Hornea el lechón a la perfección: Coloca el lechón condimentado en una bandeja para hornear lo suficientemente grande como para contenerlo cómodamente. Introduce la bandeja en el horno precalentado y hornea el lechón durante aproximadamente 3-4 horas, dependiendo del tamaño y peso del animal. Durante el proceso de cocción, asegúrate de rociar periódicamente el lechón con sus propios jugos para mantenerlo jugoso y para garantizar que la piel se vuelva crujiente y dorada. Este paso es crucial para obtener una textura y sabor perfectos. Mientras el lechón se cocina lentamente, el aroma irresistible llenará tu cocina, aumentando la expectativa de todos los comensales.",
+                "foto_procedimiento":""
             },
             {
                 "numero_procedimiento": 3,
-                "desc_procedimiento": "Hacer cortes poco profundos en la piel del lechón con un cuchillo afilado.",
-                "foto_procedimiento": "cochinillo_paso3.jpg"
-            },
-            {
-                "numero_procedimiento": 4,
-                "desc_procedimiento": "En un mortero, machacar los dientes de ajo con sal y las hierbas frescas hasta obtener una pasta.",
-                "foto_procedimiento": "cochinillo_paso4.jpg"
-            },
-            {
-                "numero_procedimiento": 5,
-                "desc_procedimiento": "Frotar la piel del lechón con la mezcla de ajo y hierbas, asegurándose de que penetre en los cortes.",
-                "foto_procedimiento": "cochinillo_paso5.jpg"
-            },
-            {
-                "numero_procedimiento": 6,
-                "desc_procedimiento": "Colocar el lechón en una bandeja para hornear y untar la piel con aceite de oliva.",
-                "foto_procedimiento": "cochinillo_paso6.jpg"
-            },
-            {
-                "numero_procedimiento": 7,
-                "desc_procedimiento": "Hornear el lechón durante 3-4 horas, rociándolo ocasionalmente con sus propios jugos, hasta que la piel esté crujiente y la carne tierna y jugosa.",
-                "foto_procedimiento": "cochinillo_paso7.jpg"
-            },
-            {
-                "numero_procedimiento": 8,
-                "desc_procedimiento": "Retirar el lechón del horno y dejar reposar unos minutos antes de cortarlo en porciones.",
-                "foto_procedimiento": "cochinillo_paso8.jpg"
-            },
-            {
-                "numero_procedimiento": 9,
-                "desc_procedimiento": "Servir caliente acompañado de guarniciones como papas asadas y ensalada verde.",
-                "foto_procedimiento": "cochinillo_paso9.jpg"
+                "desc_procedimiento": "Descansa, corta y sirve con estilo: Una vez que el lechón esté perfectamente cocido y la piel haya adquirido un color dorado tentador, retíralo del horno y déjalo reposar durante unos minutos para permitir que los jugos se redistribuyan uniformemente, lo que garantizará una carne suculenta y tierna en cada bocado. Después de este breve período de reposo, procede a cortar el lechón en porciones generosas, mostrando con orgullo la piel crujiente y dorada que has logrado con tanto cuidado. Acompaña esta obra maestra culinaria con guarniciones clásicas como papas asadas al romero y una fresca ensalada verde aderezada con vinagreta balsámica. Sirve este festín con estilo y disfruta de los elogios de tus invitados mientras deleitan sus paladares con cada bocado.",
+                "foto_procedimiento":""
             }
         ]
     }
