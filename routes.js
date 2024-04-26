@@ -209,15 +209,17 @@ router.post("/registerUser", upload.single("photo"), async (req, res) => {
 
 
 /* --------------------------- Seguir restaurante --------------------------- */
-router.post("/home/:restId/seguirRestaurante", checkToken, async (req, res) => {
+router.post("/followRest/:userId/:restId", async (req, res) => {
   try {
-    const { userId } = req.body; // QUE ES MEJOR TENER EL USAURIO EN REQ.BODY O EL RESTAURANTE
-    const restauranteId = req.params.restId;
-
+    const { userId, restId } = req.params; // QUE ES MEJOR TENER EL USAURIO EN REQ.BODY O EL RESTAURANTE
+  
+console.log(userId)
+console.log(restId)
     // Verifica si el usuario y el restaurante existen
     const usuario = await Usuario.findByPk(userId);
-    const restaurante = await Restaurante.findByPk(restauranteId);
-
+    const restaurante = await Restaurante.findByPk(restId);
+console.log(restaurante)
+console.log(usuario)
     if (!usuario || !restaurante) {
       return res
         .status(404)
@@ -227,7 +229,9 @@ router.post("/home/:restId/seguirRestaurante", checkToken, async (req, res) => {
     // Verifica si le sigue o no
     const existeRelacion = await usuario.hasRestaurante(restaurante);
     if (existeRelacion) {
-      return res.status(409).json({ error: "El usuario ya lo sigue " });
+
+      await usuario.removeRestaurante(restaurante)
+      return res.status(409).json({ error: "Eliminacion " });
     }
 
     // Crea una nueva entrada en la tabla intermedia
@@ -260,9 +264,10 @@ router.post("/registerRest", upload.single("photo"), async (req, res) => {
       cp,
       telefono,
       descripcio,
-      tipos_cocina
+      tipos_cocina,
+      dieta
     } = req.body;
-
+console.log(req.body)
     const baseUrl = 'http://localhost:3000/api/uploads/'
     const foto_restaurante = req.file ? baseUrl + req.file.filename : null; // Obtiene la ruta del archivo subido
 
@@ -304,6 +309,7 @@ router.post("/registerRest", upload.single("photo"), async (req, res) => {
       direccion,
       cp,
       foto_restaurante,
+      dieta
     });
 
     await restaurant.addTipoCocina(cocinasId)
@@ -388,6 +394,43 @@ router.put("/home/:restId/recipes/:id", checkToken, async (req, res) => {
 }); // Actualitza
 
 router.delete("/recipes/:id", checkToken, async (req, res) => await deleteItem(req, res, Receta)); // Elimina un recipes
+
+
+
+
+
+router.post("/followRecipe/:userId/:recipeId", async (req, res) => {
+  try {
+    const { userId, recipeId } = req.params;
+
+   
+    const usuario = await Usuario.findByPk(userId);
+    const receta = await Receta.findByPk(recipeId);
+
+    if (!usuario || !receta) {
+      return res
+        .status(404)
+        .json({ error: "Usuario o receta no encontrados" });
+    }
+
+    
+    const sigueReceta = await usuario.hasReceta(receta);
+    if (sigueReceta) {
+      
+      await usuario.removeReceta(receta);
+      return res.status(200).json({ message: "Relación de seguimiento eliminada" });
+    }
+
+    
+    await usuario.addReceta(receta);
+
+    res.status(200).json({ message: "Usuario sigue la receta" });
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+});
+
+module.exports = router;
 
 
 /* ----------------------------- CREAR RECETA ---------------------------- */
