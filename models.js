@@ -164,7 +164,7 @@ const Procedimiento = sequelize.define("Procedimiento", {
         allowNull: false,
     },
     desc_procedimiento: {
-        type: DataTypes.STRING,
+        type: DataTypes.STRING(1000),
         unique: false,
     },
     foto_procedimiento: {
