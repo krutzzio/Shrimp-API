@@ -351,7 +351,6 @@ router.post("/loginRest", async (req, res) => {
 /*                                  RECETAS                                 */
 /* -------------------------------------------------------------------------- */
 
-
 router.get("/home/recetas", checkToken, async (req, res) => {
   try {
     const user = await Usuario.findByPk(req.userId);

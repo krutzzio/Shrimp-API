@@ -56,32 +56,17 @@
         "procedimientos": [
             {
                 "numero_procedimiento": 1,
-                "desc_procedimiento": "Cocinar la pasta según las instrucciones del paquete. Escurrir y reservar.",
+                "desc_procedimiento": "Cocinar la pasta en agua hirviendo con sal siguiendo las instrucciones del paquete hasta que esté al dente. Mientras tanto, cortar la pechuga de pollo en trozos y dorarlos en una sartén con aceite a fuego medio-alto hasta que estén cocidos y dorados por fuera.",
                 "foto_procedimiento": "procedimiento1.jpg"
             },
             {
                 "numero_procedimiento": 2,
-                "desc_procedimiento": "Cortar la pechuga de pollo en trozos y cocinar en una sartén con un poco de aceite hasta que esté dorada por fuera y cocida por dentro.",
+                "desc_procedimiento": "En la misma sartén, reducir el fuego a medio y derretir la mantequilla. Agregar el ajo picado y saltearlo hasta que esté fragante. Luego, verter la crema de leche y agregar el queso parmesano rallado. Cocinar a fuego lento, revolviendo ocasionalmente, hasta que la salsa espese ligeramente.",
                 "foto_procedimiento": "procedimiento2.jpg"
             },
             {
                 "numero_procedimiento": 3,
-                "desc_procedimiento": "En la misma sartén, derretir la mantequilla y saltear el ajo picado hasta que esté fragante.",
-                "foto_procedimiento": "procedimiento3.jpg"
-            },
-            {
-                "numero_procedimiento": 4,
-                "desc_procedimiento": "Agregar la crema de leche y el queso parmesano rallado. Cocinar a fuego lento hasta que la salsa espese ligeramente.",
-                "foto_procedimiento": "procedimiento1.jpg"
-            },
-            {
-                "numero_procedimiento": 5,
-                "desc_procedimiento": "Incorporar la pasta cocida y el pollo a la salsa. Mezclar bien y calentar todo junto.",
-                "foto_procedimiento": "procedimiento2.jpg"
-            },
-            {
-                "numero_procedimiento": 6,
-                "desc_procedimiento": "Sazonar con sal y pimienta al gusto. Servir caliente y disfrutar.",
+                "desc_procedimiento": "Agregar la pasta cocida y escurrida junto con los trozos de pollo a la salsa en la sartén. Mezclar todo bien para que la pasta y el pollo estén cubiertos uniformemente con la salsa. Sazonar con sal y pimienta al gusto. Servir caliente y disfrutar.",
                 "foto_procedimiento": "procedimiento3.jpg"
             }
         ]
@@ -173,18 +158,8 @@
             },
             {
                 "numero_procedimiento": 3,
-                "desc_procedimiento": "En la misma sartén, agregar un poco más de aceite si es necesario y saltear el tomate triturado hasta que reduzca y espese ligeramente.",
+                "desc_procedimiento": "En la misma sartén, agregar un poco más de aceite si es necesario y saltear el tomate triturado hasta que reduzca y espese ligeramente. Añadir la crema de coco a la salsa de tomate y mezclar bien. Cocinar a fuego lento durante unos minutos.",
                 "foto_procedimiento": "procedimiento3.jpg"
-            },
-            {
-                "numero_procedimiento": 4,
-                "desc_procedimiento": "Añadir la crema de coco a la salsa de tomate y mezclar bien. Cocinar a fuego lento durante unos minutos.",
-                "foto_procedimiento": "procedimiento1.jpg"
-            },
-            {
-                "numero_procedimiento": 5,
-                "desc_procedimiento": "Incorporar el pollo cocido a la salsa y calentar todo junto. Espolvorear con cilantro fresco picado antes de servir. Acompañar con arroz basmati cocido.",
-                "foto_procedimiento": "procedimiento2.jpg"
             }
         ]
     },
@@ -250,33 +225,18 @@
         "procedimientos": [
             {
                 "numero_procedimiento": 1,
-                "desc_procedimiento": "Picar la cebolla, los tomates, el jengibre y el ajo finamente.",
+                "desc_procedimiento": "Picar finamente la cebolla, los tomates, el jengibre y el ajo.",
                 "foto_procedimiento": "procedimiento1.jpg"
             },
             {
                 "numero_procedimiento": 2,
-                "desc_procedimiento": "En una sartén grande, saltear la cebolla, el jengibre y el ajo hasta que estén dorados.",
-                "foto_procedimiento": "procedimiento1.jpg"
+                "desc_procedimiento": "En una sartén grande, saltear la cebolla, el jengibre y el ajo hasta que estén dorados. Agregar los tomates picados y cocinar hasta que se deshagan.",
+                "foto_procedimiento": "procedimiento2.jpg"
             },
             {
                 "numero_procedimiento": 3,
-                "desc_procedimiento": "Agregar los tomates picados y cocinar hasta que se deshagan.",
-                "foto_procedimiento": "procedimiento1.jpg"
-            },
-            {
-                "numero_procedimiento": 4,
-                "desc_procedimiento": "Añadir el curry en polvo y cocinar por unos minutos.",
-                "foto_procedimiento": "procedimiento1.jpg"
-            },
-            {
-                "numero_procedimiento": 5,
-                "desc_procedimiento": "Incorporar los garbanzos cocidos y la leche de coco. Cocinar a fuego lento hasta que la salsa espese.",
-                "foto_procedimiento": "procedimiento1.jpg"
-            },
-            {
-                "numero_procedimiento": 6,
-                "desc_procedimiento": "Servir caliente, espolvoreado con cilantro fresco picado, acompañado de arroz basmati cocido.",
-                "foto_procedimiento": "procedimiento1.jpg"
+                "desc_procedimiento": "Añadir el curry en polvo y cocinar por unos minutos. Incorporar los garbanzos cocidos y la leche de coco. Cocinar a fuego lento hasta que la salsa espese. Servir caliente, espolvoreado con cilantro fresco picado, acompañado de arroz basmati cocido.",
+                "foto_procedimiento": "procedimiento3.jpg"
             }
         ]
     },
@@ -362,28 +322,13 @@
             },
             {
                 "numero_procedimiento": 2,
-                "desc_procedimiento": "En una olla grande, calentar el aceite de oliva y saltear la cebolla, el apio y las zanahorias hasta que estén tiernos.",
+                "desc_procedimiento": "En una olla grande, calentar el aceite de oliva y saltear la cebolla, el apio y las zanahorias hasta que estén tiernos. Agregar el ajo picado, el pimentón dulce y el comino molido. Cocinar por unos minutos hasta que el ajo esté fragante.",
                 "foto_procedimiento": "sopa_lentejas_proceso2.jpg"
             },
             {
                 "numero_procedimiento": 3,
-                "desc_procedimiento": "Agregar el ajo picado, el pimentón dulce y el comino molido. Cocinar por unos minutos hasta que el ajo esté fragante.",
+                "desc_procedimiento": "Añadir los tomates picados y cocinar hasta que se deshagan. Agregar las lentejas y el caldo de verduras. Dejar cocinar a fuego lento hasta que las lentejas estén tiernas, aproximadamente 30-40 minutos. Sazonar con sal y pimienta al gusto. Servir caliente, acompañado de pan crujiente.",
                 "foto_procedimiento": "sopa_lentejas_proceso3.jpg"
-            },
-            {
-                "numero_procedimiento": 4,
-                "desc_procedimiento": "Añadir los tomates picados y cocinar hasta que se deshagan.",
-                "foto_procedimiento": "sopa_lentejas_proceso4.jpg"
-            },
-            {
-                "numero_procedimiento": 5,
-                "desc_procedimiento": "Agregar las lentejas y el caldo de verduras. Dejar cocinar a fuego lento hasta que las lentejas estén tiernas, aproximadamente 30-40 minutos.",
-                "foto_procedimiento": "sopa_lentejas_proceso5.jpg"
-            },
-            {
-                "numero_procedimiento": 6,
-                "desc_procedimiento": "Sazonar con sal y pimienta al gusto. Servir caliente, acompañado de pan crujiente.",
-                "foto_procedimiento": "sopa_lentejas_proceso6.jpg"
             }
         ]
     },
@@ -439,33 +384,13 @@
         "procedimientos": [
             {
                 "numero_procedimiento": 1,
-                "desc_procedimiento": "Lavar y picar finamente las espinacas frescas y la cebolla.",
+                "desc_procedimiento": "Lavar y picar finamente las espinacas frescas y la cebolla. En una sartén grande, calentar el aceite de oliva y saltear la cebolla hasta que esté transparente. Agregar las espinacas picadas a la sartén y cocinar hasta que se marchiten.",
                 "foto_procedimiento": "tortilla_espinacas_queso_proceso1.jpg"
             },
             {
                 "numero_procedimiento": 2,
-                "desc_procedimiento": "En una sartén grande, calentar el aceite de oliva y saltear la cebolla hasta que esté transparente.",
+                "desc_procedimiento": "Batir los huevos en un tazón grande y añadir las espinacas cocidas, el queso rallado, la sal y la pimienta. Verter la mezcla de huevos en una sartén caliente y cocinar a fuego medio-bajo hasta que la tortilla esté dorada por ambos lados y el queso se haya derretido por dentro. Servir caliente, cortada en porciones, y disfrutar como plato principal o acompañamiento.",
                 "foto_procedimiento": "tortilla_espinacas_queso_proceso2.jpg"
-            },
-            {
-                "numero_procedimiento": 3,
-                "desc_procedimiento": "Agregar las espinacas picadas a la sartén y cocinar hasta que se marchiten.",
-                "foto_procedimiento": "tortilla_espinacas_queso_proceso3.jpg"
-            },
-            {
-                "numero_procedimiento": 4,
-                "desc_procedimiento": "Batir los huevos en un tazón grande y añadir las espinacas cocidas, el queso rallado, la sal y la pimienta.",
-                "foto_procedimiento": "tortilla_espinacas_queso_proceso4.jpg"
-            },
-            {
-                "numero_procedimiento": 5,
-                "desc_procedimiento": "Verter la mezcla de huevos en una sartén caliente y cocinar a fuego medio-bajo hasta que la tortilla esté dorada por ambos lados y el queso se haya derretido por dentro.",
-                "foto_procedimiento": "tortilla_espinacas_queso_proceso5.jpg"
-            },
-            {
-                "numero_procedimiento": 6,
-                "desc_procedimiento": "Servir caliente, cortada en porciones, y disfrutar como plato principal o acompañamiento.",
-                "foto_procedimiento": "tortilla_espinacas_queso_proceso6.jpg"
             }
         ]
     },
@@ -1343,7 +1268,7 @@
             {
                 "IngredienteId": 5,
                 "cantidad": 6,
-                "medida": "tomates" 
+                "medida": "tomates"
             },
             {
                 "IngredienteId": 3,
@@ -1353,27 +1278,27 @@
             {
                 "IngredienteId": 2,
                 "cantidad": 1,
-                "medida": "diente" 
+                "medida": "diente"
             },
             {
                 "IngredienteId": 1,
                 "cantidad": 2,
-                "medida": "cucharadas" 
+                "medida": "cucharadas"
             },
             {
                 "IngredienteId": 31,
                 "cantidad": 2,
-                "medida": "cucharadas" 
+                "medida": "cucharadas"
             },
             {
                 "IngredienteId": 22,
                 "cantidad": 1,
-                "medida": "rama" 
+                "medida": "rama"
             },
             {
                 "IngredienteId": 20,
                 "cantidad": 1,
-                "medida": "ramita" 
+                "medida": "ramita"
             },
             {
                 "IngredienteId": 4,
@@ -1383,17 +1308,17 @@
             {
                 "IngredienteId": 14,
                 "cantidad": 1,
-                "medida": "unidad" 
+                "medida": "unidad"
             },
             {
                 "IngredienteId": 142,
                 "cantidad": 1,
-                "medida": "rebanada" 
+                "medida": "rebanada"
             },
             {
                 "IngredienteId": 147,
                 "cantidad": 1,
-                "medida": "taza" 
+                "medida": "taza"
             },
             {
                 "IngredienteId": 29,
@@ -1445,17 +1370,17 @@
             {
                 "IngredienteId": 96,
                 "cantidad": 1,
-                "medida": "pulpo" 
+                "medida": "pulpo"
             },
             {
                 "IngredienteId": 7,
                 "cantidad": 4,
-                "medida": "unidades pequeñas" 
+                "medida": "unidades pequeñas"
             },
             {
                 "IngredienteId": 1,
                 "cantidad": 4,
-                "medida": "cucharadas" 
+                "medida": "cucharadas"
             },
             {
                 "IngredienteId": 148,
@@ -1465,7 +1390,7 @@
             {
                 "IngredienteId": 29,
                 "cantidad": 1,
-                "medida": "pizca" 
+                "medida": "pizca"
             }
         ],
         "procedimientos": [
@@ -1527,27 +1452,27 @@
             {
                 "IngredienteId": 149,
                 "cantidad": 1,
-                "medida": "lechón entero" 
+                "medida": "lechón entero"
             },
             {
                 "IngredienteId": 1,
                 "cantidad": 4,
-                "medida": "cucharadas" 
+                "medida": "cucharadas"
             },
             {
                 "IngredienteId": 2,
                 "cantidad": 4,
-                "medida": "dientes" 
+                "medida": "dientes"
             },
             {
                 "IngredienteId": 20,
                 "cantidad": 2,
-                "medida": "ramitas" 
+                "medida": "ramitas"
             },
             {
                 "IngredienteId": 29,
                 "cantidad": 1,
-                "medida": "ramita" 
+                "medida": "ramita"
             }
         ],
         "procedimientos": [
