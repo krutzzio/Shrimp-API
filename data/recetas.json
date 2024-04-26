@@ -1280,45 +1280,25 @@
         ],
         "procedimientos": [
             {
-                "numero_procedimiento": 1,
-                "desc_procedimiento": "Lavar bien el pulpo bajo agua fría para quitar cualquier residuo.",
-                "foto_procedimiento": "pulpo_gallega_paso1.jpg"
-            },
-            {
-                "numero_procedimiento": 2,
-                "desc_procedimiento": "En una olla grande, llevar agua a ebullición. Sumergir el pulpo en el agua hirviendo y cocinar durante aproximadamente 40-50 minutos, hasta que esté tierno. El tiempo de cocción puede variar según el tamaño del pulpo.",
-                "foto_procedimiento": "pulpo_gallega_paso2.jpg"
-            },
-            {
-                "numero_procedimiento": 3,
-                "desc_procedimiento": "Mientras se cocina el pulpo, pelar las papas y cortarlas en rodajas gruesas.",
-                "foto_procedimiento": "pulpo_gallega_papas_paso3.jpg"
-            },
-            {
-                "numero_procedimiento": 4,
-                "desc_procedimiento": "Cocinar las papas en agua con sal hasta que estén tiernas pero firmes.",
-                "foto_procedimiento": "pulpo_gallega_papas_paso4.jpg"
-            },
-            {
-                "numero_procedimiento": 5,
-                "desc_procedimiento": "Una vez cocido, retirar el pulpo del agua y dejar enfriar unos minutos.",
-                "foto_procedimiento": "pulpo_gallega_paso3.jpg"
-            },
-            {
-                "numero_procedimiento": 6,
-                "desc_procedimiento": "Cortar el pulpo en rodajas de aproximadamente 1 centímetro de grosor y disponerlas en un plato junto con las papas.",
-                "foto_procedimiento": "pulpo_gallega_paso4.jpg"
-            },
-            {
-                "numero_procedimiento": 7,
-                "desc_procedimiento": "Rociar el pulpo y las papas con aceite de oliva y espolvorear con pimentón dulce y sal gruesa al gusto.",
-                "foto_procedimiento": "pulpo_gallega_paso5.jpg"
-            },
-            {
-                "numero_procedimiento": 8,
-                "desc_procedimiento": "Servir caliente y acompañar con pan crusty.",
-                "foto_procedimiento": "pulpo_gallega_paso6.jpg"
+                "procedimientos_resumidos": [
+                    {
+                        "numero_procedimiento": 1,
+                        "desc_procedimiento": "Preparar el pulpo: Comienza lavando bien el pulpo bajo agua fría para quitar cualquier residuo. Este paso es fundamental para asegurar la limpieza y frescura del pulpo antes de la cocción.",
+                        "foto_procedimiento":""
+                    },
+                    {
+                        "numero_procedimiento": 2,
+                        "desc_procedimiento": "Cocinar el pulpo y las papas: En una olla grande, lleva agua a ebullición y sumerge el pulpo en el agua hirviendo. Cocina durante 40-50 minutos hasta que el pulpo esté tierno. Mientras tanto, pela las papas, córtalas en rodajas y cocínalas en agua con sal hasta que estén tiernas pero firmes.",
+                        "foto_procedimiento":""
+                    },
+                    {
+                        "numero_procedimiento": 3,
+                        "desc_procedimiento": "Servir y disfrutar: Una vez cocido, retira el pulpo del agua y déjalo enfriar unos minutos. Luego, córtalo en rodajas y disponlo en un plato junto con las papas. Rocía el pulpo y las papas con aceite de oliva, espolvorea con pimentón dulce y sal al gusto, y sirve caliente acompañado de pan crusty para una experiencia culinaria gallega auténtica y deliciosa.",
+                        "foto_procedimiento":""
+                    }
+                ]
             }
+            
         ]
     },
     {
