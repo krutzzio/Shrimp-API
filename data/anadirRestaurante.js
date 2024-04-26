@@ -11,7 +11,7 @@ async function anadirRestaurante() {
             dieta: 0,
             direccion: "calle test",
             numero: "42",
-            cp: "12345",
+            cp: "08032",
             foto_restaurante: 'restaurante1.jpg',
             tipos_cocina: [1, 2]
         },
@@ -24,7 +24,7 @@ async function anadirRestaurante() {
             dieta: 0,
             direccion: "calle test",
             numero: "42",
-            cp: "12345",
+            cp: "08032",
             foto_restaurante: 'restaurante2.jpg',
             tipos_cocina: [9, 7]
         },
@@ -37,7 +37,7 @@ async function anadirRestaurante() {
             dieta: 0,
             direccion: "calle test",
             numero: "42",
-            cp: "12345",
+            cp: "08032",
             foto_restaurante: 'restaurante3.jpg',
             tipos_cocina: [2, 6]
         },

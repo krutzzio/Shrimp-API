@@ -1,114 +1,114 @@
 [
     {
         "nombre_grupo": "Crustaceos",
-        "dieta": "otro"
+        "dieta": "0"
     },
     {
         "nombre_grupo": "Huevos",
-        "dieta": "vegetal"
+        "dieta": "1"
     },
     {
         "nombre_grupo": "Pescado",
-        "dieta": "otro"
+        "dieta": "0"
     },
     {
         "nombre_grupo": "Cacahuetes",
-        "dieta": "vegano"
+        "dieta": "2"
     },
     {
         "nombre_grupo": "Soja",
-        "dieta": "vegano"
+        "dieta": "2"
     },
     {
         "nombre_grupo": "Lacteos",
-        "dieta": "vegetal"
+        "dieta": "1"
     },
     {
         "nombre_grupo": "Frutos secos",
-        "dieta": "vegano"
+        "dieta": "2"
     },
     {
         "nombre_grupo": "Apios",
-        "dieta": "vegano"
+        "dieta": "2"
     },
     {
         "nombre_grupo": "Mostazas",
-        "dieta": "vegano"
+        "dieta": "2"
     },
     {
         "nombre_grupo": "Sesamos",
-        "dieta": "vegano"
+        "dieta": "2"
     },
     {
         "nombre_grupo": "Dioxido de azufre y sultifos",
-        "dieta": "otro"
+        "dieta": "0"
     },
     {
         "nombre_grupo": "Altramuces",
-        "dieta": "vegano"
+        "dieta": "2"
     },
     {
         "nombre_grupo": "Moluscos",
-        "dieta": "otro"
+        "dieta": "0"
     },
     {
         "nombre_grupo": "Carne, pollo",
-        "dieta": "otro"
+        "dieta": "0"
     },
     {
         "nombre_grupo": "ninguno",
-        "dieta": "otro"
+        "dieta": "0"
     },
     {
         "nombre_grupo": "Vegetales",
-        "dieta": "vegano"
+        "dieta": "2"
     },
     {
         "nombre_grupo": "Frutas",
-        "dieta": "vegano"
+        "dieta": "2"
     },
     {
         "nombre_grupo": "Legumbres",
-        "dieta": "vegano"
+        "dieta": "2"
     },
     {
         "nombre_grupo": "Cereales",
-        "dieta": "vegano"
+        "dieta": "2"
     },
     {
         "nombre_grupo": "Grasas",
-        "dieta": "otro"
+        "dieta": "0"
     },
     {
         "nombre_grupo": "Condimentos",
-        "dieta": "vegano"
+        "dieta": "2"
     },
     {
         "nombre_grupo": "Especies",
-        "dieta": "vegano"
+        "dieta": "2"
     },
     {
         "nombre_grupo": "Salsas",
-        "dieta": "vegano"
+        "dieta": "2"
     },
     {
         "nombre_grupo": "Aceites",
-        "dieta": "vegano"
+        "dieta": "2"
     },
     {
         "nombre_grupo": "Mieles",
-        "dieta": "vegetal"
+        "dieta": "1"
     },
     {
         "nombre_grupo": "Vinos",
-        "dieta": "vegano"
+        "dieta": "2"
     },
     {
         "nombre_grupo": "Vinagres",
-        "dieta": "vegano"
+        "dieta": "2"
     },
     {
         "nombre_grupo": "Azúcar",
-        "dieta": "vegano"
+        "dieta": "2"
     }
 ]

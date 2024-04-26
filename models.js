@@ -3,7 +3,7 @@ const { Sequelize, DataTypes } = require("sequelize"); // Importa la llibreria S
 
 const bcrypt = require("bcrypt"); // Importa la llibreria bcrypt per a encriptar contrasenyes
 
-const sequelize = new Sequelize("gamba", "root", "admin123", {
+const sequelize = new Sequelize("gamba", "root", "", {
     host: "localhost",
     //host: '192.168.1.133', //IP de la base de dades
     port: 3306,
@@ -30,7 +30,7 @@ const Usuario = sequelize.define("Usuario", {
         allowNull: false,
     },
     dieta: {
-        type: DataTypes.STRING,
+        type: DataTypes.INTEGER,
         allowNull: false,
     },
     foto_perfil: {
@@ -115,6 +115,10 @@ const Receta = sequelize.define("Receta", {
         type: DataTypes.STRING,
         allowNull: true,
     },
+    dieta: {
+        type: DataTypes.INTEGER,
+        allowNull: false,
+    }
 });
 
 // Model per a la taula Receta
@@ -258,7 +262,7 @@ async function iniDB() {
     await anadirReceta()
 }
 
-iniDB();
+//iniDB();
 
 //Exportem els models
 module.exports = {

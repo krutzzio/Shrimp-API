@@ -355,21 +355,52 @@ router.get("/home/recetas", checkToken, async (req, res) => {
   try {
     const user = await Usuario.findByPk(req.userId);
     const tipos_cocinas_user = await user.getTipoCocinas();
+    let alergias = await user.getGrupoAlimentos();
+    alergias = alergias.map(alergia => alergia.id)
+
+    //Obtener recetas Recomendadas
     const TipoCocinaId = tipos_cocinas_user.map(tipo => tipo.id)
-    const recetasSugeridas = await Receta.findAll({ where: { TipoCocinaId } })
-    const recetas = await Promise.all(recetasSugeridas.map(async receta => {
+    let recetasSugeridas
+    if (user.dieta === 0) {
+      recetasSugeridas = await Receta.findAll({ where: { TipoCocinaId } })
+    } else if (user.dieta === 1) {
+      recetasSugeridas = await Receta.findAll({ where: { TipoCocinaId, dieta: [1, 2] } })
+    } else {
+      recetasSugeridas = await Receta.findAll({ where: { TipoCocinaId, dieta: 2 } })
+    }
+    let recetasRecomendadas = await Promise.all(recetasSugeridas.map(async receta => {
+      const ingredientesReceta = await receta.getIngredientes()
+      const grupoAlimento = await Promise.all(ingredientesReceta.map(async ingrediente => ingrediente.getGrupoAlimento()))
+      if (grupoAlimento.some(alimento => alergias.includes(alimento.id))) return
       const tipoCocinaReceta = await receta.getTipoCocina()
       const nombreRestaurante = await receta.getRestaurante()
       const recetaInUser = await user.hasReceta(receta);
-      console.log("Recetas SUGERIDAS", recetaInUser);
-
-      const infoReceta = { receta: receta.dataValues, nombreRestaurante: nombreRestaurante.nombre, tipoCocinaReceta: tipoCocinaReceta.nombre_tipo, recetaInUser: recetaInUser }
-      /* console.log("TIPO_RECETA", tipoCocinaReceta, "NOMBRE", tipoCocinaReceta.nombre_tipo)
-      console.log("RESTAURANTE", nombreRestaurante, "NOMBRE", nombreRestaurante.nombre)
-       */return infoReceta
+      return {
+        receta: receta.dataValues,
+        nombreRestaurante: nombreRestaurante.nombre,
+        tipoCocinaReceta: tipoCocinaReceta.nombre_tipo,
+        recetaInUser: recetaInUser
+      }
     }))
-    res.status(201).json(recetas);
+    recetasRecomendadas = recetasRecomendadas.filter(recetas => recetas)
 
+    //Obtener recetas Recomendadas
+    const restaurantesCercanos = await Restaurante.findAll({ where: { cp: user.cp } })
+    const RestauranteId = restaurantesCercanos.map(rest => rest.id)
+    let recetasCercanas = await Receta.findAll({ where: { RestauranteId } })
+    recetasCercanas = await Promise.all(recetasCercanas.map(async receta => {
+      const tipoCocinaReceta = await receta.getTipoCocina()
+      const nombreRestaurante = await receta.getRestaurante()
+      const recetaInUser = await user.hasReceta(receta);
+      return {
+        receta: receta.dataValues,
+        nombreRestaurante: nombreRestaurante.nombre,
+        tipoCocinaReceta: tipoCocinaReceta.nombre_tipo,
+        recetaInUser: recetaInUser
+      }
+    }))
+
+    res.status(201).json({ recetasRecomendadas, recetasCercanas });
   } catch (error) {
     res.status(500).json({ error: error.message });
   }
@@ -444,12 +475,28 @@ router.post("/home/:restId/registerReceta", upload.single("photo"), async (req, 
       return res.status(404).json({ error: "Tipo de cocina no encontrado" });
     }
 
+    // Crea ingredientes
+    const dietaReceta = 2
+    for (const ingrediente of ingredientes) {
+      const alimentoIngrediente = ingrediente.getGrupoAlimento()
+      if (alimentoIngrediente.dieta === 1 && dietaReceta !== 0) dietaReceta = 1
+      else if (alimentoIngrediente.dieta === 0) dietaReceta = 0
+      const { id, cantidad, medida } = ingrediente;
+      const recetaIngrediente = await Receta_Ingrediente.create({
+        RecetumId: receta.id,
+        IngredienteId: id,
+        cantidad,
+        medida,
+      });
+    }
+
     // Crea receta
     const receta = await Receta.create({
       nombre_receta,
       desc_receta,
       TipoCocinaId,
       RestauranteId: restauranteId,
+      dieta: dietaReceta,
       persones,
       tiempo,
       dificultad,
@@ -457,17 +504,8 @@ router.post("/home/:restId/registerReceta", upload.single("photo"), async (req, 
       foto_receta,
     });
 
-    // Crea ingredientes
-    for (const ingrediente of ingredientes) {
-      const { id, cantidad, medida } = ingrediente;
-      const recetaIngrediente = await Receta_Ingrediente.create({
-        RecetumId: receta.id,
-        IngredienteId: id,
-        cantidad,
-        medida,
 
-      });
-    }
+
     const procedimientosCreados = [];
     for (const procedimiento of procedimientos) {
       const nuevoProcedimiento = await Procedimiento.create({
