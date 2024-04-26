@@ -150,7 +150,7 @@ router.post("/registerUser", upload.single("photo"), async (req, res) => {
       dieta,
     } = req.body; // Obté el nom, email i contrasenya de la petició
 
-    const baseUrl = 'http://localhost:3000/api/uploads/'
+    const baseUrl = 'http://34.175.64.191:3000/api/uploads/'
     const foto_perfil = req.file ? baseUrl + req.file.filename : null; // Obtiene la ruta del archivo subido
 
     if (!nombre || !correo || !password || !cp) {
@@ -212,14 +212,14 @@ router.post("/registerUser", upload.single("photo"), async (req, res) => {
 router.post("/followRest/:userId/:restId", async (req, res) => {
   try {
     const { userId, restId } = req.params; // QUE ES MEJOR TENER EL USAURIO EN REQ.BODY O EL RESTAURANTE
-  
-console.log(userId)
-console.log(restId)
+
+    console.log(userId)
+    console.log(restId)
     // Verifica si el usuario y el restaurante existen
     const usuario = await Usuario.findByPk(userId);
     const restaurante = await Restaurante.findByPk(restId);
-console.log(restaurante)
-console.log(usuario)
+    console.log(restaurante)
+    console.log(usuario)
     if (!usuario || !restaurante) {
       return res
         .status(404)
@@ -267,8 +267,8 @@ router.post("/registerRest", upload.single("photo"), async (req, res) => {
       tipos_cocina,
       dieta
     } = req.body;
-console.log(req.body)
-    const baseUrl = 'http://localhost:3000/api/uploads/'
+    console.log(req.body)
+    const baseUrl = 'http://34.175.64.191:3000/api/uploads/'
     const foto_restaurante = req.file ? baseUrl + req.file.filename : null; // Obtiene la ruta del archivo subido
 
     if (
@@ -434,7 +434,7 @@ router.post("/followRecipe/:userId/:recipeId", async (req, res) => {
   try {
     const { userId, recipeId } = req.params;
 
-   
+
     const usuario = await Usuario.findByPk(userId);
     const receta = await Receta.findByPk(recipeId);
 
@@ -444,15 +444,15 @@ router.post("/followRecipe/:userId/:recipeId", async (req, res) => {
         .json({ error: "Usuario o receta no encontrados" });
     }
 
-    
+
     const sigueReceta = await usuario.hasReceta(receta);
     if (sigueReceta) {
-      
+
       await usuario.removeReceta(receta);
       return res.status(200).json({ message: "Relación de seguimiento eliminada" });
     }
 
-    
+
     await usuario.addReceta(receta);
 
     res.status(200).json({ message: "Usuario sigue la receta" });
