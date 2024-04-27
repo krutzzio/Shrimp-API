@@ -406,7 +406,14 @@ router.get("/home/recetas", checkToken, async (req, res) => {
       }
     }))
 
-    res.status(201).json({ recetasRecomendadas, recetasCercanas });
+
+    //Obtener recetas diferentes
+    const allRecetas = Receta.findAll()
+    const recetasNuevas = (await allRecetas).filter(receta => !TipoCocinaId.includes(receta.TipoCocinaId))
+
+
+
+    res.status(201).json({ recetasRecomendadas, recetasCercanas, recetasNuevas });
   } catch (error) {
     res.status(500).json({ error: error.message });
   }

@@ -260,9 +260,24 @@ async function iniDB() {
 
     const anadirReceta = require("./data/anadirReceta.js")
     await anadirReceta()
+
+    const userTest = {
+        nombre: "admin",
+        correo: "admin@test.com",
+        password: "admin123",
+        cp: "08032",
+        tipos_cocina: [1, 2, 4],
+        alergias: [7, 4],
+        dieta: 0,
+        foto_perfil: "http://34.175.64.191:3000/api/uploads/adminUser.jpg",
+    }
+    const user = await Usuario.create(userTest)
+    await user.addTipoCocina(userTest.tipos_cocina)
+    await user.addGrupoAlimento(userTest.alergias)
+
 }
 
-//iniDB();
+iniDB();
 
 //Exportem els models
 module.exports = {
