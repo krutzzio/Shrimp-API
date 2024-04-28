@@ -659,6 +659,8 @@ router.post("/home/:restId/registerReceta", upload.single("photo"), async (req, 
 });
 
 
+router.get("/tipuscuina", async (req, res) => await readItems(req, res, TipoCocina)); // Llege
+router.get("/ingredientes", async (req, res) => await readItems(req, res, Ingrediente)); // Llege
 
 
 router.get('/uploads/:fileName', (req, res) => {
