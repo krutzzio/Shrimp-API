@@ -3,7 +3,7 @@ const { Sequelize, DataTypes } = require("sequelize"); // Importa la llibreria S
 
 const bcrypt = require("bcrypt"); // Importa la llibreria bcrypt per a encriptar contrasenyes
 
-const sequelize = new Sequelize("gamba", "root", "admin123", {
+const sequelize = new Sequelize("gamba", "root", "", {
     host: "localhost",
     //host: '192.168.1.133', //IP de la base de dades
     port: 3306,
@@ -269,12 +269,11 @@ async function iniDB() {
         tipos_cocina: [1, 2, 4],
         alergias: [7, 4],
         dieta: 0,
-        foto_perfil: "http://34.175.64.191:3000/api/uploads/adminUser.jpg",
+        foto_perfil: "http://localhost:3000/api/uploads/adminUser.jpg",
     }
     const user = await Usuario.create(userTest)
     await user.addTipoCocina(userTest.tipos_cocina)
     await user.addGrupoAlimento(userTest.alergias)
-
 }
 
 //iniDB();

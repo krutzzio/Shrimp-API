@@ -7,7 +7,7 @@
         "dificultad": "Fácil",
         "tipo": "Principal",
         "dieta": 0,
-        "foto_receta": "http://34.175.64.191:3000/api/uploads/pasta_alfredo.jpeg",
+        "foto_receta": "http://localhost:3000/api/uploads/pasta_alfredo.jpeg",
         "RestauranteId": 2,
         "TipoCocinaId": [
             5
@@ -58,17 +58,17 @@
             {
                 "numero_procedimiento": 1,
                 "desc_procedimiento": "Cocinar la pasta en agua hirviendo con sal siguiendo las instrucciones del paquete hasta que esté al dente. Mientras tanto, cortar la pechuga de pollo en trozos y dorarlos en una sartén con aceite a fuego medio-alto hasta que estén cocidos y dorados por fuera.",
-                "foto_procedimiento": "http://34.175.64.191:3000/api/uploads/pasta_alfredo_1.jpeg"
+                "foto_procedimiento": "http://localhost:3000/api/uploads/pasta_alfredo_1.jpeg"
             },
             {
                 "numero_procedimiento": 2,
                 "desc_procedimiento": "En la misma sartén, reducir el fuego a medio y derretir la mantequilla. Agregar el ajo picado y saltearlo hasta que esté fragante. Luego, verter la crema de leche y agregar el queso parmesano rallado. Cocinar a fuego lento, revolviendo ocasionalmente, hasta que la salsa espese ligeramente.",
-                "foto_procedimiento": "http://34.175.64.191:3000/api/uploads/pasta_alfredo_2.jpeg"
+                "foto_procedimiento": "http://localhost:3000/api/uploads/pasta_alfredo_2.jpeg"
             },
             {
                 "numero_procedimiento": 3,
                 "desc_procedimiento": "Agregar la pasta cocida y escurrida junto con los trozos de pollo a la salsa en la sartén. Mezclar todo bien para que la pasta y el pollo estén cubiertos uniformemente con la salsa. Sazonar con sal y pimienta al gusto. Servir caliente y disfrutar.",
-                "foto_procedimiento": "http://34.175.64.191:3000/api/uploads/pasta_alfredo_3.jpeg"
+                "foto_procedimiento": "http://localhost:3000/api/uploads/pasta_alfredo_3.jpeg"
             }
         ]
     },
@@ -80,7 +80,7 @@
         "dieta": 0,
         "dificultad": "Media",
         "tipo": "Segundo",
-        "foto_receta": "http://34.175.64.191:3000/api/uploads/pollo_tika.jpeg",
+        "foto_receta": "http://localhost:3000/api/uploads/pollo_tika.jpeg",
         "RestauranteId": 7,
         "TipoCocinaId": [
             4
@@ -151,17 +151,17 @@
             {
                 "numero_procedimiento": 1,
                 "desc_procedimiento": "Cortar las pechugas de pollo en trozos y marinar con yogur, jengibre rallado, ajo picado, cúrcuma, comino, pimentón y canela. Dejar reposar al menos 30 minutos.",
-                "foto_procedimiento": "http://34.175.64.191:3000/api/uploads/pollo_tika_1.jpeg"
+                "foto_procedimiento": "http://localhost:3000/api/uploads/pollo_tika_1.jpeg"
             },
             {
                 "numero_procedimiento": 2,
                 "desc_procedimiento": "Cocinar el pollo marinado en una sartén caliente hasta que esté dorado por fuera y cocido por dentro. Reservar.",
-                "foto_procedimiento": "http://34.175.64.191:3000/api/uploads/pollo_tika_2.jpeg"
+                "foto_procedimiento": "http://localhost:3000/api/uploads/pollo_tika_2.jpeg"
             },
             {
                 "numero_procedimiento": 3,
                 "desc_procedimiento": "En la misma sartén, agregar un poco más de aceite si es necesario y saltear el tomate triturado hasta que reduzca y espese ligeramente. Añadir la crema de coco a la salsa de tomate y mezclar bien. Cocinar a fuego lento durante unos minutos.",
-                "foto_procedimiento": "http://34.175.64.191:3000/api/uploads/pollo_tika_3.jpeg"
+                "foto_procedimiento": "http://localhost:3000/api/uploads/pollo_tika_3.jpeg"
             }
         ]
     },
@@ -173,7 +173,7 @@
         "dificultad": "Fácil",
         "dieta": 2,
         "tipo": "Principal",
-        "foto_receta": "http://34.175.64.191:3000/api/uploads/curry_garbanzos.jpeg",
+        "foto_receta": "http://localhost:3000/api/uploads/curry_garbanzos.jpeg",
         "RestauranteId": 1,
         "TipoCocinaId": [
             4
@@ -229,17 +229,17 @@
             {
                 "numero_procedimiento": 1,
                 "desc_procedimiento": "Picar finamente la cebolla, los tomates, el jengibre y el ajo.",
-                "foto_procedimiento": "http://34.175.64.191:3000/api/uploads/curry_garbanzos_1.jpeg"
+                "foto_procedimiento": "http://localhost:3000/api/uploads/curry_garbanzos_1.jpeg"
             },
             {
                 "numero_procedimiento": 2,
                 "desc_procedimiento": "En una sartén grande, saltear la cebolla, el jengibre y el ajo hasta que estén dorados. Agregar los tomates picados y cocinar hasta que se deshagan.",
-                "foto_procedimiento": "http://34.175.64.191:3000/api/uploads/curry_garbanzos_2.jpeg"
+                "foto_procedimiento": "http://localhost:3000/api/uploads/curry_garbanzos_2.jpeg"
             },
             {
                 "numero_procedimiento": 3,
                 "desc_procedimiento": "Añadir el curry en polvo y cocinar por unos minutos. Incorporar los garbanzos cocidos y la leche de coco. Cocinar a fuego lento hasta que la salsa espese. Servir caliente, espolvoreado con cilantro fresco picado, acompañado de arroz basmati cocido.",
-                "foto_procedimiento": "http://34.175.64.191:3000/api/uploads/curry_garbanzos_3.jpeg"
+                "foto_procedimiento": "http://localhost:3000/api/uploads/curry_garbanzos_3.jpeg"
             }
         ]
     },
@@ -251,7 +251,7 @@
         "dieta": 2,
         "dificultad": "Fácil",
         "tipo": "Principal",
-        "foto_receta": "http://34.175.64.191:3000/api/uploads/sopa_lentejas.jpeg",
+        "foto_receta": "http://localhost:3000/api/uploads/sopa_lentejas.jpeg",
         "RestauranteId": 2,
         "TipoCocinaId": [
             9
@@ -322,17 +322,17 @@
             {
                 "numero_procedimiento": 1,
                 "desc_procedimiento": "Picar finamente la cebolla, el apio, las zanahorias, el ajo y los tomates.",
-                "foto_procedimiento": "http://34.175.64.191:3000/api/uploads/sopa_lentejas_1.jpeg"
+                "foto_procedimiento": "http://localhost:3000/api/uploads/sopa_lentejas_1.jpeg"
             },
             {
                 "numero_procedimiento": 2,
                 "desc_procedimiento": "En una olla grande, calentar el aceite de oliva y saltear la cebolla, el apio y las zanahorias hasta que estén tiernos. Agregar el ajo picado, el pimentón dulce y el comino molido. Cocinar por unos minutos hasta que el ajo esté fragante.",
-                "foto_procedimiento": "http://34.175.64.191:3000/api/uploads/sopa_lentejas_2.jpeg"
+                "foto_procedimiento": "http://localhost:3000/api/uploads/sopa_lentejas_2.jpeg"
             },
             {
                 "numero_procedimiento": 3,
                 "desc_procedimiento": "Añadir los tomates picados y cocinar hasta que se deshagan. Agregar las lentejas y el caldo de verduras. Dejar cocinar a fuego lento hasta que las lentejas estén tiernas, aproximadamente 30-40 minutos. Sazonar con sal y pimienta al gusto. Servir caliente, acompañado de pan crujiente.",
-                "foto_procedimiento": "http://34.175.64.191:3000/api/uploads/sopa_lentejas_3.jpeg"
+                "foto_procedimiento": "http://localhost:3000/api/uploads/sopa_lentejas_3.jpeg"
             }
         ]
     },
@@ -344,7 +344,7 @@
         "dificultad": "Fácil",
         "dieta": 1,
         "tipo": "Principal",
-        "foto_receta": "http://34.175.64.191:3000/api/uploads/tortilla_espinacas.jpeg",
+        "foto_receta": "http://localhost:3000/api/uploads/tortilla_espinacas.jpeg",
         "RestauranteId": 1,
         "TipoCocinaId": [
             9
@@ -390,12 +390,12 @@
             {
                 "numero_procedimiento": 1,
                 "desc_procedimiento": "Lavar y picar finamente las espinacas frescas y la cebolla. En una sartén grande, calentar el aceite de oliva y saltear la cebolla hasta que esté transparente. Agregar las espinacas picadas a la sartén y cocinar hasta que se marchiten.",
-                "foto_procedimiento": "http://34.175.64.191:3000/api/uploads/tortilla_espinacas_1.jpeg"
+                "foto_procedimiento": "http://localhost:3000/api/uploads/tortilla_espinacas_1.jpeg"
             },
             {
                 "numero_procedimiento": 2,
                 "desc_procedimiento": "Batir los huevos en un tazón grande y añadir las espinacas cocidas, el queso rallado, la sal y la pimienta. Verter la mezcla de huevos en una sartén caliente y cocinar a fuego medio-bajo hasta que la tortilla esté dorada por ambos lados y el queso se haya derretido por dentro. Servir caliente, cortada en porciones, y disfrutar como plato principal o acompañamiento.",
-                "foto_procedimiento": "http://34.175.64.191:3000/api/uploads/tortilla_espinacas_2.jpeg"
+                "foto_procedimiento": "http://localhost:3000/api/uploads/tortilla_espinacas_2.jpeg"
             }
         ]
     },
@@ -407,7 +407,7 @@
         "dieta": 2,
         "dificultad": "Media",
         "tipo": "Principal",
-        "foto_receta": "http://34.175.64.191:3000/api/uploads/cuscus_verduras.jpeg",
+        "foto_receta": "http://localhost:3000/api/uploads/cuscus_verduras.jpeg",
         "RestauranteId": 3,
         "TipoCocinaId": [
             8
@@ -493,17 +493,17 @@
             {
                 "numero_procedimiento": 1,
                 "desc_procedimiento": "Picar finamente la cebolla, las zanahorias, el calabacín, el pimiento rojo y los tomates. En una olla grande, calentar el aceite de oliva y saltear la cebolla hasta que esté transparente.",
-                "foto_procedimiento": "http://34.175.64.191:3000/api/uploads/cuscus_verduras1.jpeg"
+                "foto_procedimiento": "http://localhost:3000/api/uploads/cuscus_verduras1.jpeg"
             },
             {
                 "numero_procedimiento": 2,
                 "desc_procedimiento": "Agregar las zanahorias, el calabacín y el pimiento rojo picados. Cocinar por unos minutos hasta que estén tiernos. Añadir los tomates picados, las pasas y las almendras. Cocinar por unos minutos más.",
-                "foto_procedimiento": "http://34.175.64.191:3000/api/uploads/cuscus_verduras_2.jpeg"
+                "foto_procedimiento": "http://localhost:3000/api/uploads/cuscus_verduras_2.jpeg"
             },
             {
                 "numero_procedimiento": 3,
                 "desc_procedimiento": "Agregar el cúrcuma, el comino, la canela, la sal y la pimienta. Mezclar bien. Agregar el caldo de verduras y llevar a ebullición. Luego, añadir el cuscús y remover. Tapar la olla y dejar reposar fuera del fuego durante 10 minutos. Servir el cuscús de verduras caliente, acompañado de pan marroquí si se desea.",
-                "foto_procedimiento": "http://34.175.64.191:3000/api/uploads/cuscus_verduras_3.jpeg"
+                "foto_procedimiento": "http://localhost:3000/api/uploads/cuscus_verduras_3.jpeg"
             }
         ]
     },
@@ -515,7 +515,7 @@
         "dieta": 0,
         "dificultad": "Media",
         "tipo": "Principal",
-        "foto_receta": "http://34.175.64.191:3000/api/uploads/costillas.jpg",
+        "foto_receta": "http://localhost:3000/api/uploads/costillas.jpg",
         "RestauranteId": 15,
         "TipoCocinaId": [
             1
@@ -571,17 +571,17 @@
             {
                 "numero_procedimiento": 1,
                 "desc_procedimiento": "Precalentar el horno a 150°C (300°F). En un tazón, mezclar la salsa barbacoa, el vinagre de manzana, el azúcar moreno, el pimentón dulce, el ajo en polvo, la sal y la pimienta negra para hacer el glaseado.",
-                "foto_procedimiento": "http://34.175.64.191:3000/api/uploads/costillas_1.jpg"
+                "foto_procedimiento": "http://localhost:3000/api/uploads/costillas_1.jpg"
             },
             {
                 "numero_procedimiento": 2,
                 "desc_procedimiento": "Colocar las costillas en una bandeja para hornear y untarlas generosamente con el glaseado por todos lados. Cubrir la bandeja con papel de aluminio y hornear durante aproximadamente 2 horas, o hasta que las costillas estén tiernas.",
-                "foto_procedimiento": "http://34.175.64.191:3000/api/uploads/costillas_2.jpg"
+                "foto_procedimiento": "http://localhost:3000/api/uploads/costillas_2.jpg"
             },
             {
                 "numero_procedimiento": 3,
                 "desc_procedimiento": "Retirar el papel de aluminio y aumentar la temperatura del horno a 200°C (400°F). Pincelar las costillas con más glaseado y hornear durante 15-20 minutos más, hasta que estén caramelizadas y doradas. Servir las costillas a la barbacoa caliente, acompañadas de ensalada de col y pan de maíz.",
-                "foto_procedimiento": "http://34.175.64.191:3000/api/uploads/costillas_3.jpg"
+                "foto_procedimiento": "http://localhost:3000/api/uploads/costillas_3.jpg"
             }
         ]
     },
@@ -593,7 +593,7 @@
         "dieta": 0,
         "dificultad": "Media",
         "tipo": "Principal",
-        "foto_receta": "http://34.175.64.191:3000/api/uploads/tacos-al-pastor.jpeg",
+        "foto_receta": "http://localhost:3000/api/uploads/tacos-al-pastor.jpeg",
         "RestauranteId": 10,
         "TipoCocinaId": [
             7
@@ -674,17 +674,17 @@
             {
                 "numero_procedimiento": 1,
                 "desc_procedimiento": "Cortar la carne de cerdo en tiras delgadas y marinar en una mezcla de achiote, jugo de naranja, jugo de limón, vinagre blanco, ajo picado, comino, orégano, pimienta negra y sal. Dejar reposar en el refrigerador durante al menos 1 hora.",
-                "foto_procedimiento": "http://34.175.64.191:3000/api/uploads/tacos-al-pastor_1.jpeg"
+                "foto_procedimiento": "http://localhost:3000/api/uploads/tacos-al-pastor_1.jpeg"
             },
             {
                 "numero_procedimiento": 2,
                 "desc_procedimiento": "En una parrilla o sartén caliente, cocinar la carne de cerdo marinada hasta que esté dorada y cocida por completo. Calentar las tortillas de maíz en una sartén o comal.",
-                "foto_procedimiento": "http://34.175.64.191:3000/api/uploads/tacos-al-pastor_2.jpeg"
+                "foto_procedimiento": "http://localhost:3000/api/uploads/tacos-al-pastor_2.jpeg"
             },
             {
                 "numero_procedimiento": 3,
                 "desc_procedimiento": "Servir la carne de cerdo cocida en las tortillas calientes, acompañadas de piña picada, cebolla finamente picada y cilantro fresco.",
-                "foto_procedimiento": "http://34.175.64.191:3000/api/uploads/tacos-al-pastor_3.jpeg"
+                "foto_procedimiento": "http://localhost:3000/api/uploads/tacos-al-pastor_3.jpeg"
             }
         ]
     },
@@ -696,7 +696,7 @@
         "tiempo": "40 minutos",
         "dificultad": "Media",
         "tipo": "Entrante",
-        "foto_receta": "http://34.175.64.191:3000/api/uploads/patatabrava.jpeg",
+        "foto_receta": "http://localhost:3000/api/uploads/patatabrava.jpeg",
         "RestauranteId": 1,
         "TipoCocinaId": [
             5
@@ -762,17 +762,17 @@
             {
                 "numero_procedimiento": 1,
                 "desc_procedimiento": "Pelar y cortar las patatas en cubos. Freír en aceite caliente hasta que estén doradas y crujientes. En una sartén, calentar el aceite de oliva y sofreír el ajo picado. Agregar el tomate frito y el pimentón. Cocinar unos minutos.",
-                "foto_procedimiento": "http://34.175.64.191:3000/api/uploads/patatabrava_1.jpeg"
+                "foto_procedimiento": "http://localhost:3000/api/uploads/patatabrava_1.jpeg"
             },
             {
                 "numero_procedimiento": 2,
                 "desc_procedimiento": "Agregar el caldo de pollo y cocinar a fuego lento hasta que la salsa espese ligeramente. Por separado, mezclar la mayonesa con el ajo picado y el perejil. Reservar como alioli.",
-                "foto_procedimiento": "http://34.175.64.191:3000/api/uploads/patatabrava_2.jpeg"
+                "foto_procedimiento": "http://localhost:3000/api/uploads/patatabrava_2.jpeg"
             },
             {
                 "numero_procedimiento": 3,
                 "desc_procedimiento": "Servir las patatas en platos individuales, cubrir con la salsa picante y servir el alioli al lado.",
-                "foto_procedimiento": "http://34.175.64.191:3000/api/uploads/patatabrava_3.jpeg"
+                "foto_procedimiento": "http://localhost:3000/api/uploads/patatabrava_3.jpeg"
             }
         ]
     },
@@ -784,7 +784,7 @@
         "tiempo": "20 minutos",
         "dificultad": "Fácil",
         "tipo": "Entrante",
-        "foto_receta": "http://34.175.64.191:3000/api/uploads/salmorejo.jpeg",
+        "foto_receta": "http://localhost:3000/api/uploads/salmorejo.jpeg",
         "RestauranteId": 1,
         "TipoCocinaId": [
             2
@@ -855,17 +855,17 @@
             {
                 "numero_procedimiento": 1,
                 "desc_procedimiento": "Pelar los tomates y quitar las semillas. Trocear el pan. En una licuadora, mezclar los tomates, el pan, el ajo, el vinagre y la sal. Triturar hasta obtener una mezcla suave.",
-                "foto_procedimiento": "http://34.175.64.191:3000/api/uploads/salmorejo_1.jpeg"
+                "foto_procedimiento": "http://localhost:3000/api/uploads/salmorejo_1.jpeg"
             },
             {
                 "numero_procedimiento": 2,
                 "desc_procedimiento": "Agregar el aceite de oliva poco a poco mientras se sigue mezclando, hasta que quede bien emulsionado. Refrigerar por al menos una hora antes de servir.",
-                "foto_procedimiento": "http://34.175.64.191:3000/api/uploads/salmorejo_2.jpeg"
+                "foto_procedimiento": "http://localhost:3000/api/uploads/salmorejo_2.jpeg"
             },
             {
                 "numero_procedimiento": 3,
                 "desc_procedimiento": "Servir frío, decorado con huevo duro picado y jamón serrano en tiras.",
-                "foto_procedimiento": "http://34.175.64.191:3000/api/uploads/salmorejo_3.jpeg"
+                "foto_procedimiento": "http://localhost:3000/api/uploads/salmorejo_3.jpeg"
             }
         ]
     },
@@ -877,7 +877,7 @@
         "dieta": 0,
         "dificultad": "Media",
         "tipo": "Principal",
-        "foto_receta": "http://34.175.64.191:3000/api/uploads/paella.jpeg",
+        "foto_receta": "http://localhost:3000/api/uploads/paella.jpeg",
         "RestauranteId": 2,
         "TipoCocinaId": [
             9
@@ -933,17 +933,17 @@
             {
                 "numero_procedimiento": 1,
                 "desc_procedimiento": "En una paellera, dorar el pollo y el conejo con aceite de oliva. Retirar y reservar. En la misma paellera, sofreír la cebolla y el pimiento rojo hasta que estén tiernos. Agregar el ajo picado y el tomate rallado. Cocinar unos minutos.",
-                "foto_procedimiento": "http://34.175.64.191:3000/api/uploads/paella_1.jpeg"
+                "foto_procedimiento": "http://localhost:3000/api/uploads/paella_1.jpeg"
             },
             {
                 "numero_procedimiento": 2,
                 "desc_procedimiento": "Incorporar el arroz y remover para que se impregne de los sabores. Agregar el caldo de pescado caliente y el azafrán. Cocinar a fuego medio-alto durante 10 minutos. Colocar los mariscos y el pollo reservados sobre el arroz.",
-                "foto_procedimiento": "http://34.175.64.191:3000/api/uploads/paella_2.jpeg"
+                "foto_procedimiento": "http://localhost:3000/api/uploads/paella_2.jpeg"
             },
             {
                 "numero_procedimiento": 3,
                 "desc_procedimiento": "Cocinar a fuego medio-bajo durante otros 10 minutos. Retirar del fuego, cubrir con papel de aluminio y dejar reposar durante 5 minutos antes de servir.",
-                "foto_procedimiento": "http://34.175.64.191:3000/api/uploads/paella_3.jpeg"
+                "foto_procedimiento": "http://localhost:3000/api/uploads/paella_3.jpeg"
             }
         ]
     },
@@ -955,7 +955,7 @@
         "dieta": 1,
         "dificultad": "Fácil",
         "tipo": "Principal",
-        "foto_receta": "http://34.175.64.191:3000/api/uploads/tortillafr.jpeg",
+        "foto_receta": "http://localhost:3000/api/uploads/tortillafr.jpeg",
         "RestauranteId": 1,
         "TipoCocinaId": [
             9
@@ -986,17 +986,17 @@
             {
                 "numero_procedimiento": 1,
                 "desc_procedimiento": "Batir los huevos en un tazón y sazonar con sal y pimienta al gusto. Calentar una sartén antiadherente a fuego medio-alto. Agregar la mantequilla y dejar que se derrita.",
-                "foto_procedimiento": "http://34.175.64.191:3000/api/uploads/tortillafr_1.jpeg"
+                "foto_procedimiento": "http://localhost:3000/api/uploads/tortillafr_1.jpeg"
             },
             {
                 "numero_procedimiento": 2,
                 "desc_procedimiento": "Verter los huevos batidos en la sartén caliente y cocinar durante unos minutos hasta que estén dorados por abajo. Con la ayuda de una espátula, voltear la tortilla y cocinar por el otro lado hasta que esté dorada y cocida por completo.",
-                "foto_procedimiento": "http://34.175.64.191:3000/api/uploads/tortillafr_2.jpeg"
+                "foto_procedimiento": "http://localhost:3000/api/uploads/tortillafr_2.jpeg"
             },
             {
                 "numero_procedimiento": 3,
                 "desc_procedimiento": "Transferir la tortilla a un plato, cortar en porciones y servir caliente.",
-                "foto_procedimiento": "http://34.175.64.191:3000/api/uploads/tortillafr_3.jpeg"
+                "foto_procedimiento": "http://localhost:3000/api/uploads/tortillafr_3.jpeg"
             }
         ]
     },
@@ -1008,7 +1008,7 @@
         "dieta": 0,
         "dificultad": "Media",
         "tipo": "Principal",
-        "foto_receta": "http://34.175.64.191:3000/api/uploads/Trucha.jpeg",
+        "foto_receta": "http://localhost:3000/api/uploads/Trucha.jpeg",
         "RestauranteId": 3,
         "TipoCocinaId": [
             9
@@ -1049,17 +1049,17 @@
             {
                 "numero_procedimiento": 1,
                 "desc_procedimiento": "Cocinar el arroz de acuerdo a las instrucciones del paquete. Reservar caliente. Sazonar los filetes de trucha con sal y pimienta al gusto.",
-                "foto_procedimiento": "http://34.175.64.191:3000/api/uploads/Trucha_1.jpeg"
+                "foto_procedimiento": "http://localhost:3000/api/uploads/Trucha_1.jpeg"
             },
             {
                 "numero_procedimiento": 2,
                 "desc_procedimiento": "Calentar una sartén a fuego medio-alto con un poco de aceite de oliva. Cocinar los filetes de trucha hasta que estén dorados por ambos lados y cocidos en su punto. Servir los filetes de trucha sobre una cama de arroz caliente.",
-                "foto_procedimiento": "http://34.175.64.191:3000/api/uploads/Trucha_2.jpeg"
+                "foto_procedimiento": "http://localhost:3000/api/uploads/Trucha_2.jpeg"
             },
             {
                 "numero_procedimiento": 3,
                 "desc_procedimiento": "Exprimir el jugo de limón sobre los filetes de trucha y decorar con rodajas de limón fresco. ¡Disfrutar!",
-                "foto_procedimiento": "http://34.175.64.191:3000/api/uploads/Trucha_3.webp"
+                "foto_procedimiento": "http://localhost:3000/api/uploads/Trucha_3.webp"
             }
         ]
     },
@@ -1071,7 +1071,7 @@
         "dieta": 0,
         "dificultad": "Media",
         "tipo": "Principal",
-        "foto_receta": "http://34.175.64.191:3000/api/uploads/estofado.jpeg",
+        "foto_receta": "http://localhost:3000/api/uploads/estofado.jpeg",
         "RestauranteId": 3,
         "TipoCocinaId": [
             6
@@ -1147,17 +1147,17 @@
             {
                 "numero_procedimiento": 1,
                 "desc_procedimiento": "En una olla grande, calentar el aceite de oliva a fuego medio-alto. Dorar la carne de ternera por todos lados. Retirar y reservar. En la misma olla, agregar un poco más de aceite si es necesario y sofreír el ajo y la cebolla hasta que estén dorados.",
-                "foto_procedimiento": "http://34.175.64.191:3000/api/uploads/estofado_1.jpeg"
+                "foto_procedimiento": "http://localhost:3000/api/uploads/estofado_1.jpeg"
             },
             {
                 "numero_procedimiento": 2,
                 "desc_procedimiento": "Agregar las papas y zanahorias cortadas en trozos grandes a la olla. Cocinar por unos minutos. Regresar la carne de ternera a la olla. Agregar el caldo de carne, laurel, tomillo, romero, pimienta negra, pimienta roja y sal.",
-                "foto_procedimiento": "http://34.175.64.191:3000/api/uploads/estofado_2.jpeg"
+                "foto_procedimiento": "http://localhost:3000/api/uploads/estofado_2.jpeg"
             },
             {
                 "numero_procedimiento": 3,
                 "desc_procedimiento": "Cubrir la olla y reducir el fuego a bajo. Cocinar a fuego lento durante aproximadamente 1 hora y media o hasta que la carne esté tierna. Servir caliente y disfrutar de este reconfortante estofado de carne.",
-                "foto_procedimiento": "http://34.175.64.191:3000/api/uploads/estofado_3.jpeg"
+                "foto_procedimiento": "http://localhost:3000/api/uploads/estofado_3.jpeg"
             }
         ]
     },
@@ -1169,7 +1169,7 @@
         "dieta": 2,
         "dificultad": "Fácil",
         "tipo": "Entrante",
-        "foto_receta": "http://34.175.64.191:3000/api/uploads/gazpacho.jpeg",
+        "foto_receta": "http://localhost:3000/api/uploads/gazpacho.jpeg",
         "RestauranteId": 4,
         "TipoCocinaId": [
             1
@@ -1240,17 +1240,17 @@
             {
                 "numero_procedimiento": 1,
                 "desc_procedimiento": "Pelar los tomates y cortarlos en trozos. Picar la cebolla, el ajo, el pimiento verde y el pepino. En una licuadora o procesador de alimentos, mezclar los tomates, la cebolla, el ajo, el pimiento verde, el pepino, el pan, el aceite de oliva, el vinagre, el laurel, el romero y la sal. Mezclar hasta obtener una mezcla homogénea.",
-                "foto_procedimiento": "http://34.175.64.191:3000/api/uploads/gazpacho_1.jpeg"
+                "foto_procedimiento": "http://localhost:3000/api/uploads/gazpacho_1.jpeg"
             },
             {
                 "numero_procedimiento": 2,
                 "desc_procedimiento": "Agregar el agua fría y mezclar nuevamente hasta que todo esté bien incorporado y el gazpacho tenga la consistencia deseada. Refrigerar el gazpacho durante al menos 1 hora antes de servir.",
-                "foto_procedimiento": "http://34.175.64.191:3000/api/uploads/gazpacho_2.jpeg"
+                "foto_procedimiento": "http://localhost:3000/api/uploads/gazpacho_2.jpeg"
             },
             {
                 "numero_procedimiento": 3,
                 "desc_procedimiento": "Servir frío y disfrutar de este delicioso gazpacho andaluz.",
-                "foto_procedimiento": "http://34.175.64.191:3000/api/uploads/gazpacho_3.jpeg"
+                "foto_procedimiento": "http://localhost:3000/api/uploads/gazpacho_3.jpeg"
             }
         ]
     },
@@ -1262,7 +1262,7 @@
         "dieta": 0,
         "dificultad": "Media",
         "tipo": "Entrante",
-        "foto_receta": "http://34.175.64.191:3000/api/uploads/PulpoGallega.jpeg",
+        "foto_receta": "http://localhost:3000/api/uploads/PulpoGallega.jpeg",
         "RestauranteId": 5,
         "TipoCocinaId": [
             1
@@ -1298,17 +1298,17 @@
             {
                 "numero_procedimiento": 1,
                 "desc_procedimiento": "Preparar el pulpo: Comienza lavando bien el pulpo bajo agua fría para quitar cualquier residuo. Este paso es fundamental para asegurar la limpieza y frescura del pulpo antes de la cocción.",
-                "foto_procedimiento": "http://34.175.64.191:3000/api/uploads/PulpoGallega_1.jpeg"
+                "foto_procedimiento": "http://localhost:3000/api/uploads/PulpoGallega_1.jpeg"
             },
             {
                 "numero_procedimiento": 2,
                 "desc_procedimiento": "Cocinar el pulpo y las papas: En una olla grande, lleva agua a ebullición y sumerge el pulpo en el agua hirviendo. Cocina durante 40-50 minutos hasta que el pulpo esté tierno. Mientras tanto, pela las papas, córtalas en rodajas y cocínalas en agua con sal hasta que estén tiernas pero firmes.",
-                "foto_procedimiento": "http://34.175.64.191:3000/api/uploads/PulpoGallega_2.jpeg"
+                "foto_procedimiento": "http://localhost:3000/api/uploads/PulpoGallega_2.jpeg"
             },
             {
                 "numero_procedimiento": 3,
                 "desc_procedimiento": "Servir y disfrutar: Una vez cocido, retira el pulpo del agua y déjalo enfriar unos minutos. Luego, córtalo en rodajas y disponlo en un plato junto con las papas. Rocía el pulpo y las papas con aceite de oliva, espolvorea con pimentón dulce y sal al gusto, y sirve caliente acompañado de pan crusty para una experiencia culinaria gallega auténtica y deliciosa.",
-                "foto_procedimiento": "http://34.175.64.191:3000/api/uploads/PulpoGallega_3.jpeg"
+                "foto_procedimiento": "http://localhost:3000/api/uploads/PulpoGallega_3.jpeg"
             }
         ]
     },
@@ -1320,7 +1320,7 @@
         "dieta": 0,
         "dificultad": "Alta",
         "tipo": "Principal",
-        "foto_receta": "http://34.175.64.191:3000/api/uploads/CochinilloAsado.jpg",
+        "foto_receta": "http://localhost:3000/api/uploads/CochinilloAsado.jpg",
         "RestauranteId": 8,
         "TipoCocinaId": [
             1
@@ -1356,17 +1356,17 @@
             {
                 "numero_procedimiento": 1,
                 "desc_procedimiento": "Prepara el lechón y condiméntalo: Para comenzar, precalienta el horno a 180°C (350°F) para garantizar una cocción uniforme. Lava minuciosamente el lechón bajo agua fría y asegúrate de secarlo completamente con papel de cocina para eliminar cualquier exceso de humedad que pueda interferir con la textura final. Luego, con un cuchillo afilado, realiza cortes poco profundos en la piel del lechón para permitir que los sabores y condimentos penetren profundamente. Prepara una mezcla aromática de ajo, sal y hierbas frescas, como romero, tomillo y laurel, en un mortero, asegurándote de obtener una pasta suave y fragante. Frota generosamente esta mezcla sobre la superficie del lechón, asegurándote de que los condimentos se introduzcan en los cortes realizados anteriormente. Finalmente, unta la piel con aceite de oliva para obtener un dorado perfecto durante la cocción.",
-                "foto_procedimiento": "http://34.175.64.191:3000/api/uploads/CochinilloAsado_1.jpg"
+                "foto_procedimiento": "http://localhost:3000/api/uploads/CochinilloAsado_1.jpg"
             },
             {
                 "numero_procedimiento": 2,
                 "desc_procedimiento": "Hornea el lechón a la perfección: Coloca el lechón condimentado en una bandeja para hornear lo suficientemente grande como para contenerlo cómodamente. Introduce la bandeja en el horno precalentado y hornea el lechón durante aproximadamente 3-4 horas, dependiendo del tamaño y peso del animal. Durante el proceso de cocción, asegúrate de rociar periódicamente el lechón con sus propios jugos para mantenerlo jugoso y para garantizar que la piel se vuelva crujiente y dorada. Este paso es crucial para obtener una textura y sabor perfectos. Mientras el lechón se cocina lentamente, el aroma irresistible llenará tu cocina, aumentando la expectativa de todos los comensales.",
-                "foto_procedimiento": "http://34.175.64.191:3000/api/uploads/CochinilloAsado_2.jpg"
+                "foto_procedimiento": "http://localhost:3000/api/uploads/CochinilloAsado_2.jpg"
             },
             {
                 "numero_procedimiento": 3,
                 "desc_procedimiento": "Descansa, corta y sirve con estilo: Una vez que el lechón esté perfectamente cocido y la piel haya adquirido un color dorado tentador, retíralo del horno y déjalo reposar durante unos minutos para permitir que los jugos se redistribuyan uniformemente, lo que garantizará una carne suculenta y tierna en cada bocado. Después de este breve período de reposo, procede a cortar el lechón en porciones generosas, mostrando con orgullo la piel crujiente y dorada que has logrado con tanto cuidado. Acompaña esta obra maestra culinaria con guarniciones clásicas como papas asadas al romero y una fresca ensalada verde aderezada con vinagreta balsámica. Sirve este festín con estilo y disfruta de los elogios de tus invitados mientras deleitan sus paladares con cada bocado.",
-                "foto_procedimiento": "http://34.175.64.191:3000/api/uploads/CochinilloAsado_3.jpg"
+                "foto_procedimiento": "http://localhost:3000/api/uploads/CochinilloAsado_3.jpg"
             }
         ]
     }

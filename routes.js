@@ -409,8 +409,18 @@ router.get("/home/recetas", checkToken, async (req, res) => {
 
     //Obtener recetas diferentes
     const allRecetas = Receta.findAll()
-    const recetasNuevas = (await allRecetas).filter(receta => !TipoCocinaId.includes(receta.TipoCocinaId))
-
+    let recetasNuevas = (await allRecetas).filter(receta => !TipoCocinaId.includes(receta.TipoCocinaId))
+    recetasNuevas = await Promise.all(recetasNuevas.map(async receta => {
+      const tipoCocinaReceta = await receta.getTipoCocina()
+      const nombreRestaurante = await receta.getRestaurante()
+      const recetaInUser = await user.hasReceta(receta);
+      return {
+        receta: receta.dataValues,
+        nombreRestaurante: nombreRestaurante.nombre,
+        tipoCocinaReceta: tipoCocinaReceta.nombre_tipo,
+        recetaInUser: recetaInUser
+      }
+    }))
 
 
     res.status(201).json({ recetasRecomendadas, recetasCercanas, recetasNuevas });
