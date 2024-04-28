@@ -1,6 +1,14 @@
 const { Restaurante } = require("../models");
 
 async function anadirRestaurante() {
+    /* 
+     PARA AÑADIR FOTO RESTAURANTE
+
+     1r paso añadir imagen en la carpeta upload (nombre unico)
+     2n en foto_restaurante añadir el siguiente texto http://localhost:3000/api/uploads/ + <nombre foto añadida en uopload>
+     (AÑADIR EXTENSION IMAGEN EJEMPLO .jpg)
+
+     */
     try {
         const restObj = [{
             nombre: 'Restaurante Nombre bonito',
@@ -13,7 +21,7 @@ async function anadirRestaurante() {
             numero: "42",
             cp: "08032",
             foto_restaurante: 'restaurante1.jpg',
-            tipos_cocina: [1, 2]
+            tipos_cocina: [1]
         },
         {
             nombre: 'Restaurante DonKamaron',

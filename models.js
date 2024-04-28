@@ -200,7 +200,35 @@ Restaurante.beforeCreate(async (restaurant) => {
     restaurant.password = hashedPassword;
 });
 
+async function actualizarDietaRestaurante(restauranteId) {
+    try {
+        // Encuentra todas las recetas asociadas al restaurante
+        const recetas = await Receta.findAll({ where: { restauranteId } });
 
+        // Determina la dieta mínima entre las recetas
+        let dietaMinima = 0; // Empezamos con el valor más restrictivo
+        recetas.forEach(receta => {
+            if (receta.dieta > dietaMinima) {
+                dietaMinima = receta.dieta;
+            }
+        });
+
+        // Actualiza la dieta del restaurante si es necesario
+        const restaurante = await Restaurante.findByPk(restauranteId);
+        if (restaurante.dieta !== dietaMinima) {
+            restaurante.dieta = dietaMinima;
+            await restaurante.save();
+        }
+    } catch (error) {
+        console.error('Error al actualizar la dieta del restaurante:', error);
+    }
+}
+
+// Define el hook afterSave para el modelo Receta
+Receta.addHook('afterSave', (receta, options) => {
+    // Actualiza la dieta del restaurante asociado a la receta
+    actualizarDietaRestaurante(receta.RestauranteId);
+});
 
 // Definim les relacions
 
@@ -276,7 +304,7 @@ async function iniDB() {
     await user.addGrupoAlimento(userTest.alergias)
 }
 
-//iniDB();
+iniDB();
 
 //Exportem els models
 module.exports = {

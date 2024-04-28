@@ -345,7 +345,7 @@
         "dieta": 1,
         "tipo": "Principal",
         "foto_receta": "http://localhost:3000/api/uploads/tortilla_espinacas.jpeg",
-        "RestauranteId": 1,
+        "RestauranteId": 7,
         "TipoCocinaId": [
             9
         ],

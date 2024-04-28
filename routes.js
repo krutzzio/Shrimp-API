@@ -252,6 +252,71 @@ router.get("/restaurant/:id", checkToken, async (req, res) => await readItem(req
 router.put("/restaurant/:id", checkToken, async (req, res) => await updateItem(req, res, Restaurante)); // Actualitza un restaurant
 router.delete("/restaurant/:id", checkToken, async (req, res) => await deleteItem(req, res, Restaurante)); // Elimina un restaurant
 
+router.get("/home/restaurantes", checkToken, async (req, res) => {
+  try {
+    const user = await Usuario.findByPk(req.userId);
+    const tipos_cocinas_user = await user.getTipoCocinas();
+    const TipoCocinaId = tipos_cocinas_user.map(tipo => tipo.id)
+
+    //Obtener recetas Recomendadas
+    let restaurantesSugeridos
+    if (user.dieta === 0) {
+      restaurantesSugeridos = await tipos_cocinas_user.getRestaurantes()  /* Restaurante.findAll({ where: { TipoCocinaId } }) */
+    } else if (user.dieta === 1) {
+      restaurantesSugeridos = await tipos_cocinas_user.getRestaurantes({ where: { dieta: [1, 2] } })
+    } else {
+      restaurantesSugeridos = await tipos_cocinas_user.getRestaurantes({ where: { dieta: 2 } })
+    }
+
+    let restaurantesRecomendados = await Promise.all(restaurantesSugeridos.map(async restaurante => {
+      const tipoCocinaRestaurante = await restaurante.getTipoCocina()
+      const restInUser = await user.hasReceta(restaurante);
+      return {
+        restaurante: restaurante.dataValues,
+        tipoCocinaReceta: tipoCocinaRestaurante.nombre_tipo,
+        restInUser: restInUser
+      }
+    }))
+
+    //Obtener recetas Recomendadas
+    const restaurantesCercanos = await Restaurante.findAll({ where: { cp: user.cp } })
+    const RestauranteId = restaurantesCercanos.map(rest => rest.id)
+    let recetasCercanas = await Receta.findAll({ where: { RestauranteId } })
+    recetasCercanas = await Promise.all(recetasCercanas.map(async receta => {
+      const tipoCocinaReceta = await receta.getTipoCocina()
+      const nombreRestaurante = await receta.getRestaurante()
+      const recetaInUser = await user.hasReceta(receta);
+      return {
+        receta: receta.dataValues,
+        nombreRestaurante: nombreRestaurante.nombre,
+        tipoCocinaReceta: tipoCocinaReceta.nombre_tipo,
+        recetaInUser: recetaInUser
+      }
+    }))
+
+
+    //Obtener recetas diferentes
+    const allRecetas = Receta.findAll()
+    let recetasNuevas = (await allRecetas).filter(receta => !TipoCocinaId.includes(receta.TipoCocinaId))
+    recetasNuevas = await Promise.all(recetasNuevas.map(async receta => {
+      const tipoCocinaReceta = await receta.getTipoCocina()
+      const nombreRestaurante = await receta.getRestaurante()
+      const recetaInUser = await user.hasReceta(receta);
+      return {
+        receta: receta.dataValues,
+        nombreRestaurante: nombreRestaurante.nombre,
+        tipoCocinaReceta: tipoCocinaReceta.nombre_tipo,
+        recetaInUser: recetaInUser
+      }
+    }))
+
+
+    res.status(201).json({ restaurantesRecomendados, recetasCercanas, recetasNuevas });
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+});
+
 /* ------------------------------- REGISTER ------------------------------- */
 router.post("/registerRest", upload.single("photo"), async (req, res) => {
   try {
