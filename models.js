@@ -304,7 +304,7 @@ async function iniDB() {
     await user.addGrupoAlimento(userTest.alergias)
 }
 
-iniDB();
+//iniDB();
 
 //Exportem els models
 module.exports = {

@@ -256,62 +256,74 @@ router.get("/home/restaurantes", checkToken, async (req, res) => {
   try {
     const user = await Usuario.findByPk(req.userId);
     const tipos_cocinas_user = await user.getTipoCocinas();
-    const TipoCocinaId = tipos_cocinas_user.map(tipo => tipo.id)
+    const TiposCocinaId = tipos_cocinas_user.map(tipo => tipo.id)
 
-    //Obtener recetas Recomendadas
+    //Obtener restaurantes Recomendadaos
     let restaurantesSugeridos
     if (user.dieta === 0) {
-      restaurantesSugeridos = await tipos_cocinas_user.getRestaurantes()  /* Restaurante.findAll({ where: { TipoCocinaId } }) */
+      restaurantesSugeridos = await Restaurante.findAll({
+        include: [{
+          model: TipoCocina,
+          where: { id: TiposCocinaId } // Filtra los tipos de cocina por los IDs en el array
+        }]
+      })
     } else if (user.dieta === 1) {
-      restaurantesSugeridos = await tipos_cocinas_user.getRestaurantes({ where: { dieta: [1, 2] } })
+      restaurantesSugeridos = await tipos_cocinas_user.getRestaurantes({
+        include: [{
+          model: TipoCocina,
+          where: { id: TiposCocinaId } // Filtra los tipos de cocina por los IDs en el array
+        }], where: { dieta: [1, 2] }
+      })
     } else {
-      restaurantesSugeridos = await tipos_cocinas_user.getRestaurantes({ where: { dieta: 2 } })
+      restaurantesSugeridos = await tipos_cocinas_user.getRestaurantes({
+        include: [{
+          model: TipoCocina,
+          where: { id: TiposCocinaId } // Filtra los tipos de cocina por los IDs en el array
+        }], where: { dieta: 2 }
+      })
     }
 
     let restaurantesRecomendados = await Promise.all(restaurantesSugeridos.map(async restaurante => {
-      const tipoCocinaRestaurante = await restaurante.getTipoCocina()
-      const restInUser = await user.hasReceta(restaurante);
+      const tipoCocinaRestaurante = await restaurante.getTipoCocinas()
+      const restInUser = await user.hasRestaurante(restaurante);
       return {
         restaurante: restaurante.dataValues,
-        tipoCocinaReceta: tipoCocinaRestaurante.nombre_tipo,
+        tipoCocinaRestaurante: tipoCocinaRestaurante,
         restInUser: restInUser
       }
     }))
 
-    //Obtener recetas Recomendadas
-    const restaurantesCercanos = await Restaurante.findAll({ where: { cp: user.cp } })
-    const RestauranteId = restaurantesCercanos.map(rest => rest.id)
-    let recetasCercanas = await Receta.findAll({ where: { RestauranteId } })
-    recetasCercanas = await Promise.all(recetasCercanas.map(async receta => {
-      const tipoCocinaReceta = await receta.getTipoCocina()
-      const nombreRestaurante = await receta.getRestaurante()
-      const recetaInUser = await user.hasReceta(receta);
+    //Obtener restaurantes Recomendados
+    let restaurantesCercanos = await Restaurante.findAll({ where: { cp: user.cp } })
+    restaurantesCercanos = await Promise.all(restaurantesCercanos.map(async restaurante => {
+      const tipoCocinaRestaurante = await restaurante.getTipoCocinas()
+      const restInUser = await user.hasRestaurante(restaurante);
       return {
-        receta: receta.dataValues,
-        nombreRestaurante: nombreRestaurante.nombre,
-        tipoCocinaReceta: tipoCocinaReceta.nombre_tipo,
-        recetaInUser: recetaInUser
+        restaurante: restaurante.dataValues,
+        tipoCocinaRestaurante: tipoCocinaRestaurante,
+        restInUser: restInUser
       }
     }))
+
 
 
     //Obtener recetas diferentes
-    const allRecetas = Receta.findAll()
-    let recetasNuevas = (await allRecetas).filter(receta => !TipoCocinaId.includes(receta.TipoCocinaId))
-    recetasNuevas = await Promise.all(recetasNuevas.map(async receta => {
-      const tipoCocinaReceta = await receta.getTipoCocina()
-      const nombreRestaurante = await receta.getRestaurante()
-      const recetaInUser = await user.hasReceta(receta);
-      return {
-        receta: receta.dataValues,
-        nombreRestaurante: nombreRestaurante.nombre,
-        tipoCocinaReceta: tipoCocinaReceta.nombre_tipo,
-        recetaInUser: recetaInUser
-      }
-    }))
+    /*     const allRestaurantes = Restaurante.findAll()
+        let restaurantesNuevos = await allRestaurantes.filter(rest => !TipoCocinaId.includes(rest.TipoCocinaId))
+        restaurantesNuevos = await Promise.all(restaurantesNuevos.map(async restaurante => {
+          const tipoCocinaReceta = await receta.getTipoCocina()
+          const nombreRestaurante = await receta.getRestaurante()
+          const recetaInUser = await user.hasReceta(receta);
+          return {
+            receta: receta.dataValues,
+            nombreRestaurante: nombreRestaurante.nombre,
+            tipoCocinaReceta: tipoCocinaReceta.nombre_tipo,
+            recetaInUser: recetaInUser
+          }
+        })) */
 
 
-    res.status(201).json({ restaurantesRecomendados, recetasCercanas, recetasNuevas });
+    res.status(201).json({ restaurantesRecomendados, restaurantesCercanos });
   } catch (error) {
     res.status(500).json({ error: error.message });
   }
@@ -516,7 +528,6 @@ router.post("/followRecipe/:userId/:recipeId", async (req, res) => {
   try {
     const { userId, recipeId } = req.params;
 
-
     const usuario = await Usuario.findByPk(userId);
     const receta = await Receta.findByPk(recipeId);
 
@@ -526,18 +537,15 @@ router.post("/followRecipe/:userId/:recipeId", async (req, res) => {
         .json({ error: "Usuario o receta no encontrados" });
     }
 
-
     const sigueReceta = await usuario.hasReceta(receta);
     if (sigueReceta) {
-
       await usuario.removeReceta(receta);
       return res.status(200).json({ message: "Relación de seguimiento eliminada" });
+    } else {
+      await usuario.addReceta(receta);
+      return res.status(200).json({ message: "Usuario sigue la receta" });
     }
 
-
-    await usuario.addReceta(receta);
-
-    res.status(200).json({ message: "Usuario sigue la receta" });
   } catch (error) {
     res.status(500).json({ error: error.message });
   }
@@ -602,6 +610,7 @@ router.post("/home/:restId/registerReceta", upload.single("photo"), async (req, 
 
     // Crea ingredientes
     const dietaReceta = 2
+
     for (const ingrediente of ingredientes) {
       const alimentoIngrediente = ingrediente.getGrupoAlimento()
       if (alimentoIngrediente.dieta === 1 && dietaReceta !== 0) dietaReceta = 1

@@ -9,6 +9,7 @@ async function anadirRestaurante() {
      (AÑADIR EXTENSION IMAGEN EJEMPLO .jpg)
 
      */
+
     try {
         const restObj = [{
             nombre: 'Restaurante Nombre bonito',
