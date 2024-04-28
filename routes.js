@@ -129,7 +129,7 @@ router.post("/loginUser", async (req, res) => {
       SECRET_KEY,
       { expiresIn: "2h" }
     ); // Genera un token JWT vàlid durant 2 hores
-    res.cookie("token", token, { httpOnly: false, maxAge: 7200000, sameSite: "none" }); // Estableix el token com una cookie
+    res.cookie("token", token, { httpOnly: false, maxAge: 7200000, sameSite: "none", secure: true }); // Estableix el token com una cookie
     res.json({ nombre: user.nombre, id: user.id }); // Retorna missatge d'èxit
   } catch (error) {
     res.status(500).json({ error: error.message }); // Retorna error 500 amb el missatge d'error
