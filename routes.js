@@ -10,12 +10,11 @@ const SECRET_KEY = "vols-que-et-punxi-amb-un-punxo";
 
 const {
   // Usuario_Restaraunte,
-
   Usuario,
   Restaurante,
   Receta,
   TipoCocina,
-
+  Ingrediente,
   Receta_Ingrediente,
   GrupoAlimento,
 } = require("./models"); // Importa els models de dades
