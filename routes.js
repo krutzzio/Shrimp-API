@@ -581,7 +581,7 @@ router.post("/home/:restId/registerReceta", upload.single("photo"), async (req, 
       dificultad,
       tipo,
       ingredientes,
-      procedimientos
+
 
     } = req.body;
 
@@ -654,18 +654,6 @@ router.post("/home/:restId/registerReceta", upload.single("photo"), async (req, 
     });
 
 
-
-    const procedimientosCreados = [];
-    for (const procedimiento of procedimientos) {
-      const nuevoProcedimiento = await Procedimiento.create({
-        numero_procedimiento: procedimiento.numero_procedimiento,
-        desc_procedimiento: procedimiento.desc_procedimiento,
-        foto_procedimiento: procedimiento.foto_procedimiento,
-        RecetumId: receta.id // Asociar el procedimiento con la receta recién creada
-      });
-      procedimientosCreados.push(nuevoProcedimiento);
-    }
-
     res.status(201).json({
       receta: {
         id: receta.id,
@@ -681,6 +669,51 @@ router.post("/home/:restId/registerReceta", upload.single("photo"), async (req, 
     res.status(500).json({ error: error.message });
   }
 });
+
+router.post(
+  "/home/:restId/procedimientos",
+
+  upload.array("photo", 7),
+  async (req, res) => {
+    try {
+      const {
+        procedimientos,
+      } = req.body;
+      console.log(procedimientos)
+      const restauranteId = req.params.restId;
+      const baseUrl = 'http://localhost:3000/api/uploads/';
+      const procedimientosCreados = [];
+let indexFoto = 0; 
+
+for (const procedimiento of procedimientos) {
+  const { numero_procedimiento, desc_procedimiento } = procedimiento;
+  
+
+  const fotos_procedimiento = req.files.map(file => baseUrl + file.filename);
+  
+  console.log(fotos_procedimiento)
+
+  
+  const nuevoProcedimiento = await Procedimiento.create({
+    numero_procedimiento,
+    desc_procedimiento,
+    foto_procedimiento: fotos_procedimiento[indexFoto], 
+    RestauranteId: restauranteId 
+  });
+  
+  procedimientosCreados.push(nuevoProcedimiento);
+  indexFoto++;
+}
+      res.status(201).json({
+        message: "Procedimientos creados exitosamente",
+        procedimientos: procedimientosCreados
+      });
+    } catch (error) {
+      res.status(500).json({ error: error.message });
+    }
+  }
+);
+
 
 
 router.get("/tipuscuina", async (req, res) => await readItems(req, res, TipoCocina)); // Llege
