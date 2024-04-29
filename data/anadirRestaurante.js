@@ -8,6 +8,18 @@ async function anadirRestaurante() {
      2n en foto_restaurante añadir el siguiente texto http://localhost:3000/api/uploads/ + <nombre foto añadida en uopload>
      (AÑADIR EXTENSION IMAGEN EJEMPLO .jpg)
 
+    1 Americana
+    2 China
+    3 Griega
+    4 India
+    5 Italiana
+    6 Japonesa
+    7 Mexicana
+    8 Marroqui
+    9 Española
+    10 Thailandesa
+    11 Catalana
+
      */
 
     try {
@@ -59,7 +71,7 @@ async function anadirRestaurante() {
             dieta: 0,
             direccion: "calle fabra",
             numero: "42",
-            cp: "12345",
+            cp: "08001",
             foto_restaurante: 'restaurante1.jpg',
             tipos_cocina: [9, 3]
         },
@@ -72,7 +84,7 @@ async function anadirRestaurante() {
             dieta: 0,
             direccion: "calle chinatown",
             numero: "42",
-            cp: "12345",
+            cp: "08002",
             foto_restaurante: 'restaurante2.jpg',
             tipos_cocina: [2, 6]
         },
@@ -215,7 +227,7 @@ async function anadirRestaurante() {
             dieta: 0,
             direccion: "Calle Cava Baja 35",
             numero: "35",
-            cp: "28005",
+            cp: "08005",
             foto_restaurante: "restaurante1.jpg",
             tipos_cocina: [1, 9]
         },
@@ -228,7 +240,7 @@ async function anadirRestaurante() {
             dieta: 0,
             direccion: "Calle Cuchilleros 17",
             numero: "17",
-            cp: "28005",
+            cp: "08005",
             foto_restaurante: "restaurante2.jpg",
             tipos_cocina: [7, 9]
         },
@@ -241,7 +253,7 @@ async function anadirRestaurante() {
             dieta: 0,
             direccion: "Calle Cuchilleros 17",
             numero: "17",
-            cp: "28005",
+            cp: "08005",
             foto_restaurante: "restaurante3.jpg",
             tipos_cocina: [8, 9]
         },
@@ -259,7 +271,7 @@ async function anadirRestaurante() {
             numero: "123",
             cp: "08010",
             foto_restaurante: "restaurante2.jpg",
-            tipos_cocina: [India]
+            tipos_cocina: [4]
         },
         {
             nombre: "Spice Garden",
@@ -272,7 +284,7 @@ async function anadirRestaurante() {
             numero: "456",
             cp: "08009",
             foto_restaurante: "restaurante2.jpg",
-            tipos_cocina: [India]
+            tipos_cocina: [4]
         },
 {
             nombre: "Namaste Indian Cuisine",
@@ -285,7 +297,7 @@ async function anadirRestaurante() {
             numero: "789",
             cp: "08008",
             foto_restaurante: "restaurante2.jpg",
-            tipos_cocina: [India]
+            tipos_cocina: [4]
         },
 {
             nombre: "Maharaja Palace",
@@ -298,7 +310,7 @@ async function anadirRestaurante() {
             numero: "101",
             cp: "08007",
             foto_restaurante: "restaurante2.jpg",
-            tipos_cocina: [India]
+            tipos_cocina: [4]
         },
 {
             nombre: "Curry House",
@@ -311,7 +323,7 @@ async function anadirRestaurante() {
             numero: "321",
             cp: "08006",
             foto_restaurante: "restaurante2.jpg",
-            tipos_cocina: [India]
+            tipos_cocina: [4]
         },
 
         // GRIEGO
@@ -327,7 +339,7 @@ async function anadirRestaurante() {
             numero: "123",
             cp: "08005",
             foto_restaurante: "restaurante2.jpg",
-            tipos_cocina: [Griego]
+            tipos_cocina: [3]
         },
         {
             nombre: "Mediterranean Delight",
@@ -340,7 +352,7 @@ async function anadirRestaurante() {
             numero: "456",
             cp: "08004",
             foto_restaurante: "restaurante2.jpg",
-            tipos_cocina: [Griego]
+            tipos_cocina: [3]
         },
 {
             nombre: "Zeus Tavern",
@@ -353,7 +365,7 @@ async function anadirRestaurante() {
             numero: "789",
             cp: "08003",
             foto_restaurante: "restaurante2.jpg",
-            tipos_cocina: [Griego]
+            tipos_cocina: [3]
         },
 {
             nombre: "Olive Grove Restaurant",
@@ -366,7 +378,7 @@ async function anadirRestaurante() {
             numero: "101",
             cp: "08002",
             foto_restaurante: "restaurante2.jpg",
-            tipos_cocina: [Griego]
+            tipos_cocina: [3]
         },
 {
             nombre: "Dionysus Grill",
@@ -379,7 +391,7 @@ async function anadirRestaurante() {
             numero: "324",
             cp: "08001",
             foto_restaurante: "restaurante2.jpg",
-            tipos_cocina: [Griego]
+            tipos_cocina: [3]
         },
 
         // MARROQUI
@@ -395,7 +407,7 @@ async function anadirRestaurante() {
             numero: "45",
             cp: "08011",
             foto_restaurante: "restaurante2.jpg",
-            tipos_cocina: [Marroqui]
+            tipos_cocina: [8]
         },
         {
             nombre: "Marrakech Spice House",
@@ -408,7 +420,7 @@ async function anadirRestaurante() {
             numero: "78",
             cp: "08012",
             foto_restaurante: "restaurante2.jpg",
-            tipos_cocina: [Marroqui]
+            tipos_cocina: [8]
         },
 {
             nombre: "Oasis del Desierto",
@@ -421,7 +433,7 @@ async function anadirRestaurante() {
             numero: "12",
             cp: "08013",
             foto_restaurante: "restaurante2.jpg",
-            tipos_cocina: [Marroqui]
+            tipos_cocina: [8]
         },
 {
             nombre: "Casablanca Flavors",
@@ -434,7 +446,7 @@ async function anadirRestaurante() {
             numero: "33",
             cp: "08014",
             foto_restaurante: "restaurante2.jpg",
-            tipos_cocina: [Marroqui]
+            tipos_cocina: [8]
         },
 {
             nombre: "Medina Palace",
@@ -447,7 +459,7 @@ async function anadirRestaurante() {
             numero: "55",
             cp: "08015",
             foto_restaurante: "restaurante2.jpg",
-            tipos_cocina: [Marroqui]
+            tipos_cocina: [8]
         }
         ]
 
