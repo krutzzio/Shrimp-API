@@ -429,8 +429,6 @@ router.post("/seguirRest/:restId", checkToken, async (req, res) => {
     // Verifica si el usuario y el restaurante existen
     const usuario = await Usuario.findByPk(req.userId);
     const restaurante = await Restaurante.findByPk(restId);
-    console.log(restaurante)
-    console.log(usuario)
     if (!usuario || !restaurante) {
       return res
         .status(404)
@@ -440,7 +438,7 @@ router.post("/seguirRest/:restId", checkToken, async (req, res) => {
     const existeRelacion = await usuario.hasRestaurante(restaurante);
     if (existeRelacion) {
       await usuario.removeRestaurante(restaurante)
-      return res.status(200).json({ in: true, message: "Relación eliminada" });
+      return res.status(200).json({ in: false, message: "Relación eliminada" });
     } else {
       // Crea una nueva entrada en la tabla intermedia
       await usuario.addRestaurante(restaurante);
@@ -452,7 +450,7 @@ router.post("/seguirRest/:restId", checkToken, async (req, res) => {
 });
 
 /* -------------------------------------------------------------------------- */
-/*                                  RECETAS                                 */
+/*                                  RECETAS                                   */
 /* -------------------------------------------------------------------------- */
 
 router.get("/home/recetas", checkToken, async (req, res) => {
@@ -670,48 +668,44 @@ router.post("/home/:restId/registerReceta", upload.single("photo"), async (req, 
   }
 });
 
-router.post(
-  "/home/:restId/procedimientos",
+router.post("/home/:restId/procedimientos", upload.array("photo", 7), async (req, res) => {
+  try {
+    const {
+      procedimientos,
+    } = req.body;
+    console.log(procedimientos)
+    const restauranteId = req.params.restId;
+    const baseUrl = 'http://localhost:3000/api/uploads/';
+    const procedimientosCreados = [];
+    let indexFoto = 0;
 
-  upload.array("photo", 7),
-  async (req, res) => {
-    try {
-      const {
-        procedimientos,
-      } = req.body;
-      console.log(procedimientos)
-      const restauranteId = req.params.restId;
-      const baseUrl = 'http://localhost:3000/api/uploads/';
-      const procedimientosCreados = [];
-let indexFoto = 0; 
+    for (const procedimiento of procedimientos) {
+      const { numero_procedimiento, desc_procedimiento } = procedimiento;
 
-for (const procedimiento of procedimientos) {
-  const { numero_procedimiento, desc_procedimiento } = procedimiento;
-  
 
-  const fotos_procedimiento = req.files.map(file => baseUrl + file.filename);
-  
-  console.log(fotos_procedimiento)
+      const fotos_procedimiento = req.files.map(file => baseUrl + file.filename);
 
-  
-  const nuevoProcedimiento = await Procedimiento.create({
-    numero_procedimiento,
-    desc_procedimiento,
-    foto_procedimiento: fotos_procedimiento[indexFoto], 
-    RestauranteId: restauranteId 
-  });
-  
-  procedimientosCreados.push(nuevoProcedimiento);
-  indexFoto++;
-}
-      res.status(201).json({
-        message: "Procedimientos creados exitosamente",
-        procedimientos: procedimientosCreados
+      console.log(fotos_procedimiento)
+
+
+      const nuevoProcedimiento = await Procedimiento.create({
+        numero_procedimiento,
+        desc_procedimiento,
+        foto_procedimiento: fotos_procedimiento[indexFoto],
+        RestauranteId: restauranteId
       });
-    } catch (error) {
-      res.status(500).json({ error: error.message });
+
+      procedimientosCreados.push(nuevoProcedimiento);
+      indexFoto++;
     }
+    res.status(201).json({
+      message: "Procedimientos creados exitosamente",
+      procedimientos: procedimientosCreados
+    });
+  } catch (error) {
+    res.status(500).json({ error: error.message });
   }
+}
 );
 
 
