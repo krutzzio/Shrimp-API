@@ -240,8 +240,8 @@ Restaurante.belongsToMany(Usuario, { through: 'UsuarioRestaurante' }); // Un res
 Receta.belongsToMany(Ingrediente, { through: Receta_Ingrediente }); // Una receta puede tener varios ingredientes
 Ingrediente.belongsToMany(Receta, { through: Receta_Ingrediente }); // Un ingrediente puede ser usado por varias recetas
 
-Receta.belongsToMany(Usuario, { through: 'RecetaUsuario' });
 Usuario.belongsToMany(Receta, { through: 'RecetaUsuario' });
+Receta.belongsToMany(Usuario, { through: 'RecetaUsuario' });
 
 Restaurante.hasMany(Receta)// Un restaurante puede tener muchas recetas
 Receta.belongsTo(Restaurante) // Un receta pertences a un solo restaurante

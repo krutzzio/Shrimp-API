@@ -82,16 +82,7 @@ router.get("/api/refresh", checkToken, async (req, res) => {
 /* -------------------------------------------------------------------------- */
 
 // Operacions CRUD per als Usuaris
-router.get(
-  "/users",
-  checkToken,
-  async (req, res) => await readItems(req, res, Usuario)
-); // Llegeix tots els usuaris
-// router.get(
-//   "/users/:id",
-//   checkToken,
-//   async (req, res) => await readItem(req, res, Usuario)
-// ); // Llegeix un usuari específic
+router.get("/users", checkToken, async (req, res) => await readItems(req, res, Usuario)); // Llegeix tots els usuaris
 
 router.get("/users/:id", async (req, res) => {
   try {
@@ -103,6 +94,43 @@ router.get("/users/:id", async (req, res) => {
 
     // Comprueba si el usuario tiene una imagen de perfil
     res.json(user);
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+});
+
+router.get("/profileUser", checkToken, async (req, res) => {
+  try {
+    const user = await Usuario.findByPk(req.userId);
+    if (!user) {
+      return res.status(404).json({ error: "User not found" });
+    }
+    let restUser = await user.getRestaurantes();
+    let recetasUser = await user.getReceta()
+
+    restUser = await Promise.all(restUser.map(async restaurante => {
+      const tipoCocinaRestaurante = await restaurante.getTipoCocinas()
+      const restInUser = await user.hasRestaurante(restaurante);
+      return {
+        restaurante: restaurante.dataValues,
+        tipoCocinaRestaurante: tipoCocinaRestaurante,
+        restInUser: restInUser
+      }
+    }))
+
+    recetasUser = await Promise.all(recetasUser.map(async receta => {
+      const tipoCocinaReceta = await receta.getTipoCocina()
+      const nombreRestaurante = await receta.getRestaurante()
+      const recetaInUser = await user.hasReceta(receta);
+      return {
+        receta: receta.dataValues,
+        nombreRestaurante: nombreRestaurante.nombre,
+        tipoCocinaReceta: tipoCocinaReceta.nombre_tipo,
+        recetaInUser: recetaInUser
+      }
+    }))
+
+    res.status(200).json({ restUser, recetasUser });
   } catch (error) {
     res.status(500).json({ error: error.message });
   }
@@ -150,7 +178,7 @@ router.post("/registerUser", upload.single("photo"), async (req, res) => {
       dieta,
     } = req.body; // Obté el nom, email i contrasenya de la petició
 
-    const baseUrl = 'http://34.175.64.191:3000/api/uploads/'
+    const baseUrl = 'http://localhost:3000/api/uploads/'
     const foto_perfil = req.file ? baseUrl + req.file.filename : null; // Obtiene la ruta del archivo subido
 
     if (!nombre || !correo || !password || !cp) {
@@ -168,7 +196,6 @@ router.post("/registerUser", upload.single("photo"), async (req, res) => {
 
     const cocinas = tipos_cocina.split(",")
     const tiposCocinas = await TipoCocina.findAll({ where: { nombre_tipo: cocinas } })
-    console.log(tiposCocinas)
     const cocinasId = tiposCocinas.map(cocina => cocina.id)
 
 
@@ -208,40 +235,7 @@ router.post("/registerUser", upload.single("photo"), async (req, res) => {
 
 
 
-/* --------------------------- Seguir restaurante --------------------------- */
-router.post("/followRest/:userId/:restId", async (req, res) => {
-  try {
-    const { userId, restId } = req.params; // QUE ES MEJOR TENER EL USAURIO EN REQ.BODY O EL RESTAURANTE
 
-    console.log(userId)
-    console.log(restId)
-    // Verifica si el usuario y el restaurante existen
-    const usuario = await Usuario.findByPk(userId);
-    const restaurante = await Restaurante.findByPk(restId);
-    console.log(restaurante)
-    console.log(usuario)
-    if (!usuario || !restaurante) {
-      return res
-        .status(404)
-        .json({ error: "Usuario o restaurante no encontrado" });
-    }
-
-    // Verifica si le sigue o no
-    const existeRelacion = await usuario.hasRestaurante(restaurante);
-    if (existeRelacion) {
-
-      await usuario.removeRestaurante(restaurante)
-      return res.status(409).json({ error: "Eliminacion " });
-    }
-
-    // Crea una nueva entrada en la tabla intermedia
-    await usuario.addRestaurante(restaurante);
-
-    res.status(200).json({ message: "Usuario sigue al restaurante " });
-  } catch (error) {
-    res.status(500).json({ error: error.message });
-  }
-});
 
 /* -------------------------------------------------------------------------- */
 /*                                RESTAURANTE                               */
@@ -305,8 +299,6 @@ router.get("/home/restaurantes", checkToken, async (req, res) => {
       }
     }))
 
-
-
     //Obtener recetas diferentes
     /*     const allRestaurantes = Restaurante.findAll()
         let restaurantesNuevos = await allRestaurantes.filter(rest => !TipoCocinaId.includes(rest.TipoCocinaId))
@@ -345,7 +337,7 @@ router.post("/registerRest", upload.single("photo"), async (req, res) => {
       dieta
     } = req.body;
     console.log(req.body)
-    const baseUrl = 'http://34.175.64.191:3000/api/uploads/'
+    const baseUrl = 'http://localhost:3000/api/uploads/'
     const foto_restaurante = req.file ? baseUrl + req.file.filename : null; // Obtiene la ruta del archivo subido
 
     if (
@@ -430,6 +422,36 @@ router.post("/loginRest", async (req, res) => {
   }
 });
 
+/* --------------------------- Seguir restaurante --------------------------- */
+router.post("/seguirRest/:restId", checkToken, async (req, res) => {
+  try {
+    const { restId } = req.params;
+
+    // Verifica si el usuario y el restaurante existen
+    const usuario = await Usuario.findByPk(req.userId);
+    const restaurante = await Restaurante.findByPk(restId);
+    console.log(restaurante)
+    console.log(usuario)
+    if (!usuario || !restaurante) {
+      return res
+        .status(404)
+        .json({ error: "Usuario o restaurante no encontrado" });
+    }
+    // Verifica si le sigue o no
+    const existeRelacion = await usuario.hasRestaurante(restaurante);
+    if (existeRelacion) {
+      await usuario.removeRestaurante(restaurante)
+      return res.status(200).json({ in: true, message: "Relación eliminada" });
+    } else {
+      // Crea una nueva entrada en la tabla intermedia
+      await usuario.addRestaurante(restaurante);
+      res.status(200).json({ in: true, message: "Relación creada" });
+    }
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+});
+
 /* -------------------------------------------------------------------------- */
 /*                                  RECETAS                                 */
 /* -------------------------------------------------------------------------- */
@@ -483,7 +505,6 @@ router.get("/home/recetas", checkToken, async (req, res) => {
       }
     }))
 
-
     //Obtener recetas diferentes
     const allRecetas = Receta.findAll()
     let recetasNuevas = (await allRecetas).filter(receta => !TipoCocinaId.includes(receta.TipoCocinaId))
@@ -520,16 +541,12 @@ router.put("/home/:restId/recipes/:id", checkToken, async (req, res) => {
 
 router.delete("/recipes/:id", checkToken, async (req, res) => await deleteItem(req, res, Receta)); // Elimina un recipes
 
-
-
-
-
-router.post("/followRecipe/:userId/:recipeId", async (req, res) => {
+router.post("/seguirReceta/:recetaId", checkToken, async (req, res) => {
   try {
-    const { userId, recipeId } = req.params;
+    const { recetaId } = req.params;
 
-    const usuario = await Usuario.findByPk(userId);
-    const receta = await Receta.findByPk(recipeId);
+    const usuario = await Usuario.findByPk(req.userId);
+    const receta = await Receta.findByPk(recetaId);
 
     if (!usuario || !receta) {
       return res
@@ -540,12 +557,11 @@ router.post("/followRecipe/:userId/:recipeId", async (req, res) => {
     const sigueReceta = await usuario.hasReceta(receta);
     if (sigueReceta) {
       await usuario.removeReceta(receta);
-      return res.status(200).json({ message: "Relación de seguimiento eliminada" });
+      return res.status(200).json({ in: false, message: "Relación de seguimiento eliminada" });
     } else {
       await usuario.addReceta(receta);
-      return res.status(200).json({ message: "Usuario sigue la receta" });
+      return res.status(200).json({ in: true, message: "Usuario sigue la receta" });
     }
-
   } catch (error) {
     res.status(500).json({ error: error.message });
   }

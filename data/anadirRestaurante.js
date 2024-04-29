@@ -24,17 +24,17 @@ async function anadirRestaurante() {
 
     try {
         const restObj = [{
-            nombre: 'Nombre bonito',
-            descripcio: 'Mejor restaurante del barrio',
-            correo: 'correo@test.com',
+            nombre: 'Paco',
+            descripcio: 'Siempre podras contar con nosotros',
+            correo: 'correo@paco.com',
             password: 'test123',
             telefono: "999999999",
             dieta: 0,
-            direccion: "calle test",
-            numero: "42",
+            direccion: "Carrer industria",
+            numero: "56",
             cp: "08032",
             foto_restaurante: 'restaurante1.jpg',
-            tipos_cocina: [1]
+            tipos_cocina: [9]
         },
         {
             nombre: 'Don Kamaron',
@@ -47,42 +47,29 @@ async function anadirRestaurante() {
             numero: "42",
             cp: "08032",
             foto_restaurante: 'restaurante2.jpg',
-            tipos_cocina: [9, 7]
+            tipos_cocina: [9]
         },
         {
-            nombre: 'Restaurante de la esquina',
-            descripcio: 'Mejor restaurante de la esquina',
-            correo: 'esquina1@test123.com',
-            password: 'test123',
-            telefono: "999929999",
-            dieta: 0,
-            direccion: "calle test",
-            numero: "42",
-            cp: "08032",
-            foto_restaurante: 'restaurante3.jpg',
-            tipos_cocina: [2, 6]
-        },
-        {
-            nombre: 'Restaurante La esquinica',
-            descripcio: 'Restaurante de la esquinica con las mejores bravas.',
+            nombre: 'La esquinica',
+            descripcio: 'Bar de la esquinica con las mejores bravas.',
             correo: 'esquinica@test123.com',
             password: 'test123',
             telefono: "999929999",
             dieta: 0,
-            direccion: "calle fabra",
-            numero: "42",
-            cp: "08001",
+            direccion: "Passeig de Fabra i Puig",
+            numero: "296",
+            cp: "08031",
             foto_restaurante: 'restaurante1.jpg',
-            tipos_cocina: [9, 3]
+            tipos_cocina: [9]
         },
         {
             nombre: 'Xinatown',
-            descripcio: 'Restaurante con las mejores comida china',
+            descripcio: 'Restaurante con las mejores comida china y japonesa',
             correo: 'xinatown@test123.com',
             password: 'test123',
             telefono: "999929999",
             dieta: 0,
-            direccion: "calle chinatown",
+            direccion: "Calle chinatown",
             numero: "42",
             cp: "08002",
             foto_restaurante: 'restaurante2.jpg',
@@ -286,7 +273,7 @@ async function anadirRestaurante() {
             foto_restaurante: "restaurante2.jpg",
             tipos_cocina: [4]
         },
-{
+        {
             nombre: "Namaste Indian Cuisine",
             descripcio: "Platos tradicionales indios con un toque moderno.",
             correo: "contact@namaste.com",
@@ -299,7 +286,7 @@ async function anadirRestaurante() {
             foto_restaurante: "restaurante2.jpg",
             tipos_cocina: [4]
         },
-{
+        {
             nombre: "Maharaja Palace",
             descripcio: "Elegante restaurante con auténtica cocina del norte de la India.",
             correo: "reservations@maharajapalace.com",
@@ -312,7 +299,7 @@ async function anadirRestaurante() {
             foto_restaurante: "restaurante2.jpg",
             tipos_cocina: [4]
         },
-{
+        {
             nombre: "Curry House",
             descripcio: "Comida india fresca y sabrosa en un ambiente acogedor.",
             correo: "info@curryhouse.com",
@@ -327,7 +314,7 @@ async function anadirRestaurante() {
         },
 
         // GRIEGO
-        
+
         {
             nombre: "Opa! Greek Taverna",
             descripcio: "Auténtica experiencia culinaria griega con música y baile.",
@@ -354,7 +341,7 @@ async function anadirRestaurante() {
             foto_restaurante: "restaurante2.jpg",
             tipos_cocina: [3]
         },
-{
+        {
             nombre: "Zeus Tavern",
             descripcio: "Comida griega casera en un ambiente familiar y acogedor.",
             correo: "contact@zeustavern.com",
@@ -367,7 +354,7 @@ async function anadirRestaurante() {
             foto_restaurante: "restaurante2.jpg",
             tipos_cocina: [3]
         },
-{
+        {
             nombre: "Olive Grove Restaurant",
             descripcio: "Cocina griega tradicional con ingredientes frescos y sabrosos.",
             correo: "reservations@olivegrove.com",
@@ -380,7 +367,7 @@ async function anadirRestaurante() {
             foto_restaurante: "restaurante2.jpg",
             tipos_cocina: [3]
         },
-{
+        {
             nombre: "Dionysus Grill",
             descripcio: "Experiencia gastronómica griega con una variedad de platos y vinos.",
             correo: "info@dionysusgrill.com",
@@ -395,7 +382,7 @@ async function anadirRestaurante() {
         },
 
         // MARROQUI
-        
+
         {
             nombre: "Al-Andalus Moroccan Cuisine",
             descripcio: "Delicias marroquíes auténticas en un ambiente exquisitamente decorado con influencias de Al-Andalus.",
@@ -422,7 +409,7 @@ async function anadirRestaurante() {
             foto_restaurante: "restaurante2.jpg",
             tipos_cocina: [8]
         },
-{
+        {
             nombre: "Oasis del Desierto",
             descripcio: "Sumérgete en la experiencia culinaria del desierto con platos tradicionales marroquíes en un oasis de tranquilidad.",
             correo: "info@oasisdesierto.com",
@@ -435,7 +422,7 @@ async function anadirRestaurante() {
             foto_restaurante: "restaurante2.jpg",
             tipos_cocina: [8]
         },
-{
+        {
             nombre: "Casablanca Flavors",
             descripcio: " Inspirado en la rica diversidad culinaria de Casablanca, este restaurante ofrece una experiencia gastronómica única.",
             correo: "info@casablancaflavors.com",
@@ -448,7 +435,7 @@ async function anadirRestaurante() {
             foto_restaurante: "restaurante2.jpg",
             tipos_cocina: [8]
         },
-{
+        {
             nombre: "Medina Palace",
             descripcio: "Sumérgete en la majestuosidad de la medina con auténtica cocina marroquí servida en un palacio restaurado.",
             correo: "info@medinapalace.com",
