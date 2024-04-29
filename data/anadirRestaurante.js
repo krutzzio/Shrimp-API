@@ -12,7 +12,7 @@ async function anadirRestaurante() {
 
     try {
         const restObj = [{
-            nombre: 'Restaurante Nombre bonito',
+            nombre: 'Nombre bonito',
             descripcio: 'Mejor restaurante del barrio',
             correo: 'correo@test.com',
             password: 'test123',
@@ -25,7 +25,7 @@ async function anadirRestaurante() {
             tipos_cocina: [1]
         },
         {
-            nombre: 'Restaurante DonKamaron',
+            nombre: 'Don Kamaron',
             descripcio: 'Mejor restaurante de buenos camarón',
             correo: 'donkamaron@test123.com',
             password: 'test123',
@@ -64,7 +64,7 @@ async function anadirRestaurante() {
             tipos_cocina: [9, 3]
         },
         {
-            nombre: 'Restaurante Xinatown',
+            nombre: 'Xinatown',
             descripcio: 'Restaurante con las mejores comida china',
             correo: 'xinatown@test123.com',
             password: 'test123',
@@ -77,7 +77,7 @@ async function anadirRestaurante() {
             tipos_cocina: [2, 6]
         },
         {
-            nombre: "Restaurante La Barceloneta",
+            nombre: "La Barceloneta",
             descripcio: "Restaurante de cocina mediterránea",
             correo: "labarceloneta@test123.com",
             password: "test123",
@@ -90,7 +90,7 @@ async function anadirRestaurante() {
             tipos_cocina: [2, 6]
         },
         {
-            nombre: "Restaurante El Born",
+            nombre: "El Born",
             descripcio: "Restaurante vegetariano en el Born",
             correo: "elborn@test123.com",
             password: "test123",
@@ -103,7 +103,7 @@ async function anadirRestaurante() {
             tipos_cocina: [3, 8]
         },
         {
-            nombre: "Restaurante El Raval",
+            nombre: "El Raval",
             descripcio: "Restaurante de cocina catalana",
             correo: "elraval@test123.com",
             password: "test123",
@@ -116,7 +116,7 @@ async function anadirRestaurante() {
             tipos_cocina: [1, 4]
         },
         {
-            nombre: "Restaurante Gràcia",
+            nombre: "Gràcia",
             descripcio: "Restaurante vegano en Gràcia",
             correo: "gracia@test123.com",
             password: "test123",
@@ -129,7 +129,7 @@ async function anadirRestaurante() {
             tipos_cocina: [5, 7]
         },
         {
-            nombre: "Restaurante El Gòtic",
+            nombre: "El Gòtic",
             descripcio: "Restaurante de fusión en el Gòtic",
             correo: "elgotic@test123.com",
             password: "test123",
@@ -142,7 +142,7 @@ async function anadirRestaurante() {
             tipos_cocina: [3, 6]
         },
         {
-            nombre: "Restaurante Poble Sec",
+            nombre: "Poble Sec",
             descripcio: "Restaurante mediterráneo en Poble Sec",
             correo: "poblesec@test123.com",
             password: "test123",
@@ -155,7 +155,7 @@ async function anadirRestaurante() {
             tipos_cocina: [2, 4]
         },
         {
-            nombre: "Restaurante Poblenou",
+            nombre: "Poblenou",
             descripcio: "Restaurante de cocina creativa",
             correo: "poblenou@test123.com",
             password: "test123",
@@ -168,7 +168,7 @@ async function anadirRestaurante() {
             tipos_cocina: [6, 8]
         },
         {
-            nombre: "Restaurante Sants",
+            nombre: "Sants",
             descripcio: "Restaurante vegetariano en Sants",
             correo: "sants@test123.com",
             password: "test123",
@@ -181,7 +181,7 @@ async function anadirRestaurante() {
             tipos_cocina: [3, 7]
         },
         {
-            nombre: "Restaurante Eixample",
+            nombre: "Eixample",
             descripcio: "Restaurante de cocina internacional",
             correo: "eixample@test123.com",
             password: "test123",
@@ -194,7 +194,7 @@ async function anadirRestaurante() {
             tipos_cocina: [1, 5]
         },
         {
-            nombre: "Restaurante Les Corts",
+            nombre: "Les Corts",
             descripcio: "Restaurante de cocina mediterránea",
             correo: "lescorts@test123.com",
             password: "test123",
@@ -207,7 +207,7 @@ async function anadirRestaurante() {
             tipos_cocina: [2, 6]
         },
         {
-            nombre: "Restaurante Casa Lucio",
+            nombre: "Casa Lucio",
             descripcio: "Restaurante de cocina tradicional madrileña",
             correo: "casalucio@test123.com",
             password: "test123",
@@ -220,7 +220,7 @@ async function anadirRestaurante() {
             tipos_cocina: [1, 9]
         },
         {
-            nombre: "Restaurante El Botín",
+            nombre: "El Botín",
             descripcio: "El restaurante más antiguo del mundo",
             correo: "elbotin@test123.com",
             password: "test123",
@@ -233,7 +233,7 @@ async function anadirRestaurante() {
             tipos_cocina: [7, 9]
         },
         {
-            nombre: "Restaurante Sobrino de Botín",
+            nombre: "Sobrino de Botín",
             descripcio: "Restaurante típico madrileño especializado en cocido",
             correo: "sobrinobotin@test123.com",
             password: "test123",
@@ -244,6 +244,210 @@ async function anadirRestaurante() {
             cp: "28005",
             foto_restaurante: "restaurante3.jpg",
             tipos_cocina: [8, 9]
+        },
+
+        // INDIO
+
+        {
+            nombre: "Taj Mahal Indian Restaurant",
+            descripcio: "Auténtica comida india en un ambiente acogedor",
+            correo: "info@tajmahal.com",
+            password: "test123",
+            telefono: "555123456",
+            dieta: 0,
+            direccion: "Calle Principal",
+            numero: "123",
+            cp: "08010",
+            foto_restaurante: "restaurante2.jpg",
+            tipos_cocina: [India]
+        },
+        {
+            nombre: "Spice Garden",
+            descripcio: "Experiencia culinaria de sabores intensos y especias frescas.",
+            correo: "info@spicegarden.com",
+            password: "test123",
+            telefono: "555123456",
+            dieta: 0,
+            direccion: "Avenida Central",
+            numero: "456",
+            cp: "08009",
+            foto_restaurante: "restaurante2.jpg",
+            tipos_cocina: [India]
+        },
+{
+            nombre: "Namaste Indian Cuisine",
+            descripcio: "Platos tradicionales indios con un toque moderno.",
+            correo: "contact@namaste.com",
+            password: "test123",
+            telefono: "555123456",
+            dieta: 0,
+            direccion: "Plaza Principal",
+            numero: "789",
+            cp: "08008",
+            foto_restaurante: "restaurante2.jpg",
+            tipos_cocina: [India]
+        },
+{
+            nombre: "Maharaja Palace",
+            descripcio: "Elegante restaurante con auténtica cocina del norte de la India.",
+            correo: "reservations@maharajapalace.com",
+            password: "test123",
+            telefono: "555123456",
+            dieta: 0,
+            direccion: "Calle Real",
+            numero: "101",
+            cp: "08007",
+            foto_restaurante: "restaurante2.jpg",
+            tipos_cocina: [India]
+        },
+{
+            nombre: "Curry House",
+            descripcio: "Comida india fresca y sabrosa en un ambiente acogedor.",
+            correo: "info@curryhouse.com",
+            password: "test123",
+            telefono: "555123456",
+            dieta: 0,
+            direccion: "Calle del Sabor",
+            numero: "321",
+            cp: "08006",
+            foto_restaurante: "restaurante2.jpg",
+            tipos_cocina: [India]
+        },
+
+        // GRIEGO
+        
+        {
+            nombre: "Opa! Greek Taverna",
+            descripcio: "Auténtica experiencia culinaria griega con música y baile.",
+            correo: "info@opagreek.com",
+            password: "test123",
+            telefono: "555111222",
+            dieta: 0,
+            direccion: "Calle Grecia",
+            numero: "123",
+            cp: "08005",
+            foto_restaurante: "restaurante2.jpg",
+            tipos_cocina: [Griego]
+        },
+        {
+            nombre: "Mediterranean Delight",
+            descripcio: "Sabores frescos y auténticos de la cocina mediterránea griega.",
+            correo: "info@mediterraneandelight.com",
+            password: "test123",
+            telefono: "555333444",
+            dieta: 0,
+            direccion: "Avenida Olivo",
+            numero: "456",
+            cp: "08004",
+            foto_restaurante: "restaurante2.jpg",
+            tipos_cocina: [Griego]
+        },
+{
+            nombre: "Zeus Tavern",
+            descripcio: "Comida griega casera en un ambiente familiar y acogedor.",
+            correo: "contact@zeustavern.com",
+            password: "test123",
+            telefono: "555666777",
+            dieta: 0,
+            direccion: "Plaza Central",
+            numero: "789",
+            cp: "08003",
+            foto_restaurante: "restaurante2.jpg",
+            tipos_cocina: [Griego]
+        },
+{
+            nombre: "Olive Grove Restaurant",
+            descripcio: "Cocina griega tradicional con ingredientes frescos y sabrosos.",
+            correo: "reservations@olivegrove.com",
+            password: "test123",
+            telefono: "555999333",
+            dieta: 0,
+            direccion: "Calle Olive",
+            numero: "101",
+            cp: "08002",
+            foto_restaurante: "restaurante2.jpg",
+            tipos_cocina: [Griego]
+        },
+{
+            nombre: "Dionysus Grill",
+            descripcio: "Experiencia gastronómica griega con una variedad de platos y vinos.",
+            correo: "info@dionysusgrill.com",
+            password: "test123",
+            telefono: "555123456",
+            dieta: 0,
+            direccion: "Calle del Sabor",
+            numero: "324",
+            cp: "08001",
+            foto_restaurante: "restaurante2.jpg",
+            tipos_cocina: [Griego]
+        },
+
+        // MARROQUI
+        
+        {
+            nombre: "Al-Andalus Moroccan Cuisine",
+            descripcio: "Delicias marroquíes auténticas en un ambiente exquisitamente decorado con influencias de Al-Andalus.",
+            correo: "info@alandalus.com",
+            password: "test123",
+            telefono: "555111222",
+            dieta: 0,
+            direccion: "Calle Alhambra",
+            numero: "45",
+            cp: "08011",
+            foto_restaurante: "restaurante2.jpg",
+            tipos_cocina: [Marroqui]
+        },
+        {
+            nombre: "Marrakech Spice House",
+            descripcio: "Sabores auténticos de Marrakech en un entorno encantador con especias exóticas y ambiente vibrante.",
+            correo: "info@marrakechspice.com",
+            password: "test123",
+            telefono: "555333444",
+            dieta: 0,
+            direccion: "Avenida Medina",
+            numero: "78",
+            cp: "08012",
+            foto_restaurante: "restaurante2.jpg",
+            tipos_cocina: [Marroqui]
+        },
+{
+            nombre: "Oasis del Desierto",
+            descripcio: "Sumérgete en la experiencia culinaria del desierto con platos tradicionales marroquíes en un oasis de tranquilidad.",
+            correo: "info@oasisdesierto.com",
+            password: "test123",
+            telefono: "555666777",
+            dieta: 0,
+            direccion: "Plaza Sahara",
+            numero: "12",
+            cp: "08013",
+            foto_restaurante: "restaurante2.jpg",
+            tipos_cocina: [Marroqui]
+        },
+{
+            nombre: "Casablanca Flavors",
+            descripcio: " Inspirado en la rica diversidad culinaria de Casablanca, este restaurante ofrece una experiencia gastronómica única.",
+            correo: "info@casablancaflavors.com",
+            password: "test123",
+            telefono: "555999333",
+            dieta: 0,
+            direccion: "Plaza Hassan II",
+            numero: "33",
+            cp: "08014",
+            foto_restaurante: "restaurante2.jpg",
+            tipos_cocina: [Marroqui]
+        },
+{
+            nombre: "Medina Palace",
+            descripcio: "Sumérgete en la majestuosidad de la medina con auténtica cocina marroquí servida en un palacio restaurado.",
+            correo: "info@medinapalace.com",
+            password: "test123",
+            telefono: "555123456",
+            dieta: 0,
+            direccion: "Calle Medina",
+            numero: "55",
+            cp: "08015",
+            foto_restaurante: "restaurante2.jpg",
+            tipos_cocina: [Marroqui]
         }
         ]
 
