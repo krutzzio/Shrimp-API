@@ -3,8 +3,9 @@ const router = express.Router(); // Crea un router d'Express
 const bcrypt = require("bcrypt"); // Importa la llibreria bcrypt per a encriptar contrasenyes
 const jwt = require("jsonwebtoken"); // Importa la llibreria jsonwebtoken per a generar i verificar JWT
 const multer = require("multer");
-const fs = require("fs");
 const path = require("path");
+const { Op } = require("sequelize");
+
 
 const SECRET_KEY = "vols-que-et-punxi-amb-un-punxo";
 
@@ -17,6 +18,7 @@ const {
   Ingrediente,
   Receta_Ingrediente,
   GrupoAlimento,
+  Promo
 } = require("./models"); // Importa els models de dades
 
 const {
@@ -421,6 +423,36 @@ router.post("/loginRest", async (req, res) => {
   }
 });
 
+
+// creacion de promociones
+router.post("/promos", async (req, res) =>{
+
+  try {
+
+    const {userId, codigo, restId} = req.body
+
+    const usuario = await Usuario.findByPk(userId);
+    if(!usuario){
+      return res
+      .status(404)
+      .json({error: "Usuario no encontrado"})
+    }
+    await Promo.create({
+      codigo: codigo,
+      validada: true,
+      UsuarioId:userId,
+      RestauranteId: restId
+    })
+    res.status(200).json({ in: true, message: "Promo creada" });
+  }
+  catch(error){
+    res.status(400).json({error: error.message})
+    
+  }
+})
+
+
+
 /* --------------------------- Seguir restaurante --------------------------- */
 router.post("/seguirRest/:restId", checkToken, async (req, res) => {
   try {
@@ -488,7 +520,7 @@ router.get("/home/recetas", checkToken, async (req, res) => {
     }))
     recetasRecomendadas = recetasRecomendadas.filter(recetas => recetas)
 
-    //Obtener recetas Recomendadas
+    //Obtener Restaurantes Recomendadas
     const restaurantesCercanos = await Restaurante.findAll({ where: { cp: user.cp } })
     const RestauranteId = restaurantesCercanos.map(rest => rest.id)
     let recetasCercanas = await Receta.findAll({ where: { RestauranteId } })
@@ -713,11 +745,69 @@ for (const procedimiento of procedimientos) {
     }
   }
 );
+//filtro por palabra
+router.post("/recetasPorPalabra", async (req, res) => {
+  try {
+    const { palabra } = req.body; // Obtén la palabra del cuerpo de la solicitud
+    // Busca todas las recetas que comiencen con la palabra dada
+    const recetas = await Receta.findAll({
+      where: {
+        nombre_receta: {
+          [Op.startsWith]: palabra // Usa el operador de sequelize para buscar recetas que comiencen con la palabra
+        }
+      }
+    });
+    res.status(200).json({ recetas: recetas }); // Devuelve las recetas encontradas
+  } catch (error) {
+    res.status(500).json({ error: error.message }); // Maneja cualquier error y devuelve un mensaje de error
+  }
+});
+
+// filtro por tipo de comida
+router.get("/recipesByType/:typeId", async (req, res) => {
+  try {
+    const typeId = req.params.typeId; // Obtiene el ID del tipo de comida del parámetro de la ruta
+
+    // Busca el tipo de cocina por su ID
+    const tipoCocina = await TipoCocina.findByPk(typeId);
+    if (!tipoCocina) {
+      return res.status(404).json({ error: "Tipo de comida no encontrado" });
+    }
+
+    // Busca las recetas que corresponden al tipo de comida dado
+    const recetas = await Receta.findAll({
+      where: { TipoCocinaId: typeId },
+    });
+
+    res.status(200).json({ recetas });
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+});
+// filtro por codigo postal
+router.get("/cp/:codigoPostal", async (req, res) => {
+  try {
+    const codigoPostal = req.params.codigoPostal;
+    
+    // Buscas Restaurantes por el codigo postal del params
+    const restaurantes = await Restaurante.findAll({ where: { cp: codigoPostal } });
+    
+    // cojes los ids
+    const restaurantesIds = restaurantes.map(restaurante => restaurante.id);
+    
+    // i buscas todas las recetas que tengan ese id
+    const recetas = await Receta.findAll({ where: { RestauranteId: restaurantesIds } });
+    
+    // las devuelves
+    res.json({ recetas });
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+});
 
 
-
-router.get("/tipuscuina", async (req, res) => await readItems(req, res, TipoCocina)); // Llege
-router.get("/ingredientes", async (req, res) => await readItems(req, res, Ingrediente)); // Llege
+router.get("/tipuscuina", async (req, res) => await readItems(req, res, TipoCocina)); 
+router.get("/ingredientes", async (req, res) => await readItems(req, res, Ingrediente)); 
 
 
 router.get('/uploads/:fileName', (req, res) => {
