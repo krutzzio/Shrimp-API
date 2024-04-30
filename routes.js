@@ -603,8 +603,35 @@ router.get("/home/recetas", checkToken, async (req, res) => {
   }
 });
 
-router.get("/home/:restId/recipes/:id", checkToken, async (req, res) => await readItems(req, res, Receta)); // Llegeix tots els restaurants
-router.get("/recipes/:id", checkToken, async (req, res) => await readItem(req, res, Receta)); // Llegeix un recipes específic
+router.get("/receta/:id", checkToken, async (req, res) => {
+  try {
+    const user = Usuario.findByPk(req.userId)
+
+    const id = req.params.id
+    const receta = await Receta.findByPk(id)
+    const restauranteReceta = await receta.getRestaurante()
+
+    const ingredientesRecetas = await receta.getIngredientes()
+    let grupoAlimentos = []
+    const alergias = await Promise.all(ingredientesRecetas.map(async ingrediente => {
+      let alergiaIngrediente = await ingrediente.getGrupoAlimento()
+      if (grupoAlimentos.includes(alergiaIngrediente)) return
+      else return [...grupoAlimentos, alergiaIngrediente]
+    }))
+
+    const procedimientosReceta = await receta.getProcedimientos()
+
+    const restInUser = user.hasRestaurante()
+    const recetaInUser = user.hasReceta()
+
+    res.status(200).json({ restauranteReceta, receta, alergias, ingredientesRecetas, procedimientosReceta, restInUser, recetaInUser });
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+}); // Llegeix un recipes específic
+
+
+
 router.put("/home/:restId/recipes/:id", checkToken, async (req, res) => {
   try {
     const restaurantId = req.params.restId;
@@ -798,17 +825,10 @@ router.post("/recetasPorPalabra", async (req, res) => {
         }
       }
     });
-    const restaurantes = await Restaurante.findAll({
-      where: {
-        nombre: {
-          [Op.startsWith]: palabra // Usa el operador de sequelize para buscar restaurantes que comiencen con la palabra
-        }
-      }
-    });
-    res.status(200).json({ 
+
+    res.status(200).json({
       recetas: recetas,
-      restaurantes:restaurantes
-     }); // Devuelve las recetas encontradas
+    }); // Devuelve las recetas encontradas
   } catch (error) {
     res.status(500).json({ error: error.message }); // Maneja cualquier error y devuelve un mensaje de error
   }
