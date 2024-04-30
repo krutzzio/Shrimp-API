@@ -7,21 +7,6 @@ async function anadirRestaurante() {
      1r paso añadir imagen en la carpeta upload (nombre unico)
      2n en foto_restaurante añadir el siguiente texto http://localhost:3000/api/uploads/ + <nombre foto añadida en uopload>
      (AÑADIR EXTENSION IMAGEN EJEMPLO .jpg)
-
-    1 Americana
-    2 China
-    3 Griega
-    4 India
-    5 Italiana
-    6 Japonesa
-    7 Mexicana
-    8 Marroqui
-    9 Española
-    10 Thailandesa
-    11 Catalana
-    12 Colombiano
-    13 Coreano
-    14 Peruano
      */
     
     try {
@@ -444,7 +429,7 @@ async function anadirRestaurante() {
                 direccion: "Rambla del Poblenou",
                 numero: "98",
                 cp: "08018",
-                foto_restaurante: "restaurante3.jpg",
+                foto_restaurante: "mexicano1.jpg",
                 tipos_cocina: [7]
             },
             {
@@ -457,7 +442,7 @@ async function anadirRestaurante() {
                 direccion: "Carrer de Sants",
                 numero: "79",
                 cp: "08014",
-                foto_restaurante: "restaurante1.jpg",
+                foto_restaurante: "mexicano2.jpg",
                 tipos_cocina: [7]
             },
             {
@@ -470,7 +455,7 @@ async function anadirRestaurante() {
                 direccion: "Passeig de Gràcia",
                 numero: "45",
                 cp: "08007",
-                foto_restaurante: "restaurante2.jpg",
+                foto_restaurante: "mexicano3.jpg",
                 tipos_cocina: [7]
             },
             {
@@ -483,7 +468,7 @@ async function anadirRestaurante() {
                 direccion: "Travessera de Les Corts",
                 numero: "322",
                 cp: "08028",
-                foto_restaurante: "restaurante3.jpg",
+                foto_restaurante: "mexicano4.jpg",
                 tipos_cocina: [7]
             },
             {
@@ -496,7 +481,7 @@ async function anadirRestaurante() {
                 direccion: "Calle Valencia",
                 numero: "25",
                 cp: "08029",
-                foto_restaurante: "restaurante3.jpg",
+                foto_restaurante: "mexicano5.jpg",
                 tipos_cocina: [7]
             },
 
@@ -512,7 +497,7 @@ async function anadirRestaurante() {
                 direccion: "Calle Alhambra",
                 numero: "45",
                 cp: "08011",
-                foto_restaurante: "restaurante2.jpg",
+                foto_restaurante: "marroqui1.jpg",
                 tipos_cocina: [8]
             },
             {
@@ -525,7 +510,7 @@ async function anadirRestaurante() {
                 direccion: "Avenida Medina",
                 numero: "78",
                 cp: "08012",
-                foto_restaurante: "restaurante2.jpg",
+                foto_restaurante: "marroqui2.jpg",
                 tipos_cocina: [8]
             },
             {
@@ -538,7 +523,7 @@ async function anadirRestaurante() {
                 direccion: "Plaza Sahara",
                 numero: "12",
                 cp: "08013",
-                foto_restaurante: "restaurante2.jpg",
+                foto_restaurante: "marroqui3.jpg",
                 tipos_cocina: [8]
             },
             {
@@ -551,7 +536,7 @@ async function anadirRestaurante() {
                 direccion: "Plaza Hassan II",
                 numero: "33",
                 cp: "08014",
-                foto_restaurante: "restaurante2.jpg",
+                foto_restaurante: "marroqui4.jpg",
                 tipos_cocina: [8]
             },
             {
@@ -564,10 +549,9 @@ async function anadirRestaurante() {
                 direccion: "Calle Medina",
                 numero: "55",
                 cp: "08015",
-                foto_restaurante: "restaurante2.jpg",
+                foto_restaurante: "marroqui5.jpg",
                 tipos_cocina: [8]
             },
-
 
             //9 ESPAÑOL
 
@@ -581,7 +565,7 @@ async function anadirRestaurante() {
                 direccion: "Carrer industria",
                 numero: "56",
                 cp: "08032",
-                foto_restaurante: 'restaurante1.jpg',
+                foto_restaurante: 'espanol1.jpg',
                 tipos_cocina: [9]
             },
             {
@@ -594,7 +578,7 @@ async function anadirRestaurante() {
                 direccion: "calle test",
                 numero: "42",
                 cp: "08032",
-                foto_restaurante: 'restaurante2.jpg',
+                foto_restaurante: 'espanol2.jpg',
                 tipos_cocina: [9]
             },
             {
@@ -607,7 +591,7 @@ async function anadirRestaurante() {
                 direccion: "Passeig de Fabra i Puig",
                 numero: "296",
                 cp: "08031",
-                foto_restaurante: 'restaurante1.jpg',
+                foto_restaurante: 'espanol3.jpg',
                 tipos_cocina: [9]
             },
             {
@@ -620,7 +604,7 @@ async function anadirRestaurante() {
                 direccion: "Calle Marina",
                 numero: "105",
                 cp: "08001",
-                foto_restaurante: "restaurante3.jpg",
+                foto_restaurante: "espanol4.jpg",
                 tipos_cocina: [9]
             },
             {
@@ -633,7 +617,7 @@ async function anadirRestaurante() {
                 direccion: "Calle Mayor",
                 numero: "10",
                 cp: "08030",
-                foto_restaurante: "restaurante3.jpg",
+                foto_restaurante: "espanol5.jpg",
                 tipos_cocina: [9]
             },
 
@@ -694,7 +678,7 @@ async function anadirRestaurante() {
             {
                 nombre: "Chao Phraya",
                 descripcio: "Un rincón de Tailandia en tu ciudad, donde puedes disfrutar de platos clásicos tailandeses en un ambiente elegante y acogedor.",
-                correo: "info@latascaespanola.com",
+                correo: "info@chaophraya.com",
                 password: "test123",
                 telefono: "932999999",
                 dieta: 0,
@@ -710,71 +694,113 @@ async function anadirRestaurante() {
             {
                 nombre: "El Born",
                 descripcio: "Restaurante vegetariano en el Born",
-                correo: "elborn@test123.com",
+                correo: "elborn@elbooorn.com",
                 password: "test123",
                 telefono: "933888888",
                 dieta: 0,
                 direccion: "Calle Princesa",
                 numero: "50",
                 cp: "08003",
-                foto_restaurante: "restaurante1.jpg",
+                foto_restaurante: "catalana1.jpg",
                 tipos_cocina: [11]
             },
             {
                 nombre: "El Raval",
                 descripcio: "Restaurante de cocina catalana",
-                correo: "elraval@test123.com",
+                correo: "lala@test123.com",
                 password: "test123",
                 telefono: "931777777",
                 dieta: 0,
                 direccion: "Rambla del Raval",
                 numero: "35",
                 cp: "08001",
-                foto_restaurante: "restaurante2.jpg",
+                foto_restaurante: "catalana2.jpg",
                 tipos_cocina: [9, 11]
             },
             {
                 nombre: "Gràcia",
                 descripcio: "Restaurante vegano en Gràcia",
-                correo: "gracia@test123.com",
+                correo: "lele@test123.com",
                 password: "test123",
                 telefono: "932222111",
                 dieta: 0,
                 direccion: "Travessera de Gràcia",
                 numero: "256",
                 cp: "08024",
-                foto_restaurante: "restaurante3.jpg",
+                foto_restaurante: "catalana3.jpg",
                 tipos_cocina: [9, 11]
             },
             {
                 nombre: "El Gòtic",
                 descripcio: "Restaurante de fusión en el Gòtic",
-                correo: "elgotic@test123.com",
+                correo: "oishiii@test123.com",
                 password: "test123",
                 telefono: "934444444",
                 dieta: 0,
                 direccion: "Carrer del Bisbe",
                 numero: "10",
                 cp: "08002",
-                foto_restaurante: "restaurante1.jpg",
+                foto_restaurante: "catalana4.jpg",
                 tipos_cocina: [9, 11]
             },
             {
                 nombre: "Poble Sec",
                 descripcio: "Restaurante mediterráneo en Poble Sec",
-                correo: "poblesec@test123.com",
+                correo: "jaja@test123.com",
                 password: "test123",
                 telefono: "935000000",
                 dieta: 0,
                 direccion: "Avinguda del Paral·lel",
                 numero: "14",
                 cp: "08001",
-                foto_restaurante: "restaurante2.jpg",
+                foto_restaurante: "catalana5.jpg",
                 tipos_cocina: [11]
             },
 
+            //12 COLOMBIANA
 
-            //Coreana
+            {
+                nombre: "El Cielo",
+                descripcio: "Un restaurante colombiano conocido por su enfoque en la cocina tradicional colombiana con un toque moderno. Ofrece platos auténticos como bandeja paisa, arepas rellenas y sancocho de gallina.",
+                correo: "info@elcielo.com",
+                password: "test123",
+                telefono: "935111111",
+                dieta: 0,
+                direccion: "Carrer Carrera",
+                numero: "22",
+                cp: "08040",
+                foto_restaurante: "colombiano1.jpg",
+                tipos_cocina: [12]
+            },
+            {
+                nombre: "Andrés Carne de Res",
+                descripcio: "Este restaurante es una experiencia cultural en sí mismo. Ofrece una amplia variedad de platos colombianos, desde carnes asadas hasta platos típicos como ajiaco y cazuela de mariscos. ",
+                correo: "info@andres.com",
+                password: "test123",
+                telefono: "935111111",
+                dieta: 0,
+                direccion: "Carrer Chile",
+                numero: "27",
+                cp: "08018",
+                foto_restaurante: "colombiano2.jpg",
+                tipos_cocina: [12]
+            },
+            {
+                nombre: "La Puerta Falsa",
+                descripcio: "Este icónico restaurante es famoso por su ajiaco, una sopa colombiana tradicional. También ofrece otras delicias colombianas como tamales, empanadas y chocolate caliente con queso. ",
+                correo: "info@puertafalsa.com",
+                password: "test123",
+                telefono: "935111111",
+                dieta: 0,
+                direccion: "Carrer Correa",
+                numero: "2",
+                cp: "08017",
+                foto_restaurante: "colombiano3.jpg",
+                tipos_cocina: [12]
+            },
+
+
+            //13 COREANA
 
             {
                 nombre: "Gochu Jip",
@@ -786,8 +812,8 @@ async function anadirRestaurante() {
                 direccion: "Carrer de Blai",
                 numero: "20",
                 cp: "08001",
-                foto_restaurante: "gochu_jip.jpg",
-                tipos_cocina: [12]
+                foto_restaurante: "coreana1.jpg",
+                tipos_cocina: [13]
             },
             
             {
@@ -800,10 +826,9 @@ async function anadirRestaurante() {
                 direccion: "Carrer de Margarit",
                 numero: "40",
                 cp: "08003",
-                foto_restaurante: "hanguk_sikdang.jpg",
-                tipos_cocina: [12]
+                foto_restaurante: "coreana2.jpg",
+                tipos_cocina: [13]
             },
-            
             {
                 nombre: "Bibim Bab House",
                 descripcio: "Sumérgete en una experiencia gastronómica única con nuestra variedad de bibimbap y platos tradicionales en Bibim Bab House.",
@@ -814,12 +839,12 @@ async function anadirRestaurante() {
                 direccion: "Carrer de Tapioles",
                 numero: "10",
                 cp: "08002",
-                foto_restaurante: "bibim_bab_house.jpg",
-                tipos_cocina: [12]
+                foto_restaurante: "coreana3.jpg",
+                tipos_cocina: [13]
             },
 
 
-            //Peruana
+            //14 PERUANA
 
 
             {
@@ -832,8 +857,8 @@ async function anadirRestaurante() {
                 direccion: "Carrer de Blai",
                 numero: "30",
                 cp: "08004",
-                foto_restaurante: "cevicheria_criolla.jpg",
-                tipos_cocina: [13]
+                foto_restaurante: "peruano1.jpg",
+                tipos_cocina: [14]
             },
             
             {
@@ -846,8 +871,8 @@ async function anadirRestaurante() {
                 direccion: "Carrer de Margarit",
                 numero: "50",
                 cp: "08001",
-                foto_restaurante: "el_sabor_del_peru.jpg",
-                tipos_cocina: [13]
+                foto_restaurante: "peruano2.jpg",
+                tipos_cocina: [14]
             },
             
             {
@@ -860,12 +885,12 @@ async function anadirRestaurante() {
                 direccion: "Carrer de Tapioles",
                 numero: "20",
                 cp: "08002",
-                foto_restaurante: "pachamama_restaurante.jpg",
-                tipos_cocina: [13]
+                foto_restaurante: "peruano3.jpg",
+                tipos_cocina: [14]
             },
 
 
-            //Hawaiano
+            //15 HAWAIANO
 
 
             {
@@ -878,10 +903,9 @@ async function anadirRestaurante() {
                 direccion: "Carrer de Blai",
                 numero: "40",
                 cp: "08002",
-                foto_restaurante: "hale_hauoli.jpg",
-                tipos_cocina: [14]
+                foto_restaurante: "hawaiano1.jpg",
+                tipos_cocina: [15]
             },
-            
             {
                 nombre: "Ohana Luau",
                 descripcio: "Únete a la familia en Ohana Luau, donde la comida hawaiana auténtica y el espíritu de aloha se fusionan en una experiencia inolvidable.",
@@ -892,10 +916,9 @@ async function anadirRestaurante() {
                 direccion: "Carrer de Margarit",
                 numero: "60",
                 cp: "08001",
-                foto_restaurante: "ohana_luau.jpg",
-                tipos_cocina: [14]
+                foto_restaurante: "hawaiano2.jpg",
+                tipos_cocina: [15]
             },
-            
             {
                 nombre: "Pono Poké Bar",
                 descripcio: "Siente la frescura del Pacífico en cada bocado en Pono Poké Bar, donde los bowls de poké y los sabores hawaianos te transportarán a la playa.",
@@ -906,12 +929,9 @@ async function anadirRestaurante() {
                 direccion: "Carrer de Tapioles",
                 numero: "30",
                 cp: "08003  ",
-                foto_restaurante: "pono_poke_bar.jpg",
-                tipos_cocina: [14]
+                foto_restaurante: "hawaiano3.jpg",
+                tipos_cocina: [15]
             }
-            
-            
-            
         ]
 
         for (const rest of restObj) {
