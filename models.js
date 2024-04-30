@@ -147,6 +147,10 @@ const Promo = sequelize.define("Promo", {
         type: DataTypes.STRING,
         allowNull: false,
     },
+    usuarioInstagram: {
+        type: DataTypes.STRING,
+        allowNull: false,
+    },
     validada: {
         type: DataTypes.BOOLEAN,
         allowNull: false,
@@ -257,9 +261,6 @@ TipoCocina.belongsToMany(Restaurante, { through: 'RestauranteCocina' })
 
 Ingrediente.belongsTo(GrupoAlimento); // Un ingrediente tiene un unico grupo
 GrupoAlimento.hasMany(Ingrediente); // Un grupo pertence a varios ingredientes
-
-Promo.belongsTo(Usuario); // Una promo tiene un unico usuario
-Usuario.hasMany(Promo); // Un usuario puede tener varias promos
 
 Promo.belongsTo(Restaurante); // Una promo tiene un unico restaurante
 Restaurante.hasMany(Promo); // Un restaurante puede tener varias promos

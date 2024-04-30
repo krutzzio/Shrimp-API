@@ -158,7 +158,7 @@ router.post("/loginUser", async (req, res) => {
       SECRET_KEY,
       { expiresIn: "2h" }
     ); // Genera un token JWT vàlid durant 2 hores
-    res.cookie("token", token, { httpOnly: false, maxAge: 7200000, sameSite: "none", secure: true }); // Estableix el token com una cookie
+    res.cookie("token", token, { httpOnly: false, maxAge: 7200000 }); // Estableix el token com una cookie
     res.json({ nombre: user.nombre, id: user.id }); // Retorna missatge d'èxit
   } catch (error) {
     res.status(500).json({ error: error.message }); // Retorna error 500 amb el missatge d'error
@@ -263,14 +263,14 @@ router.get("/home/restaurantes", checkToken, async (req, res) => {
         }]
       })
     } else if (user.dieta === 1) {
-      restaurantesSugeridos = await tipos_cocinas_user.getRestaurantes({
+      restaurantesSugeridos = await Restaurante.findAll({
         include: [{
           model: TipoCocina,
           where: { id: TiposCocinaId } // Filtra los tipos de cocina por los IDs en el array
         }], where: { dieta: [1, 2] }
       })
     } else {
-      restaurantesSugeridos = await tipos_cocinas_user.getRestaurantes({
+      restaurantesSugeridos = await Restaurante.findAll({
         include: [{
           model: TipoCocina,
           where: { id: TiposCocinaId } // Filtra los tipos de cocina por los IDs en el array
@@ -425,31 +425,76 @@ router.post("/loginRest", async (req, res) => {
 
 
 // creacion de promociones
-router.post("/promos", async (req, res) =>{
-
+router.post("/promos", async (req, res) => {
   try {
+    const { codigo, restId, userInsta } = req.body
 
-    const {userId, codigo, restId} = req.body
-
-    const usuario = await Usuario.findByPk(userId);
-    if(!usuario){
-      return res
-      .status(404)
-      .json({error: "Usuario no encontrado"})
-    }
     await Promo.create({
       codigo: codigo,
       validada: true,
-      UsuarioId:userId,
+      usuarioInstagram: userInsta,
       RestauranteId: restId
     })
     res.status(200).json({ in: true, message: "Promo creada" });
   }
-  catch(error){
-    res.status(400).json({error: error.message})
-    
+  catch (error) {
+    res.status(400).json({ error: error.message })
   }
 })
+
+router.get("/profileRest/:restId", async (req, res) => {
+  try {
+    const restId = req.params.restId
+
+    const rest = await Restaurante.findByPk(restId)
+    const tiposCocinas = await rest.getTipoCocinas()
+
+    const promosRest = await Promo.findAll({
+      where: {
+        RestauranteId: restId
+      }
+    })
+
+    let recetasRest = await Receta.findAll({
+      where: {
+        RestauranteId: restId
+      }
+    })
+
+    recetasRest = await Promise.all(recetasRest.map(async receta => {
+      const tipoCocinaReceta = await receta.getTipoCocina()
+      const nombreRestaurante = await receta.getRestaurante()
+      return {
+        receta: receta.dataValues,
+        nombreRestaurante: nombreRestaurante.nombre,
+        tipoCocinaReceta: tipoCocinaReceta.nombre_tipo,
+        recetaInUser: true
+      }
+    }))
+
+    res.status(200).json({ promosRest, recetasRest, tiposCocinas });
+  }
+  catch (error) {
+    res.status(400).json({ error: error.message })
+  }
+})
+
+
+router.get("/promos/:restId", async (req, res) => {
+  try {
+    const restId = req.params.restId
+    const promosRest = await Promo.findAll({
+      where: {
+        RestauranteId: restId
+      }
+    })
+    res.status(200).json({ promosRest });
+  }
+  catch (error) {
+    res.status(400).json({ error: error.message })
+  }
+})
+
 
 
 
@@ -472,7 +517,7 @@ router.post("/seguirRest/:restId", checkToken, async (req, res) => {
     const existeRelacion = await usuario.hasRestaurante(restaurante);
     if (existeRelacion) {
       await usuario.removeRestaurante(restaurante)
-      return res.status(200).json({ in: true, message: "Relación eliminada" });
+      return res.status(200).json({ in: false, message: "Relación eliminada" });
     } else {
       // Crea una nueva entrada en la tabla intermedia
       await usuario.addRestaurante(restaurante);
@@ -702,48 +747,44 @@ router.post("/home/:restId/registerReceta", upload.single("photo"), async (req, 
   }
 });
 
-router.post(
-  "/home/:restId/procedimientos",
+router.post("/home/:restId/procedimientos", upload.array("photo", 7), async (req, res) => {
+  try {
+    const {
+      procedimientos,
+    } = req.body;
+    console.log(procedimientos)
+    const restauranteId = req.params.restId;
+    const baseUrl = 'http://localhost:3000/api/uploads/';
+    const procedimientosCreados = [];
+    let indexFoto = 0;
 
-  upload.array("photo", 7),
-  async (req, res) => {
-    try {
-      const {
-        procedimientos,
-      } = req.body;
-      console.log(procedimientos)
-      const restauranteId = req.params.restId;
-      const baseUrl = 'http://localhost:3000/api/uploads/';
-      const procedimientosCreados = [];
-let indexFoto = 0; 
+    for (const procedimiento of procedimientos) {
+      const { numero_procedimiento, desc_procedimiento } = procedimiento;
 
-for (const procedimiento of procedimientos) {
-  const { numero_procedimiento, desc_procedimiento } = procedimiento;
-  
 
-  const fotos_procedimiento = req.files.map(file => baseUrl + file.filename);
-  
-  console.log(fotos_procedimiento)
+      const fotos_procedimiento = req.files.map(file => baseUrl + file.filename);
 
-  
-  const nuevoProcedimiento = await Procedimiento.create({
-    numero_procedimiento,
-    desc_procedimiento,
-    foto_procedimiento: fotos_procedimiento[indexFoto], 
-    RestauranteId: restauranteId 
-  });
-  
-  procedimientosCreados.push(nuevoProcedimiento);
-  indexFoto++;
-}
-      res.status(201).json({
-        message: "Procedimientos creados exitosamente",
-        procedimientos: procedimientosCreados
+      console.log(fotos_procedimiento)
+
+
+      const nuevoProcedimiento = await Procedimiento.create({
+        numero_procedimiento,
+        desc_procedimiento,
+        foto_procedimiento: fotos_procedimiento[indexFoto],
+        RestauranteId: restauranteId
       });
-    } catch (error) {
-      res.status(500).json({ error: error.message });
+
+      procedimientosCreados.push(nuevoProcedimiento);
+      indexFoto++;
     }
+    res.status(201).json({
+      message: "Procedimientos creados exitosamente",
+      procedimientos: procedimientosCreados
+    });
+  } catch (error) {
+    res.status(500).json({ error: error.message });
   }
+}
 );
 //filtro por palabra
 router.post("/recetasPorPalabra", async (req, res) => {
@@ -788,16 +829,16 @@ router.get("/recipesByType/:typeId", async (req, res) => {
 router.get("/cp/:codigoPostal", async (req, res) => {
   try {
     const codigoPostal = req.params.codigoPostal;
-    
+
     // Buscas Restaurantes por el codigo postal del params
     const restaurantes = await Restaurante.findAll({ where: { cp: codigoPostal } });
-    
+
     // cojes los ids
     const restaurantesIds = restaurantes.map(restaurante => restaurante.id);
-    
+
     // i buscas todas las recetas que tengan ese id
     const recetas = await Receta.findAll({ where: { RestauranteId: restaurantesIds } });
-    
+
     // las devuelves
     res.json({ recetas });
   } catch (error) {
@@ -806,8 +847,8 @@ router.get("/cp/:codigoPostal", async (req, res) => {
 });
 
 
-router.get("/tipuscuina", async (req, res) => await readItems(req, res, TipoCocina)); 
-router.get("/ingredientes", async (req, res) => await readItems(req, res, Ingrediente)); 
+router.get("/tipuscuina", async (req, res) => await readItems(req, res, TipoCocina));
+router.get("/ingredientes", async (req, res) => await readItems(req, res, Ingrediente));
 
 
 router.get('/uploads/:fileName', (req, res) => {
