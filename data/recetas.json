@@ -1655,16 +1655,6 @@
                 "IngredienteId": 1,
                 "cantidad": 2,
                 "medida": "cucharadas"
-            },
-            {
-                "IngredienteId": 29, 
-                "cantidad": null,
-                "medida": "al gusto"
-            },
-            {
-                "IngredienteId": 4, 
-                "cantidad": null,
-                "medida": "al gusto"
             }
         ],
         "procedimientos": [
@@ -1695,15 +1685,15 @@
         "tipo": "Aperitivo",
         "foto_receta": "http://localhost:3000/api/uploads/Sushi_Rolls_Foto.jpg",
         "RestauranteId": 4,
-        "TipoCocinaId": [18],
+        "TipoCocinaId": [6],
         "ingredientes": [
             {
                 "IngredienteId": 41, 
                 "cantidad": 2,
-                "medida": "tazas"
+                "medida": "gramos"
             },
             {
-                "IngredienteId": 123,
+                "IngredienteId": 23,
                 "cantidad": 4,
                 "medida": "hojas"
             },
@@ -1713,24 +1703,9 @@
                 "medida": "gramos"
             },
             {
-                "IngredienteId": 125, 
-                "cantidad": 1,
-                "medida": "unidad"
-            },
-            {
-                "IngredienteId": 126, 
-                "cantidad": 1,
-                "medida": "unidad"
-            },
-            {
                 "IngredienteId": 52,
                 "cantidad": 100,
                 "medida": "gramos"
-            },
-            {
-                "IngredienteId": 41,
-                "cantidad": 2,
-                "medida": "cucharadas"
             },
             {
                 "IngredienteId": 30,
@@ -1741,22 +1716,8 @@
                 "IngredienteId": 29,
                 "cantidad": 1,
                 "medida": "cucharadita"
-            },
-            {
-                "IngredienteId": 33,
-                "cantidad": null,
-                "medida": "para servir"
-            },
-            {
-                "IngredienteId": 132,
-                "cantidad": null,
-                "medida": "para servir"
-            },
-            {
-                "IngredienteId": 153,
-                "cantidad": null,
-                "medida": "para servir"
             }
+
         ],
         "procedimientos": [
             {
@@ -1786,7 +1747,7 @@
         "tipo": "Postre",
         "foto_receta": "http://localhost:3000/api/uploads/Tiramisú_foto.jpg",
         "RestauranteId": 10,
-        "TipoCocinaId": [17],
+        "TipoCocinaId": [5],
         "ingredientes": [
             {
                 "IngredienteId": 51, 
@@ -1796,15 +1757,10 @@
             {
                 "IngredienteId": 30, 
                 "cantidad": 100,
-                "medida": "gramos"
+                "medida": "cucharada"
             },
             {
-                "IngredienteId": 117,
-                "cantidad": 250,
-                "medida": "gramos"
-            },
-            {
-                "IngredienteId": 118,
+                "IngredienteId": 151,
                 "cantidad": 200,
                 "medida": "gramos"
             },
@@ -1815,8 +1771,8 @@
             },
             {
                 "IngredienteId": 120,
-                "cantidad": 2,
-                "medida": "cucharadas"
+                "cantidad": 20,
+                "medida": "gramos"
             }
         ],
         "procedimientos": [
@@ -1847,7 +1803,7 @@
         "tipo": "Principal",
         "foto_receta": "http://localhost:3000/api/uploads/Paella_Valenciana_Foto.jpg",
         "RestauranteId": 11,
-        "TipoCocinaId": [16],
+        "TipoCocinaId": [9],
         "ingredientes": [
             {
                 "IngredienteId": 41, 
@@ -1890,14 +1846,9 @@
                 "medida": "gramos"
             },
             {
-                "IngredienteId": 109,
-                "cantidad": 1,
-                "medida": "cucharadita"
-            },
-            {
-                "IngredienteId": 146, 
-                "cantidad": 4,
-                "medida": "tazas"
+                "IngredienteId": 146,   
+                "cantidad": 400,
+                "medida": "ml"
             },
             {
                 "IngredienteId": 1,
@@ -1908,16 +1859,6 @@
                 "IngredienteId": 2,
                 "cantidad": 4,
                 "medida": "dientes"
-            },
-            {
-                "IngredienteId": 29,
-                "cantidad": null,
-                "medida": "al gusto"
-            },
-            {
-                "IngredienteId": 4,
-                "cantidad": null,
-                "medida": "al gusto"
             }
         ],
         "procedimientos": [
@@ -1981,16 +1922,6 @@
                 "medida": "mililitros"
             },
             {
-                "IngredienteId": 27,
-                "cantidad": null,
-                "medida": "al gusto"
-            },
-            {
-                "IngredienteId": 29,
-                "cantidad": null,
-                "medida": "al gusto"
-            },
-            {
                 "IngredienteId": 1,
                 "cantidad": 3,
                 "medida": "cucharadas"
@@ -2024,7 +1955,7 @@
         "tipo": "Principal",
         "foto_receta": "http://localhost:3000/api/uploads/Risotto_de_Champiñones_foto.jpg",
         "RestauranteId": 18,
-        "TipoCocinaId": [14],
+        "TipoCocinaId": [5],
         "ingredientes": [
             {
                 "IngredienteId": 41,
@@ -2037,14 +1968,9 @@
                 "medida": "gramos"
             },
             {
-                "IngredienteId": 75,
-                "cantidad": 1,
-                "medida": "taza"
-            },
-            {
                 "IngredienteId": 161,
                 "cantidad": 4,
-                "medida": "tazas"
+                "medida": "ml"
             },
             {
                 "IngredienteId": 3,
@@ -2059,27 +1985,12 @@
             {
                 "IngredienteId": 152,
                 "cantidad": 1,
-                "medida": "taza"
-            },
-            {
-                "IngredienteId": 56,
-                "cantidad": 2,
-                "medida": "cucharadas"
+                "medida": "gramos"
             },
             {
                 "IngredienteId": 1,
                 "cantidad": 1,
                 "medida": "cucharada"
-            },
-            {
-                "IngredienteId": 29,
-                "cantidad": null,
-                "medida": "al gusto"
-            },
-            {
-                "IngredienteId": 4,
-                "cantidad": null,
-                "medida": "al gusto"
             }
         ],
         "procedimientos": [
@@ -2111,68 +2022,63 @@
 
     {
         "nombre_receta": "Tajine de cordero",
-        "desc_receta": "El tajine o tajín es un guiso tradicional de la cocina marroquí. Se hace con cualquier tipo de carne, excepto cerdo, y se caracteriza por ser platos ricos en calorías, en sabores y en aromas. Probar uno de estos guisos es un verdadero lujo para el paladar así que no dudéis hacer esta receta en casa.",
+        "desc_receta": "El tajine o tajín es un guiso tradicional marroquí. Se hace con cualquier tipo de carne y se caracteriza por ser platos ricos en calorías, en sabores y en aromas.",
         "personas": "2",
         "tiempo": "2.20 horas",
         "dieta": 0,
         "dificultad": "Media",
         "tipo": "Principal",
         "foto_receta": "http://localhost:3000/api/uploads/tajine_de_cordero.jpg",
-        "RestauranteId": "MARROQUI",
-        "TipoCocinaId": ["MARROQUI"],
+        "RestauranteId": 5,
+        "TipoCocinaId": [8],
         "ingredientes": [
             {
-                "IngredienteId": "CEBOLLA",
+                "IngredienteId": "3",
                 "cantidad": 250,
                 "medida": "gramos"
             },
             {
-                "IngredienteId": "ACEITE DE OLIVA",
+                "IngredienteId": "1",
                 "cantidad": 60,
                 "medida": "mililitros"
             },
             {
-                "IngredienteId": "CANELA",
+                "IngredienteId": "24",
                 "cantidad": 1.5,
                 "medida": "palo"
             },
             {
-                "IngredienteId": "CILANTRO",
+                "IngredienteId": "18",
                 "cantidad": 4,
                 "medida": "gramos"
             },
             {
-                "IngredienteId": "jengibre",
+                "IngredienteId": "153",
                 "cantidad": 2,
                 "medida": "gramos"
             },
             {
-                "IngredienteId": "pimienta negra",
+                "IngredienteId": "27",
                 "cantidad": 1,
                 "medida": "gramo"
             },
             {
-                "IngredienteId": "azafran",
-                "cantidad": 1,
-                "medida": "pizca"
-            },
-            {
-                "IngredienteId": "cordero",
+                "IngredienteId": "103",
                 "cantidad": 500,
                 "medida": "gramos"
             },
             {
-                "IngredienteId": "miel",
+                "IngredienteId": "38",
                 "cantidad": 3,
                 "medida": "cucharada"
             },
             {
-                "IngredienteId": "pasas",
+                "IngredienteId": "167",
                 "cantidad": 150,
                 "medida": "gramos"
             },
             {
-                "IngredienteId": "almendras",
+                "IngredienteId": "121",
                 "cantidad": 35,
                 "medida": "gramos"
             }
@@ -2204,49 +2110,35 @@
         "dificultad": "Media",
         "tipo": "Principal",
         "foto_receta": "http://localhost:3000/api/uploads/tajin_pollo.jpg",
-        "RestauranteId": "MARROQUI",
-        "TipoCocinaId": ["MARROQUI"],
+        "RestauranteId": 12,
+        "TipoCocinaId": ["8"],
         "ingredientes": [
             {
-                "IngredienteId": "limones",
-                "cantidad": 2,
-                "medida": "unidades"
-            },
-            {
-                "IngredienteId": "cuartos traseros de pollo",
+                "IngredienteId": "100",
                 "cantidad": 4,
                 "medida": "unidades"
             },
             {
-                "IngredienteId": "cebollas",
+                "IngredienteId": "3",
                 "cantidad": 2,
                 "medida": "unidades"
             },
             {
-                "IngredienteId": "ajo",
+                "IngredienteId": "2",
                 "cantidad": 4,
                 "medida": "trozos"
             },
             {
-                "IngredienteId": "cilantro",
+                "IngredienteId": "18",
                 "cantidad": 3,
                 "medida": "cucharadas"
             },
             {
-                "IngredienteId": "aceite de oliva",
+                "IngredienteId": "1",
                 "cantidad": 100,
                 "medida": "mililitros"
-            },
-            {
-                "IngredienteId": "aceitunas verdes",
-                "cantidad": 200,
-                "medida": "gramos"
-            },
-            {
-                "IngredienteId": "azafran",
-                "cantidad": 10,
-                "medida": "hebras"
             }
+ 
         ],
         "procedimientos": [
             {
@@ -2267,56 +2159,46 @@
     ]
     },
     {
-        "nombre_receta": "Makis de Atún",
-        "desc_receta": "¡Se termina el verano y volvemos a la rutina! Como esto no es plato de buen gusto para nadie os traemos una receta que sí que lo es: Maki de atún. Esta receta sencilla y deliciosa es perfecta para los amantes del sushi que están deseando aprender a prepararlo por su cuenta. ¿Todo listo? ",
+        "nombre_receta": "Makis de Rape",
+        "desc_receta": " Esta receta sencilla y deliciosa es perfecta para los amantes del sushi que están deseando aprender a prepararlo por su cuenta. ¿Todo listo? ",
         "personas": "2",
         "tiempo": "30 minutos",
         "dieta": 0,
         "dificultad": "Media",
         "tipo": "Entrante",
         "foto_receta": "http://localhost:3000/api/uploads/makis_atun.jpg",
-        "RestauranteId": "JAPONES",
-        "TipoCocinaId": ["JAPONES"],
+        "RestauranteId": 8,
+        "TipoCocinaId": [6],
         "ingredientes": [
             {
-                "IngredienteId": "atun fresco",
+                "IngredienteId": "87",
                 "cantidad": 250,
                 "medida": "gramos"
             },
             {
-                "IngredienteId": "ACEITE DE sesamo",
+                "IngredienteId": "1",
                 "cantidad": 20,
                 "medida": "mililitros"
             },
             {
-                "IngredienteId": "salsa de soja",
+                "IngredienteId": "33",
                 "cantidad": 60,
                 "medida": "mililitros"
             },
             {
-                "IngredienteId": "jenjibre",
+                "IngredienteId": "153",
                 "cantidad": 2,
                 "medida": "gramos"
             },
             {
-                "IngredienteId": "alga nori",
-                "cantidad": 4,
-                "medida": "unidades"
-            },
-            {
-                "IngredienteId": "arroz de sushi",
+                "IngredienteId": "41",
                 "cantidad": 200,
                 "medida": "gramos"
             },
             {
-                "IngredienteId": "vinagre",
+                "IngredienteId": "31",
                 "cantidad": 20,
                 "medida": "mililitros"
-            },
-            {
-                "IngredienteId": "aguacate",
-                "cantidad": 1,
-                "medida": "unidad"
             }
         ],
         "procedimientos": [
@@ -2339,53 +2221,53 @@
     },
     {
         "nombre_receta": "Anticuchos",
-        "desc_receta": "El anticucho es una brocheta proveniente de Perú. Es una receta que cuenta con variaciones y es muy popular también en algunos países de Sudamérica. La receta peruana original suele hacerse con corazón de vacuno y especiado con ají panca (un chile rojo peruano aromático y poco picante) que le da ese color rojizo tan característico.",
+        "desc_receta": "El anticucho es una brocheta proveniente de Perú. Es una receta que cuenta con variaciones y es muy popular también en algunos países de Sudamérica. ",
         "personas": "2",
         "tiempo": "45 minutos",
         "dieta": 0,
         "dificultad": "Fácil",
         "tipo": "Entrante",
         "foto_receta": "http://localhost:3000/api/uploads/anticuchos.jpg",
-        "RestauranteId": "PERUANO",
-        "TipoCocinaId": ["PERUANO"],
+        "RestauranteId": 10,
+        "TipoCocinaId": [14],
         "ingredientes": [
             {
-                "IngredienteId": "solomillo",
+                "IngredienteId": "105",
                 "cantidad": 1,
                 "medida": "kilogramo"
             },
             {
-                "IngredienteId": "patatas",
+                "IngredienteId": "7",
                 "cantidad": 2,
                 "medida": "unidades"
             },
             {
-                "IngredienteId": "ajo",
+                "IngredienteId": "2",
                 "cantidad": 1,
                 "medida": "unidad"
             },
             {
-                "IngredienteId": "cebolla",
+                "IngredienteId": "3",
                 "cantidad": 1,
                 "medida": "unidad"
             },
             {
-                "IngredienteId": "queso fresco",
+                "IngredienteId": "52",
                 "cantidad": 50,
                 "medida": "gramos"
             },
             {
-                "IngredienteId": "leche",
+                "IngredienteId": "54",
                 "cantidad": 150,
                 "medida": "mililitros"
             },
             {
-                "IngredienteId": "mantequilla",
+                "IngredienteId": "56",
                 "cantidad": 20,
                 "medida": "gramos"
             },
             {
-                "IngredienteId": "comino",
+                "IngredienteId": "26",
                 "cantidad": 1,
                 "medida": "cucharada"
             }
@@ -2410,53 +2292,48 @@
     },
     {
         "nombre_receta": "Pollo Kum Pao",
-        "desc_receta": "El pollo Kung Pao es uno de los clásicos de las cartas de los restaurantes chinos que hoy os enseñamos a preparar en casa. Su sabor es adictivo al combinar salado, dulce y especiado. Es muy fácil y rápido de hacer. A continuación, la receta paso a paso.",
+        "desc_receta": "Su sabor es adictivo al combinar salado, dulce y especiado. Es muy fácil y rápido de hacer. A continuación, la receta paso a paso.",
         "personas": "2",
         "tiempo": "1 hora",
         "dieta": 0,
         "dificultad": "Media",
         "tipo": "Principal",
         "foto_receta": "http://localhost:3000/api/uploads/pollo_kum_pao.jpg",
-        "RestauranteId": "PERUANO",
-        "TipoCocinaId": ["PERUANO"],
+        "RestauranteId": 11,
+        "TipoCocinaId": [14],
         "ingredientes": [
             {
-                "IngredienteId": "pechuga de pollo",
+                "IngredienteId": "100",
                 "cantidad": 500,
                 "medida": "gramos"
             },
             {
-                "IngredienteId": "ajo",
+                "IngredienteId": "2",
                 "cantidad": 4,
                 "medida": "unidades"
             },
             {
-                "IngredienteId": "jengibre",
+                "IngredienteId": "153",
                 "cantidad": 20,
                 "medida": "gramos"
             },
             {
-                "IngredienteId": "chiles",
-                "cantidad": 12,
-                "medida": "unidad"
-            },
-            {
-                "IngredienteId": "cebolletas",
-                "cantidad": 6,
+                "IngredienteId": "3",
+                "cantidad": 3,
                 "medida": "unidades"
             },
             {
-                "IngredienteId": "cacahuetes",
+                "IngredienteId": "57",
                 "cantidad": 2,
                 "medida": "cucharadas"
             },
             {
-                "IngredienteId": "pimienta",
+                "IngredienteId": "28",
                 "cantidad": 4,
                 "medida": "gramos"
             },
             {
-                "IngredienteId": "aceite de oliva",
+                "IngredienteId": "1",
                 "cantidad": 1,
                 "medida": "cucharada"
             }
