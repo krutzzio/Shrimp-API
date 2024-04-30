@@ -1655,16 +1655,6 @@
                 "IngredienteId": 1,
                 "cantidad": 2,
                 "medida": "cucharadas"
-            },
-            {
-                "IngredienteId": 29, 
-                "cantidad": null,
-                "medida": "al gusto"
-            },
-            {
-                "IngredienteId": 4, 
-                "cantidad": null,
-                "medida": "al gusto"
             }
         ],
         "procedimientos": [
@@ -1695,15 +1685,15 @@
         "tipo": "Aperitivo",
         "foto_receta": "http://localhost:3000/api/uploads/Sushi_Rolls_Foto.jpg",
         "RestauranteId": 4,
-        "TipoCocinaId": [18],
+        "TipoCocinaId": [6],
         "ingredientes": [
             {
                 "IngredienteId": 41, 
                 "cantidad": 2,
-                "medida": "tazas"
+                "medida": "gramos"
             },
             {
-                "IngredienteId": 123,
+                "IngredienteId": 23,
                 "cantidad": 4,
                 "medida": "hojas"
             },
@@ -1713,24 +1703,9 @@
                 "medida": "gramos"
             },
             {
-                "IngredienteId": 125, 
-                "cantidad": 1,
-                "medida": "unidad"
-            },
-            {
-                "IngredienteId": 126, 
-                "cantidad": 1,
-                "medida": "unidad"
-            },
-            {
                 "IngredienteId": 52,
                 "cantidad": 100,
                 "medida": "gramos"
-            },
-            {
-                "IngredienteId": 41,
-                "cantidad": 2,
-                "medida": "cucharadas"
             },
             {
                 "IngredienteId": 30,
@@ -1741,22 +1716,8 @@
                 "IngredienteId": 29,
                 "cantidad": 1,
                 "medida": "cucharadita"
-            },
-            {
-                "IngredienteId": 33,
-                "cantidad": null,
-                "medida": "para servir"
-            },
-            {
-                "IngredienteId": 132,
-                "cantidad": null,
-                "medida": "para servir"
-            },
-            {
-                "IngredienteId": 153,
-                "cantidad": null,
-                "medida": "para servir"
             }
+
         ],
         "procedimientos": [
             {
@@ -1786,7 +1747,7 @@
         "tipo": "Postre",
         "foto_receta": "http://localhost:3000/api/uploads/Tiramisú_foto.jpg",
         "RestauranteId": 10,
-        "TipoCocinaId": [17],
+        "TipoCocinaId": [5],
         "ingredientes": [
             {
                 "IngredienteId": 51, 
@@ -1796,15 +1757,10 @@
             {
                 "IngredienteId": 30, 
                 "cantidad": 100,
-                "medida": "gramos"
+                "medida": "cucharada"
             },
             {
-                "IngredienteId": 117,
-                "cantidad": 250,
-                "medida": "gramos"
-            },
-            {
-                "IngredienteId": 118,
+                "IngredienteId": 151,
                 "cantidad": 200,
                 "medida": "gramos"
             },
@@ -1815,8 +1771,8 @@
             },
             {
                 "IngredienteId": 120,
-                "cantidad": 2,
-                "medida": "cucharadas"
+                "cantidad": 20,
+                "medida": "gramos"
             }
         ],
         "procedimientos": [
@@ -1847,7 +1803,7 @@
         "tipo": "Principal",
         "foto_receta": "http://localhost:3000/api/uploads/Paella_Valenciana_Foto.jpg",
         "RestauranteId": 11,
-        "TipoCocinaId": [16],
+        "TipoCocinaId": [9],
         "ingredientes": [
             {
                 "IngredienteId": 41, 
@@ -1890,14 +1846,9 @@
                 "medida": "gramos"
             },
             {
-                "IngredienteId": 109,
-                "cantidad": 1,
-                "medida": "cucharadita"
-            },
-            {
-                "IngredienteId": 146, 
-                "cantidad": 4,
-                "medida": "tazas"
+                "IngredienteId": 146,   
+                "cantidad": 400,
+                "medida": "ml"
             },
             {
                 "IngredienteId": 1,
@@ -1908,16 +1859,6 @@
                 "IngredienteId": 2,
                 "cantidad": 4,
                 "medida": "dientes"
-            },
-            {
-                "IngredienteId": 29,
-                "cantidad": null,
-                "medida": "al gusto"
-            },
-            {
-                "IngredienteId": 4,
-                "cantidad": null,
-                "medida": "al gusto"
             }
         ],
         "procedimientos": [
@@ -1981,16 +1922,6 @@
                 "medida": "mililitros"
             },
             {
-                "IngredienteId": 27,
-                "cantidad": null,
-                "medida": "al gusto"
-            },
-            {
-                "IngredienteId": 29,
-                "cantidad": null,
-                "medida": "al gusto"
-            },
-            {
                 "IngredienteId": 1,
                 "cantidad": 3,
                 "medida": "cucharadas"
@@ -2024,7 +1955,7 @@
         "tipo": "Principal",
         "foto_receta": "http://localhost:3000/api/uploads/Risotto_de_Champiñones_foto.jpg",
         "RestauranteId": 18,
-        "TipoCocinaId": [14],
+        "TipoCocinaId": [5],
         "ingredientes": [
             {
                 "IngredienteId": 41,
@@ -2037,14 +1968,9 @@
                 "medida": "gramos"
             },
             {
-                "IngredienteId": 75,
-                "cantidad": 1,
-                "medida": "taza"
-            },
-            {
                 "IngredienteId": 161,
                 "cantidad": 4,
-                "medida": "tazas"
+                "medida": "ml"
             },
             {
                 "IngredienteId": 3,
@@ -2059,27 +1985,12 @@
             {
                 "IngredienteId": 152,
                 "cantidad": 1,
-                "medida": "taza"
-            },
-            {
-                "IngredienteId": 56,
-                "cantidad": 2,
-                "medida": "cucharadas"
+                "medida": "gramos"
             },
             {
                 "IngredienteId": 1,
                 "cantidad": 1,
                 "medida": "cucharada"
-            },
-            {
-                "IngredienteId": 29,
-                "cantidad": null,
-                "medida": "al gusto"
-            },
-            {
-                "IngredienteId": 4,
-                "cantidad": null,
-                "medida": "al gusto"
             }
         ],
         "procedimientos": [
