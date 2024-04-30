@@ -22,7 +22,7 @@ async function anadirRestaurante() {
                 direccion: "Carrer Miranda",
                 numero: "72",
                 cp: "08036",
-                foto_restaurante: 'americano1.jpg',
+                foto_restaurante: 'http://localhost:3000/api/uploads/americano1.jpg',
                 tipos_cocina: [1]
             },
             {
@@ -35,7 +35,7 @@ async function anadirRestaurante() {
                 direccion: "Avenida del Oeste",
                 numero: "50",
                 cp: "08037",
-                foto_restaurante: 'americano2.jpg',
+                foto_restaurante: 'http://localhost:3000/api/uploads/americano2.jpg',
                 tipos_cocina: [1]
             },
             {
@@ -48,7 +48,7 @@ async function anadirRestaurante() {
                 direccion: "Avenida Pareja",
                 numero: "123",
                 cp: "08032",
-                foto_restaurante: 'americano3.jpg',
+                foto_restaurante: 'http://localhost:3000/api/uploads/americano3.jpg',
                 tipos_cocina: [1]
             },
             {
@@ -61,7 +61,7 @@ async function anadirRestaurante() {
                 direccion: "Paseo del Aire",
                 numero: "16",
                 cp: "08022",
-                foto_restaurante: "americano4.jpg",
+                foto_restaurante: "http://localhost:3000/api/uploads/americano4.jpg",
                 tipos_cocina: [1]
             },
             {
@@ -74,7 +74,7 @@ async function anadirRestaurante() {
                 direccion: "Calle Pillo",
                 numero: "43",
                 cp: "08038",
-                foto_restaurante: "americano5.jpg",
+                foto_restaurante: "http://localhost:3000/api/uploads/americano5.jpg",
                 tipos_cocina: [1]
             },
 
@@ -90,7 +90,7 @@ async function anadirRestaurante() {
                 direccion: "Calle chinatown",
                 numero: "42",
                 cp: "08002",
-                foto_restaurante: 'china1.jpg',
+                foto_restaurante: 'http://localhost:3000/api/uploads/china1.jpg',
                 tipos_cocina: [2, 6]
             },
             {
@@ -103,7 +103,7 @@ async function anadirRestaurante() {
                 direccion: "Avenida de la Prosperidad",
                 numero: "15",
                 cp: "08003",
-                foto_restaurante: 'china2.jpg',
+                foto_restaurante: 'http://localhost:3000/api/uploads/china2.jpg',
                 tipos_cocina: [2]
             },
             {
@@ -116,7 +116,7 @@ async function anadirRestaurante() {
                 direccion: "Calle de la Luna",
                 numero: "20",
                 cp: "08004",
-                foto_restaurante: 'china3.jpg',
+                foto_restaurante: 'http://localhost:3000/api/uploads/china3.jpg',
                 tipos_cocina: [2]
             },
             {
@@ -129,7 +129,7 @@ async function anadirRestaurante() {
                 direccion: "Plaza del Sol",
                 numero: "5",
                 cp: "08005",
-                foto_restaurante: 'china4.jpg',
+                foto_restaurante: 'http://localhost:3000/api/uploads/china4.jpg',
                 tipos_cocina: [2]
             },
             {
@@ -142,7 +142,7 @@ async function anadirRestaurante() {
                 direccion: "Calle Barcelona",
                 numero: "12",
                 cp: "08006",
-                foto_restaurante: 'china5.jpg',
+                foto_restaurante: 'http://localhost:3000/api/uploads/china5.jpg',
                 tipos_cocina: [2]
             },
 
@@ -158,7 +158,7 @@ async function anadirRestaurante() {
                 direccion: "Calle Grecia",
                 numero: "123",
                 cp: "08005",
-                foto_restaurante: "griego1.jpg",
+                foto_restaurante: "http://localhost:3000/api/uploads/griego1.jpg",
                 tipos_cocina: [3]
             },
             {
@@ -171,7 +171,7 @@ async function anadirRestaurante() {
                 direccion: "Avenida Olivo",
                 numero: "456",
                 cp: "08004",
-                foto_restaurante: "griego2.jpg",
+                foto_restaurante: "http://localhost:3000/api/uploads/griego2.jpg",
                 tipos_cocina: [3]
             },
             {
@@ -184,7 +184,7 @@ async function anadirRestaurante() {
                 direccion: "Plaza Central",
                 numero: "789",
                 cp: "08003",
-                foto_restaurante: "griego3.jpg",
+                foto_restaurante: "http://localhost:3000/api/uploads/griego3.jpg",
                 tipos_cocina: [3]
             },
             {
@@ -197,7 +197,7 @@ async function anadirRestaurante() {
                 direccion: "Calle Olive",
                 numero: "101",
                 cp: "08002",
-                foto_restaurante: "griego4.jpg",
+                foto_restaurante: "http://localhost:3000/api/uploads/griego4.jpg",
                 tipos_cocina: [3]
             },
             {
@@ -210,7 +210,7 @@ async function anadirRestaurante() {
                 direccion: "Calle del Sabor",
                 numero: "324",
                 cp: "08001",
-                foto_restaurante: "griego5.jpg",
+                foto_restaurante: "http://localhost:3000/api/uploads/griego5.jpg",
                 tipos_cocina: [3]
             },
 
@@ -226,7 +226,7 @@ async function anadirRestaurante() {
                 direccion: "Calle Principal",
                 numero: "123",
                 cp: "08010",
-                foto_restaurante: "indio1.jpg",
+                foto_restaurante: "http://localhost:3000/api/uploads/indio1.jpg",
                 tipos_cocina: [4]
             },
             {
@@ -239,7 +239,7 @@ async function anadirRestaurante() {
                 direccion: "Avenida Central",
                 numero: "456",
                 cp: "08009",
-                foto_restaurante: "indio2.jpg",
+                foto_restaurante: "http://localhost:3000/api/uploads/indio2.jpg",
                 tipos_cocina: [4]
             },
             {
@@ -252,7 +252,7 @@ async function anadirRestaurante() {
                 direccion: "Plaza Principal",
                 numero: "789",
                 cp: "08008",
-                foto_restaurante: "indio3.jpg",
+                foto_restaurante: "http://localhost:3000/api/uploads/indio3.jpg",
                 tipos_cocina: [4]
             },
             {
@@ -265,7 +265,7 @@ async function anadirRestaurante() {
                 direccion: "Calle Real",
                 numero: "101",
                 cp: "08007",
-                foto_restaurante: "indio4.jpg",
+                foto_restaurante: "http://localhost:3000/api/uploads/indio4.jpg",
                 tipos_cocina: [4]
             },
             {
@@ -278,7 +278,7 @@ async function anadirRestaurante() {
                 direccion: "Calle del Sabor",
                 numero: "321",
                 cp: "08006",
-                foto_restaurante: "indio5.jpg",
+                foto_restaurante: "http://localhost:3000/api/uploads/indio5.jpg",
                 tipos_cocina: [4]
             },
 
@@ -294,7 +294,7 @@ async function anadirRestaurante() {
                 direccion: "Calle Cava Baja",
                 numero: "35",
                 cp: "08005",
-                foto_restaurante: "italiano1.jpg",
+                foto_restaurante: "http://localhost:3000/api/uploads/italiano1.jpg",
                 tipos_cocina: [5]
             },
             {
@@ -307,7 +307,7 @@ async function anadirRestaurante() {
                 direccion: "Calle Cuchilleros",
                 numero: "17",
                 cp: "08006",
-                foto_restaurante: "italiano2.jpg",
+                foto_restaurante: "http://localhost:3000/api/uploads/italiano2.jpg",
                 tipos_cocina: [5]
             },
             {
@@ -320,7 +320,7 @@ async function anadirRestaurante() {
                 direccion: "Calle Cuchilleros",
                 numero: "17",
                 cp: "08007",
-                foto_restaurante: "italiano3.jpg",
+                foto_restaurante: "http://localhost:3000/api/uploads/italiano3.jpg",
                 tipos_cocina: [5]
             },
             {
@@ -333,7 +333,7 @@ async function anadirRestaurante() {
                 direccion: "Via Roma",
                 numero: "10",
                 cp: "08008",
-                foto_restaurante: "italiano4.jpg",
+                foto_restaurante: "http://localhost:3000/api/uploads/italiano4.jpg",
                 tipos_cocina: [5]
             },
             {
@@ -346,7 +346,7 @@ async function anadirRestaurante() {
                 direccion: "Plaza Marco",
                 numero: "5",
                 cp: "08011",
-                foto_restaurante: "italiano5.jpg",
+                foto_restaurante: "http://localhost:3000/api/uploads/italiano5.jpg",
                 tipos_cocina: [5]
             },
 
@@ -362,7 +362,7 @@ async function anadirRestaurante() {
                 direccion: "Carrer Industria",
                 numero: "86",
                 cp: "08035",
-                foto_restaurante: 'japones1.jpg',
+                foto_restaurante: 'http://localhost:3000/api/uploads/japones1.jpg',
                 tipos_cocina: [6]
             },
             {
@@ -375,7 +375,7 @@ async function anadirRestaurante() {
                 direccion: "calle Frigo",
                 numero: "2",
                 cp: "08013",
-                foto_restaurante: 'japones2.jpg',
+                foto_restaurante: 'http://localhost:3000/api/uploads/japones2.jpg',
                 tipos_cocina: [6]
             },
             {
@@ -388,7 +388,7 @@ async function anadirRestaurante() {
                 direccion: "avenida Caballero",
                 numero: "96",
                 cp: "08024",
-                foto_restaurante: 'japones3.jpg',
+                foto_restaurante: 'http://localhost:3000/api/uploads/japones3.jpg',
                 tipos_cocina: [6]
             },
             {
@@ -401,7 +401,7 @@ async function anadirRestaurante() {
                 direccion: "Calle Azul",
                 numero: "30",
                 cp: "08010",
-                foto_restaurante: "japones4.jpg",
+                foto_restaurante: "http://localhost:3000/api/uploads/japones4.jpg",
                 tipos_cocina: [6]
             },
             {
@@ -414,7 +414,7 @@ async function anadirRestaurante() {
                 direccion: "Calle Mayor",
                 numero: "15",
                 cp: "08031",
-                foto_restaurante: "japones5.jpg",
+                foto_restaurante: "http://localhost:3000/api/uploads/japones5.jpg",
                 tipos_cocina: [6]
             },
 
@@ -429,7 +429,7 @@ async function anadirRestaurante() {
                 direccion: "Rambla del Poblenou",
                 numero: "98",
                 cp: "08018",
-                foto_restaurante: "mexicano1.jpg",
+                foto_restaurante: "http://localhost:3000/api/uploads/mexicano1.jpg",
                 tipos_cocina: [7]
             },
             {
@@ -442,7 +442,7 @@ async function anadirRestaurante() {
                 direccion: "Carrer de Sants",
                 numero: "79",
                 cp: "08014",
-                foto_restaurante: "mexicano2.jpg",
+                foto_restaurante: "http://localhost:3000/api/uploads/mexicano2.jpg",
                 tipos_cocina: [7]
             },
             {
@@ -455,7 +455,7 @@ async function anadirRestaurante() {
                 direccion: "Passeig de Gràcia",
                 numero: "45",
                 cp: "08007",
-                foto_restaurante: "mexicano3.jpg",
+                foto_restaurante: "http://localhost:3000/api/uploads/mexicano3.jpg",
                 tipos_cocina: [7]
             },
             {
@@ -468,7 +468,7 @@ async function anadirRestaurante() {
                 direccion: "Travessera de Les Corts",
                 numero: "322",
                 cp: "08028",
-                foto_restaurante: "mexicano4.jpg",
+                foto_restaurante: "http://localhost:3000/api/uploads/mexicano4.jpg",
                 tipos_cocina: [7]
             },
             {
@@ -481,7 +481,7 @@ async function anadirRestaurante() {
                 direccion: "Calle Valencia",
                 numero: "25",
                 cp: "08029",
-                foto_restaurante: "mexicano5.jpg",
+                foto_restaurante: "http://localhost:3000/api/uploads/mexicano5.jpg",
                 tipos_cocina: [7]
             },
 
@@ -497,7 +497,7 @@ async function anadirRestaurante() {
                 direccion: "Calle Alhambra",
                 numero: "45",
                 cp: "08011",
-                foto_restaurante: "marroqui1.jpg",
+                foto_restaurante: "http://localhost:3000/api/uploads/marroqui1.jpg",
                 tipos_cocina: [8]
             },
             {
@@ -510,7 +510,7 @@ async function anadirRestaurante() {
                 direccion: "Avenida Medina",
                 numero: "78",
                 cp: "08012",
-                foto_restaurante: "marroqui2.jpg",
+                foto_restaurante: "http://localhost:3000/api/uploads/marroqui2.jpg",
                 tipos_cocina: [8]
             },
             {
@@ -523,7 +523,7 @@ async function anadirRestaurante() {
                 direccion: "Plaza Sahara",
                 numero: "12",
                 cp: "08013",
-                foto_restaurante: "marroqui3.jpg",
+                foto_restaurante: "http://localhost:3000/api/uploads/marroqui3.jpg",
                 tipos_cocina: [8]
             },
             {
@@ -536,7 +536,7 @@ async function anadirRestaurante() {
                 direccion: "Plaza Hassan II",
                 numero: "33",
                 cp: "08014",
-                foto_restaurante: "marroqui4.jpg",
+                foto_restaurante: "http://localhost:3000/api/uploads/marroqui4.jpg",
                 tipos_cocina: [8]
             },
             {
@@ -549,7 +549,7 @@ async function anadirRestaurante() {
                 direccion: "Calle Medina",
                 numero: "55",
                 cp: "08015",
-                foto_restaurante: "marroqui5.jpg",
+                foto_restaurante: "http://localhost:3000/api/uploads/marroqui5.jpg",
                 tipos_cocina: [8]
             },
 
@@ -565,7 +565,7 @@ async function anadirRestaurante() {
                 direccion: "Carrer industria",
                 numero: "56",
                 cp: "08032",
-                foto_restaurante: 'espanol1.jpg',
+                foto_restaurante: 'http://localhost:3000/api/uploads/espanol1.jpg',
                 tipos_cocina: [9]
             },
             {
@@ -578,7 +578,7 @@ async function anadirRestaurante() {
                 direccion: "calle test",
                 numero: "42",
                 cp: "08032",
-                foto_restaurante: 'espanol2.jpg',
+                foto_restaurante: 'http://localhost:3000/api/uploads/espanol2.jpg',
                 tipos_cocina: [9]
             },
             {
@@ -591,7 +591,7 @@ async function anadirRestaurante() {
                 direccion: "Passeig de Fabra i Puig",
                 numero: "296",
                 cp: "08031",
-                foto_restaurante: 'espanol3.jpg',
+                foto_restaurante: 'http://localhost:3000/api/uploads/espanol3.jpg',
                 tipos_cocina: [9]
             },
             {
@@ -604,7 +604,7 @@ async function anadirRestaurante() {
                 direccion: "Calle Marina",
                 numero: "105",
                 cp: "08001",
-                foto_restaurante: "espanol4.jpg",
+                foto_restaurante: "http://localhost:3000/api/uploads/espanol4.jpg",
                 tipos_cocina: [9]
             },
             {
@@ -617,7 +617,7 @@ async function anadirRestaurante() {
                 direccion: "Calle Mayor",
                 numero: "10",
                 cp: "08030",
-                foto_restaurante: "espanol5.jpg",
+                foto_restaurante: "http://localhost:3000/api/uploads/espanol5.jpg",
                 tipos_cocina: [9]
             },
 
@@ -633,7 +633,7 @@ async function anadirRestaurante() {
                 direccion: "Carrer de la Orquidea",
                 numero: "1",
                 cp: "08020",
-                foto_restaurante: 'tailandes1.jpg',
+                foto_restaurante: 'http://localhost:3000/api/uploads/tailandes1.jpg',
                 tipos_cocina: [10]
             },
             {
@@ -646,7 +646,7 @@ async function anadirRestaurante() {
                 direccion: "calle Amarilla",
                 numero: "42",
                 cp: "08036",
-                foto_restaurante: 'tailandes2.jpg',
+                foto_restaurante: 'http://localhost:3000/api/uploads/tailandes2.jpg',
                 tipos_cocina: [10]
             },
             {
@@ -659,7 +659,7 @@ async function anadirRestaurante() {
                 direccion: "Passeig de Fabra i Puig",
                 numero: "296",
                 cp: "08039",
-                foto_restaurante: 'tailandes3.jpg',
+                foto_restaurante: 'http://localhost:3000/api/uploads/tailandes3.jpg',
                 tipos_cocina: [10]
             },
             {
@@ -672,7 +672,7 @@ async function anadirRestaurante() {
                 direccion: "Calle Marina",
                 numero: "105",
                 cp: "08001",
-                foto_restaurante: "tailandes4.jpg",
+                foto_restaurante: "http://localhost:3000/api/uploads/tailandes4.jpg",
                 tipos_cocina: [10]
             },
             {
@@ -685,7 +685,7 @@ async function anadirRestaurante() {
                 direccion: "Calle Mayor",
                 numero: "10",
                 cp: "08030",
-                foto_restaurante: "tailandes5.jpg",
+                foto_restaurante: "http://localhost:3000/api/uploads/tailandes5.jpg",
                 tipos_cocina: [10]
             },
 
@@ -701,7 +701,7 @@ async function anadirRestaurante() {
                 direccion: "Calle Princesa",
                 numero: "50",
                 cp: "08003",
-                foto_restaurante: "catalana1.jpg",
+                foto_restaurante: "http://localhost:3000/api/uploads/catalana1.jpg",
                 tipos_cocina: [11]
             },
             {
@@ -714,7 +714,7 @@ async function anadirRestaurante() {
                 direccion: "Rambla del Raval",
                 numero: "35",
                 cp: "08001",
-                foto_restaurante: "catalana2.jpg",
+                foto_restaurante: "http://localhost:3000/api/uploads/catalana2.jpg",
                 tipos_cocina: [9, 11]
             },
             {
@@ -727,7 +727,7 @@ async function anadirRestaurante() {
                 direccion: "Travessera de Gràcia",
                 numero: "256",
                 cp: "08024",
-                foto_restaurante: "catalana3.jpg",
+                foto_restaurante: "http://localhost:3000/api/uploads/catalana3.jpg",
                 tipos_cocina: [9, 11]
             },
             {
@@ -740,7 +740,7 @@ async function anadirRestaurante() {
                 direccion: "Carrer del Bisbe",
                 numero: "10",
                 cp: "08002",
-                foto_restaurante: "catalana4.jpg",
+                foto_restaurante: "http://localhost:3000/api/uploads/catalana4.jpg",
                 tipos_cocina: [9, 11]
             },
             {
@@ -753,7 +753,7 @@ async function anadirRestaurante() {
                 direccion: "Avinguda del Paral·lel",
                 numero: "14",
                 cp: "08001",
-                foto_restaurante: "catalana5.jpg",
+                foto_restaurante: "http://localhost:3000/api/uploads/catalana5.jpg",
                 tipos_cocina: [11]
             },
 
@@ -769,7 +769,7 @@ async function anadirRestaurante() {
                 direccion: "Carrer Carrera",
                 numero: "22",
                 cp: "08040",
-                foto_restaurante: "colombiano1.jpg",
+                foto_restaurante: "http://localhost:3000/api/uploads/colombiano1.jpg",
                 tipos_cocina: [12]
             },
             {
@@ -782,7 +782,7 @@ async function anadirRestaurante() {
                 direccion: "Carrer Chile",
                 numero: "27",
                 cp: "08018",
-                foto_restaurante: "colombiano2.jpg",
+                foto_restaurante: "http://localhost:3000/api/uploads/colombiano2.jpg",
                 tipos_cocina: [12]
             },
             {
@@ -795,7 +795,7 @@ async function anadirRestaurante() {
                 direccion: "Carrer Correa",
                 numero: "2",
                 cp: "08017",
-                foto_restaurante: "colombiano3.jpg",
+                foto_restaurante: "http://localhost:3000/api/uploads/colombiano3.jpg",
                 tipos_cocina: [12]
             },
 
@@ -812,7 +812,7 @@ async function anadirRestaurante() {
                 direccion: "Carrer de Blai",
                 numero: "20",
                 cp: "08001",
-                foto_restaurante: "coreana1.jpg",
+                foto_restaurante: "http://localhost:3000/api/uploads/coreana1.jpg",
                 tipos_cocina: [13]
             },
             
@@ -826,7 +826,7 @@ async function anadirRestaurante() {
                 direccion: "Carrer de Margarit",
                 numero: "40",
                 cp: "08003",
-                foto_restaurante: "coreana2.jpg",
+                foto_restaurante: "http://localhost:3000/api/uploads/coreana2.jpg",
                 tipos_cocina: [13]
             },
             {
@@ -839,7 +839,7 @@ async function anadirRestaurante() {
                 direccion: "Carrer de Tapioles",
                 numero: "10",
                 cp: "08002",
-                foto_restaurante: "coreana3.jpg",
+                foto_restaurante: "http://localhost:3000/api/uploads/coreana3.jpg",
                 tipos_cocina: [13]
             },
 
@@ -857,7 +857,7 @@ async function anadirRestaurante() {
                 direccion: "Carrer de Blai",
                 numero: "30",
                 cp: "08004",
-                foto_restaurante: "peruano1.jpg",
+                foto_restaurante: "http://localhost:3000/api/uploads/peruano1.jpg",
                 tipos_cocina: [14]
             },
             
@@ -871,7 +871,7 @@ async function anadirRestaurante() {
                 direccion: "Carrer de Margarit",
                 numero: "50",
                 cp: "08001",
-                foto_restaurante: "peruano2.jpg",
+                foto_restaurante: "http://localhost:3000/api/uploads/peruano2.jpg",
                 tipos_cocina: [14]
             },
             
@@ -885,7 +885,7 @@ async function anadirRestaurante() {
                 direccion: "Carrer de Tapioles",
                 numero: "20",
                 cp: "08002",
-                foto_restaurante: "peruano3.jpg",
+                foto_restaurante: "http://localhost:3000/api/uploads/peruano3.jpg",
                 tipos_cocina: [14]
             },
 
@@ -903,7 +903,7 @@ async function anadirRestaurante() {
                 direccion: "Carrer de Blai",
                 numero: "40",
                 cp: "08002",
-                foto_restaurante: "hawaiano1.jpg",
+                foto_restaurante: "http://localhost:3000/api/uploads/hawaiano1.jpg",
                 tipos_cocina: [15]
             },
             {
@@ -916,7 +916,7 @@ async function anadirRestaurante() {
                 direccion: "Carrer de Margarit",
                 numero: "60",
                 cp: "08001",
-                foto_restaurante: "hawaiano2.jpg",
+                foto_restaurante: "http://localhost:3000/api/uploads/hawaiano2.jpg",
                 tipos_cocina: [15]
             },
             {
@@ -929,7 +929,7 @@ async function anadirRestaurante() {
                 direccion: "Carrer de Tapioles",
                 numero: "30",
                 cp: "08003  ",
-                foto_restaurante: "hawaiano3.jpg",
+                foto_restaurante: "http://localhost:3000/api/uploads/hawaiano3.jpg",
                 tipos_cocina: [15]
             }
         ]
