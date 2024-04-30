@@ -821,7 +821,7 @@ router.post("/recetasPorPalabra", async (req, res) => {
     const recetas = await Receta.findAll({
       where: {
         nombre_receta: {
-          [Op.startsWith]: palabra // Usa el operador de sequelize para buscar recetas que comiencen con la palabra
+          [Op.like]:`%${palabra}%` // Usa el operador de sequelize para buscar recetas que comiencen con la palabra
         }
       }
     });

@@ -1369,5 +1369,726 @@
                 "foto_procedimiento": "http://localhost:3000/api/uploads/CochinilloAsado_3.jpg"
             }
         ]
+    },
+    {
+        "nombre_receta": "Tortilla de patatas",
+        "desc_receta": "Una sabrosa tortilla de patata",
+        "personas": "4",
+        "tiempo": "30 minutos",
+        "dificultad": "Fácil",
+        "tipo": "Principal",
+        "foto_receta": "http://localhost:3000/api/uploads/Tortilla_de_patata_Foto.jpeg",
+        "RestauranteId": 3,
+        "TipoCocinaId": [6],
+        "ingredientes": [
+            {
+                "IngredienteId": 7, 
+                "cantidad": 700,
+                "medida": "gramos"
+            },
+            {
+                "IngredienteId": 3, 
+                "cantidad": 300,
+                "medida": "gramos"
+            },
+            {
+                "IngredienteId": 56,
+                "cantidad": 6,
+                "medida": "unidad"
+            },
+            {
+                "IngredienteId": 29,
+                "cantidad": 25,
+                "medida": "gramos"
+            },
+            {
+                "IngredienteId": 1, 
+                "cantidad": 25,
+                "medida": "mililitros"
+            }
+        ],
+        "procedimientos": [
+            {
+                "numero_procedimiento": 1,
+                "desc_procedimiento": "Comenzamos con la tarea más larga, la de caramelizar la cebolla que nos llevará unos 30 minutos. Para ello, pelamos la cebolla y la cortamos en juliana. Después la ponemos en una sartén a fuego muy lento y dejamos que se haga muy despacio, removiendo de vez en cuando.",
+                "foto_procedimiento": "http://localhost:3000/api/uploads/Tortilla_de_patata_paso1.jpg"
+            },
+            {
+                "numero_procedimiento": 2,
+                "desc_procedimiento": "No nos interesa que se dore la cebolla sino que se vaya pochando muy despacio. Queremos caramelizar la cebolla. Mientras la cebolla se hace, pelamos las patatas y las cortamos en rodajas finas, procurando que todas ellas sean de tamaño uniforme.",
+                "foto_procedimiento": "http://localhost:3000/api/uploads/Tortilla_de_patata_paso2.jpg"
+            },
+            {
+                "numero_procedimiento": 3,
+                "desc_procedimiento": "En la misma sartén, derretir la mantequilla y saltear el ajo picado hasta que esté fragante.",
+                "foto_procedimiento": "http://localhost:3000/api/uploads/Tortilla_de_patata_paso3.jpg"
+            }
+        ]
+    },
+    {
+        "nombre_receta": "Spaghetti Carbonara",
+        "desc_receta": "Una deliciosa pasta italiana con una cremosa salsa de huevo, queso y panceta.",
+        "personas": "4",
+        "tiempo": "20 minutos",
+        "dificultad": "Media",
+        "tipo": "Principal",
+        "foto_receta": "http://localhost:3000/api/uploads/Spaghetti_Carbonara_foto.jpg",
+        "RestauranteId": 6,
+        "TipoCocinaId": [8],
+        "ingredientes": [
+            {
+                "IngredienteId": 9, 
+                "cantidad": 400,
+                "medida": "gramos"
+            },
+            {
+                "IngredienteId": 1, 
+                "cantidad": 1,
+                "medida": "unidad"
+            },
+            {
+                "IngredienteId": 29, 
+                "cantidad": 50,
+                "medida": "gramos"
+            },
+            {
+                "IngredienteId": 52, 
+                "cantidad": 50,
+                "medida": "gramos"
+            },
+            {
+                "IngredienteId": 14, 
+                "cantidad": 100,
+                "medida": "gramos"
+            }
+        ],
+        "procedimientos": [
+            {
+                "numero_procedimiento": 1,
+                "desc_procedimiento": "Comenzamos cociendo la pasta en agua con sal según las instrucciones del paquete, hasta que esté al dente. Reservamos una taza del agua de cocción antes de escurrir la pasta.",
+                "foto_procedimiento": "http://localhost:3000/api/uploads/Spaghetti_Carbonara_Paso1.jpg"
+            },
+            {
+                "numero_procedimiento": 2,
+                "desc_procedimiento": "Mientras tanto, en una sartén grande, freír la panceta hasta que esté crujiente. Retirar del fuego y dejar escurrir sobre papel de cocina.",
+                "foto_procedimiento": "http://localhost:3000/api/uploads/Spaghetti_Carbonara_Paso2.jpg"
+            },
+            {
+                "numero_procedimiento": 3,
+                "desc_procedimiento": "En un bol, batir los huevos, agregar el queso rallado y la pimienta negra recién molida. Mezclar bien.",
+                "foto_procedimiento": "http://localhost:3000/api/uploads/Spaghetti_Carbonara_Paso3.jpg"
+            }
+        ]
+    },
+    
+    {
+        "nombre_receta": "Pad Thai",
+        "desc_receta": "Un clásico plato tailandés de fideos de arroz salteados con camarones, tofu, brotes de soja y cacahuetes, en una deliciosa salsa agridulce.",
+        "personas": "4",
+        "tiempo": "30 minutos",
+        "dificultad": "Media",
+        "tipo": "Principal",
+        "foto_receta": "http://localhost:3000/api/uploads/Pad_Thai_foto.jpg",
+        "RestauranteId": 5,
+        "TipoCocinaId": [11],
+        "ingredientes": [
+            {
+                "IngredienteId": 32,
+                "cantidad": 200,
+                "medida": "gramos"
+            },
+            {
+                "IngredienteId": 50, 
+                "cantidad": 200,
+                "medida": "gramos"
+            },
+            {
+                "IngredienteId": 48, 
+                "cantidad": 200,
+                "medida": "gramos"
+            },
+            {
+                "IngredienteId": 35, 
+                "cantidad": 100,
+                "medida": "gramos"
+            },
+            {
+                "IngredienteId": 3,
+                "cantidad": 2,
+                "medida": "unidad"
+            },
+            {
+                "IngredienteId": 37,
+                "cantidad": 50,
+                "medida": "gramos"
+            },
+            {
+                "IngredienteId": 51, 
+                "cantidad": 2,
+                "medida": "unidad"
+            },
+            {
+                "IngredienteId": 39, 
+                "cantidad": 2,
+                "medida": "cucharadas"
+            },
+            {
+                "IngredienteId": 40, 
+                "cantidad": 2,
+                "medida": "cucharadas"
+            },
+            {
+                "IngredienteId": 41, 
+                "cantidad": 2,
+                "medida": "cucharadas"
+            },
+            {
+                "IngredienteId": 179, 
+                "cantidad": 1,
+                "medida": "cucharada"
+            },
+            {
+                "IngredienteId": 33, 
+                "cantidad": 1,
+                "medida": "cucharada"
+            },
+            {
+                "IngredienteId": 178, 
+                "cantidad": 1,
+                "medida": "unidad"
+            },
+            {
+                "IngredienteId": 45,
+                "cantidad": 1,
+                "medida": "unidad"
+            }
+        ],
+        "procedimientos": [
+            {
+                "numero_procedimiento": 1,
+                "desc_procedimiento": "Cocinar los fideos de arroz según las instrucciones del paquete. Escurrir y reservar.",
+                "foto_procedimiento": "http://localhost:3000/api/uploads/Pad_Thai_Paso1.jpg"
+            },
+            {
+                "numero_procedimiento": 2,
+                "desc_procedimiento": "En una sartén grande o wok, calentar el aceite de cacahuete a fuego medio-alto. Agregar el tofu cortado en cubos y cocinar hasta que esté dorado por todos lados.",
+                "foto_procedimiento": "http://localhost:3000/api/uploads/Pad_Thai_Paso2.jpg"
+            },
+            {
+                "numero_procedimiento": 3,
+                "desc_procedimiento": "Agregar los camarones a la sartén y cocinar hasta que estén rosados y cocidos. Retirar del wok y reservar.",
+                "foto_procedimiento": "http://localhost:3000/api/uploads/Pad_Thai_Paso3.jpg"
+            }
+        ]
+    },
+    {
+        "nombre_receta": "Coq au Vin",
+        "desc_receta": "Un delicioso plato francés de pollo cocido en vino tinto con champiñones, cebollas, zanahorias y hierbas aromáticas.",
+        "personas": "4",
+        "tiempo": "2 horas",
+        "dificultad": "Media",
+        "tipo": "Principal",
+        "foto_receta": "http://localhost:3000/api/uploads/Coq_au_Vin_Foto.jpg",
+        "RestauranteId": 9,
+        "TipoCocinaId": [12],
+        "ingredientes": [
+            {
+                "IngredienteId": 100, 
+                "cantidad": 1,
+                "medida": "unidad"
+            },
+            {
+                "IngredienteId": 47, 
+                "cantidad": 750,
+                "medida": "mililitros"
+            },
+            {
+                "IngredienteId": 16,
+                "cantidad": 200,
+                "medida": "gramos"
+            },
+            {
+                "IngredienteId": 3,
+                "cantidad": 200,
+                "medida": "gramos"
+            },
+            {
+                "IngredienteId": 6,
+                "cantidad": 2,
+                "medida": "unidad"
+            },
+            {
+                "IngredienteId": 102, 
+                "cantidad": 100,
+                "medida": "gramos"
+            },
+            {
+                "IngredienteId": 39,
+                "cantidad": 2,
+                "medida": "cucharadas"
+            },
+            {
+                "IngredienteId": 53,
+                "cantidad": 250,
+                "medida": "mililitros"
+            },
+            {
+                "IngredienteId": 2, 
+                "cantidad": 3,
+                "medida": "dientes"
+            },
+            {
+                "IngredienteId": 21,
+                "cantidad": 2,
+                "medida": "ramitas"
+            },
+            {
+                "IngredienteId": 23,
+                "cantidad": 2,
+                "medida": "hojas"
+            },
+            {
+                "IngredienteId": 1,
+                "cantidad": 2,
+                "medida": "cucharadas"
+            },
+            {
+                "IngredienteId": 29, 
+                "cantidad": null,
+                "medida": "al gusto"
+            },
+            {
+                "IngredienteId": 4, 
+                "cantidad": null,
+                "medida": "al gusto"
+            }
+        ],
+        "procedimientos": [
+            {
+                "numero_procedimiento": 1,
+                "desc_procedimiento": "Salpimentar el pollo cortado en piezas y enharinar ligeramente cada pieza.",
+                "foto_procedimiento": "chttp://localhost:3000/api/uploads/Coq_au_vin_paso1.jpg"
+            },
+            {
+                "numero_procedimiento": 2,
+                "desc_procedimiento": "En una cacerola grande o una olla, calentar el aceite de oliva y dorar el pollo por todos lados. Retirar y reservar.",
+                "foto_procedimiento": "http://localhost:3000/api/uploads/Coq_au_vin_paso2.jpg"
+            },
+            {
+                "numero_procedimiento": 3,
+                "desc_procedimiento": "En la misma cacerola, agregar el tocino o panceta cortado en trozos y dorar.",
+                "foto_procedimiento": "http://localhost:3000/api/uploads/Coq_au_vin_paso3.jpg"
+            }
+        ]
+    }, 
+    {
+        "nombre_receta": "Sushi Rolls",
+        "desc_receta": "Una selección de sushi rolls japoneses, incluyendo California Roll, Spicy Tuna Roll y Philadelphia Roll.",
+        "personas": "4",
+        "tiempo": "45 minutos",
+        "dificultad": "Media",
+        "tipo": "Aperitivo",
+        "foto_receta": "http://localhost:3000/api/uploads/Sushi_Rolls_Foto.jpg",
+        "RestauranteId": 4,
+        "TipoCocinaId": [18],
+        "ingredientes": [
+            {
+                "IngredienteId": 41, 
+                "cantidad": 2,
+                "medida": "tazas"
+            },
+            {
+                "IngredienteId": 123,
+                "cantidad": 4,
+                "medida": "hojas"
+            },
+            {
+                "IngredienteId": 80, 
+                "cantidad": 200,
+                "medida": "gramos"
+            },
+            {
+                "IngredienteId": 125, 
+                "cantidad": 1,
+                "medida": "unidad"
+            },
+            {
+                "IngredienteId": 126, 
+                "cantidad": 1,
+                "medida": "unidad"
+            },
+            {
+                "IngredienteId": 52,
+                "cantidad": 100,
+                "medida": "gramos"
+            },
+            {
+                "IngredienteId": 41,
+                "cantidad": 2,
+                "medida": "cucharadas"
+            },
+            {
+                "IngredienteId": 30,
+                "cantidad": 1,
+                "medida": "cucharada"
+            },
+            {
+                "IngredienteId": 29,
+                "cantidad": 1,
+                "medida": "cucharadita"
+            },
+            {
+                "IngredienteId": 33,
+                "cantidad": null,
+                "medida": "para servir"
+            },
+            {
+                "IngredienteId": 132,
+                "cantidad": null,
+                "medida": "para servir"
+            },
+            {
+                "IngredienteId": 153,
+                "cantidad": null,
+                "medida": "para servir"
+            }
+        ],
+        "procedimientos": [
+            {
+                "numero_procedimiento": 1,
+                "desc_procedimiento": "Cocinar el arroz para sushi según las instrucciones del paquete. Mezclar el vinagre de arroz, el azúcar y la sal en una cacerola y calentar a fuego medio hasta que el azúcar se disuelva.",
+                "foto_procedimiento": "http://localhost:3000/api/uploads/Sushi_Rolls_Paso1.jpg"
+            },
+            {
+                "numero_procedimiento": 2,
+                "desc_procedimiento": "Agregar la mezcla de vinagre al arroz cocido y mezclar bien para combinar. Dejar enfriar.",
+                "foto_procedimiento": "http://localhost:3000/api/uploads/Sushi_Rolls_Paso2.jpg"
+            },
+            {
+                "numero_procedimiento": 3,
+                "desc_procedimiento": "Colocar una hoja de alga nori en una esterilla de sushi. Extender una capa delgada de arroz sobre el alga, dejando un borde libre en la parte superior.",
+                "foto_procedimiento": "http://localhost:3000/api/uploads/Sushi_Rolls_Paso3.jpg"
+            }
+        ]
+    },
+    {
+        "nombre_receta": "Tiramisú",
+        "desc_receta": "Un postre italiano clásico hecho con capas de bizcochos de soletilla empapados en café, crema de mascarpone y cacao en polvo.",
+        "personas": "6",
+        "tiempo": "30 minutos",
+        "dificultad": "Media",
+        "tipo": "Postre",
+        "foto_receta": "http://localhost:3000/api/uploads/Tiramisú_foto.jpg",
+        "RestauranteId": 10,
+        "TipoCocinaId": [17],
+        "ingredientes": [
+            {
+                "IngredienteId": 51, 
+                "cantidad": 4,
+                "medida": "unidad"
+            },
+            {
+                "IngredienteId": 30, 
+                "cantidad": 100,
+                "medida": "gramos"
+            },
+            {
+                "IngredienteId": 117,
+                "cantidad": 250,
+                "medida": "gramos"
+            },
+            {
+                "IngredienteId": 118,
+                "cantidad": 200,
+                "medida": "gramos"
+            },
+            {
+                "IngredienteId": 119, 
+                "cantidad": 1,
+                "medida": "taza"
+            },
+            {
+                "IngredienteId": 120,
+                "cantidad": 2,
+                "medida": "cucharadas"
+            }
+        ],
+        "procedimientos": [
+            {
+                "numero_procedimiento": 1,
+                "desc_procedimiento": "Separar las claras de las yemas de huevo. Batir las yemas con el azúcar hasta que estén espesas y de color claro.",
+                "foto_procedimiento": "http://localhost:3000/api/uploads/Tiramisú_paso1.jpeg"
+            },
+            {
+                "numero_procedimiento": 2,
+                "desc_procedimiento": "Agregar el mascarpone a las yemas batidas y mezclar hasta obtener una crema suave y homogénea.",
+                "foto_procedimiento": "http://localhost:3000/api/uploads/Tiramisú_paso2.jpeg"
+            },
+            {
+                "numero_procedimiento": 3,
+                "desc_procedimiento": "En otro tazón, batir las claras de huevo a punto de nieve.",
+                "foto_procedimiento": "http://localhost:3000/api/uploads/Tiramisú_paso3.jpeg"
+            }
+        ]
+    }, 
+    {
+        "nombre_receta": "Paella Valenciana",
+        "desc_receta": "Un clásico plato español de arroz cocido con azafrán, pollo, conejo, mariscos, verduras y especias.",
+        "personas": "6",
+        "tiempo": "1.5 horas",
+        "dificultad": "Media",
+        "tipo": "Principal",
+        "foto_receta": "http://localhost:3000/api/uploads/Paella_Valenciana_Foto.jpg",
+        "RestauranteId": 11,
+        "TipoCocinaId": [16],
+        "ingredientes": [
+            {
+                "IngredienteId": 41, 
+                "cantidad": 2,
+                "medida": "tazas"
+            },
+            {
+                "IngredienteId": 100,
+                "cantidad": 4,
+                "medida": "unidad"
+            },
+            {
+                "IngredienteId": 106, 
+                "cantidad": 500,
+                "medida": "gramos"
+            },
+            {
+                "IngredienteId": 63,
+                "cantidad": 300,
+                "medida": "gramos"
+            },
+            {
+                "IngredienteId": 77,
+                "cantidad": 200,
+                "medida": "gramos"
+            },
+            {
+                "IngredienteId": 5,
+                "cantidad": 3,
+                "medida": "unidad"
+            },
+            {
+                "IngredienteId": 166,
+                "cantidad": 2,
+                "medida": "unidad"
+            },
+            {
+                "IngredienteId": 15,
+                "cantidad": 150,
+                "medida": "gramos"
+            },
+            {
+                "IngredienteId": 109,
+                "cantidad": 1,
+                "medida": "cucharadita"
+            },
+            {
+                "IngredienteId": 146, 
+                "cantidad": 4,
+                "medida": "tazas"
+            },
+            {
+                "IngredienteId": 1,
+                "cantidad": 3,
+                "medida": "cucharadas"
+            },
+            {
+                "IngredienteId": 2,
+                "cantidad": 4,
+                "medida": "dientes"
+            },
+            {
+                "IngredienteId": 29,
+                "cantidad": null,
+                "medida": "al gusto"
+            },
+            {
+                "IngredienteId": 4,
+                "cantidad": null,
+                "medida": "al gusto"
+            }
+        ],
+        "procedimientos": [
+            {
+                "numero_procedimiento": 1,
+                "desc_procedimiento": "En una paellera grande o sartén, calentar el aceite de oliva y dorar el pollo y el conejo por todos lados. Retirar y reservar.",
+                "foto_procedimiento": "http://localhost:3000/api/uploads/Paella_Valenciana_paso1.jpg"
+            },
+            {
+                "numero_procedimiento": 2,
+                "desc_procedimiento": "En la misma paellera, agregar los pimientos rojos cortados en tiras, las judías verdes cortadas en trozos y el ajo picado. Cocinar hasta que estén tiernos.",
+                "foto_procedimiento": "http://localhost:3000/api/uploads/Paella_Valenciana_paso2.jpg"
+            },
+            {
+                "numero_procedimiento": 3,
+                "desc_procedimiento": "Agregar los tomates triturados y cocinar hasta que se reduzcan y espesen.",
+                "foto_procedimiento": "http://localhost:3000/api/uploads/Paella_Valenciana_paso3.jpg"
+            }
+        ]
+    },
+    {
+        "nombre_receta": "Goulash Húngaro",
+        "desc_receta": "Un guiso húngaro tradicional de carne de res cocida lentamente con cebollas, pimientos, tomate, paprika y especias.",
+        "personas": "6",
+        "tiempo": "2 horas",
+        "dificultad": "Media",
+        "tipo": "Principal",
+        "foto_receta": "http://localhost:3000/api/uploads/Goulash_Húngaro_Foto.jpg",
+        "RestauranteId": 14,
+        "TipoCocinaId": [15],
+        "ingredientes": [
+            {
+                "IngredienteId": 105,
+                "cantidad": 1,
+                "medida": "kg"
+            },
+            {
+                "IngredienteId": 3,
+                "cantidad": 2,
+                "medida": "unidad"
+            },
+            {
+                "IngredienteId": 28,
+                "cantidad": 2,
+                "medida": "unidad"
+            },
+            {
+                "IngredienteId": 5,
+                "cantidad": 3,
+                "medida": "unidad"
+            },
+            {
+                "IngredienteId": 17,
+                "cantidad": 3,
+                "medida": "cucharadas"
+            },
+            {
+                "IngredienteId": 146,
+                "cantidad": 500,
+                "medida": "mililitros"
+            },
+            {
+                "IngredienteId": 27,
+                "cantidad": null,
+                "medida": "al gusto"
+            },
+            {
+                "IngredienteId": 29,
+                "cantidad": null,
+                "medida": "al gusto"
+            },
+            {
+                "IngredienteId": 1,
+                "cantidad": 3,
+                "medida": "cucharadas"
+            }
+        ],
+        "procedimientos": [
+            {
+                "numero_procedimiento": 1,
+                "desc_procedimiento": "En una olla grande, calentar el aceite vegetal y dorar la carne de res en lotes hasta que esté bien sellada. Retirar y reservar.",
+                "foto_procedimiento": "http://localhost:3000/api/uploads/Goulash_Húngaro_paso1.jpg"
+            },
+            {
+                "numero_procedimiento": 2,
+                "desc_procedimiento": "En la misma olla, agregar las cebollas cortadas en rodajas finas y los pimientos cortados en tiras. Cocinar hasta que estén tiernos.",
+                "foto_procedimiento": "http://localhost:3000/api/uploads/Goulash_Húngaro_paso2.jpg"
+            },
+            {
+                "numero_procedimiento": 3,
+                "desc_procedimiento": "Agregar los tomates picados y cocinar por unos minutos hasta que se ablanden.",
+                "foto_procedimiento": "http://localhost:3000/api/uploads/Goulash_Húngaro_paso3.jpg"
+            }
+        ]
+    }, 
+    {
+        "nombre_receta": "Risotto de Champiñones",
+        "desc_receta": "Un cremoso risotto italiano con champiñones salteados, vino blanco, caldo de verduras y queso parmesano.",
+        "personas": "4",
+        "tiempo": "40 minutos",
+        "dificultad": "Media",
+        "tipo": "Principal",
+        "foto_receta": "http://localhost:3000/api/uploads/Risotto_de_Champiñones_foto.jpg",
+        "RestauranteId": 18,
+        "TipoCocinaId": [14],
+        "ingredientes": [
+            {
+                "IngredienteId": 41,
+                "cantidad": 1,
+                "medida": "taza"
+            },
+            {
+                "IngredienteId": 16,
+                "cantidad": 200,
+                "medida": "gramos"
+            },
+            {
+                "IngredienteId": 75,
+                "cantidad": 1,
+                "medida": "taza"
+            },
+            {
+                "IngredienteId": 161,
+                "cantidad": 4,
+                "medida": "tazas"
+            },
+            {
+                "IngredienteId": 3,
+                "cantidad": 1,
+                "medida": "unidad"
+            },
+            {
+                "IngredienteId": 2,
+                "cantidad": 2,
+                "medida": "dientes"
+            },
+            {
+                "IngredienteId": 152,
+                "cantidad": 1,
+                "medida": "taza"
+            },
+            {
+                "IngredienteId": 56,
+                "cantidad": 2,
+                "medida": "cucharadas"
+            },
+            {
+                "IngredienteId": 1,
+                "cantidad": 1,
+                "medida": "cucharada"
+            },
+            {
+                "IngredienteId": 29,
+                "cantidad": null,
+                "medida": "al gusto"
+            },
+            {
+                "IngredienteId": 4,
+                "cantidad": null,
+                "medida": "al gusto"
+            }
+        ],
+        "procedimientos": [
+            {
+                "numero_procedimiento": 1,
+                "desc_procedimiento": "Calentar el caldo de verduras en una cacerola y mantener caliente a fuego bajo.",
+                "foto_procedimiento": "http://localhost:3000/api/uploads/Risotto_de_Champiñones_paso1.jpg"
+            },
+            {
+                "numero_procedimiento": 2,
+                "desc_procedimiento": "En una sartén grande, calentar el aceite de oliva y la mitad de la mantequilla. Saltear la cebolla y el ajo picados hasta que estén tiernos.",
+                "foto_procedimiento": "http://localhost:3000/api/uploads/Risotto_de_Champiñones_paso2.jpg"
+            },
+            {
+                "numero_procedimiento": 3,
+                "desc_procedimiento": "Agregar los champiñones cortados y cocinar hasta que estén dorados y tiernos.",
+                "foto_procedimiento": "http://localhost:3000/api/uploads/Risotto_de_Champiñones_paso3.jpg"
+            }
+    ]
     }
 ]
