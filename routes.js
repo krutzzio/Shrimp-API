@@ -798,7 +798,17 @@ router.post("/recetasPorPalabra", async (req, res) => {
         }
       }
     });
-    res.status(200).json({ recetas: recetas }); // Devuelve las recetas encontradas
+    const restaurantes = await Restaurante.findAll({
+      where: {
+        nombre: {
+          [Op.startsWith]: palabra // Usa el operador de sequelize para buscar restaurantes que comiencen con la palabra
+        }
+      }
+    });
+    res.status(200).json({ 
+      recetas: recetas,
+      restaurantes:restaurantes
+     }); // Devuelve las recetas encontradas
   } catch (error) {
     res.status(500).json({ error: error.message }); // Maneja cualquier error y devuelve un mensaje de error
   }
@@ -840,7 +850,7 @@ router.get("/cp/:codigoPostal", async (req, res) => {
     const recetas = await Receta.findAll({ where: { RestauranteId: restaurantesIds } });
 
     // las devuelves
-    res.json({ recetas });
+    res.json({ recetas, restaurantes });
   } catch (error) {
     res.status(500).json({ error: error.message });
   }
