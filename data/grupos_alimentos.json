@@ -1,114 +1,142 @@
 [
     {
         "nombre_grupo": "Crustaceos",
-        "dieta": "0"
+        "dieta": "0",
+        "alergeno": "1"
     },
     {
         "nombre_grupo": "Huevos",
-        "dieta": "1"
+        "dieta": "1",
+        "alergeno": "1"
     },
     {
         "nombre_grupo": "Pescado",
-        "dieta": "0"
+        "dieta": "0",
+        "alergeno": "1"
     },
     {
         "nombre_grupo": "Cacahuetes",
-        "dieta": "2"
+        "dieta": "2",
+        "alergeno": "0"
     },
     {
         "nombre_grupo": "Soja",
-        "dieta": "2"
+        "dieta": "2",
+        "alergeno": "1"
     },
     {
         "nombre_grupo": "Lacteos",
-        "dieta": "1"
+        "dieta": "1",
+        "alergeno": "1"
     },
     {
         "nombre_grupo": "Frutos secos",
-        "dieta": "2"
+        "dieta": "2",
+        "alergeno": "0"
     },
     {
-        "nombre_grupo": "Apios",
-        "dieta": "2"
+        "nombre_grupo": "Apio",
+        "dieta": "2",
+        "alergeno": "1"
     },
     {
         "nombre_grupo": "Mostazas",
-        "dieta": "2"
+        "dieta": "2",
+        "alergeno": "0"
     },
     {
-        "nombre_grupo": "Sesamos",
-        "dieta": "2"
+        "nombre_grupo": "Sesamo",
+        "dieta": "2",
+        "alergeno": "1"
     },
     {
-        "nombre_grupo": "Dioxido de azufre y sultifos",
-        "dieta": "0"
+        "nombre_grupo": "Sultifos",
+        "dieta": "0",
+        "alergeno": "1"
     },
     {
         "nombre_grupo": "Altramuces",
-        "dieta": "2"
+        "dieta": "2",
+        "alergeno": "1"
     },
     {
         "nombre_grupo": "Moluscos",
-        "dieta": "0"
+        "dieta": "0",
+        "alergeno": "1"
     },
     {
         "nombre_grupo": "Carne, pollo",
-        "dieta": "0"
+        "dieta": "0",
+        "alergeno": "0"
     },
     {
         "nombre_grupo": "ninguno",
-        "dieta": "0"
+        "dieta": "0",
+        "alergeno": "0"
     },
     {
         "nombre_grupo": "Vegetales",
-        "dieta": "2"
+        "dieta": "2",
+        "alergeno": "0"
     },
     {
         "nombre_grupo": "Frutas",
-        "dieta": "2"
+        "dieta": "2",
+        "alergeno": "0"
     },
     {
         "nombre_grupo": "Legumbres",
-        "dieta": "2"
+        "dieta": "2",
+        "alergeno": "0"
     },
     {
         "nombre_grupo": "Cereales",
-        "dieta": "2"
+        "dieta": "2",
+        "alergeno": "0"
     },
     {
         "nombre_grupo": "Grasas",
-        "dieta": "0"
+        "dieta": "0",
+        "alergeno": "0"
     },
     {
         "nombre_grupo": "Condimentos",
-        "dieta": "2"
+        "dieta": "2",
+        "alergeno": "0"
     },
     {
         "nombre_grupo": "Especies",
-        "dieta": "2"
+        "dieta": "2",
+        "alergeno": "0"
     },
     {
         "nombre_grupo": "Salsas",
-        "dieta": "2"
+        "dieta": "2",
+        "alergeno": "0"
     },
     {
         "nombre_grupo": "Aceites",
-        "dieta": "2"
+        "dieta": "2",
+        "alergeno": "0"
     },
     {
         "nombre_grupo": "Mieles",
-        "dieta": "1"
+        "dieta": "1",
+        "alergeno": "0"
     },
     {
         "nombre_grupo": "Vinos",
-        "dieta": "2"
+        "dieta": "2",
+        "alergeno": "0"
     },
     {
         "nombre_grupo": "Vinagres",
-        "dieta": "2"
+        "dieta": "2",
+        "alergeno": "0"
     },
     {
         "nombre_grupo": "Azúcar",
-        "dieta": "2"
+        "dieta": "2",
+        "alergeno": "0"
     }
 ]
