@@ -2099,5 +2099,385 @@
                 "foto_procedimiento": "http://localhost:3000/api/uploads/Risotto_de_Champiñones_paso3.jpg"
             }
     ]
+    },
+
+    
+
+
+
+
+
+
+
+    {
+        "nombre_receta": "Tajine de cordero",
+        "desc_receta": "El tajine o tajín es un guiso tradicional de la cocina marroquí. Se hace con cualquier tipo de carne, excepto cerdo, y se caracteriza por ser platos ricos en calorías, en sabores y en aromas. Probar uno de estos guisos es un verdadero lujo para el paladar así que no dudéis hacer esta receta en casa.",
+        "personas": "2",
+        "tiempo": "2.20 horas",
+        "dieta": 0,
+        "dificultad": "Media",
+        "tipo": "Principal",
+        "foto_receta": "http://localhost:3000/api/uploads/tajine_de_cordero.jpg",
+        "RestauranteId": "MARROQUI",
+        "TipoCocinaId": ["MARROQUI"],
+        "ingredientes": [
+            {
+                "IngredienteId": "CEBOLLA",
+                "cantidad": 250,
+                "medida": "gramos"
+            },
+            {
+                "IngredienteId": "ACEITE DE OLIVA",
+                "cantidad": 60,
+                "medida": "mililitros"
+            },
+            {
+                "IngredienteId": "CANELA",
+                "cantidad": 1.5,
+                "medida": "palo"
+            },
+            {
+                "IngredienteId": "CILANTRO",
+                "cantidad": 4,
+                "medida": "gramos"
+            },
+            {
+                "IngredienteId": "jengibre",
+                "cantidad": 2,
+                "medida": "gramos"
+            },
+            {
+                "IngredienteId": "pimienta negra",
+                "cantidad": 1,
+                "medida": "gramo"
+            },
+            {
+                "IngredienteId": "azafran",
+                "cantidad": 1,
+                "medida": "pizca"
+            },
+            {
+                "IngredienteId": "cordero",
+                "cantidad": 500,
+                "medida": "gramos"
+            },
+            {
+                "IngredienteId": "miel",
+                "cantidad": 3,
+                "medida": "cucharada"
+            },
+            {
+                "IngredienteId": "pasas",
+                "cantidad": 150,
+                "medida": "gramos"
+            },
+            {
+                "IngredienteId": "almendras",
+                "cantidad": 35,
+                "medida": "gramos"
+            }
+        ],
+        "procedimientos": [
+            {
+                "numero_procedimiento": 1,
+                "desc_procedimiento": "Echamos 250 g de cebollas ralladas en un tajine con 60 ml de aceite de oliva y rehogamos hasta que todos los líquidos se hayan evaporado y el aceite se separe de la cebolla rallada. Mientras rehogamos la cebolla, preparamos un bouquet garni con ½ palo de canela y 4 g de cilantro fresco en rama.",
+                "foto_procedimiento": "http://localhost:3000/api/uploads/tajine_de_cordero1.jpg"
+            },
+            {
+                "numero_procedimiento": 2,
+                "desc_procedimiento": "Cuando la cebolla rallada ya no tenga jugos y el aceite se haya separado de la cebolla, añadimos 2 g de jengibre en polvo, 1 g de pimienta negra molida, 1 pizca de azafrán y el bouquet garni. Mezclamos y rehogamos, siempre a fuego bajo, entre 2 y 4 minutos, o hasta que nuestra cocina huela a especias. Añadimos 500 g de cordero troceado, mezclamos para que el cordero quede impregnado del sofrito y añadimos entre 250 y 300 ml de agua, hasta casi cubrir el guiso, y 2 cucharadas de miel. Tapamos el tajine y dejamos cocer el guiso a fuego medio durante 1 hora aproximadamente.",
+                "foto_procedimiento": "http://localhost:3000/api/uploads/tajine_de_cordero2.jpg"
+            },
+            {
+                "numero_procedimiento": 3,
+                "desc_procedimiento": "Calentamos el horno a 170 ºC con calor arriba y abajo. Pasamos el tajine al horno, siempre tapado, y lo dejamos cocer durante 45 minutos. Retiramos el tajine del horno, añadimos 150 g de ciruelas pasas sin semillas y un poco de agua si fuera necesario. Tapamos, volvemos a meter en el horno y continuamos la cocción 15 minutos más. Si la salsa estuviese muy líquida, retiramos el cordero y las ciruelas con una espumadera, y reducimos la salsa hasta que esté más espesa.",
+                "foto_procedimiento": "http://localhost:3000/api/uploads/tajine_de_cordero3.jpg"
+            }
+    ]
+    },
+    {
+        "nombre_receta": "Tajine de pollo con limón encuertido y mantequilla curada",
+        "desc_receta": "Queremos compartiros una receta maravillosa de un guiso marroquí para hacer con este recipiente y dejar a los tuyos boquiabiertos: tajine de pollo con limón encurtido y mantequilla curada. ¡Encendemos fogones!",
+        "personas": "2",
+        "tiempo": "2.20 horas",
+        "dieta": 0,
+        "dificultad": "Media",
+        "tipo": "Principal",
+        "foto_receta": "http://localhost:3000/api/uploads/tajin_pollo.jpg",
+        "RestauranteId": "MARROQUI",
+        "TipoCocinaId": ["MARROQUI"],
+        "ingredientes": [
+            {
+                "IngredienteId": "limones",
+                "cantidad": 2,
+                "medida": "unidades"
+            },
+            {
+                "IngredienteId": "cuartos traseros de pollo",
+                "cantidad": 4,
+                "medida": "unidades"
+            },
+            {
+                "IngredienteId": "cebollas",
+                "cantidad": 2,
+                "medida": "unidades"
+            },
+            {
+                "IngredienteId": "ajo",
+                "cantidad": 4,
+                "medida": "trozos"
+            },
+            {
+                "IngredienteId": "cilantro",
+                "cantidad": 3,
+                "medida": "cucharadas"
+            },
+            {
+                "IngredienteId": "aceite de oliva",
+                "cantidad": 100,
+                "medida": "mililitros"
+            },
+            {
+                "IngredienteId": "aceitunas verdes",
+                "cantidad": 200,
+                "medida": "gramos"
+            },
+            {
+                "IngredienteId": "azafran",
+                "cantidad": 10,
+                "medida": "hebras"
+            }
+        ],
+        "procedimientos": [
+            {
+                "numero_procedimiento": 1,
+                "desc_procedimiento": "El proceso de fermentación de estos limones requiere de un mínimo de cuatro semanas, por lo que es importante que prepares esta parte de la receta con tiempo. Para elaborarla, necesitamos un par de tarros de vidrio donde los limones entren, pero queden bien apretados. Si este tarro está esterilizado, mejor.",
+                "foto_procedimiento": "http://localhost:3000/api/uploads/tajin_pollo1.jpg"
+            },
+            {
+                "numero_procedimiento": 2,
+                "desc_procedimiento": "Con un cuchillo cortamos los extremos de los limones limpios y les aplicamos dos cortes en cruz transversales y sin terminar, dejando un centímetro del limón sin cortar. Además, cada corte tiene que ser realizado por el lado opuesto del limón, de manera que el limón quede abierto en cuartos que no pueden separarse del todo.",
+                "foto_procedimiento": "http://localhost:3000/api/uploads/tajin_pollo2.jpg"
+            },
+            {
+                "numero_procedimiento": 3,
+                "desc_procedimiento": "Colocamos un poco de sal al fondo del tarro, metemos el limón y rellenamos ambos cortes de los limones con sal. Es importante que esté bien relleno. Por último, terminado de rellenar los tarros con toda la sal, hasta que queden bien cubiertos.",
+                "foto_procedimiento": "http://localhost:3000/api/uploads/tajin_pollo3.jpg"
+            }
+    ]
+    },
+    {
+        "nombre_receta": "Makis de Atún",
+        "desc_receta": "¡Se termina el verano y volvemos a la rutina! Como esto no es plato de buen gusto para nadie os traemos una receta que sí que lo es: Maki de atún. Esta receta sencilla y deliciosa es perfecta para los amantes del sushi que están deseando aprender a prepararlo por su cuenta. ¿Todo listo? ",
+        "personas": "2",
+        "tiempo": "30 minutos",
+        "dieta": 0,
+        "dificultad": "Media",
+        "tipo": "Entrante",
+        "foto_receta": "http://localhost:3000/api/uploads/makis_atun.jpg",
+        "RestauranteId": "JAPONES",
+        "TipoCocinaId": ["JAPONES"],
+        "ingredientes": [
+            {
+                "IngredienteId": "atun fresco",
+                "cantidad": 250,
+                "medida": "gramos"
+            },
+            {
+                "IngredienteId": "ACEITE DE sesamo",
+                "cantidad": 20,
+                "medida": "mililitros"
+            },
+            {
+                "IngredienteId": "salsa de soja",
+                "cantidad": 60,
+                "medida": "mililitros"
+            },
+            {
+                "IngredienteId": "jenjibre",
+                "cantidad": 2,
+                "medida": "gramos"
+            },
+            {
+                "IngredienteId": "alga nori",
+                "cantidad": 4,
+                "medida": "unidades"
+            },
+            {
+                "IngredienteId": "arroz de sushi",
+                "cantidad": 200,
+                "medida": "gramos"
+            },
+            {
+                "IngredienteId": "vinagre",
+                "cantidad": 20,
+                "medida": "mililitros"
+            },
+            {
+                "IngredienteId": "aguacate",
+                "cantidad": 1,
+                "medida": "unidad"
+            }
+        ],
+        "procedimientos": [
+            {
+                "numero_procedimiento": 1,
+                "desc_procedimiento": "Lava el arroz de sushi bajo agua fría hasta que el agua salga clara. Cuécelo en una olla con agua siguiendo las instrucciones del paquete. Mientras aún está caliente, mezcla el arroz cocido con una mezcla de vinagre de arroz, azúcar y sal. Deja que el arroz se enfríe a temperatura ambiente.",
+                "foto_procedimiento": "http://localhost:3000/api/uploads/makis_atun1.jpg"
+            },
+            {
+                "numero_procedimiento": 2,
+                "desc_procedimiento": "Corta el atún en tiras delgadas. Asegúrate de que estén lo suficientemente delgadas para enrollar fácilmente.Coloca una hoja de alga nori sobre una esterilla de bambú para sushi con el lado brillante hacia abajo.",
+                "foto_procedimiento": "http://localhost:3000/api/uploads/makis_atun2.jpg"
+            },
+            {
+                "numero_procedimiento": 3,
+                "desc_procedimiento": "Extiende una capa delgada de arroz de sushi sobre la hoja de alga nori, dejando un espacio de aproximadamente 1 centímetro en el borde superior. Coloca las tiras de atún en el centro del arroz. Enrolla el makis utilizando la esterilla de bambú, aplicando una ligera presión para asegurar que quede compacto. Con un cuchillo afilado y ligeramente humedecido, corta los rollos de maki en rodajas de aproximadamente 1,5 cm de grosor.",
+                "foto_procedimiento": "http://localhost:3000/api/uploads/makis_atun3.jpg"
+            }
+    ]
+    },
+    {
+        "nombre_receta": "Anticuchos",
+        "desc_receta": "El anticucho es una brocheta proveniente de Perú. Es una receta que cuenta con variaciones y es muy popular también en algunos países de Sudamérica. La receta peruana original suele hacerse con corazón de vacuno y especiado con ají panca (un chile rojo peruano aromático y poco picante) que le da ese color rojizo tan característico.",
+        "personas": "2",
+        "tiempo": "45 minutos",
+        "dieta": 0,
+        "dificultad": "Fácil",
+        "tipo": "Entrante",
+        "foto_receta": "http://localhost:3000/api/uploads/anticuchos.jpg",
+        "RestauranteId": "PERUANO",
+        "TipoCocinaId": ["PERUANO"],
+        "ingredientes": [
+            {
+                "IngredienteId": "solomillo",
+                "cantidad": 1,
+                "medida": "kilogramo"
+            },
+            {
+                "IngredienteId": "patatas",
+                "cantidad": 2,
+                "medida": "unidades"
+            },
+            {
+                "IngredienteId": "ajo",
+                "cantidad": 1,
+                "medida": "unidad"
+            },
+            {
+                "IngredienteId": "cebolla",
+                "cantidad": 1,
+                "medida": "unidad"
+            },
+            {
+                "IngredienteId": "queso fresco",
+                "cantidad": 50,
+                "medida": "gramos"
+            },
+            {
+                "IngredienteId": "leche",
+                "cantidad": 150,
+                "medida": "mililitros"
+            },
+            {
+                "IngredienteId": "mantequilla",
+                "cantidad": 20,
+                "medida": "gramos"
+            },
+            {
+                "IngredienteId": "comino",
+                "cantidad": 1,
+                "medida": "cucharada"
+            }
+        ],
+        "procedimientos": [
+            {
+                "numero_procedimiento": 1,
+                "desc_procedimiento": "En un tazón grande, mezcla el vinagre de vino tinto, el ajo picado, el comino, el pimentón, el orégano, la sal y la pimienta. Agrega los trozos de carne a la mezcla de marinado y asegúrate de que estén completamente cubiertos. Deja marinar en el refrigerador durante al menos 2 horas, o idealmente durante la noche, para que la carne absorba bien los sabores.",
+                "foto_procedimiento": "http://localhost:3000/api/uploads/anticuchos1.jpg"
+            },
+            {
+                "numero_procedimiento": 2,
+                "desc_procedimiento": "Una vez marinada la carne, ensarta los trozos en los palitos de brocheta, dejando un pequeño espacio entre cada trozo. Calienta una parrilla o una sartén a fuego medio-alto y cocina los anticuchos durante unos 8-10 minutos, girándolos ocasionalmente para que se cocinen de manera uniforme. La carne debe estar bien dorada por fuera pero aún jugosa por dentro.",
+                "foto_procedimiento": "http://localhost:3000/api/uploads/anticuchos2.jpg"
+            },
+            {
+                "numero_procedimiento": 3,
+                "desc_procedimiento": "Sirve los anticuchos calientes, acompañados de papas sancochadas o maíz cocido si lo deseas.Puedes servirlos con salsa de ají amarillo o salsa criolla para darles aún más sabor y un toque picante.",
+                "foto_procedimiento": "http://localhost:3000/api/uploads/anticuchos3.jpg"
+            }
+    ]
+    },
+    {
+        "nombre_receta": "Pollo Kum Pao",
+        "desc_receta": "El pollo Kung Pao es uno de los clásicos de las cartas de los restaurantes chinos que hoy os enseñamos a preparar en casa. Su sabor es adictivo al combinar salado, dulce y especiado. Es muy fácil y rápido de hacer. A continuación, la receta paso a paso.",
+        "personas": "2",
+        "tiempo": "1 hora",
+        "dieta": 0,
+        "dificultad": "Media",
+        "tipo": "Principal",
+        "foto_receta": "http://localhost:3000/api/uploads/pollo_kum_pao.jpg",
+        "RestauranteId": "PERUANO",
+        "TipoCocinaId": ["PERUANO"],
+        "ingredientes": [
+            {
+                "IngredienteId": "pechuga de pollo",
+                "cantidad": 500,
+                "medida": "gramos"
+            },
+            {
+                "IngredienteId": "ajo",
+                "cantidad": 4,
+                "medida": "unidades"
+            },
+            {
+                "IngredienteId": "jengibre",
+                "cantidad": 20,
+                "medida": "gramos"
+            },
+            {
+                "IngredienteId": "chiles",
+                "cantidad": 12,
+                "medida": "unidad"
+            },
+            {
+                "IngredienteId": "cebolletas",
+                "cantidad": 6,
+                "medida": "unidades"
+            },
+            {
+                "IngredienteId": "cacahuetes",
+                "cantidad": 2,
+                "medida": "cucharadas"
+            },
+            {
+                "IngredienteId": "pimienta",
+                "cantidad": 4,
+                "medida": "gramos"
+            },
+            {
+                "IngredienteId": "aceite de oliva",
+                "cantidad": 1,
+                "medida": "cucharada"
+            }
+        ],
+        "procedimientos": [
+            {
+                "numero_procedimiento": 1,
+                "desc_procedimiento": "En un tazón pequeño, mezcla todos los ingredientes para la salsa kung pao: salsa de soja, vinagre de arroz, azúcar y salsa de chile. Si prefieres una salsa más espesa, agrega la maicena disuelta en agua y mezcla bien. Reserva. Prepara los pimientos cortándolos en trozos, pica los ajos, ralla el jengibre y corta las cebollas verdes en trozos. Ten todos los ingredientes listos antes de comenzar a cocinar.",
+                "foto_procedimiento": "http://localhost:3000/api/uploads/pollo_kum_pao1.jpg"
+            },
+            {
+                "numero_procedimiento": 2,
+                "desc_procedimiento": "Calienta el aceite en un wok o sartén grande a fuego medio-alto. Agrega los trozos de pollo y cocínalos hasta que estén dorados por todos lados y cocidos por completo. Retira el pollo del wok y reserva. En la misma sartén, agrega un poco más de aceite si es necesario. Agrega los pimientos, los cacahuetes, el ajo picado, el jengibre rallado y los chiles secos. Saltea durante unos minutos hasta que los pimientos estén tiernos pero aún crujientes.",
+                "foto_procedimiento": "http://localhost:3000/api/uploads/pollo_kum_pao2.jpg"
+            },
+            {
+                "numero_procedimiento": 3,
+                "desc_procedimiento": "Regresa el pollo cocido al wok y vierte la salsa kung pao sobre los ingredientes. Cocina todo junto por unos minutos más, revolviendo constantemente, hasta que la salsa se espese ligeramente y todo esté bien combinado. Sirve el pollo Kung Pao caliente, espolvoreado con cebollinos frescos picados por encima.",
+                "foto_procedimiento": "http://localhost:3000/api/uploads/pollo_kum_pao3.jpg"
+            }
+    ]
     }
+
 ]
