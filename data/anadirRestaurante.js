@@ -718,7 +718,7 @@ async function anadirRestaurante() {
                 numero: "50",
                 cp: "08003",
                 foto_restaurante: "restaurante1.jpg",
-                tipos_cocina: [9, 11]
+                tipos_cocina: [11]
             },
             {
                 nombre: "El Raval",
@@ -770,8 +770,148 @@ async function anadirRestaurante() {
                 numero: "14",
                 cp: "08001",
                 foto_restaurante: "restaurante2.jpg",
-                tipos_cocina: [9, 11]
+                tipos_cocina: [11]
             },
+
+
+            //Coreana
+
+            {
+                nombre: "Gochu Jip",
+                descripcio: "Auténtico restaurante coreano especializado en platos picantes y barbacoa a la parrilla en el corazón de Poble Sec.",
+                correo: "gochujip@test123.com",
+                password: "test123",
+                telefono: "935111111",
+                dieta: 0,
+                direccion: "Carrer de Blai",
+                numero: "20",
+                cp: "08001",
+                foto_restaurante: "gochu_jip.jpg",
+                tipos_cocina: [12]
+            },
+            
+            {
+                nombre: "HanGuk Sikdang",
+                descripcio: "Experimenta la esencia de Corea del Sur en nuestro restaurante HanGuk Sikdang, donde fusionamos autenticidad y creatividad culinaria.",
+                correo: "hanguksikdang@test123.com",
+                password: "test123",
+                telefono: "935222222",
+                dieta: 0,
+                direccion: "Carrer de Margarit",
+                numero: "40",
+                cp: "08003",
+                foto_restaurante: "hanguk_sikdang.jpg",
+                tipos_cocina: [12]
+            },
+            
+            {
+                nombre: "Bibim Bab House",
+                descripcio: "Sumérgete en una experiencia gastronómica única con nuestra variedad de bibimbap y platos tradicionales en Bibim Bab House.",
+                correo: "bibimbabhouse@test123.com",
+                password: "test123",
+                telefono: "935333333",
+                dieta: 0,
+                direccion: "Carrer de Tapioles",
+                numero: "10",
+                cp: "08002",
+                foto_restaurante: "bibim_bab_house.jpg",
+                tipos_cocina: [12]
+            },
+
+
+            //Peruana
+
+
+            {
+                nombre: "La Cevichería Criolla",
+                descripcio: "Descubre los sabores auténticos del Perú en La Cevichería Criolla, donde cada plato es una explosión de frescura y tradición.",
+                correo: "cevicheriacriolla@test123.com",
+                password: "test123",
+                telefono: "935444444",
+                dieta: 0,
+                direccion: "Carrer de Blai",
+                numero: "30",
+                cp: "08004",
+                foto_restaurante: "cevicheria_criolla.jpg",
+                tipos_cocina: [13]
+            },
+            
+            {
+                nombre: "El Sabor del Perú",
+                descripcio: "Viaja a través de los sabores del Perú en El Sabor del Perú, donde cada plato cuenta una historia de tradición y pasión culinaria.",
+                correo: "elsabordelperu@test123.com",
+                password: "test123",
+                telefono: "935555555",
+                dieta: 0,
+                direccion: "Carrer de Margarit",
+                numero: "50",
+                cp: "08001",
+                foto_restaurante: "el_sabor_del_peru.jpg",
+                tipos_cocina: [13]
+            },
+            
+            {
+                nombre: "Pachamama Restaurante",
+                descripcio: "Embárcate en un viaje gastronómico a través de la diversidad culinaria del Perú en Pachamama Restaurante, donde cada plato es una celebración de la tierra.",
+                correo: "pachamamarestaurante@test123.com",
+                password: "test123",
+                telefono: "935666666",
+                dieta: 0,
+                direccion: "Carrer de Tapioles",
+                numero: "20",
+                cp: "08002",
+                foto_restaurante: "pachamama_restaurante.jpg",
+                tipos_cocina: [13]
+            },
+
+
+            //Hawaiano
+
+
+            {
+                nombre: "Hale Hau'oli",
+                descripcio: "Sumérgete en la alegría de Hawai en Hale Hau'oli, donde cada plato es una fiesta de sabores tropicales y exóticos.",
+                correo: "halehauoli@test123.com",
+                password: "test123",
+                telefono: "935777777",
+                dieta: 0,
+                direccion: "Carrer de Blai",
+                numero: "40",
+                cp: "08002",
+                foto_restaurante: "hale_hauoli.jpg",
+                tipos_cocina: [14]
+            },
+            
+            {
+                nombre: "Ohana Luau",
+                descripcio: "Únete a la familia en Ohana Luau, donde la comida hawaiana auténtica y el espíritu de aloha se fusionan en una experiencia inolvidable.",
+                correo: "ohanaluau@test123.com",
+                password: "test123",
+                telefono: "935888888",
+                dieta: 0,
+                direccion: "Carrer de Margarit",
+                numero: "60",
+                cp: "08001",
+                foto_restaurante: "ohana_luau.jpg",
+                tipos_cocina: [14]
+            },
+            
+            {
+                nombre: "Pono Poké Bar",
+                descripcio: "Siente la frescura del Pacífico en cada bocado en Pono Poké Bar, donde los bowls de poké y los sabores hawaianos te transportarán a la playa.",
+                correo: "ponopokebar@test123.com",
+                password: "test123",
+                telefono: "935999999",
+                dieta: 0,
+                direccion: "Carrer de Tapioles",
+                numero: "30",
+                cp: "08003  ",
+                foto_restaurante: "pono_poke_bar.jpg",
+                tipos_cocina: [14]
+            }
+            
+            
+            
         ]
 
         for (const rest of restObj) {
