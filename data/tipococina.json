@@ -31,5 +31,14 @@
     },
     {
         "nombre_tipo": "Catalana"
+    },
+    {
+        "nombre_tipo": "Colombiana"
+    },
+    {
+        "nombre_tipo": "Coreana"
+    },
+    {
+        "nombre_tipo": "Peruana"
     }
 ]
