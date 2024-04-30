@@ -794,20 +794,13 @@ router.post("/recetasPorPalabra", async (req, res) => {
     const recetas = await Receta.findAll({
       where: {
         nombre_receta: {
-          [Op.startsWith]: palabra // Usa el operador de sequelize para buscar recetas que comiencen con la palabra
+          [Op.like]:`%${palabra}%` // Usa el operador de sequelize para buscar recetas que comiencen con la palabra
         }
       }
     });
-    const restaurantes = await Restaurante.findAll({
-      where: {
-        nombre: {
-          [Op.startsWith]: palabra // Usa el operador de sequelize para buscar restaurantes que comiencen con la palabra
-        }
-      }
-    });
+
     res.status(200).json({ 
-      recetas: recetas,
-      restaurantes:restaurantes
+      recetas: recetas
      }); // Devuelve las recetas encontradas
   } catch (error) {
     res.status(500).json({ error: error.message }); // Maneja cualquier error y devuelve un mensaje de error
