@@ -8,7 +8,7 @@
         "dificultad": "Fácil",
         "tipo": "Principal",
         "foto_receta": "http://localhost:3000/api/uploads/pasta_alfredo.jpeg",
-        "RestauranteId": 2,
+        "RestauranteId": 21,
         "TipoCocinaId": [
             5
         ],
@@ -81,7 +81,7 @@
         "dificultad": "Media",
         "tipo": "Segundo",
         "foto_receta": "http://localhost:3000/api/uploads/pollo_tika.jpeg",
-        "RestauranteId": 7,
+        "RestauranteId": 16,
         "TipoCocinaId": [
             4
         ],
@@ -174,7 +174,7 @@
         "dificultad": "Fácil",
         "tipo": "Principal",
         "foto_receta": "http://localhost:3000/api/uploads/curry_garbanzos.jpeg",
-        "RestauranteId": 1,
+        "RestauranteId": 17,
         "TipoCocinaId": [
             4
         ],
@@ -252,7 +252,7 @@
         "dificultad": "Fácil",
         "tipo": "Principal",
         "foto_receta": "http://localhost:3000/api/uploads/sopa_lentejas.jpeg",
-        "RestauranteId": 2,
+        "RestauranteId": 41,
         "TipoCocinaId": [
             9
         ],
@@ -345,7 +345,7 @@
         "dificultad": "Fácil",
         "tipo": "Principal",
         "foto_receta": "http://localhost:3000/api/uploads/tortilla_espinacas.jpeg",
-        "RestauranteId": 7,
+        "RestauranteId": 42,
         "TipoCocinaId": [
             9
         ],
@@ -408,7 +408,7 @@
         "dificultad": "Media",
         "tipo": "Principal",
         "foto_receta": "http://localhost:3000/api/uploads/cuscus_verduras.jpeg",
-        "RestauranteId": 3,
+        "RestauranteId": 18,
         "TipoCocinaId": [
             8
         ],
@@ -516,7 +516,7 @@
         "dificultad": "Media",
         "tipo": "Principal",
         "foto_receta": "http://localhost:3000/api/uploads/costillas.jpg",
-        "RestauranteId": 15,
+        "RestauranteId": 1,
         "TipoCocinaId": [
             1
         ],
@@ -594,7 +594,7 @@
         "dificultad": "Media",
         "tipo": "Principal",
         "foto_receta": "http://localhost:3000/api/uploads/tacos-al-pastor.jpeg",
-        "RestauranteId": 10,
+        "RestauranteId": 30,
         "TipoCocinaId": [
             7
         ],
@@ -697,7 +697,7 @@
         "dificultad": "Media",
         "tipo": "Entrante",
         "foto_receta": "http://localhost:3000/api/uploads/patatabrava.jpeg",
-        "RestauranteId": 1,
+        "RestauranteId": 43,
         "TipoCocinaId": [
             9
         ],
@@ -785,7 +785,7 @@
         "dificultad": "Fácil",
         "tipo": "Entrante",
         "foto_receta": "http://localhost:3000/api/uploads/salmorejo.jpeg",
-        "RestauranteId": 1,
+        "RestauranteId": 44,
         "TipoCocinaId": [
             9
         ],
@@ -878,7 +878,7 @@
         "dificultad": "Media",
         "tipo": "Principal",
         "foto_receta": "http://localhost:3000/api/uploads/paella.jpeg",
-        "RestauranteId": 2,
+        "RestauranteId": 45,
         "TipoCocinaId": [
             9
         ],
@@ -956,7 +956,7 @@
         "dificultad": "Fácil",
         "tipo": "Principal",
         "foto_receta": "http://localhost:3000/api/uploads/tortillafr.jpeg",
-        "RestauranteId": 1,
+        "RestauranteId": 41,
         "TipoCocinaId": [
             9
         ],
@@ -1009,7 +1009,7 @@
         "dificultad": "Media",
         "tipo": "Principal",
         "foto_receta": "http://localhost:3000/api/uploads/Trucha.jpeg",
-        "RestauranteId": 3,
+        "RestauranteId": 42,
         "TipoCocinaId": [
             9
         ],
@@ -1072,7 +1072,7 @@
         "dificultad": "Media",
         "tipo": "Principal",
         "foto_receta": "http://localhost:3000/api/uploads/estofado.jpeg",
-        "RestauranteId": 3,
+        "RestauranteId": 43,
         "TipoCocinaId": [
             9
         ],
@@ -1170,7 +1170,7 @@
         "dificultad": "Fácil",
         "tipo": "Entrante",
         "foto_receta": "http://localhost:3000/api/uploads/gazpacho.jpeg",
-        "RestauranteId": 4,
+        "RestauranteId": 44,
         "TipoCocinaId": [
             9
         ],
@@ -1263,7 +1263,7 @@
         "dificultad": "Media",
         "tipo": "Entrante",
         "foto_receta": "http://localhost:3000/api/uploads/PulpoGallega.jpeg",
-        "RestauranteId": 5,
+        "RestauranteId": 45,
         "TipoCocinaId": [
             9
         ],
@@ -1321,7 +1321,7 @@
         "dificultad": "Alta",
         "tipo": "Principal",
         "foto_receta": "http://localhost:3000/api/uploads/CochinilloAsado.jpg",
-        "RestauranteId": 8,
+        "RestauranteId": 44,
         "TipoCocinaId": [
             9
         ],
@@ -1379,7 +1379,7 @@
         "dificultad": "Fácil",
         "tipo": "Principal",
         "foto_receta": "http://localhost:3000/api/uploads/Tortilla_de_patata_Foto.jpeg",
-        "RestauranteId": 3,
+        "RestauranteId": 45,
         "TipoCocinaId": [9],
         "ingredientes": [
             {
@@ -1435,7 +1435,7 @@
         "dificultad": "Media",
         "tipo": "Principal",
         "foto_receta": "http://localhost:3000/api/uploads/Spaghetti_Carbonara_foto.jpg",
-        "RestauranteId": 6,
+        "RestauranteId": 23,
         "TipoCocinaId": [5],
         "ingredientes": [
             {
@@ -1492,7 +1492,7 @@
         "dificultad": "Media",
         "tipo": "Principal",
         "foto_receta": "http://localhost:3000/api/uploads/Pad_Thai_foto.jpg",
-        "RestauranteId": 5,
+        "RestauranteId": 46,
         "TipoCocinaId": [10],
         "ingredientes": [
             {
@@ -1593,7 +1593,7 @@
         "dificultad": "Media",
         "tipo": "Principal",
         "foto_receta": "http://localhost:3000/api/uploads/Coq_au_Vin_Foto.jpg",
-        "RestauranteId": 9,
+        "RestauranteId": 47,
         "TipoCocinaId": [10],
         "ingredientes": [
             {
@@ -1684,7 +1684,7 @@
         "dificultad": "Media",
         "tipo": "Aperitivo",
         "foto_receta": "http://localhost:3000/api/uploads/Sushi_Rolls_Foto.jpg",
-        "RestauranteId": 4,
+        "RestauranteId": 26,
         "TipoCocinaId": [6],
         "ingredientes": [
             {
@@ -1746,7 +1746,7 @@
         "dificultad": "Media",
         "tipo": "Postre",
         "foto_receta": "http://localhost:3000/api/uploads/Tiramisú_foto.jpg",
-        "RestauranteId": 10,
+        "RestauranteId": 25,
         "TipoCocinaId": [5],
         "ingredientes": [
             {
@@ -1802,7 +1802,7 @@
         "dificultad": "Media",
         "tipo": "Principal",
         "foto_receta": "http://localhost:3000/api/uploads/Paella_Valenciana_Foto.jpg",
-        "RestauranteId": 11,
+        "RestauranteId": 43,
         "TipoCocinaId": [9],
         "ingredientes": [
             {
@@ -1880,7 +1880,7 @@
         ]
     },
     {
-        "nombre_receta": "Goulash Húngaro",
+        "nombre_receta": "Goulash",
         "desc_receta": "Un guiso húngaro tradicional de carne de res cocida lentamente con cebollas, pimientos, tomate, paprika y especias.",
         "persones": "6",
         "tiempo": "2 horas",
@@ -1888,7 +1888,7 @@
         "dificultad": "Media",
         "tipo": "Principal",
         "foto_receta": "http://localhost:3000/api/uploads/Goulash_Húngaro_Foto.jpg",
-        "RestauranteId": 14,
+        "RestauranteId": 65,
         "TipoCocinaId": [15],
         "ingredientes": [
             {
@@ -1954,7 +1954,7 @@
         "dificultad": "Media",
         "tipo": "Principal",
         "foto_receta": "http://localhost:3000/api/uploads/Risotto_de_Champiñones_foto.jpg",
-        "RestauranteId": 18,
+        "RestauranteId": 24,
         "TipoCocinaId": [5],
         "ingredientes": [
             {
@@ -2020,7 +2020,7 @@
         "dificultad": "Media",
         "tipo": "Principal",
         "foto_receta": "http://localhost:3000/api/uploads/tajine_de_cordero.jpg",
-        "RestauranteId": 5,
+        "RestauranteId": 36,
         "TipoCocinaId": [8],
         "ingredientes": [
             {
@@ -2101,7 +2101,7 @@
         "dificultad": "Media",
         "tipo": "Principal",
         "foto_receta": "http://localhost:3000/api/uploads/tajin_pollo.jpg",
-        "RestauranteId": 12,
+        "RestauranteId": 37,
         "TipoCocinaId": [8],
         "ingredientes": [
             {
@@ -2158,7 +2158,7 @@
         "dificultad": "Media",
         "tipo": "Entrante",
         "foto_receta": "http://localhost:3000/api/uploads/makis_atun.jpg",
-        "RestauranteId": 8,
+        "RestauranteId": 27,
         "TipoCocinaId": [6],
         "ingredientes": [
             {
@@ -2219,7 +2219,7 @@
         "dificultad": "Fácil",
         "tipo": "Entrante",
         "foto_receta": "http://localhost:3000/api/uploads/anticuchos.jpg",
-        "RestauranteId": 10,
+        "RestauranteId": 62,
         "TipoCocinaId": [14],
         "ingredientes": [
             {
@@ -2290,7 +2290,7 @@
         "dificultad": "Media",
         "tipo": "Principal",
         "foto_receta": "http://localhost:3000/api/uploads/pollo_kum_pao.jpg",
-        "RestauranteId": 11,
+        "RestauranteId": 6,
         "TipoCocinaId": [2],
         "ingredientes": [
             {

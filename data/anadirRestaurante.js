@@ -11,7 +11,7 @@ async function anadirRestaurante() {
     
     try {
         const restObj = [
-            //1 AMERICANO
+            //1 AMERICANO (1,2,3,4,5)
             {
                 nombre: 'Brooklyn Burger Bar',
                 descripcio: 'Un lugar acogedor que sirve las mejores hamburguesas al estilo neoyorquino, con ingredientes frescos y creativos.',
@@ -78,7 +78,7 @@ async function anadirRestaurante() {
                 tipos_cocina: [1]
             },
 
-            //2 CHINA
+            //2 CHINA(6,7,8,9,10)
 
             {
                 nombre: 'Xinatown',
@@ -146,7 +146,7 @@ async function anadirRestaurante() {
                 tipos_cocina: [2]
             },
 
-            // 3 GRIEGO
+            // 3 GRIEGO(11,12,13,14,15)
 
             {
                 nombre: "Opa! Greek Taverna",
@@ -214,7 +214,7 @@ async function anadirRestaurante() {
                 tipos_cocina: [3]
             },
 
-            // 4 INDIO
+            // 4 INDIO(16,17,18,19,20)
 
             {
                 nombre: "Taj Mahal Indian Restaurant",
@@ -282,7 +282,7 @@ async function anadirRestaurante() {
                 tipos_cocina: [4]
             },
 
-            //5 ITALIANO
+            //5 ITALIANO(21,22,23,24,25)
 
             {
                 nombre: "Luccio",
@@ -350,7 +350,7 @@ async function anadirRestaurante() {
                 tipos_cocina: [5]
             },
 
-            //6 JAPONES
+            //6 JAPONES(26,27,28,29)
 
             {
                 nombre: 'Sushi Zen',
@@ -418,7 +418,7 @@ async function anadirRestaurante() {
                 tipos_cocina: [6]
             },
 
-            //7 MEXICANO
+            //7 MEXICANO(30,31,32,33,34,35)
             {
                 nombre: "Taco riko",
                 descripcio: "Restaurante de cocina creativa mexicana",
@@ -485,7 +485,7 @@ async function anadirRestaurante() {
                 tipos_cocina: [7]
             },
 
-            // 8 MARROQUI
+            // 8 MARROQUI(36,37,38,39,40)
 
             {
                 nombre: "Al-Andalus Moroccan Cuisine",
@@ -553,7 +553,7 @@ async function anadirRestaurante() {
                 tipos_cocina: [8]
             },
 
-            //9 ESPAÑOL
+            //9 ESPAÑOL(41,42,43,44,45)
 
             {
                 nombre: 'Paco',
@@ -621,7 +621,7 @@ async function anadirRestaurante() {
                 tipos_cocina: [9]
             },
 
-            //10 TAILANDESA
+            //10 TAILANDESA(46,47,48,49,50)
 
             {
                 nombre: 'Thai Orchid',
@@ -689,7 +689,7 @@ async function anadirRestaurante() {
                 tipos_cocina: [10]
             },
 
-            //11 CATALANA
+            //11 CATALANA(51,52,53,54,55)
 
             {
                 nombre: "El Born",
@@ -757,7 +757,7 @@ async function anadirRestaurante() {
                 tipos_cocina: [11]
             },
 
-            //12 COLOMBIANA
+            //12 COLOMBIANA(56,57,58)
 
             {
                 nombre: "El Cielo",
@@ -800,7 +800,7 @@ async function anadirRestaurante() {
             },
 
 
-            //13 COREANA
+            //13 COREANA(59,60,61)
 
             {
                 nombre: "Gochu Jip",
@@ -844,7 +844,7 @@ async function anadirRestaurante() {
             },
 
 
-            //14 PERUANA
+            //14 PERUANA(62,63,64)
 
 
             {
@@ -890,7 +890,7 @@ async function anadirRestaurante() {
             },
 
 
-            //15 HAWAIANO
+            //15 HAWAIANO(65,66,67)
 
 
             {
