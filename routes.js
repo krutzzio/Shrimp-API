@@ -11,6 +11,7 @@ const SECRET_KEY = "vols-que-et-punxi-amb-un-punxo";
 
 const {
   // Usuario_Restaraunte,
+  Procedimiento,
   Usuario,
   Restaurante,
   Receta,
@@ -787,19 +788,20 @@ router.post("/home/:restId/registerReceta", upload.single("photo"), async (req, 
         foto_receta: foto_receta
       },
       ingredientes: ingredientes,
+      recetaId: receta.id
     });
   } catch (error) {
     res.status(500).json({ error: error.message });
   }
 });
 
-router.post("/home/:restId/procedimientos", upload.array("photo", 7), async (req, res) => {
+router.post("/home/:recetaId/procedimientos", upload.array("photo", 7), async (req, res) => {
   try {
     const {
       procedimientos,
     } = req.body;
     console.log(procedimientos)
-    const restauranteId = req.params.restId;
+    const recetaId = req.params.recetaId;
     const baseUrl = 'http://localhost:3000/api/uploads/';
     const procedimientosCreados = [];
     let indexFoto = 0;
@@ -817,7 +819,7 @@ router.post("/home/:restId/procedimientos", upload.array("photo", 7), async (req
         numero_procedimiento,
         desc_procedimiento,
         foto_procedimiento: fotos_procedimiento[indexFoto],
-        RestauranteId: restauranteId
+        RecetumId: recetaId
       });
 
       procedimientosCreados.push(nuevoProcedimiento);
