@@ -2524,6 +2524,67 @@
                 "foto_procedimiento": "http://localhost:3000/api/uploads/mole3.JPG"
             }
     ]
+    },
+    {
+        "nombre_receta": "Ssam de Cerdo",
+        "desc_receta": "El ssam es un plato típico de la cocina coreana que combina una variedad de sabores y texturas. En esta receta, os presentamos nuestra versión fácil con panceta de cerdo para que podáis disfrutarlo sin salir de casa.",
+        "persones": "4",
+        "tiempo": "3 horas",
+        "dieta": 0,
+        "dificultad": "Media",
+        "tipo": "Primero",
+        "foto_receta": "http://localhost:3000/api/uploads/ssam.JPG",
+        "RestauranteId": 59,
+        "TipoCocinaId": [13],
+        "ingredientes": [
+            {
+                "IngredienteId": "80",
+                "cantidad": 200,
+                "medida": "gramos"
+            },
+            {
+                "IngredienteId": "33",
+                "cantidad": 2,
+                "medida": "cucharadas"
+            },
+            {
+                "IngredienteId": "31",
+                "cantidad": 1,
+                "medida": "cucharadita"
+            },
+            {
+                "IngredienteId": "38",
+                "cantidad": 1,
+                "medida": "cucharadita"
+            },
+            {
+                "IngredienteId": "14",
+                "cantidad": 1,
+                "medida": "unidades"
+            },
+            {
+                "IngredienteId": "41",
+                "cantidad": 1,
+                "medida": "taza"
+            }
+        ],
+        "procedimientos": [
+            {
+                "numero_procedimiento": 1,
+                "desc_procedimiento": "Comienza con un trozo de carne de cerdo, como un lomo o una paleta. Puedes marinarlo con una mezcla de salsa de soja, miel, ajo picado, jengibre rallado y un toque de aceite de sésamo. Deja que la carne marine durante al menos 1 hora para que absorba bien los sabores.",
+                "foto_procedimiento": "http://localhost:3000/api/uploads/ssam1.JPG"
+            },
+            {
+                "numero_procedimiento": 2,
+                "desc_procedimiento": "Después de marinar, cocina la carne de cerdo en una sartén caliente o en una parrilla hasta que esté dorada por fuera y cocida por dentro. Puedes cortarla en trozos más pequeños para una cocción más rápida y para facilitar su colocación en los wraps.",
+                "foto_procedimiento": "http://localhost:3000/api/uploads/ssam2.JPG"
+            },
+            {
+                "numero_procedimiento": 3,
+                "desc_procedimiento": "Para servir, coloca una hoja grande de lechuga o col (como hojas de lechuga iceberg o col rizada) en un plato. Estas hojas actuarán como envolturas para los ssam. Agrega una porción de cerdo cocido en el centro de cada hoja de lechuga.Acompaña el cerdo con diferentes condimentos y guarniciones, como arroz blanco, kimchi, pepinos en rodajas, cebollas verdes, pasta de ají coreano (gochujang) y salsa de soja. Enrolla la hoja de lechuga alrededor del cerdo y los acompañamientos, formando un paquete tipo taco.",
+                "foto_procedimiento": "http://localhost:3000/api/uploads/ssam3.JPG"
+            }
+    ]
     }
 
 ]
