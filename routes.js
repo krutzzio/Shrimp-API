@@ -687,15 +687,14 @@ router.post("/home/:restId/registerReceta", upload.single("photo"), async (req, 
       dificultad,
       tipo,
       ingredientes,
-
-
     } = req.body;
 
-console.log(req.body)
+    console.log("PASO 1", ingredientes)
     const baseUrl = 'http://localhost:3000/api/uploads/'
     const foto_receta = req.file ? baseUrl + req.file.filename : null; // Obtiene la ruta del archivo subido
 
     const restauranteId = req.params.restId;
+    console.log("PASO 2")
 
     // Verificar
     if (
@@ -712,6 +711,9 @@ console.log(req.body)
             "Nombre, descripción, TipoCocinaId, al menos un procedimiento y al menos un ingrediente son requeridos",
         });
     }
+
+    console.log("PASO 3")
+
     // Mira si hay otra igual sengun el nombre de la receta en un mismo restaurante
     const existingReceta = await Receta.findOne({
       where: { nombre_receta, RestauranteId: restauranteId },
@@ -724,19 +726,27 @@ console.log(req.body)
             "Ya existe una receta con el mismo nombre para este restaurante",
         });
     }
+
+    console.log("PASO 4")
+
     const tipoCocina = await TipoCocina.findByPk(TipoCocinaId);
     if (!tipoCocina) {
       return res.status(404).json({ error: "Tipo de cocina no encontrado" });
     }
-console.log(ingredientes)
+    console.log("PASO 5")
+
     // Crea ingredientes
     const dietaReceta = 2
+    var arrayJSON = JSON.parse(ingredientes);
+    console.log("AQUI", arrayJSON)
 
     for (const ingrediente of ingredientes) {
-      console.log('hola')
       const alimentoIngrediente = ingrediente.getGrupoAlimento()
+      console.log(ingrediente.dataValues)
+
       if (alimentoIngrediente.dieta === 1 && dietaReceta !== 0) dietaReceta = 1
       else if (alimentoIngrediente.dieta === 0) dietaReceta = 0
+
       const { id, cantidad, medida } = ingrediente;
       const recetaIngrediente = await Receta_Ingrediente.create({
         RecetumId: receta.id,
@@ -746,6 +756,7 @@ console.log(ingredientes)
       });
       console.log(recetaIngrediente)
     }
+    console.log("PASO 6")
 
     // Crea receta
     const receta = await Receta.create({
@@ -760,6 +771,7 @@ console.log(ingredientes)
       tipo,
       foto_receta,
     });
+    console.log("PASO 7")
 
 
     res.status(201).json({
@@ -808,6 +820,7 @@ router.post("/home/:restId/procedimientos", upload.array("photo", 7), async (req
       procedimientosCreados.push(nuevoProcedimiento);
       indexFoto++;
     }
+
     res.status(201).json({
       message: "Procedimientos creados exitosamente",
       procedimientos: procedimientosCreados
