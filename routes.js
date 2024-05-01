@@ -496,6 +496,34 @@ router.get("/promos/:restId", async (req, res) => {
   }
 })
 
+router.get("/restaurante/:restId", checkToken, async (req, res) => {
+  try {
+    const user = await Usuario.findByPk(req.userId)
+    const restId = req.params.restId
+    const restaurante = await Restaurante.findByPk(restId);
+    let recetasRestaurante = await restaurante.getReceta()
+    const tiposCocinas = await restaurante.getTipoCocinas()
+    const restInUser = await user.hasRestaurante(restaurante)
+
+    recetasRestaurante = await Promise.all(recetasRestaurante.map(async receta => {
+      const tipoCocinaReceta = await receta.getTipoCocina()
+      const recetaInUser = await user.hasReceta(receta);
+      return {
+        receta: receta.dataValues,
+        nombreRestaurante: restaurante.nombre,
+        tipoCocinaReceta: tipoCocinaReceta.nombre_tipo,
+        recetaInUser: recetaInUser
+      }
+    }))
+
+
+    res.status(200).json({ restaurante, recetasRestaurante, tiposCocinas, restInUser });
+  }
+  catch (error) {
+    res.status(400).json({ error: error.message })
+  }
+})
+
 
 
 
@@ -507,8 +535,6 @@ router.post("/seguirRest/:restId", checkToken, async (req, res) => {
     // Verifica si el usuario y el restaurante existen
     const usuario = await Usuario.findByPk(req.userId);
     const restaurante = await Restaurante.findByPk(restId);
-    console.log(restaurante)
-    console.log(usuario)
     if (!usuario || !restaurante) {
       return res
         .status(404)
@@ -800,16 +826,16 @@ router.post("/home/:recetaId/procedimientos", upload.array("photo", 7), async (r
     const {
       procedimientos,
     } = req.body;
-    console.log(procedimientos)
     const recetaId = req.params.recetaId;
     const baseUrl = 'http://localhost:3000/api/uploads/';
     const procedimientosCreados = [];
     let indexFoto = 0;
 
+
     for (const procedimiento of procedimientos) {
       const { numero_procedimiento, desc_procedimiento } = procedimiento;
 
-
+      console.log(procedimiento)
       const fotos_procedimiento = req.files.map(file => baseUrl + file.filename);
 
       console.log(fotos_procedimiento)
