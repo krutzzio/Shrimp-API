@@ -92,7 +92,7 @@ const Receta = sequelize.define("Receta", {
         allowNull: true,
     },
     desc_receta: {
-        type: DataTypes.STRING,
+        type: DataTypes.STRING(500),
         allowNull: true,
     },
     persones: {
@@ -309,7 +309,7 @@ async function iniDB() {
     await user.addGrupoAlimento(userTest.alergias)
 }
 
-//iniDB();
+iniDB();
 
 //Exportem els models
 module.exports = {
