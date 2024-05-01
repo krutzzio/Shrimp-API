@@ -2349,7 +2349,7 @@
     },
     {
         "nombre_receta": "Musaka",
-        "desc_receta": "La musaka tiene tantas variantes de elaboración como ingredientes que pueden ser utilizados para preparar este plato tan famoso dentro de la gastronomía griega y de algún que otro país de la cuenca del Mediterráneo. En este caso vamos a compartir con vosotros la receta de la musaka de pollo.",
+        "desc_receta": "La musaka tiene tantas variantes de elaboración como ingredientes que pueden ser utilizados para preparar este plato tan famoso dentro de la gastronomía griega.",
         "persones": "6",
         "tiempo": "1 hora",
         "dieta": 0,
@@ -2405,7 +2405,7 @@
     },
     {
         "nombre_receta": "Poke de Salmón",
-        "desc_receta": "El poke bowl de salmón es un plato fresco, sabroso y colorido que indudablemente está de moda. Tal vez sea por su atractivo visual, porque es muy saludable, o porque la receta es muy sencilla de preparar.",
+        "desc_receta": "El poke bowl de salmón es un plato fresco, sabroso y colorido que indudablemente está de moda. Tal vez sea por su atractivo visual, porque es muy saludable.",
         "persones": "2",
         "tiempo": "30 minutos",
         "dieta": 0,
@@ -2466,7 +2466,7 @@
     },
     {
         "nombre_receta": "Mole",
-        "desc_receta": "Aquí tienes nuestra receta para preparar un auténtico mole, un clásico de la cocina mexicana que combina chiles, especias y chocolate para formar una deliciosa salsa llena de contrastes.",
+        "desc_receta": "Aquí tienes nuestra receta para preparar un auténtico mole, un clásico de la cocina mexicana que combina chiles, especias y chocolate.",
         "persones": "2",
         "tiempo": "1 hora",
         "dieta": 0,
@@ -2527,7 +2527,7 @@
     },
     {
         "nombre_receta": "Ssam de Cerdo",
-        "desc_receta": "El ssam es un plato típico de la cocina coreana que combina una variedad de sabores y texturas. En esta receta, os presentamos nuestra versión fácil con panceta de cerdo para que podáis disfrutarlo sin salir de casa.",
+        "desc_receta": "El ssam es un plato típico de la cocina coreana que combina una variedad de sabores y texturas. En esta receta, os presentamos nuestra versión fácil con panceta de cerdo.",
         "persones": "4",
         "tiempo": "3 horas",
         "dieta": 0,
@@ -2588,7 +2588,7 @@
     },
     {
         "nombre_receta": "Ceviche de corvina",
-        "desc_receta": "El ceviche de corvina es uno de los platos más populares de la gastronomía peruana. A continuación, os contamos cómo preparar esta receta paso a paso y con ingredientes frescos para que quede tan buena como la original.",
+        "desc_receta": "El ceviche de corvina es uno de los platos más populares de la gastronomía peruana. A continuación, os contamos cómo preparar esta receta paso a paso.",
         "persones": "4",
         "tiempo": "30 minutos",
         "dieta": 0,
@@ -2649,7 +2649,7 @@
     },
     {
         "nombre_receta": "Empanadillas de carne",
-        "desc_receta": "En esta receta de empanadillas, presentamos la combinación perfecta de una masa crujiente y un relleno de carne de ternera sabroso y sencillo al que nadie podrá resistirse. Bien como entrante o para cenar, las empanadillas de carne picada son la opción perfecta para cualquier ocasión.",
+        "desc_receta": "En esta receta de empanadillas, presentamos la combinación perfecta de una masa crujiente y un relleno de carne de ternera sabroso y sencillo al que nadie podrá resistirse.",
         "persones": "4",
         "tiempo": "1 hora",
         "dieta": 0,
