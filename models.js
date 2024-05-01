@@ -188,7 +188,7 @@ const Procedimiento = sequelize.define("Procedimiento", {
 // Model per a la taula Receta
 const Receta_Ingrediente = sequelize.define("Receta_Ingrediente", {
     cantidad: {
-        type: DataTypes.INTEGER,
+        type: DataTypes.STRING,
         allowNull: false,
     },
     medida: {

@@ -689,12 +689,19 @@ router.post("/home/:restId/registerReceta", upload.single("photo"), async (req, 
       ingredientes,
     } = req.body;
 
-    console.log("PASO 1", ingredientes)
+    console.log(nombre_receta,
+      desc_receta,
+      TipoCocinaId,
+      persones,
+      tiempo,
+      dificultad,
+      tipo,
+      ingredientes,)
+
     const baseUrl = 'http://localhost:3000/api/uploads/'
     const foto_receta = req.file ? baseUrl + req.file.filename : null; // Obtiene la ruta del archivo subido
 
     const restauranteId = req.params.restId;
-    console.log("PASO 2")
 
     // Verificar
     if (
@@ -712,7 +719,6 @@ router.post("/home/:restId/registerReceta", upload.single("photo"), async (req, 
         });
     }
 
-    console.log("PASO 3")
 
     // Mira si hay otra igual sengun el nombre de la receta en un mismo restaurante
     const existingReceta = await Receta.findOne({
@@ -727,37 +733,26 @@ router.post("/home/:restId/registerReceta", upload.single("photo"), async (req, 
         });
     }
 
-    console.log("PASO 4")
 
     const tipoCocina = await TipoCocina.findByPk(TipoCocinaId);
     if (!tipoCocina) {
       return res.status(404).json({ error: "Tipo de cocina no encontrado" });
     }
-    console.log("PASO 5")
 
     // Crea ingredientes
-    const dietaReceta = 2
-    var arrayJSON = JSON.parse(ingredientes);
-    console.log("AQUI", arrayJSON)
+    let dietaReceta = 2
+    const ingredientesJSON = JSON.parse(ingredientes);
+    const ingredientesId = ingredientesJSON.map(ingrediente => ingrediente.id)
+    const ingredientesReceta = await Ingrediente.findAll({ where: { id: ingredientesId } })
+    await Promise.all(ingredientesReceta.map(async ingrediente => {
+      const alimentoIngrediente = await ingrediente.getGrupoAlimento()
+      if (alimentoIngrediente.dieta == 1 && dietaReceta != 0) dietaReceta = 1
+      else if (alimentoIngrediente.dieta == 0) dietaReceta = 0
+    }))
 
-    for (const ingrediente of ingredientes) {
-      const alimentoIngrediente = ingrediente.getGrupoAlimento()
-      console.log(ingrediente.dataValues)
 
-      if (alimentoIngrediente.dieta === 1 && dietaReceta !== 0) dietaReceta = 1
-      else if (alimentoIngrediente.dieta === 0) dietaReceta = 0
 
-      const { id, cantidad, medida } = ingrediente;
-      const recetaIngrediente = await Receta_Ingrediente.create({
-        RecetumId: receta.id,
-        IngredienteId: id,
-        cantidad,
-        medida,
-      });
-      console.log(recetaIngrediente)
-    }
-    console.log("PASO 6")
-
+    console.log("PASO 6", persones, tiempo, dificultad, tipo)
     // Crea receta
     const receta = await Receta.create({
       nombre_receta,
@@ -771,8 +766,16 @@ router.post("/home/:restId/registerReceta", upload.single("photo"), async (req, 
       tipo,
       foto_receta,
     });
-    console.log("PASO 7")
 
+    for (const ingrediente of ingredientesJSON) {
+      const { id, cantidad, medida } = ingrediente;
+      const recetaIngrediente = await Receta_Ingrediente.create({
+        RecetumId: receta.id,
+        IngredienteId: id,
+        cantidad,
+        medida,
+      });
+    }
 
     res.status(201).json({
       receta: {
