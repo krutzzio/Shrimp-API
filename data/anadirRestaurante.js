@@ -73,7 +73,7 @@ async function anadirRestaurante() {
                 dieta: 0,
                 direccion: "Calle Pillo",
                 numero: "43",
-                cp: "08038",
+                cp: "08032",
                 foto_restaurante: "http://localhost:3000/api/uploads/americano5.jpg",
                 tipos_cocina: [1]
             },
@@ -151,13 +151,13 @@ async function anadirRestaurante() {
             {
                 nombre: "Opa! Greek Taverna",
                 descripcio: "Auténtica experiencia culinaria griega con música y baile.",
-                correo: "info@opagreek.com",
+                correo: "info@griego.com",
                 password: "test123",
                 telefono: "555111222",
                 dieta: 0,
                 direccion: "Calle Grecia",
                 numero: "123",
-                cp: "08005",
+                cp: "08032",
                 foto_restaurante: "http://localhost:3000/api/uploads/griego1.jpg",
                 tipos_cocina: [3]
             },
@@ -225,7 +225,7 @@ async function anadirRestaurante() {
                 dieta: 0,
                 direccion: "Calle Principal",
                 numero: "123",
-                cp: "08010",
+                cp: "08032",
                 foto_restaurante: "http://localhost:3000/api/uploads/indio1.jpg",
                 tipos_cocina: [4]
             },
@@ -251,7 +251,7 @@ async function anadirRestaurante() {
                 dieta: 0,
                 direccion: "Plaza Principal",
                 numero: "789",
-                cp: "08008",
+                cp: "08032",
                 foto_restaurante: "http://localhost:3000/api/uploads/indio3.jpg",
                 tipos_cocina: [4]
             },
@@ -306,7 +306,7 @@ async function anadirRestaurante() {
                 dieta: 0,
                 direccion: "Calle Cuchilleros",
                 numero: "17",
-                cp: "08006",
+                cp: "08032",
                 foto_restaurante: "http://localhost:3000/api/uploads/italiano2.jpg",
                 tipos_cocina: [5]
             },
