@@ -2707,6 +2707,128 @@
                 "foto_procedimiento": "http://localhost:3000/api/uploads/empanadillas3.JPG"
             }
     ]
+    },
+    {
+        "nombre_receta": "Spanakopita",
+        "desc_receta": "La spanakopita es una deliciosa tarta griega de espinacas, compuesta por delicadas y crujientes capas de masa filo con un jugoso relleno. Resulta estupenda como entrante o plato principal para agasajar a nuestros invitados. A continuación, la receta paso a paso.",
+        "persones": "4",
+        "tiempo": "1 hora",
+        "dieta": 2,
+        "dificultad": "Fácil",
+        "tipo": "Primero",
+        "foto_receta": "http://localhost:3000/api/uploads/spanakopita.JPG",
+        "RestauranteId": 11,
+        "TipoCocinaId": [3],
+        "ingredientes": [
+            {
+                "IngredienteId": "11",
+                "cantidad": 500,
+                "medida": "gramos"
+            },
+            {
+                "IngredienteId": "52",
+                "cantidad": 200,
+                "medida": "gramos"
+            },
+            {
+                "IngredienteId": "3",
+                "cantidad": 1,
+                "medida": "unidad"
+            },
+            {
+                "IngredienteId": "2",
+                "cantidad": 1,
+                "medida": "unidad"
+            },
+            {
+                "IngredienteId": "1",
+                "cantidad": 50,
+                "medida": "mililitros"
+            }
+        ],
+        "procedimientos": [
+            {
+                "numero_procedimiento": 1,
+                "desc_procedimiento": "En una sartén grande, calienta un poco de aceite de oliva a fuego medio. Agrega la cebolla picada y los dientes de ajo picados, y saltea hasta que estén dorados y fragantes. Añade las espinacas frescas y saltea hasta que se marchiten. Esto tomará unos 5 minutos. Retira la mezcla del fuego y déjala enfriar un poco. Una vez que la mezcla de espinacas esté tibia, agrega el queso feta desmenuzado y el eneldo picado si lo deseas. Mezcla bien y sazona con sal y pimienta al gusto.",
+                "foto_procedimiento": "http://localhost:3000/api/uploads/spanakopita1.JPG"
+            },
+            {
+                "numero_procedimiento": 2,
+                "desc_procedimiento": "Precalienta el horno a 180°C (350°F). Extiende una hoja de masa filo sobre una superficie plana y pincela con aceite de oliva. Coloca otra hoja de masa filo encima y repite el proceso hasta tener 4 hojas superpuestas. Coloca una porción de la mezcla de espinacas y queso en un extremo de las hojas de masa filo. Dobla los lados de la masa filo sobre el relleno y luego enrola la masa filo hasta formar un rollo. Repite este proceso con el resto de la mezcla de espinacas y queso.",
+                "foto_procedimiento": "http://localhost:3000/api/uploads/spanakopita2.JPG"
+            },
+            {
+                "numero_procedimiento": 3,
+                "desc_procedimiento": "Coloca los rollos de spanakopita en una bandeja para hornear previamente engrasada. Pincela la parte superior de los rollos con un poco más de aceite de oliva. Hornea en el horno precalentado durante 25-30 minutos o hasta que estén dorados y crujientes. Una vez listos, retira del horno y deja enfriar ligeramente antes de servir. ¡Disfruta de tu delicioso spanakopita griego vegetariano!",
+                "foto_procedimiento": "http://localhost:3000/api/uploads/spanakopita3.JPG"
+            }
+    ]
+    },
+    {
+        "nombre_receta": "Briam",
+        "desc_receta": "El briam tiene otro nombre: tourlou-tourlou. En realidad, tourlou-tourlou es más un proceso de cocción que una receta. Es una expresión griega de origen turco que se utiliza para hacer referencia a los surtidos y mezclas, especialmente en la cocina.",
+        "persones": "4",
+        "tiempo": "1 hora",
+        "dieta": 2,
+        "dificultad": "Medio",
+        "tipo": "Primero",
+        "foto_receta": "http://localhost:3000/api/uploads/briam.jpg",
+        "RestauranteId": 11,
+        "TipoCocinaId": [3],
+        "ingredientes": [
+            {
+                "IngredienteId": "5",
+                "cantidad": 3,
+                "medida": "unidades"
+            },
+            {
+                "IngredienteId": "7",
+                "cantidad": 2,
+                "medida": "unidades"
+            },
+            {
+                "IngredienteId": "165",
+                "cantidad": 2,
+                "medida": "unidad"
+            },
+            {
+                "IngredienteId": "3",
+                "cantidad": 1,
+                "medida": "unidad"
+            },
+            {
+                "IngredienteId": "2",
+                "cantidad": 3,
+                "medida": "unidades"
+            },
+            {
+                "IngredienteId": "166",
+                "cantidad": 1,
+                "medida": "unidad"
+            },
+            {
+                "IngredienteId": "1",
+                "cantidad": 50,
+                "medida": "mililitros"
+            }
+        ],
+        "procedimientos": [
+            {
+                "numero_procedimiento": 1,
+                "desc_procedimiento": "Precalienta el horno a 200°C (400°F). En un recipiente grande, combina todas las verduras cortadas: tomates, papas, calabacines, berenjenas, cebollas, pimientos y ajo. Rocía las verduras con aceite de oliva y jugo de limón. Espolvorea con orégano seco, sal y pimienta al gusto. Mezcla bien para asegurarte de que todas las verduras estén cubiertas con el aliño.",
+                "foto_procedimiento": "http://localhost:3000/api/uploads/briam1.jpg"
+            },
+            {
+                "numero_procedimiento": 2,
+                "desc_procedimiento": "Transfiere las verduras aliñadas a una bandeja para hornear grande y distribúyelas en una capa uniforme. Si lo deseas, puedes colocar unas hojas de laurel entre las verduras para agregar aroma (opcional). Cubre la bandeja para hornear con papel de aluminio y hornea en el horno precalentado durante 40 minutos.",
+                "foto_procedimiento": "http://localhost:3000/api/uploads/briam2.JPG"
+            },
+            {
+                "numero_procedimiento": 3,
+                "desc_procedimiento": "Pasados los 40 minutos, retira el papel de aluminio y vuelve a hornear durante otros 20-30 minutos o hasta que las verduras estén tiernas y doradas. Una vez listo, retira del horno y deja reposar durante unos minutos antes de servir. Sirve el Briam caliente como plato principal o como acompañamiento. ¡Disfruta de esta deliciosa receta griega vegetariana!",
+                "foto_procedimiento": "http://localhost:3000/api/uploads/briam3.jpg"
+            }
+    ]
     }
 
 ]
