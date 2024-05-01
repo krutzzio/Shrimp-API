@@ -2585,6 +2585,67 @@
                 "foto_procedimiento": "http://localhost:3000/api/uploads/ssam3.JPG"
             }
     ]
+    },
+    {
+        "nombre_receta": "Ceviche de corvina",
+        "desc_receta": "El ceviche de corvina es uno de los platos más populares de la gastronomía peruana. A continuación, os contamos cómo preparar esta receta paso a paso y con ingredientes frescos para que quede tan buena como la original.",
+        "persones": "4",
+        "tiempo": "30 minutos",
+        "dieta": 0,
+        "dificultad": "Fácil",
+        "tipo": "Primero",
+        "foto_receta": "http://localhost:3000/api/uploads/ceviche.JPG",
+        "RestauranteId": 64,
+        "TipoCocinaId": [14],
+        "ingredientes": [
+            {
+                "IngredienteId": "80",
+                "cantidad": 200,
+                "medida": "gramos"
+            },
+            {
+                "IngredienteId": "33",
+                "cantidad": 2,
+                "medida": "cucharadas"
+            },
+            {
+                "IngredienteId": "31",
+                "cantidad": 1,
+                "medida": "cucharadita"
+            },
+            {
+                "IngredienteId": "38",
+                "cantidad": 1,
+                "medida": "cucharadita"
+            },
+            {
+                "IngredienteId": "14",
+                "cantidad": 1,
+                "medida": "unidades"
+            },
+            {
+                "IngredienteId": "41",
+                "cantidad": 1,
+                "medida": "taza"
+            }
+        ],
+        "procedimientos": [
+            {
+                "numero_procedimiento": 1,
+                "desc_procedimiento": "Adquiere aproximadamente 500 gramos de filete de corbina fresca. Asegúrate de que esté limpio y sin piel. Corta el filete en cubos pequeños y uniformes. Exprime suficiente jugo de limón y lima para cubrir completamente los cubos de corbina en un recipiente. El jugo de cítricos cocinará el pescado, así que asegúrate de tener suficiente para cubrirlo por completo. Pica finamente algunos ingredientes aromáticos como cebolla morada, cilantro fresco y ají o chile, según tu preferencia. Puedes ajustar la cantidad de chile para controlar el nivel de picante del ceviche. Opcionalmente, puedes agregar otros ingredientes como tomate, aguacate, pepino o mango para darle más textura y sabor al ceviche.",
+                "foto_procedimiento": "http://localhost:3000/api/uploads/ceviche1.JPG"
+            },
+            {
+                "numero_procedimiento": 2,
+                "desc_procedimiento": "Coloca los cubos de corbina en un recipiente y cúbrelos por completo con el jugo de limón y lima. Asegúrate de que todos los cubos estén sumergidos en el jugo. Agrega la cebolla morada picada, el cilantro fresco y el ají o chile al recipiente con el pescado. Revuelve suavemente para combinar todos los ingredientes. Deja marinar el ceviche en el refrigerador durante al menos 30 minutos a 1 hora. Durante este tiempo, el ácido del jugo de cítricos cocinará el pescado, dándole su característica textura firme y opaca.",
+                "foto_procedimiento": "http://localhost:3000/api/uploads/ceviche2.JPG"
+            },
+            {
+                "numero_procedimiento": 3,
+                "desc_procedimiento": "Una vez que el ceviche haya marinado el tiempo suficiente, retíralo del refrigerador. Sirve el ceviche de corbina en platos individuales o en un tazón grande para compartir.Opcionalmente, decora el ceviche con algunas hojas de cilantro fresco adicionales o rodajas de limón para darle un toque final.",
+                "foto_procedimiento": "http://localhost:3000/api/uploads/ceviche3.JPG"
+            }
+    ]
     }
 
 ]
