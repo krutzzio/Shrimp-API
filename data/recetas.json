@@ -2646,6 +2646,67 @@
                 "foto_procedimiento": "http://localhost:3000/api/uploads/ceviche3.JPG"
             }
     ]
+    },
+    {
+        "nombre_receta": "Empanadillas de carne",
+        "desc_receta": "En esta receta de empanadillas, presentamos la combinación perfecta de una masa crujiente y un relleno de carne de ternera sabroso y sencillo al que nadie podrá resistirse. Bien como entrante o para cenar, las empanadillas de carne picada son la opción perfecta para cualquier ocasión.",
+        "persones": "4",
+        "tiempo": "1 hora",
+        "dieta": 0,
+        "dificultad": "Fácil",
+        "tipo": "Primero",
+        "foto_receta": "http://localhost:3000/api/uploads/empanadillas.JPG",
+        "RestauranteId": 57,
+        "TipoCocinaId": [12],
+        "ingredientes": [
+            {
+                "IngredienteId": "80",
+                "cantidad": 200,
+                "medida": "gramos"
+            },
+            {
+                "IngredienteId": "33",
+                "cantidad": 2,
+                "medida": "cucharadas"
+            },
+            {
+                "IngredienteId": "31",
+                "cantidad": 1,
+                "medida": "cucharadita"
+            },
+            {
+                "IngredienteId": "38",
+                "cantidad": 1,
+                "medida": "cucharadita"
+            },
+            {
+                "IngredienteId": "14",
+                "cantidad": 1,
+                "medida": "unidades"
+            },
+            {
+                "IngredienteId": "41",
+                "cantidad": 1,
+                "medida": "taza"
+            }
+        ],
+        "procedimientos": [
+            {
+                "numero_procedimiento": 1,
+                "desc_procedimiento": "En una sartén, sofríe una cebolla picada y dos dientes de ajo picados en un poco de aceite hasta que estén dorados y fragantes. Agrega 300 gramos de carne molida (puede ser de res, cerdo o una mezcla) a la sartén y cocina a fuego medio-alto hasta que esté bien dorada y cocida por completo. Condimenta la carne con sal, pimienta y tus especias favoritas, como comino, pimentón o una pizca de orégano, para darle un sabor rico y bien sazonado. Si lo deseas, puedes agregar ingredientes adicionales al relleno, como aceitunas picadas, pasas, huevo duro picado o pimientos morrones en conserva, para darle más sabor y textura.",
+                "foto_procedimiento": "http://localhost:3000/api/uploads/empanadillas1.JPG"
+            },
+            {
+                "numero_procedimiento": 2,
+                "desc_procedimiento": "Para hacer la masa para empanadillas desde cero, combina 2 tazas de harina de trigo con 1 cucharadita de sal en un tazón grande. Agrega 1/4 de taza de mantequilla fría cortada en cubos pequeños y mezcla con un tenedor o tus manos hasta que la mezcla se asemeje a migas gruesas. Incorpora gradualmente aproximadamente 1/2 taza de agua fría, una cucharada a la vez, hasta que la masa se junte y puedas formar una bola suave y manejable. Divide la masa en porciones pequeñas y forma discos delgados con cada porción, utilizando un rodillo o tus manos.",
+                "foto_procedimiento": "http://localhost:3000/api/uploads/empanadillas2.JPG"
+            },
+            {
+                "numero_procedimiento": 3,
+                "desc_procedimiento": "Coloca una porción de relleno preparado en el centro de cada disco de masa. Dobla la masa sobre el relleno para formar una media luna y presiona los bordes con un tenedor para sellarlas. Coloca las empanadillas en una bandeja para hornear forrada con papel pergamino. Pincela cada empanadilla con huevo batido para darles un bonito color dorado al hornear. Hornea las empanadillas en un horno precalentado a 180°C durante unos 20-25 minutos, o hasta que estén doradas y crujientes.",
+                "foto_procedimiento": "http://localhost:3000/api/uploads/empanadillas3.JPG"
+            }
+    ]
     }
 
 ]
