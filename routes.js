@@ -689,7 +689,7 @@ router.post("/home/:restId/registerReceta", upload.single("photo"), async (req, 
 
     } = req.body;
 
-
+console.log(req.body)
     const baseUrl = 'http://localhost:3000/api/uploads/'
     const foto_receta = req.file ? baseUrl + req.file.filename : null; // Obtiene la ruta del archivo subido
 
@@ -726,11 +726,12 @@ router.post("/home/:restId/registerReceta", upload.single("photo"), async (req, 
     if (!tipoCocina) {
       return res.status(404).json({ error: "Tipo de cocina no encontrado" });
     }
-
+console.log(ingredientes)
     // Crea ingredientes
     const dietaReceta = 2
 
     for (const ingrediente of ingredientes) {
+      console.log('hola')
       const alimentoIngrediente = ingrediente.getGrupoAlimento()
       if (alimentoIngrediente.dieta === 1 && dietaReceta !== 0) dietaReceta = 1
       else if (alimentoIngrediente.dieta === 0) dietaReceta = 0
@@ -741,6 +742,7 @@ router.post("/home/:restId/registerReceta", upload.single("photo"), async (req, 
         cantidad,
         medida,
       });
+      console.log(recetaIngrediente)
     }
 
     // Crea receta

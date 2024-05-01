@@ -1373,7 +1373,7 @@
     {
         "nombre_receta": "Tortilla de patatas",
         "desc_receta": "Una sabrosa tortilla de patata",
-        "personas": "4",
+        "persones": "4",
         "tiempo": "30 minutos",
         "dieta": 1,
         "dificultad": "Fácil",
@@ -1429,7 +1429,7 @@
     {
         "nombre_receta": "Spaghetti Carbonara",
         "desc_receta": "Una deliciosa pasta italiana con una cremosa salsa de huevo, queso y panceta.",
-        "personas": "4",
+        "persones": "4",
         "tiempo": "20 minutos",
         "dieta": 0,
         "dificultad": "Media",
@@ -1486,7 +1486,7 @@
     {
         "nombre_receta": "Pad Thai",
         "desc_receta": "Un clásico plato tailandés de fideos de arroz salteados con camarones, tofu, brotes de soja y cacahuetes, en una deliciosa salsa agridulce.",
-        "personas": "4",
+        "persones": "4",
         "tiempo": "30 minutos",
         "dieta": 0,
         "dificultad": "Media",
@@ -1587,7 +1587,7 @@
     {
         "nombre_receta": "Coq au Vin",
         "desc_receta": "Un delicioso plato francés de pollo cocido en vino tinto con champiñones, cebollas, zanahorias y hierbas aromáticas.",
-        "personas": "4",
+        "persones": "4",
         "tiempo": "2 horas",
         "dieta": 0,
         "dificultad": "Media",
@@ -1678,7 +1678,7 @@
     {
         "nombre_receta": "Sushi Rolls",
         "desc_receta": "Una selección de sushi rolls japoneses, incluyendo California Roll, Spicy Tuna Roll y Philadelphia Roll.",
-        "personas": "4",
+        "persones": "4",
         "tiempo": "45 minutos",
         "dieta": 0,
         "dificultad": "Media",
@@ -1740,7 +1740,7 @@
     {
         "nombre_receta": "Tiramisú",
         "desc_receta": "Un postre italiano clásico hecho con capas de bizcochos de soletilla empapados en café, crema de mascarpone y cacao en polvo.",
-        "personas": "6",
+        "persones": "6",
         "tiempo": "30 minutos",
         "dieta": 1,
         "dificultad": "Media",
@@ -1796,7 +1796,7 @@
     {
         "nombre_receta": "Paella Valenciana",
         "desc_receta": "Un clásico plato español de arroz cocido con azafrán, pollo, conejo, mariscos, verduras y especias.",
-        "personas": "6",
+        "persones": "6",
         "tiempo": "1.5 horas",
         "dieta": 0,
         "dificultad": "Media",
@@ -1882,7 +1882,7 @@
     {
         "nombre_receta": "Goulash Húngaro",
         "desc_receta": "Un guiso húngaro tradicional de carne de res cocida lentamente con cebollas, pimientos, tomate, paprika y especias.",
-        "personas": "6",
+        "persones": "6",
         "tiempo": "2 horas",
         "dieta": 0,
         "dificultad": "Media",
@@ -1948,7 +1948,7 @@
     {
         "nombre_receta": "Risotto de Champiñones",
         "desc_receta": "Un cremoso risotto italiano con champiñones salteados, vino blanco, caldo de verduras y queso parmesano.",
-        "personas": "4",
+        "persones": "4",
         "tiempo": "40 minutos",
         "dieta": 1,
         "dificultad": "Media",
@@ -2023,7 +2023,7 @@
     {
         "nombre_receta": "Tajine de cordero",
         "desc_receta": "El tajine o tajín es un guiso tradicional marroquí. Se hace con cualquier tipo de carne y se caracteriza por ser platos ricos en calorías, en sabores y en aromas.",
-        "personas": "2",
+        "persones": "2",
         "tiempo": "2.20 horas",
         "dieta": 0,
         "dificultad": "Media",
@@ -2104,7 +2104,7 @@
     {
         "nombre_receta": "Tajine de pollo con limón encuertido y mantequilla curada",
         "desc_receta": "Queremos compartiros una receta maravillosa de un guiso marroquí para hacer con este recipiente y dejar a los tuyos boquiabiertos: tajine de pollo con limón encurtido y mantequilla curada. ¡Encendemos fogones!",
-        "personas": "2",
+        "persones": "2",
         "tiempo": "2.20 horas",
         "dieta": 0,
         "dificultad": "Media",
@@ -2161,7 +2161,7 @@
     {
         "nombre_receta": "Makis de Rape",
         "desc_receta": " Esta receta sencilla y deliciosa es perfecta para los amantes del sushi que están deseando aprender a prepararlo por su cuenta. ¿Todo listo? ",
-        "personas": "2",
+        "persones": "2",
         "tiempo": "30 minutos",
         "dieta": 0,
         "dificultad": "Media",
@@ -2222,7 +2222,7 @@
     {
         "nombre_receta": "Anticuchos",
         "desc_receta": "El anticucho es una brocheta proveniente de Perú. Es una receta que cuenta con variaciones y es muy popular también en algunos países de Sudamérica. ",
-        "personas": "2",
+        "persones": "2",
         "tiempo": "45 minutos",
         "dieta": 0,
         "dificultad": "Fácil",
@@ -2293,7 +2293,7 @@
     {
         "nombre_receta": "Pollo Kum Pao",
         "desc_receta": "Su sabor es adictivo al combinar salado, dulce y especiado. Es muy fácil y rápido de hacer. A continuación, la receta paso a paso.",
-        "personas": "2",
+        "persones": "2",
         "tiempo": "1 hora",
         "dieta": 0,
         "dificultad": "Media",
