@@ -605,26 +605,28 @@ router.get("/home/recetas", checkToken, async (req, res) => {
 
 router.get("/receta/:id", checkToken, async (req, res) => {
   try {
-    const user = Usuario.findByPk(req.userId)
+    const user = await Usuario.findByPk(req.userId)
 
     const id = req.params.id
-    const receta = await Receta.findByPk(id)
-    const restauranteReceta = await receta.getRestaurante()
+    let receta = await Receta.findByPk(id)
+    let restauranteReceta = await receta.getRestaurante()
 
     const ingredientesRecetas = await receta.getIngredientes()
     let grupoAlimentos = []
-    const alergias = await Promise.all(ingredientesRecetas.map(async ingrediente => {
+    await Promise.all(ingredientesRecetas.map(async ingrediente => {
       let alergiaIngrediente = await ingrediente.getGrupoAlimento()
-      if (grupoAlimentos.includes(alergiaIngrediente)) return
-      else return [...grupoAlimentos, alergiaIngrediente]
+      if (grupoAlimentos.includes(alergiaIngrediente.id)) return
+      else grupoAlimentos = [...grupoAlimentos, alergiaIngrediente.id]
     }))
-
+    const alergias = await GrupoAlimento.findAll({ where: { id: grupoAlimentos, alergeno: 1 } })
     const procedimientosReceta = await receta.getProcedimientos()
+    const tipoCocina = await receta.getTipoCocina()
+    const restInUser = await user.hasRestaurante(restauranteReceta)
+    const recetaInUser = await user.hasReceta(receta)
+    restauranteReceta = { ...restauranteReceta.dataValues, restInUser }
+    receta = { ...receta.dataValues, recetaInUser }
 
-    const restInUser = user.hasRestaurante()
-    const recetaInUser = user.hasReceta()
-
-    res.status(200).json({ restauranteReceta, receta, alergias, ingredientesRecetas, procedimientosReceta, restInUser, recetaInUser });
+    res.status(200).json({ restauranteReceta, receta, tipoCocina, alergias, ingredientesRecetas, procedimientosReceta });
   } catch (error) {
     res.status(500).json({ error: error.message });
   }
@@ -823,7 +825,7 @@ router.post("/recetasPorPalabra", async (req, res) => {
     const recetas = await Receta.findAll({
       where: {
         nombre_receta: {
-          [Op.like]:`%${palabra}%` // Usa el operador de sequelize para buscar recetas que comiencen con la palabra
+          [Op.like]: `%${palabra}%` // Usa el operador de sequelize para buscar recetas que comiencen con la palabra
         }
       }
     });

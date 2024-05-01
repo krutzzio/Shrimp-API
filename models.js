@@ -139,6 +139,10 @@ const GrupoAlimento = sequelize.define("GrupoAlimento", {
         type: DataTypes.STRING,
         allowNull: false,
     },
+    alergeno: {
+        type: DataTypes.STRING,
+        allowNull: false,
+    },
 });
 
 // Model per a la taula Receta
