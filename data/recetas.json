@@ -2346,6 +2346,62 @@
                 "foto_procedimiento": "http://localhost:3000/api/uploads/pollo_kum_pao3.jpg"
             }
     ]
+    },
+    {
+        "nombre_receta": "Musaka",
+        "desc_receta": "La musaka tiene tantas variantes de elaboración como ingredientes que pueden ser utilizados para preparar este plato tan famoso dentro de la gastronomía griega y de algún que otro país de la cuenca del Mediterráneo. En este caso vamos a compartir con vosotros la receta de la musaka de pollo.",
+        "persones": "6",
+        "tiempo": "1 hora",
+        "dieta": 0,
+        "dificultad": "Media",
+        "tipo": "Principal",
+        "foto_receta": "http://localhost:3000/api/uploads/musaka.jpg",
+        "RestauranteId": 12,
+        "TipoCocinaId": [3],
+        "ingredientes": [
+            {
+                "IngredienteId": "3",
+                "cantidad": 2,
+                "medida": "unidades"
+            },
+            {
+                "IngredienteId": "2",
+                "cantidad": 4,
+                "medida": "unidades"
+            },
+            {
+                "IngredienteId": "102",
+                "cantidad": 1,
+                "medida": "kilogramo"
+            },
+            {
+                "IngredienteId": "1",
+                "cantidad": 500,
+                "medida": "mililitros"
+            },
+            {
+                "IngredienteId": "5",
+                "cantidad": 2,
+                "medida": "unidades"
+            }
+        ],
+        "procedimientos": [
+            {
+                "numero_procedimiento": 1,
+                "desc_procedimiento": "Comenzaremos lavando las berenjenas y cortándolas en rodajas, bien sea a lo largo o a lo ancho, como queramos. Cuando las tengamos todas cortadas las pondremos en un plato sobre un papel absorbente y les echaremos sal para que suden y eliminen el sabor amargo que suelen tener. Por otro lado, pelaremos y picaremos la cebolla en trozos normales, los ajos los pelaremos y laminaremos y salpimentaremos bien el pollo. Echamos un chorretón de aceite de oliva en una sartén y la ponemos a fuego mínimo para ir dorando la cebolla, el ajo y un poco de sal.",
+                "foto_procedimiento": "http://localhost:3000/api/uploads/musaka1.JPG"
+            },
+            {
+                "numero_procedimiento": 2,
+                "desc_procedimiento": "Cuando la cebolla esté ligeramente pochada agregaremos los tomates lavados, pelados y troceados, dejando la mezcla durante unos 15 minutos y acordándonos de remover de vez en cuando. Cuando se haya consumido parte del agua de los tomates incorporaremos la canela y la carne picada de pollo y continuaremos haciéndola durante unos 5 o 6 minutos removiendo poco a poco. En otra sartén echaremos un poco de aceite de oliva y pasaremos las rodajas de las berenjenas por las dos caras hasta que se doren un poco y se ablanden.",
+                "foto_procedimiento": "http://localhost:3000/api/uploads/musaka2.jpg"
+            },
+            {
+                "numero_procedimiento": 3,
+                "desc_procedimiento": "Cuando las hagamos, las dejaremos en un plato sobre un papel absorbente para que recoja el exceso de aceite. Precalentaremos el horno a 180 grados y es el momento de preparar la musaka. Utilizaremos una bandeja honda y colocaremos una capa de rodajas de berenjena para cubrir todo el fondo, añadiremos la mitad de la carne de pollo y una capa de bechamel. Repetiremos de nuevo, poniendo el resto de las rodajas berenjena, el resto de la carne y el resto de la bechamel y sobre esta última capa echaremos unos generosos puñados de queso rallado. Lo meteremos en el horno y lo dejaremos durante 30 minutos y estará lista para servir.",
+                "foto_procedimiento": "http://localhost:3000/api/uploads/musaka3.JPG"
+            }
+    ]
     }
 
 ]
