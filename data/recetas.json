@@ -2463,6 +2463,67 @@
                 "foto_procedimiento": "http://localhost:3000/api/uploads/pokesalmon3.JPG"
             }
     ]
+    },
+    {
+        "nombre_receta": "Mole",
+        "desc_receta": "Aquí tienes nuestra receta para preparar un auténtico mole, un clásico de la cocina mexicana que combina chiles, especias y chocolate para formar una deliciosa salsa llena de contrastes.",
+        "persones": "2",
+        "tiempo": "1 hora",
+        "dieta": 0,
+        "dificultad": "Media",
+        "tipo": "Principal",
+        "foto_receta": "http://localhost:3000/api/uploads/mole.JPG",
+        "RestauranteId": 30,
+        "TipoCocinaId": [7],
+        "ingredientes": [
+            {
+                "IngredienteId": "80",
+                "cantidad": 200,
+                "medida": "gramos"
+            },
+            {
+                "IngredienteId": "33",
+                "cantidad": 2,
+                "medida": "cucharadas"
+            },
+            {
+                "IngredienteId": "31",
+                "cantidad": 1,
+                "medida": "cucharadita"
+            },
+            {
+                "IngredienteId": "38",
+                "cantidad": 1,
+                "medida": "cucharadita"
+            },
+            {
+                "IngredienteId": "14",
+                "cantidad": 1,
+                "medida": "unidades"
+            },
+            {
+                "IngredienteId": "41",
+                "cantidad": 1,
+                "medida": "taza"
+            }
+        ],
+        "procedimientos": [
+            {
+                "numero_procedimiento": 1,
+                "desc_procedimiento": "Reúne los ingredientes necesarios para hacer mole, que incluyen chiles secos (como chiles anchos, chiles pasilla y chiles mulatos), especias (como clavos de olor, canela y comino), frutos secos (como almendras, nueces y ajonjolí), y otros ingredientes como cebolla, ajo, tortillas de maíz, chocolate de mesa y caldo de pollo. Tuesta los chiles secos en una sartén caliente hasta que estén fragantes, luego remójalos en agua caliente para ablandarlos. Asa los demás ingredientes secos (especias, frutos secos) en una sartén sin aceite para resaltar sus sabores.",
+                "foto_procedimiento": "http://localhost:3000/api/uploads/mole1.JPG"
+            },
+            {
+                "numero_procedimiento": 2,
+                "desc_procedimiento": "En una licuadora o procesador de alimentos, mezcla los chiles remojados (sin las semillas ni las venas si quieres un mole menos picante), los ingredientes secos tostados, cebolla, ajo y tortillas de maíz con un poco de caldo de pollo. Licúa hasta obtener una mezcla suave y homogénea. Agrega más caldo de pollo según sea necesario para lograr la consistencia deseada. Vierte la mezcla en una olla grande y cocina a fuego medio-bajo, revolviendo ocasionalmente, hasta que espese y los sabores se mezclen, durante aproximadamente 30 minutos a 1 hora. Agrega trozos de chocolate de mesa al final y mezcla hasta que se derrita y se incorpore completamente.",
+                "foto_procedimiento": "http://localhost:3000/api/uploads/mole2.JPG"
+            },
+            {
+                "numero_procedimiento": 3,
+                "desc_procedimiento": "Sirve el mole caliente sobre pollo cocido o cualquier otro tipo de carne de tu elección. Acompaña el mole con arroz blanco y tortillas calientes para disfrutar de una comida tradicional mexicana completa. Opcionalmente, decora el mole con semillas de sésamo tostadas o cilantro fresco picado para darle un toque final. ¡Disfruta de este delicioso plato de mole casero con tus amigos y familiares!",
+                "foto_procedimiento": "http://localhost:3000/api/uploads/mole3.JPG"
+            }
+    ]
     }
 
 ]
