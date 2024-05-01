@@ -699,7 +699,7 @@
         "foto_receta": "http://localhost:3000/api/uploads/patatabrava.jpeg",
         "RestauranteId": 1,
         "TipoCocinaId": [
-            5
+            9
         ],
         "ingredientes": [
             {
@@ -787,7 +787,7 @@
         "foto_receta": "http://localhost:3000/api/uploads/salmorejo.jpeg",
         "RestauranteId": 1,
         "TipoCocinaId": [
-            2
+            9
         ],
         "ingredientes": [
             {
@@ -1074,7 +1074,7 @@
         "foto_receta": "http://localhost:3000/api/uploads/estofado.jpeg",
         "RestauranteId": 3,
         "TipoCocinaId": [
-            6
+            9
         ],
         "ingredientes": [
             {
@@ -1172,7 +1172,7 @@
         "foto_receta": "http://localhost:3000/api/uploads/gazpacho.jpeg",
         "RestauranteId": 4,
         "TipoCocinaId": [
-            1
+            9
         ],
         "ingredientes": [
             {
@@ -1265,7 +1265,7 @@
         "foto_receta": "http://localhost:3000/api/uploads/PulpoGallega.jpeg",
         "RestauranteId": 5,
         "TipoCocinaId": [
-            1
+            9
         ],
         "ingredientes": [
             {
@@ -1323,7 +1323,7 @@
         "foto_receta": "http://localhost:3000/api/uploads/CochinilloAsado.jpg",
         "RestauranteId": 8,
         "TipoCocinaId": [
-            1
+            9
         ],
         "ingredientes": [
             {
@@ -1380,7 +1380,7 @@
         "tipo": "Principal",
         "foto_receta": "http://localhost:3000/api/uploads/Tortilla_de_patata_Foto.jpeg",
         "RestauranteId": 3,
-        "TipoCocinaId": [6],
+        "TipoCocinaId": [9],
         "ingredientes": [
             {
                 "IngredienteId": 7, 
@@ -1436,7 +1436,7 @@
         "tipo": "Principal",
         "foto_receta": "http://localhost:3000/api/uploads/Spaghetti_Carbonara_foto.jpg",
         "RestauranteId": 6,
-        "TipoCocinaId": [8],
+        "TipoCocinaId": [5],
         "ingredientes": [
             {
                 "IngredienteId": 9, 
@@ -1493,7 +1493,7 @@
         "tipo": "Principal",
         "foto_receta": "http://localhost:3000/api/uploads/Pad_Thai_foto.jpg",
         "RestauranteId": 5,
-        "TipoCocinaId": [11],
+        "TipoCocinaId": [10],
         "ingredientes": [
             {
                 "IngredienteId": 32,
@@ -1594,7 +1594,7 @@
         "tipo": "Principal",
         "foto_receta": "http://localhost:3000/api/uploads/Coq_au_Vin_Foto.jpg",
         "RestauranteId": 9,
-        "TipoCocinaId": [12],
+        "TipoCocinaId": [10],
         "ingredientes": [
             {
                 "IngredienteId": 100, 
@@ -2011,15 +2011,6 @@
             }
     ]
     },
-
-    
-
-
-
-
-
-
-
     {
         "nombre_receta": "Tajine de cordero",
         "desc_receta": "El tajine o tajín es un guiso tradicional marroquí. Se hace con cualquier tipo de carne y se caracteriza por ser platos ricos en calorías, en sabores y en aromas.",
@@ -2111,7 +2102,7 @@
         "tipo": "Principal",
         "foto_receta": "http://localhost:3000/api/uploads/tajin_pollo.jpg",
         "RestauranteId": 12,
-        "TipoCocinaId": ["8"],
+        "TipoCocinaId": [8],
         "ingredientes": [
             {
                 "IngredienteId": "100",
@@ -2159,7 +2150,7 @@
     ]
     },
     {
-        "nombre_receta": "Makis de Rape",
+        "nombre_receta": "Makis de Atún",
         "desc_receta": " Esta receta sencilla y deliciosa es perfecta para los amantes del sushi que están deseando aprender a prepararlo por su cuenta. ¿Todo listo? ",
         "persones": "2",
         "tiempo": "30 minutos",
@@ -2300,7 +2291,7 @@
         "tipo": "Principal",
         "foto_receta": "http://localhost:3000/api/uploads/pollo_kum_pao.jpg",
         "RestauranteId": 11,
-        "TipoCocinaId": [14],
+        "TipoCocinaId": [2],
         "ingredientes": [
             {
                 "IngredienteId": "100",
